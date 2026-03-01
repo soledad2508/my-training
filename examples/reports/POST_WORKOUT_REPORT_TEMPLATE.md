@@ -12,7 +12,7 @@ Data (last_updated UTC: [YYYY-MM-DDTHH:MM:SS])
 
 Completed workout: [ActivityType] [WorkoutName]
 Start time: [HH:MM:SS]
-Duration: [X.XX] hours (planned [Xh])
+Duration: [XhYm] (planned [XhYm])
 Distance: [XX.X] km
 Power: [XXX] W avg / [XXX] W NP
 Power zones: [XX]% Zone 1, [XX]% Zone 2
@@ -42,7 +42,7 @@ ATL: [XX.XX]
 Ramp rate: [X.XX]
 ACWR: [X.XX] ([assessment])
 Recovery Index: [X.XX]
-Hours: [XX.XX]
+Hours: [XhYm]
 TSS: [XXX]
 
 Interpretation:
@@ -83,3 +83,7 @@ Round zone percentages to the nearest **whole number** (1%). The JSON data sourc
 | Durability (7d mean) | < 3% (good) | 3–5% (moderate) | > 5% (declining) |
 | EF trend | improving/stable | — | declining |
 | TID drift | consistent | shifting | acute_depolarization |
+
+## Formatting Rule
+
+- **Durations and sleep:** Always use `_formatted` fields from JSON (e.g., `sleep_formatted`, `duration_formatted`, `total_training_formatted`). Never convert decimal `_hours` fields to display format — the formatted values are pre-calculated from raw seconds and avoid rounding errors.
