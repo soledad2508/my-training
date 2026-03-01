@@ -8,6 +8,8 @@ Version 3.6.2 - Workout Summary Generation & Tiered Detail
   - resolve=true on events API for structured workout_doc with resolved targets
   - Workout summary parser: Pattern A (explicit reps), Pattern B (flat alternating)
   - Strict guards: distinctness threshold, duration tolerance (±1s/±2s), normalized watts
+  - Consecutive identical interval block merging (strict string equality)
+  - Fixed duration_hours: read moving_time (not duration) from events API
   - Tiered planned workout detail: days 0-7 full, days 8-42 skeleton + summary/preview
   - workout_summary_stats telemetry (attempted, success, patternA/B, bail reasons)
   - Fail-closed: unrecognized structures return null, raw description preserved
@@ -3050,9 +3052,36 @@ class IntervalsSync:
             if not has_interval:
                 return None  # All flat steps — no wall-of-text problem, skip summary
             
-            return " | ".join(parts)
+            return self._merge_interval_blocks(parts)
         except Exception:
             return None
+    
+    def _merge_interval_blocks(self, parts: List[str]) -> str:
+        """
+        Merge consecutive identical interval blocks in summary parts.
+        
+        E.g., ["5×10s @700W / 3m rec", "5×10s @700W / 3m rec"] → ["2 × 5×10s @700W / 3m rec"]
+        
+        No WU/CD labeling — that's a coaching interpretation, not structural data.
+        Strict string equality only.
+        """
+        if not parts:
+            return ""
+        
+        result = []
+        i = 0
+        while i < len(parts):
+            current = parts[i]
+            count = 1
+            while i + count < len(parts) and parts[i + count] == current:
+                count += 1
+            if count > 1:
+                result.append(f"{count} × {current}")
+            else:
+                result.append(current)
+            i += count
+        
+        return " | ".join(result)
     
     def _render_step(self, step: Dict) -> str:
         """Render a single workout_doc step. Returns string or None."""
@@ -3361,7 +3390,7 @@ class IntervalsSync:
             if not has_block:
                 return None
             
-            return " | ".join(parts)
+            return self._merge_interval_blocks(parts)
         except Exception:
             return None
     
@@ -3480,7 +3509,7 @@ class IntervalsSync:
                 "name": "Planned Workout" if anonymize else evt.get("name", ""),
                 "type": evt.get("category", ""),
                 "planned_tss": evt.get("icu_training_load"),
-                "duration_hours": round(evt.get("duration", 0) / 3600, 2),
+                "duration_hours": round(evt.get("moving_time", 0) / 3600, 2),
                 "workout_summary": summary
             }
             
