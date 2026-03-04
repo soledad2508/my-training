@@ -1,11 +1,10 @@
-
 #!/usr/bin/env python3
 """
 Intervals.icu → GitHub/Local JSON Export
 Exports training data for LLM access.
 Supports both automated GitHub sync and manual local export.
 
-Version 3.6.5 - Activity notes + coach annotations on planned workouts
+Version 3.7 - Phase detection v2: dual-stream architecture (retrospective + prospective)
   - Parse NOTE: lines from activity descriptions into "coach_notes" array
   - Parse NOTE: lines from planned workout descriptions into "coach_notes" array
   - NOTE: lines stripped from planned workout descriptions to avoid duplication
@@ -60,7 +59,7 @@ class IntervalsSync:
     HISTORY_FILE = "history.json"
     UPSTREAM_REPO = "CrankAddict/section-11"
     CHANGELOG_FILE = "changelog.json"
-    VERSION = "3.6.5"
+    VERSION = "3.7"
 
     # Sport family mapping for per-sport monotony calculation
     # Multi-sport athletes get inflated total monotony when cross-training
@@ -441,6 +440,20 @@ class IntervalsSync:
             current_ftp_outdoor, ftp_history.get("outdoor", {}), "outdoor"
         )
         
+        # Build race calendar (v3.5.0) — moved before derived metrics for phase detection
+        print("Building race calendar...")
+        race_calendar = self._build_race_calendar(
+            future_events=future_events,
+            current_ctl=ctl,
+            current_atl=atl,
+            current_tsb=tsb,
+            activities_7d=activities_display,
+            today=today
+        )
+        
+        # Format planned workouts — used by both phase detection and output
+        formatted_planned_workouts = self._format_events(near_future_events, anonymize, today=today)
+        
         # Calculate derived metrics for Section 11 compliance
         print("Calculating derived metrics...")
         derived_metrics = self._calculate_derived_metrics(
@@ -456,7 +469,9 @@ class IntervalsSync:
             power_model=power_model,
             benchmark_indoor=(benchmark_index_indoor, ftp_8_weeks_ago_indoor, current_ftp_indoor),
             benchmark_outdoor=(benchmark_index_outdoor, ftp_8_weeks_ago_outdoor, current_ftp_outdoor),
-            vo2max=vo2max
+            vo2max=vo2max,
+            formatted_planned_workouts=formatted_planned_workouts,
+            race_calendar=race_calendar
         )
         
         # Generate alerts array (v3.3.0)
@@ -474,17 +489,6 @@ class IntervalsSync:
             print(f"  ⚠️  {len(alerts)} alerts: {alarm_count} alarm, {warning_count} warning")
         else:
             print("  ✅ No alerts — green light")
-        
-        # Build race calendar (v3.5.0)
-        print("Building race calendar...")
-        race_calendar = self._build_race_calendar(
-            future_events=future_events,
-            current_ctl=ctl,
-            current_atl=atl,
-            current_tsb=tsb,
-            activities_7d=activities_display,
-            today=today
-        )
         
         # Add race-specific alerts
         race_alerts = self._generate_race_alerts(race_calendar)
@@ -559,7 +563,7 @@ class IntervalsSync:
             "derived_metrics": derived_metrics,
             "recent_activities": self._format_activities(activities_display, anonymize),
             "wellness_data": self._format_wellness(wellness),
-            "planned_workouts": self._format_events(near_future_events, anonymize, today=today),
+            "planned_workouts": formatted_planned_workouts,
             "workout_summary_stats": getattr(self, '_summary_stats', {}),
             "weekly_summary": self._compute_weekly_summary(activities_display, wellness),
             "race_calendar": race_calendar
@@ -608,7 +612,9 @@ class IntervalsSync:
                                     power_model: Dict,
                                     benchmark_indoor: Tuple[Optional[float], Optional[int], Optional[int]],
                                     benchmark_outdoor: Tuple[Optional[float], Optional[int], Optional[int]],
-                                    vo2max: float) -> Dict:
+                                    vo2max: float,
+                                    formatted_planned_workouts: List[Dict] = None,
+                                    race_calendar: Dict = None) -> Dict:
         """
         Calculate Section 11 derived metrics.
         
@@ -620,6 +626,12 @@ class IntervalsSync:
             benchmark_indoor: (benchmark_index, ftp_8_weeks_ago, current_ftp) for indoor
             benchmark_outdoor: (benchmark_index, ftp_8_weeks_ago, current_ftp) for outdoor
         """
+        
+        # Defaults for phase detection inputs
+        if formatted_planned_workouts is None:
+            formatted_planned_workouts = []
+        if race_calendar is None:
+            race_calendar = {"next_race": None, "all_races": [], "taper_alert": {"active": False}, "race_week": {"active": False}}
         
         # Unpack benchmark tuples
         benchmark_index_indoor, ftp_8_weeks_ago_indoor, current_ftp_indoor = benchmark_indoor
@@ -832,17 +844,26 @@ class IntervalsSync:
             if is_hard:
                 hard_days_this_week += 1
         
-        # === PHASE DETECTION ===
-        phase_detected, phase_triggers = self._detect_phase(
-            acwr=acwr,
-            ri=ri,
-            quality_intensity_pct=quality_intensity_percentage,
-            hard_days_per_week=hard_days_this_week,
-            strain=strain,
-            monotony=monotony,
-            tsb=current_tsb,
-            ctl=current_ctl
+        # === PHASE DETECTION v2 (dual-stream) ===
+        today = datetime.now().strftime("%Y-%m-%d")
+        
+        # Load weekly_180d lookback from history.json
+        weekly_rows = self._load_weekly_rows_for_phase()
+        previous_phase = None
+        if weekly_rows:
+            previous_phase = weekly_rows[-1].get("phase_detected")
+        
+        phase_result = self._detect_phase_v2(
+            weekly_rows=weekly_rows,
+            planned_workouts=formatted_planned_workouts,
+            race_calendar=race_calendar,
+            previous_phase=previous_phase,
+            today=today
         )
+        phase_detected = phase_result["phase"]
+        
+        # Legacy compatibility: extract trigger-style info for existing consumers
+        phase_triggers = phase_result["reason_codes"]
         
         # === SEASONAL CONTEXT ===
         seasonal_context = self._determine_seasonal_context()
@@ -912,8 +933,9 @@ class IntervalsSync:
             "consistency_details": consistency_details,
             
             # Phase & Context
-            "phase_detected": phase_detected,
-            "phase_triggers": phase_triggers,
+            "phase_detection": phase_result,
+            "phase_detected": phase_detected,  # top-level shortcut for backward compat
+            "phase_triggers": phase_triggers,   # backward compat
             "seasonal_context": seasonal_context,
             
             # Benchmark & FTP Progression (Indoor)
@@ -1681,78 +1703,586 @@ class IntervalsSync:
                      "more polarized acutely.")
         }
 
-    def _detect_phase(self, acwr: float, ri: float, quality_intensity_pct: float,
-                      hard_days_per_week: int,
-                      strain: float, monotony: float, tsb: float, ctl: float) -> Tuple[str, List[str]]:
+    # === PHASE DETECTION v2 (dual-stream, spec-driven) ===
+    
+    def _detect_phase_v2(self, weekly_rows: List[Dict], planned_workouts: List[Dict],
+                          race_calendar: Dict, previous_phase: Optional[str] = None,
+                          today: str = None, dossier_declared: Optional[str] = None) -> Dict:
         """
-        Detect current training phase based on Section 11 Phase Detection Criteria
+        Dual-stream phase detection (v2).
         
-        Uses both time-based quality intensity % AND session-based hard days/week.
-        For high-volume athletes (10+ hrs/week), time-based metrics undercount intensity
-        because hard sessions are diluted by volume. Session count provides the correction.
+        Stream 1: Completed history — rolling 4-week lookback from weekly_180d rows.
+        Stream 2: Planned calendar — next 7-14 days of planned workouts + race calendar.
+        
+        Returns full phase output structure with confidence and reason_codes.
+        
+        Phase states: Build, Base, Peak, Taper, Deload, Recovery, Overreached, null.
         """
-        triggers = []
+        if today is None:
+            today = datetime.now().strftime("%Y-%m-%d")
         
-        # Check for Overreached first (safety)
-        if acwr and acwr > 1.3:
-            triggers.append(f"ACWR {acwr} > 1.3")
-        if strain and strain > 3500:
-            triggers.append(f"Strain {strain} > 3500")
-        if ri and ri < 0.6:
-            triggers.append(f"RI {ri} < 0.6")
-        if monotony and monotony > 2.5:
-            triggers.append(f"Monotony {monotony} > 2.5")
+        reason_codes = []
         
-        if len(triggers) >= 2 or (ri and ri < 0.6):
-            return "Overreached", triggers
+        # Compute features from both streams
+        s1 = self._phase_stream1_features(weekly_rows)
+        s2 = self._phase_stream2_features(planned_workouts, race_calendar, s1, today)
         
-        # Recovery phase
-        if tsb and tsb > 10:
-            triggers = [f"TSB {tsb} > +10"]
-            return "Recovery", triggers
+        # Data quality assessment
+        data_quality = self._phase_data_quality(weekly_rows, s1, reason_codes)
         
-        # Taper phase
-        if tsb and tsb > 0 and ctl:
-            if 0 < tsb <= 10:
-                triggers = [f"TSB {tsb} positive", "CTL stable/declining"]
-                return "Taper", triggers
+        # Classification
+        phase, confidence, extra_reasons = self._phase_classify(
+            s1, s2, previous_phase, data_quality
+        )
+        reason_codes.extend(extra_reasons)
         
-        # Build phase — by time OR by session count
-        # High-volume athletes may show low quality % but still train 2+ hard days/week
-        build_by_time = (quality_intensity_pct and 15 <= quality_intensity_pct <= 25)
-        build_by_sessions = (hard_days_per_week >= 2)
+        # Phase duration: count consecutive weeks of same phase from recent weekly rows
+        phase_duration = 0
+        if phase and weekly_rows:
+            for row in reversed(weekly_rows):
+                if row.get("phase_detected") == phase:
+                    phase_duration += 1
+                else:
+                    break
         
-        if acwr and 0.8 <= acwr <= 1.3:
-            if build_by_time or build_by_sessions:
-                triggers = [f"ACWR {acwr} in 0.8-1.3"]
-                if build_by_time:
-                    triggers.append(f"Quality Intensity {quality_intensity_pct}% in 15-25%")
-                if build_by_sessions:
-                    triggers.append(f"Hard days {hard_days_per_week}/week >= 2")
-                return "Build", triggers
+        # Dossier agreement
+        dossier_agreement = None
+        if dossier_declared:
+            dossier_agreement = (dossier_declared == phase) if phase else None
         
-        # Base phase — low intensity by BOTH time and session count
-        if acwr and 0.8 <= acwr < 1.0:
-            triggers = [f"ACWR {acwr} in 0.8-1.0"]
-            if quality_intensity_pct is not None:
-                triggers.append(f"Quality Intensity {quality_intensity_pct}% < 15%")
-            if hard_days_per_week is not None:
-                triggers.append(f"Hard days {hard_days_per_week}/week <= 1")
-            return "Base", triggers
+        # Stream agreement
+        stream_agreement = s1.get("suggested_phase") == s2.get("suggested_phase")
+        if s1.get("suggested_phase") is None or s2.get("suggested_phase") is None:
+            stream_agreement = None  # can't assess if one stream has no opinion
         
-        # Peak phase — high intensity with controlled load
-        peak_by_time = (quality_intensity_pct and quality_intensity_pct > 20)
-        peak_by_sessions = (hard_days_per_week >= 3)
+        return {
+            "phase": phase,
+            "confidence": confidence,
+            "reason_codes": reason_codes,
+            "basis": {
+                "stream_1": {
+                    "ctl_slope": s1.get("ctl_slope"),
+                    "acwr_trend": s1.get("acwr_trend"),
+                    "hard_day_pattern": s1.get("hard_day_avg"),
+                    "weeks_available": s1.get("weeks_available", 0)
+                },
+                "stream_2": {
+                    "planned_tss_delta": s2.get("planned_tss_delta"),
+                    "hard_sessions_planned": s2.get("hard_sessions_planned"),
+                    "race_proximity": s2.get("race_proximity"),
+                    "next_week_load": s2.get("next_week_tss_delta"),
+                    "plan_coverage_current_week": s2.get("plan_coverage_current_week"),
+                    "plan_coverage_next_week": s2.get("plan_coverage_next_week")
+                },
+                "data_quality": data_quality,
+                "stream_agreement": stream_agreement
+            },
+            "previous_phase": previous_phase,
+            "phase_duration_weeks": phase_duration,
+            "dossier_declared": dossier_declared,
+            "dossier_agreement": dossier_agreement
+        }
+    
+    def _phase_stream1_features(self, weekly_rows: List[Dict]) -> Dict:
+        """
+        Extract Stream 1 (retrospective) features from weekly_180d rows.
+        Uses last 4 weeks for trend detection.
+        """
+        result = {
+            "weeks_available": len(weekly_rows),
+            "ctl_slope": None,
+            "ctl_values": [],
+            "acwr_trend": None,
+            "hard_day_avg": None,
+            "hard_day_values": [],
+            "monotony_trend": None,
+            "tss_values": [],
+            "suggested_phase": None
+        }
         
-        if acwr and acwr >= 1.0 and (peak_by_time or peak_by_sessions):
-            triggers = [f"ACWR {acwr} >= 1.0"]
-            if peak_by_time:
-                triggers.append(f"Quality Intensity {quality_intensity_pct}% > 20%")
-            if peak_by_sessions:
-                triggers.append(f"Hard days {hard_days_per_week}/week >= 3")
-            return "Peak", triggers
+        if not weekly_rows:
+            return result
         
-        return "Indeterminate", ["Insufficient data for phase detection"]
+        # Use last 4 weeks (or fewer if not available)
+        recent = weekly_rows[-4:] if len(weekly_rows) >= 4 else weekly_rows
+        
+        # CTL slope: linear trend over available weeks
+        ctl_values = [r.get("ctl_end") for r in recent if r.get("ctl_end") is not None]
+        result["ctl_values"] = ctl_values
+        if len(ctl_values) >= 2:
+            # Simple slope: (last - first) / n_weeks
+            result["ctl_slope"] = round((ctl_values[-1] - ctl_values[0]) / len(ctl_values), 2)
+        
+        # TSS values for trend
+        result["tss_values"] = [r.get("total_tss", 0) or 0 for r in recent]
+        
+        # ACWR trend: direction over the window
+        acwr_values = [r.get("acwr") for r in recent if r.get("acwr") is not None]
+        if len(acwr_values) >= 2:
+            acwr_diff = acwr_values[-1] - acwr_values[0]
+            if acwr_diff > 0.1:
+                result["acwr_trend"] = "rising"
+            elif acwr_diff < -0.1:
+                result["acwr_trend"] = "falling"
+            else:
+                result["acwr_trend"] = "stable"
+        
+        # Hard-day density
+        hard_values = [r.get("hard_days", 0) or 0 for r in recent]
+        result["hard_day_values"] = hard_values
+        if hard_values:
+            result["hard_day_avg"] = round(statistics.mean(hard_values), 1)
+        
+        # Monotony trend (last week vs average of prior weeks)
+        mono_values = [r.get("monotony") for r in recent if r.get("monotony") is not None]
+        if len(mono_values) >= 2:
+            if mono_values[-1] and mono_values[-1] > 2.5:
+                result["monotony_trend"] = "elevated"
+            else:
+                result["monotony_trend"] = "normal"
+        
+        # Stream 1 suggested phase (retrospective only)
+        result["suggested_phase"] = self._phase_from_stream1(result, recent)
+        
+        return result
+    
+    def _phase_from_stream1(self, features: Dict, recent_rows: List[Dict]) -> Optional[str]:
+        """Suggest a phase from Stream 1 features alone. Returns phase or None."""
+        ctl_slope = features.get("ctl_slope")
+        hard_avg = features.get("hard_day_avg")
+        acwr_trend = features.get("acwr_trend")
+        mono_trend = features.get("monotony_trend")
+        
+        # Overreached: requires convergence of multiple signals, not a single metric.
+        # Path A: Current week ACWR > 1.5 (acute spike, Gabbett danger zone)
+        # Path B: Sustained elevated monotony (>2.5) + ACWR trending up or >1.3
+        if mono_trend == "elevated":
+            # Use CURRENT week's ACWR, not historical max — a spike 3 weeks ago
+            # that's since resolved should not keep triggering Overreached
+            current_acwr = recent_rows[-1].get("acwr") if recent_rows else None
+            if current_acwr is not None and current_acwr > 1.5:
+                return "Overreached"
+            # Sustained pattern: elevated monotony + ACWR still above normal
+            if current_acwr is not None and current_acwr > 1.3 and acwr_trend == "rising":
+                return "Overreached"
+        
+        if ctl_slope is None:
+            return None
+        
+        # Build: rising CTL + sustained hard days
+        if ctl_slope > 1.0 and hard_avg is not None and hard_avg >= 1.5:
+            return "Build"
+        
+        # Base: flat CTL + moderate volume
+        if -1.0 <= ctl_slope <= 1.0 and hard_avg is not None and hard_avg <= 1.5:
+            return "Base"
+        
+        # Declining CTL — could be Deload, Taper, or Recovery (need Stream 2)
+        if ctl_slope < -1.0:
+            return None  # ambiguous without calendar context
+        
+        return None
+    
+    def _phase_stream2_features(self, planned_workouts: List[Dict], race_calendar: Dict,
+                                 stream1: Dict, today: str) -> Dict:
+        """
+        Extract Stream 2 (prospective) features from planned workouts and race calendar.
+        """
+        result = {
+            "planned_tss_delta": None,
+            "hard_sessions_planned": 0,
+            "race_proximity": None,
+            "race_category": None,
+            "next_week_tss_delta": None,
+            "plan_coverage_current_week": 0.0,
+            "plan_coverage_next_week": 0.0,
+            "suggested_phase": None
+        }
+        
+        today_date = datetime.strptime(today, "%Y-%m-%d")
+        
+        # Race proximity from race_calendar
+        next_race = race_calendar.get("next_race")
+        if next_race and next_race.get("days_until") is not None:
+            result["race_proximity"] = next_race["days_until"]
+            result["race_category"] = next_race.get("category")
+        
+        if not planned_workouts:
+            return result
+        
+        # Rolling 7-day windows for plan coverage (aligned with planned_tss_delta)
+        current_week_start = today_date
+        current_week_end = today_date + timedelta(days=6)
+        next_week_start = today_date + timedelta(days=7)
+        next_week_end = today_date + timedelta(days=13)
+        
+        # Classify planned workouts into current and next rolling week
+        current_week_workouts = []
+        next_week_workouts = []
+        next_7d_tss = 0
+        
+        for pw in planned_workouts:
+            pw_date_str = (pw.get("date") or "")[:10]
+            if not pw_date_str or pw_date_str == "unknown":
+                continue
+            try:
+                pw_date = datetime.strptime(pw_date_str, "%Y-%m-%d")
+            except ValueError:
+                continue
+            
+            # Next 7 days TSS (rolling, for planned_tss_delta)
+            days_from_today = (pw_date - today_date).days
+            if 0 <= days_from_today < 7:
+                next_7d_tss += (pw.get("planned_tss") or 0)
+            
+            # Rolling week classification (for plan coverage)
+            if current_week_start <= pw_date <= current_week_end:
+                current_week_workouts.append(pw)
+            elif next_week_start <= pw_date <= next_week_end:
+                next_week_workouts.append(pw)
+        
+        # Plan coverage: sessions / expected sessions
+        # Expected sessions = avg activity count from stream1 recent weeks
+        tss_values = stream1.get("tss_values", [])
+        weeks_avail = stream1.get("weeks_available", 0)
+        
+        # Plan coverage: sessions / expected sessions
+        # TODO(v3.71): expected_sessions should use avg activity_count from weekly_180d rows
+        # (available in rows but not currently passed through stream1 features).
+        # Hard-coded 5 means athletes training 7×/week get coverage >1.0, and 3×/week get 0.6.
+        # Impact is limited: plan_coverage only adjusts confidence, not classification.
+        expected_sessions = 5
+        if weeks_avail > 0:
+            pass  # Future: extract from weekly_rows activity_count average
+        
+        result["plan_coverage_current_week"] = round(
+            len(current_week_workouts) / expected_sessions, 2
+        ) if expected_sessions > 0 else 0.0
+        result["plan_coverage_next_week"] = round(
+            len(next_week_workouts) / expected_sessions, 2
+        ) if expected_sessions > 0 else 0.0
+        
+        # Planned TSS delta: planned next 7d / avg of prior 21d actual
+        avg_tss_prev_21d = None
+        if tss_values and len(tss_values) >= 3:
+            avg_tss_prev_21d = statistics.mean(tss_values[-3:])
+        elif tss_values:
+            avg_tss_prev_21d = statistics.mean(tss_values)
+        
+        if avg_tss_prev_21d and avg_tss_prev_21d > 0 and next_7d_tss > 0:
+            result["planned_tss_delta"] = round(next_7d_tss / avg_tss_prev_21d, 2)
+        
+        # Next week TSS delta (for Deload confirmation: does load resume?)
+        next_week_tss = sum(pw.get("planned_tss") or 0 for pw in next_week_workouts)
+        if avg_tss_prev_21d and avg_tss_prev_21d > 0 and next_week_tss > 0:
+            result["next_week_tss_delta"] = round(next_week_tss / avg_tss_prev_21d, 2)
+        
+        # Hard sessions planned (next 7 days)
+        # A planned workout is "hard" if its name or type suggests intensity
+        hard_count = 0
+        next_7d_sessions = 0
+        for pw in planned_workouts:
+            pw_date_str = (pw.get("date") or "")[:10]
+            if not pw_date_str or pw_date_str == "unknown":
+                continue
+            try:
+                pw_date = datetime.strptime(pw_date_str, "%Y-%m-%d")
+            except ValueError:
+                continue
+            if 0 <= (pw_date - today_date).days < 7:
+                next_7d_sessions += 1
+                ws = pw.get("workout_summary") or ""
+                cat = (pw.get("type") or "").upper()
+                name = (pw.get("name") or "").lower()
+                # Heuristic: interval markers, race categories, or intensity keywords
+                if ("×" in ws or "sets" in ws.lower() or
+                    cat in ("RACE_A", "RACE_B", "RACE_C") or
+                    any(kw in name for kw in ("interval", "vo2", "threshold", "sprint", "tempo",
+                                               "race", "hard", "intensity", "sweet spot"))):
+                    hard_count += 1
+        result["hard_sessions_planned"] = hard_count
+        result["next_7d_sessions"] = next_7d_sessions
+        
+        # Stream 2 suggested phase
+        result["suggested_phase"] = self._phase_from_stream2(result)
+        
+        return result
+    
+    def _phase_from_stream2(self, features: Dict) -> Optional[str]:
+        """Suggest a phase from Stream 2 features alone. Returns phase or None."""
+        race_prox = features.get("race_proximity")
+        race_cat = features.get("race_category")
+        tss_delta = features.get("planned_tss_delta")
+        next_week_delta = features.get("next_week_tss_delta")
+        
+        # Taper: race within 14 days + volume reducing
+        if race_prox is not None and race_prox <= 14 and race_cat in ("RACE_A", "RACE_B"):
+            if tss_delta is not None and tss_delta <= 0.80:
+                return "Taper"
+            # Race is close but volume not yet reducing — could be Peak
+            return "Taper"  # err toward Taper when race is imminent
+        
+        # Peak: race within 21 days + no volume reduction yet
+        if race_prox is not None and race_prox <= 21 and race_cat in ("RACE_A", "RACE_B"):
+            if tss_delta is not None and tss_delta > 0.80:
+                return "Peak"
+        
+        # Deload signal: ≥20% reduction + next week resumes
+        if tss_delta is not None and tss_delta <= 0.80:
+            if next_week_delta is not None and next_week_delta >= 0.85:
+                return "Deload"
+            # Next week unknown — Deload candidate (can't confirm)
+            if features.get("plan_coverage_next_week", 0) < 0.3:
+                return None  # ambiguous, can't confirm rebound
+            return "Deload"
+        
+        return None
+    
+    def _phase_data_quality(self, weekly_rows: List[Dict], stream1: Dict,
+                             reason_codes: List[str]) -> str:
+        """Assess data quality and append reason codes. Returns 'good', 'mixed', or 'poor'."""
+        quality = "good"
+        weeks = stream1.get("weeks_available", 0)
+        
+        if weeks < 3:
+            reason_codes.append("INSUFFICIENT_LOOKBACK")
+            quality = "poor"
+        
+        # Check intensity basis breakdown across recent weeks
+        if weekly_rows:
+            recent = weekly_rows[-4:] if len(weekly_rows) >= 4 else weekly_rows
+            hr_only_weeks = 0
+            for row in recent:
+                ibb = row.get("intensity_basis_breakdown")
+                if ibb and ibb.get("hr", 0) > 0 and ibb.get("power", 0) == 0:
+                    hr_only_weeks += 1
+            if hr_only_weeks > len(recent) / 2:
+                reason_codes.append("HR_ONLY_MAJORITY")
+                quality = "mixed" if quality == "good" else quality
+        
+        return quality
+    
+    def _phase_classify(self, s1: Dict, s2: Dict, previous_phase: Optional[str],
+                         data_quality: str) -> Tuple[Optional[str], str, List[str]]:
+        """
+        Core classification logic. Combines both streams, applies scoring, 
+        hysteresis, and confidence.
+        
+        Returns (phase, confidence, extra_reason_codes).
+        """
+        reasons = []
+        
+        s1_phase = s1.get("suggested_phase")
+        s2_phase = s2.get("suggested_phase")
+        race_prox = s2.get("race_proximity")
+        race_cat = s2.get("race_category")
+        tss_delta = s2.get("planned_tss_delta")
+        next_week_delta = s2.get("next_week_tss_delta")
+        ctl_slope = s1.get("ctl_slope")
+        hard_avg = s1.get("hard_day_avg")
+        plan_cov_curr = s2.get("plan_coverage_current_week", 0)
+        plan_cov_next = s2.get("plan_coverage_next_week", 0)
+        weeks = s1.get("weeks_available", 0)
+        
+        # planned_tss_delta is only meaningful if enough sessions are planned in the next 7 days.
+        # With few planned sessions, planned TSS is a subset — delta will be misleadingly low.
+        next_7d_sessions = s2.get("next_7d_sessions", 0)
+        tss_delta_reliable = tss_delta is not None and next_7d_sessions >= 3
+        
+        # === Insufficient data guard ===
+        if data_quality == "poor" and weeks < 2:
+            reasons.append("INSUFFICIENT_DATA")
+            return None, "low", reasons
+        
+        # === Priority 1: Overreached (safety) ===
+        if s1_phase == "Overreached":
+            return "Overreached", "high", ["SAFETY_ACWR_OR_MONOTONY"]
+        
+        # Secondary Overreached check — elevated monotony alone is insufficient.
+        # Require actual acute overload evidence (ACWR rising AND hard-day density high).
+        # "Rising" ACWR from 0.8→1.0 with 2 hard days is normal Build, not overreaching.
+        
+        # === Priority 2: Taper (race-anchored) ===
+        if race_prox is not None and race_prox <= 14 and race_cat in ("RACE_A", "RACE_B"):
+            confidence = "high"
+            if tss_delta_reliable and tss_delta <= 0.80:
+                reasons.append("RACE_IMMINENT_VOLUME_REDUCING")
+            else:
+                reasons.append("RACE_IMMINENT")
+                confidence = "medium"
+            return "Taper", confidence, reasons
+        
+        # === Priority 3: Peak (race approaching, not yet tapering) ===
+        if race_prox is not None and race_prox <= 21 and race_cat in ("RACE_A", "RACE_B"):
+            if not tss_delta_reliable or tss_delta > 0.80:
+                ctl_values = s1.get("ctl_values", [])
+                if ctl_values and len(ctl_values) >= 3:
+                    current_ctl = ctl_values[-1]
+                    max_ctl = max(ctl_values)
+                    if current_ctl >= max_ctl * 0.95:
+                        # At actual peak, CTL often flattens (slope ~0) as the athlete
+                        # is at cycle high but no longer gaining. Allow marginal decline.
+                        if ctl_slope is not None and ctl_slope >= -0.5:
+                            return "Peak", "medium", ["RACE_APPROACHING_CTL_HIGH"]
+        
+        # === Priority 3.5: Recovery (early check for clearly declining/idle athletes) ===
+        # Extended low load + 0 hard days + declining CTL → Recovery before Build/Base scoring
+        if (ctl_slope is not None and ctl_slope < -1.0 and
+                hard_avg is not None and hard_avg < 0.5 and weeks >= 3):
+            confidence = "medium" if data_quality != "poor" else "low"
+            reasons.append("DECLINING_LOAD_NO_HARD_DAYS")
+            return "Recovery", confidence, reasons
+        
+        # === Priority 4: Deload→Build transition ===
+        # When previous phase was Deload, expected next state is Build.
+        # TSS delta is unreliable here (prior 3-week avg includes the deload week).
+        # Use planned workout content instead.
+        if previous_phase == "Deload":
+            hard_planned = s2.get("hard_sessions_planned", 0)
+            if hard_planned >= 2:
+                return "Build", "medium", ["BUILD_RESUMING_AFTER_DELOAD"]
+            elif hard_planned >= 1 or (plan_cov_curr > 0 and (not tss_delta_reliable or tss_delta > 0.80)):
+                return "Build", "low", ["BUILD_RESUMING_AFTER_DELOAD_TENTATIVE"]
+        
+        # === Priority 5: Deload (calendar-driven) ===
+        # Deload = Build history + reduced/easy planned load + ≤1 hard session planned.
+        # The 3-week Build history gate (weeks >= 3, rising CTL, hard_avg >= 1.5) is
+        # intentional: an athlete doing their first-ever deload with <3 weeks of Build
+        # data gets Recovery instead. This is the safer classification — without sufficient
+        # Build evidence, we can't distinguish "planned deload" from "athlete just isn't
+        # training hard". False Recovery is less harmful than false Deload.
+        # Two paths:
+        #  A) Reliable TSS delta ≤ 0.80 + ≤1 hard session → strong Deload signal
+        #  B) Sparse plan (< 3 sessions) + ≤1 hard session + Build history → Deload candidate
+        hard_planned = s2.get("hard_sessions_planned", 0)
+        build_history = (ctl_slope is not None and ctl_slope > 0 and
+                        hard_avg is not None and hard_avg >= 1.5 and
+                        weeks >= 3)
+        
+        deload_signal = False
+        deload_path = None
+        
+        # Allow ≤1 hard session during deload — real deload weeks often keep
+        # one short quality session for neuromuscular maintenance (e.g., deload SS).
+        # 2+ hard sessions = not structurally a deload.
+        # When hard_planned == 1, require ≥3 planned sessions to trust the plan
+        # is representative — a 2-session plan with 1 hard is too sparse to judge.
+        if hard_planned == 0 or (hard_planned == 1 and next_7d_sessions >= 3):
+            # Path A: reliable TSS delta showing reduction
+            if tss_delta_reliable and tss_delta <= 0.80 and build_history:
+                deload_signal = True
+                deload_path = "A"
+            # Path B: sparse plan, all easy, strong Build history
+            elif (next_7d_sessions > 0 and not tss_delta_reliable and build_history
+                  and ctl_slope > 1.0 and hard_avg >= 2.0):
+                deload_signal = True
+                deload_path = "B"
+        
+        if deload_signal:
+            if next_week_delta is not None and next_week_delta >= 0.80:
+                return "Deload", "high", ["BUILD_HISTORY_REDUCED_LOAD_REBOUND_CONFIRMED"]
+            elif plan_cov_next < 0.3:
+                reasons.append("PLAN_GAP_NEXT_WEEK")
+                conf = "medium" if deload_path == "A" else "medium"
+                return "Deload", conf, reasons
+            else:
+                return "Deload", "medium", ["BUILD_HISTORY_REDUCED_LOAD"]
+        
+        # Non-Build-history reduction: Recovery (only if CTL is also declining)
+        # A Base athlete with stable CTL and low planned TSS isn't recovering — they're maintaining.
+        if tss_delta_reliable and tss_delta <= 0.80 and hard_planned <= 1:
+            if not build_history and ctl_slope is not None and ctl_slope < -1.0:
+                confidence = "medium" if data_quality != "poor" else "low"
+                return "Recovery", confidence, ["NO_BUILD_HISTORY_LOW_LOAD"]
+        
+        # === Priority 6: Build / Base (scored) ===
+        build_score = 0
+        base_score = 0
+        
+        # CTL slope
+        if ctl_slope is not None:
+            if ctl_slope > 2.0:
+                build_score += 3
+            elif ctl_slope > 1.0:
+                build_score += 2
+            elif ctl_slope > 0:
+                build_score += 1
+            elif -1.0 <= ctl_slope <= 0:
+                base_score += 2
+            # ctl_slope < -1.0 already handled in Recovery early check
+        
+        # Hard-day density
+        if hard_avg is not None:
+            if hard_avg >= 2.5:
+                build_score += 2
+            elif hard_avg >= 1.5:
+                build_score += 1
+            elif hard_avg <= 1.0:
+                base_score += 2
+            else:
+                base_score += 1
+        
+        # ACWR trend
+        acwr_trend = s1.get("acwr_trend")
+        if acwr_trend == "rising":
+            build_score += 1
+        elif acwr_trend == "stable":
+            base_score += 1
+        elif acwr_trend == "falling":
+            base_score += 1
+        
+        # Planned week continues pattern (Stream 2) — only if enough planned sessions
+        if next_7d_sessions >= 3:
+            if s2.get("hard_sessions_planned", 0) >= 2:
+                build_score += 1
+            elif s2.get("hard_sessions_planned", 0) <= 1:
+                base_score += 1
+        
+        # Determine winner
+        margin = build_score - base_score
+        
+        if margin >= 2:
+            phase = "Build"
+        elif margin <= -2:
+            phase = "Base"
+        elif margin > 0:
+            phase = previous_phase if previous_phase in ("Build", "Base") else "Build"
+        elif margin < 0:
+            phase = previous_phase if previous_phase in ("Build", "Base") else "Base"
+        else:
+            if previous_phase in ("Build", "Base"):
+                phase = previous_phase
+            else:
+                phase = None
+                reasons.append("BUILD_BASE_AMBIGUOUS")
+        
+        if phase is None:
+            confidence = "low"
+        elif abs(margin) >= 3 and data_quality == "good":
+            confidence = "high"
+        elif abs(margin) >= 2 or data_quality == "good":
+            confidence = "medium"
+        else:
+            confidence = "low"
+        
+        # === Hysteresis for normal transitions ===
+        if phase and previous_phase and phase != previous_phase:
+            if previous_phase not in ("Overreached", None):
+                reasons.append(f"PHASE_TRANSITION_{previous_phase}_TO_{phase}")
+        
+        # Adjust confidence for data quality
+        if data_quality == "poor" and confidence == "high":
+            confidence = "medium"
+        elif data_quality == "poor" and confidence == "medium":
+            confidence = "low"
+        
+        # Adjust confidence for plan coverage
+        if plan_cov_curr == 0 and plan_cov_next == 0:
+            if confidence == "high":
+                confidence = "medium"
+            reasons.append("NO_PLANNED_WORKOUTS")
+        
+        return phase, confidence, reasons
     
     def _determine_seasonal_context(self) -> str:
         """
@@ -1775,6 +2305,20 @@ class IntervalsSync:
             return "Late Season / Transition"
         else:
             return "Unknown"
+    
+    def _load_weekly_rows_for_phase(self) -> List[Dict]:
+        """Load recent weekly_180d rows from history.json for phase detection lookback."""
+        history_path = self.script_dir / self.HISTORY_FILE
+        if not history_path.exists():
+            return []
+        try:
+            with open(history_path, 'r') as f:
+                history_data = json.load(f)
+            rows = history_data.get("weekly_180d", [])
+            # Return last 4 weeks for lookback
+            return rows[-4:] if len(rows) >= 4 else rows
+        except Exception:
+            return []
     
     # === ALERTS SYSTEM (v3.3.0) ===
     
@@ -2293,6 +2837,22 @@ class IntervalsSync:
         print("  Building 180-day weekly tier...")
         weekly_180d = self._build_weekly_tier(activities_by_date, wellness_by_date, days=180)
         
+        # === PHASE BACKFILL ===
+        # Retroactively classify phase for each weekly row using trailing 4-week window.
+        # Stream 2 (planned calendar) is unavailable for historical weeks — confidence is limited.
+        empty_race_cal = {"next_race": None, "all_races": [], "taper_alert": {"active": False}, "race_week": {"active": False}}
+        for i in range(len(weekly_180d)):
+            lookback = weekly_180d[max(0, i-3):i+1]
+            prev_phase = weekly_180d[i-1].get("phase_detected") if i > 0 else None
+            result = self._detect_phase_v2(
+                weekly_rows=lookback,
+                planned_workouts=[],
+                race_calendar=empty_race_cal,
+                previous_phase=prev_phase,
+                today=weekly_180d[i]["week_start"]
+            )
+            weekly_180d[i]["phase_detected"] = result["phase"]
+        
         # === MONTHLY TIERS ===
         monthly_tiers = {}
         for years in [1, 2, 3]:
@@ -2418,6 +2978,8 @@ class IntervalsSync:
             week_feel = []
             week_weight = []
             hard_days = 0
+            daily_tss_list = []
+            intensity_basis_counts = {"power": 0, "hr": 0}
             longest_ride = 0
             z1_z2_time = 0
             z3_time = 0
@@ -2443,6 +3005,7 @@ class IntervalsSync:
                 week_tss += day_tss
                 week_seconds += day_seconds
                 week_activities += len(day_activities)
+                daily_tss_list.append(day_tss)
 
                 if self._is_valid_hrv(wellness.get("hrv")):
                     week_hrv.append(wellness["hrv"])
@@ -2486,12 +3049,27 @@ class IntervalsSync:
                     if feel:
                         week_feel.append(feel)
                 
-                is_hard, _basis = self._classify_hard_day(day_zones_by_basis)
+                is_hard, hard_basis = self._classify_hard_day(day_zones_by_basis)
                 if is_hard:
                     hard_days += 1
+                    if hard_basis in ("power", "hr"):
+                        intensity_basis_counts[hard_basis] += 1
             
             if ctl_end and atl_end:
                 tsb_end = round(ctl_end - atl_end, 1)
+            
+            # Monotony: mean(daily_tss) / stdev(daily_tss) — Foster (1998)
+            # Requires 5+ days for meaningful value; partial weeks produce garbage
+            # (e.g., 2 similar days → near-zero stdev → monotony 40+)
+            week_monotony = None
+            days_with_data = sum(1 for t in daily_tss_list if t > 0)
+            if len(daily_tss_list) >= 5 and days_with_data >= 3:
+                try:
+                    m = statistics.mean(daily_tss_list)
+                    s = statistics.stdev(daily_tss_list)
+                    week_monotony = round(m / s, 2) if s > 0 else None
+                except Exception:
+                    week_monotony = None
             
             rows.append({
                 "week_start": current.strftime("%Y-%m-%d"),
@@ -2511,10 +3089,26 @@ class IntervalsSync:
                 "hard_days": hard_days,
                 "longest_ride_hours": round(longest_ride / 3600, 2),
                 "avg_feel": round(statistics.mean(week_feel), 1) if week_feel else None,
-                "weight_kg": round(week_weight[-1], 1) if week_weight else None
+                "weight_kg": round(week_weight[-1], 1) if week_weight else None,
+                "monotony": week_monotony,
+                "intensity_basis_breakdown": intensity_basis_counts if hard_days > 0 else None,
+                "acwr": None,  # computed in post-pass below
+                "phase_detected": None  # populated by _detect_phase_v2
             })
             
             current += timedelta(days=7)
+        
+        # Post-pass: compute per-week ACWR
+        # ACWR = this week's avg daily TSS / prior 3 weeks' avg daily TSS
+        for i, row in enumerate(rows):
+            if i < 3:
+                # Not enough prior weeks for chronic load
+                continue
+            acute = row["total_tss"] / 7 if row["total_tss"] else 0
+            chronic_tss = sum(rows[j]["total_tss"] or 0 for j in range(i - 3, i))
+            chronic = chronic_tss / 21 if chronic_tss else 0
+            if chronic > 0:
+                row["acwr"] = round(acute / chronic, 2)
         
         return rows
     
