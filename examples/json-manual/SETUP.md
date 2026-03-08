@@ -9,8 +9,16 @@ Export Intervals.icu data locally for different time ranges.
 
 ## First-Time Setup
 
+Download sync.py from the [Section 11 repository](https://github.com/CrankAddict/section-11/tree/main/examples):
+
 ```bash
-python sync.py --setup
+curl -O https://raw.githubusercontent.com/CrankAddict/section-11/main/examples/sync.py
+```
+
+Then configure your credentials:
+
+```bash
+python3 sync.py --setup
 ```
 
 Enter your Intervals.icu credentials when prompted. Config saves to `.sync_config.json`.
@@ -25,13 +33,13 @@ Enter your Intervals.icu credentials when prompted. Config saves to `.sync_confi
 
 ```bash
 # Last 7 days (default)
-python sync.py --output latest.json
+python3 sync.py --output latest.json
 
 # Last 14 days
-python sync.py --days 14 --output 14days.json
+python3 sync.py --days 14 --output 14days.json
 
 # Last 90 days
-python sync.py --days 90 --output 90days.json
+python3 sync.py --days 90 --output 90days.json
 ```
 
 ### Common time ranges
@@ -49,7 +57,7 @@ python sync.py --days 90 --output 90days.json
 If you configured GitHub credentials during setup:
 
 ```bash
-python sync.py --days 14
+python3 sync.py --days 14
 ```
 
 Pushes to your configured GitHub repo.
@@ -95,6 +103,10 @@ See [examples/README.md](../README.md#derived-metrics) for the full derived metr
 
 **Option 3: Use with agentic platforms** — Claude Code, Claude Cowork, OpenAI Codex CLI, Gemini CLI, and OpenClaw can read files directly from your filesystem — no GitHub needed. Point the agent at the folder containing your exported JSON files. See the [agentic setup guide](../../README.md#agentic-setup).
 
+### Automate it
+
+Want sync.py to run automatically on a timer? See [json-local-sync](../json-local-sync/SETUP.md).
+
 ---
 
 ## Options Reference
@@ -117,7 +129,7 @@ See [examples/README.md](../README.md#derived-metrics) for the full derived metr
 ## Troubleshooting
 
 ### "Config not found" error
-Run `python sync.py --setup` first.
+Run `python3 sync.py --setup` first.
 
 ### Empty or missing data
 - Check your API key is valid
