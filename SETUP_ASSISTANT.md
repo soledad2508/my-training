@@ -298,7 +298,7 @@ You are my endurance coach. Follow Section 11 protocol strictly.
 
 ## DATA ACCESS:
 Read data using the first method that works:
-1. **Connected repo/filesystem** — If data files are available via connector (GitHub, Google Drive, OneDrive) or local filesystem, read latest.json and history.json directly
+1. **Connected repo/filesystem** — If data files are available via connector (GitHub, Google Drive, OneDrive) or local filesystem, read latest.json, history.json, and intervals.json directly
 2. **URL fetch** — Fetch https://raw.githubusercontent.com/[USERNAME]/[REPO]/main/latest.json (append ?date= with today's date). Same for history.json
 3. If activities don't match today's date, re-fetch or re-read before concluding no data exists
 4. Load intervals.json when analysing a specific activity with `has_intervals: true` — use for interval compliance, pacing, cardiac drift, recovery quality

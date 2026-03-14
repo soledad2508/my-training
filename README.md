@@ -94,7 +94,7 @@ You are my endurance coach. Follow Section 11 protocol strictly.
 
 ## DATA ACCESS:
 Read data using the first method that works:
-1. **Connected repo/filesystem** — If data files are available via connector (GitHub, Google Drive, OneDrive) or local filesystem, read latest.json and history.json directly
+1. **Connected repo/filesystem** — If data files are available via connector (GitHub, Google Drive, OneDrive) or local filesystem, read latest.json, history.json, and intervals.json directly
 2. **URL fetch** — Fetch https://raw.githubusercontent.com/[USERNAME]/[REPO]/main/latest.json (append ?date= with today's date). Same for history.json
 3. If activities don't match today's date, re-fetch or re-read before concluding no data exists
 4. Load intervals.json when analysing a specific activity with `has_intervals: true` — use for interval compliance, pacing, cardiac drift, recovery quality
@@ -244,7 +244,7 @@ Cowork runs on your local machine and can read files directly from your filesyst
 
 1. Connect your GitHub account via the ChatGPT GitHub connector at [chatgpt.com/codex](https://chatgpt.com/codex)
 2. Authorize access to your private training data repo during setup
-3. Codex clones the repo into an isolated container and reads `latest.json` and `history.json` directly
+3. Codex clones the repo into an isolated container and reads `latest.json`, `history.json`, and `intervals.json` directly
 4. The Codex CLI works locally with your existing filesystem and Git setup
 
 ### Gemini CLI
@@ -314,7 +314,7 @@ After configuration, test with:
 
 Most AI platforms now have GitHub connectors that can access private repos directly. Check the [Platform Setup](#platform-setup) table for your platform's connector path.
 
-If your platform doesn't support connectors or you can't get them working: use a public repo, upload `latest.json` and `history.json` manually to your AI Project/Space, or use an [agentic platform](#agentic-setup) with GitHub access configured.
+If your platform doesn't support connectors or you can't get them working: use a public repo, upload `latest.json`, `history.json`, and `intervals.json` manually to your AI Project/Space, or use an [agentic platform](#agentic-setup) with GitHub access configured.
 
 ### Data appears stale after sync
 
@@ -344,7 +344,7 @@ The GitHub connector for Grok is still rolling out. If it's not available in you
 
 This can happen when the AI fails to fetch or parse your JSON data, when the context window overflows, or when the platform's web search doesn't reliably retrieve raw JSON.
 
-**Nuclear option:** Download the full [section-11 repo](https://github.com/CrankAddict/section-11) as a zip and upload it directly into your AI Project, Gem, Space, or chat. This bypasses all fetch/connector issues and gives the AI the protocol and templates in one package. You'll still need to provide your own `latest.json`, `history.json`, and `DOSSIER.md` separately.
+**Nuclear option:** Download the full [section-11 repo](https://github.com/CrankAddict/section-11) as a zip and upload it directly into your AI Project, Gem, Space, or chat. This bypasses all fetch/connector issues and gives the AI the protocol and templates in one package. You'll still need to provide your own `latest.json`, `history.json`, `intervals.json`, and `DOSSIER.md` separately.
 
 ---
 
@@ -460,7 +460,7 @@ See [examples/README.md](examples/README.md) for the full derived metrics table 
 
 ### Longitudinal History
 
-The script generates `history.json` with tiered granularity: daily (90 days), weekly (180 days), and monthly (up to 3 years). Includes period summaries, FTP timeline, and data gap detection. Provide both `latest.json` and `history.json` to your AI coach for the most complete analysis.
+The script generates `history.json` with tiered granularity: daily (90 days), weekly (180 days), and monthly (up to 3 years). Includes period summaries, FTP timeline, and data gap detection. Provide `latest.json`, `history.json`, and `intervals.json` to your AI coach for the most complete analysis.
 
 ### FTP History Tracking
 

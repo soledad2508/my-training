@@ -56,7 +56,7 @@ Copy this file to your agent workspace as `HEARTBEAT.md` and fill in the bracket
 
 ### Background Analysis
 - Run once per week between training weeks (suggested: Sunday 20:00 – Monday 10:00)
-- Use latest.json for current status, history.json for longitudinal trends, archive/ for recent snapshots
+- Use latest.json for current status, history.json for longitudinal trends, intervals.json for structured session detail, archive/ for recent snapshots
 - Compare current week vs previous weeks, current month vs previous months
 - Track consistency patterns (sessions per week, missed days)
 - Note long-term CTL trends (building, plateauing, declining)
