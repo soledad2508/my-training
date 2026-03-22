@@ -44,6 +44,8 @@ Key Performance Markers:
   Long ride decoupling trend: [X.X]% → [X.X]% [↑/↓/→]
   Best 20-min power: [XXX]W (week [X])
   Best 5-min power: [XXX]W (week [X])
+  Power curve rotation: [+/-X.X] ([sprint-biased/endurance-biased/balanced])
+  Strongest adaptation: [anchor] ([+/-X.X]%) — omit both lines if power_curve_delta null
 
 Polarization (block average):
   Z1+Z2: [XX]%
@@ -121,6 +123,7 @@ Next Block Plan:
 | **Fitness Progression** | Start vs end of block | CTL delta is the headline number |
 | **eFTP** | Intervals.icu estimated FTP | Track alongside formal FTP — catches drift |
 | **Performance Markers** | Best efforts + target comparison | Shows whether stimulus is producing adaptation |
+| **Power Curve Rotation** | rotation_index from capability.power_curve_delta | Sprint-biased (positive) vs endurance-biased (negative) adaptation across the block. Omit if null |
 | **Decoupling trend** | Long ride aerobic efficiency | Improving decoupling = aerobic base building |
 | **Polarization by Week** | Weekly zone distributions | Catches grey zone creep within a block. Append classification + PI only when week diverges from block-scale TID |
 | **Durability by Week** | Weekly mean decoupling from steady-state sessions | VI ≤ 1.05, ≥ 90min. Shows aerobic efficiency trajectory across block |

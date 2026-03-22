@@ -1,10 +1,19 @@
 # Section 11 — AI Coach Protocol
 
-**Protocol Version:** 11.18  
-**Last Updated:** 2026-03-19
+**Protocol Version:** 11.19  
+**Last Updated:** 2026-03-22
 **License:** [MIT](https://opensource.org/licenses/MIT)
 
 ### Changelog
+
+**v11.19 — Power Curve Delta (Capability Metric):**
+- New capability metric: `power_curve_delta` compares MMP at 5 anchor durations (5s/60s/300s/1200s/3600s) across two 28-day windows
+- Rotation index: sprint-biased vs endurance-biased adaptation direction. 300s excluded (transitional)
+- Single `power-curves` API call per sync (two windows in one request, sport-filtered type=Ride)
+- Curve matching by response ID (not list index) — handles empty windows when API omits curves with no data
+- Guards: per-anchor null (missing duration or 0 watts), division-by-zero (null pct_change), block-level (<3 valid anchors)
+- Field definitions, interpretation guidance, report template additions (weekly + block)
+- sync.py v3.87
 
 **v11.18 — Environmental Conditions Protocol:**
 - New section: delta-based heat stress tiers (relative to athlete's 14-day thermal baseline), absolute guardrails, insufficient-baseline fallback
@@ -108,7 +117,7 @@ Section 11 operates as a **self-contained AI protocol**. All metric definitions,
 | Zone Distribution Metrics | Section 11 (11A, subsection 9) | AI intensity monitoring |
 | Seiler TID Classification | Section 11 (11A, Zone Distribution) | AI TID classification and drift detection |
 | Aggregate Durability | Section 11 (11A, subsection 9) | AI durability trend tracking |
-| Capability Metrics | Section 11 (11A, subsection 9) | AI capability-layer analysis (durability + TID comparison) |
+| Capability Metrics | Section 11 (11A, subsection 9) | AI capability-layer analysis (durability, TID comparison, power curve delta) |
 | Validation Metadata | Section 11 (11C) | AI audit schema |
 
 AI systems should reference the athlete dossier for athlete-specific values (FTP, zones, goals, schedule) and this protocol for all coaching logic, thresholds, and decision rules.
@@ -1310,7 +1319,7 @@ These metrics are **secondary** to the primary readiness markers defined in Sect
 
 1. **Primary readiness:** RI, HRV, RHR, Sleep
 2. **Secondary load metrics:** Stress Tolerance, Load-Recovery Ratio, Consistency Index
-3. **Tertiary diagnostics:** Zone Distribution Metrics, Durability Sub-Metrics, Capability Metrics (Aggregate Durability, TID Drift)
+3. **Tertiary diagnostics:** Zone Distribution Metrics, Durability Sub-Metrics, Capability Metrics (Aggregate Durability, TID Drift, Power Curve Delta)
 
 Do not override primary readiness signals with secondary load metrics.
 
@@ -1529,6 +1538,55 @@ Higher HRRc = faster recovery = better parasympathetic rebound. Trend direction 
 - Lamberts et al. (2024): HRR60s in trained-to-elite cyclists — ICC = 0.97, TEM = 4.3%.
 - Buchheit (2006): HRR associated with training loads, not VO2max.
 - Tinker (2019): Intervals.icu renamed HRR to HRRc to distinguish from Heart Rate Reserve.
+
+---
+
+#### Power Curve Delta (Capability Metric)
+
+The per-session and trending capability metrics above (Durability, EF, HRRc) diagnose *how* the athlete executes sessions. **Power Curve Delta** provides a *what's changing* view — comparing MMP (Mean Maximal Power) at key durations across two time windows to reveal energy system adaptation direction that CTL/ATL/TSS miss entirely.
+
+**Data Source:** The `capability.power_curve_delta` object in the data mirror compares MMP from two 28-day windows (current vs previous) fetched via the Intervals.icu `power-curves` API. Sport-filtered to cycling (`type=Ride`). Single API call per sync.
+
+**Anchor Durations:**
+
+| Anchor | Duration | Energy System | Physiological Signal |
+|--------|----------|---------------|---------------------|
+| 5s | 5 seconds | Neuromuscular | Sprint power, NM recruitment |
+| 60s | 60 seconds | Anaerobic/VO₂ | Anaerobic capacity |
+| 300s | 5 minutes | MAP | Max Aerobic Power |
+| 1200s | 20 minutes | Threshold | FTP-adjacent sustainable power |
+| 3600s | 60 minutes | Endurance | Aerobic endurance ceiling |
+
+**Rotation Index:**
+
+`rotation_index = mean(5s pct_change, 60s pct_change) - mean(1200s pct_change, 3600s pct_change)`
+
+300s is excluded from the rotation calculation — it sits at the transitional boundary between anaerobic and aerobic energy systems and muddies the signal. It remains in the anchors block for coaching context.
+
+| Rotation Index | Interpretation |
+|---------------|----------------|
+| Positive (> +1.0) | Sprint-biased gains — short-duration power improving faster than endurance |
+| Near zero (±1.0) | Balanced adaptation or minimal change across the curve |
+| Negative (< -1.0) | Endurance-biased gains — long-duration power improving faster than sprint |
+
+**Data Quality Guards:**
+- Per-anchor: null if that duration is not present in the window's data (athlete never rode long enough) or if watts value is 0
+- Per-anchor pct_change: null if either window's anchor watts is null (avoids division by zero)
+- Block-level: entire block nulled when either window has fewer than 3 valid anchor durations
+- Rotation index: null if any of its 4 component anchors (5s, 60s, 1200s, 3600s) has null pct_change
+
+**Interpretation Guidance:**
+- Compare rotation direction to training phase: endurance-biased rotation during Base is expected; sprint-biased during Build with VO₂max work may indicate neuromuscular freshness while threshold stagnates
+- Cross-reference with Benchmark Index and eFTP: if eFTP is flat but 300s/1200s anchors are rising, the power curve is seeing what FTP tracking misses
+- Cross-reference with TID drift: if rotation is sprint-biased but TID shows Polarized → expected. Sprint-biased with Threshold TID → may indicate interval quality is good but volume adaptation is lagging
+- Absolute watts matter for coaching context; pct_change matters for trend direction
+- Small changes (< ±1.5% at an anchor) are within normal variation — don't overinterpret
+
+**Scope:** Display and coaching context only. Not wired into readiness_decision signals. The AI coach layer interprets direction, magnitude, and phase context — no adaptation labels are baked into the data.
+
+**References:**
+- Pinot & Grappe (2011): Power profiling across durations for talent identification and training prescription.
+- Quod et al. (2010): MMP tracking as a training monitoring tool in elite cyclists.
 
 ---
 
@@ -2067,6 +2125,15 @@ This subsection defines the formal self-validation and audit metadata structure 
 | `capability.hrrc.mean_hrrc_7d` | number/null | Mean HRRc (bpm) from qualifying sessions in last 7 days. Requires ≥ 1 session. |
 | `capability.hrrc.mean_hrrc_28d`| number/null | Mean HRRc (bpm) from qualifying sessions in last 28 days. Requires ≥ 3 sessions. |
 | `capability.hrrc.trend`        | string/null | HRRc trend: "improving" / "stable" / "declining". >10% difference between 7d and 28d means = meaningful. Null if either window has insufficient sessions. Display only — not wired into readiness_decision signals. |
+| `capability.power_curve_delta.window_days` | number | Window size in days (default 28). |
+| `capability.power_curve_delta.current_window` | object | `{start, end}` date strings for the current (recent) window. |
+| `capability.power_curve_delta.previous_window` | object | `{start, end}` date strings for the previous (comparison) window. |
+| `capability.power_curve_delta.anchors` | object/null | Per-anchor MMP comparison. Keys: `5s`, `60s`, `300s`, `1200s`, `3600s`. Each has `current_watts`, `previous_watts`, `pct_change`. Null when block-level guard fails. |
+| `capability.power_curve_delta.anchors.{dur}.current_watts` | number/null | MMP watts at this anchor duration in the current window. Null if duration not in data or watts is 0. |
+| `capability.power_curve_delta.anchors.{dur}.previous_watts` | number/null | MMP watts at this anchor duration in the previous window. Null if duration not in data or watts is 0. |
+| `capability.power_curve_delta.anchors.{dur}.pct_change` | number/null | Percentage change from previous to current window. Rounded to 1 decimal. Null if either window's watts is null. |
+| `capability.power_curve_delta.rotation_index` | number/null | `mean(5s,60s pct_change) - mean(1200s,3600s pct_change)`. Positive = sprint-biased gains, negative = endurance-biased. 300s excluded. Null if any component anchor has null pct_change. Rounded to 1 decimal. |
+| `capability.power_curve_delta.note` | string | Interpretation guidance for AI coaches. |
 
 ---
 

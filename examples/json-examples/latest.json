@@ -4,7 +4,7 @@
     "display_formatting": "For durations and sleep, always display the '_formatted' fields (e.g., sleep_formatted, duration_formatted, total_training_formatted) instead of converting decimal '_hours' values. The formatted fields are pre-calculated from raw seconds and avoid rounding errors.",
     "data_period": "Last 7 days (including today)",
     "extended_data_note": "ACWR and baselines calculated from 28 days of data",
-    "capability_metrics_note": "The 'capability' block in derived_metrics contains durability trend (aggregate decoupling 7d/28d), efficiency factor trend (aggregate EF 7d/28d), HRRc trend (heart rate recovery 7d/28d), and TID comparison (7d vs 28d distribution drift). These measure HOW the athlete expresses fitness, not just load. Use these for coaching context alongside traditional load metrics. Durability and EF trend direction matters more than absolute values. HRRc is display only \u2014 higher = better parasympathetic recovery.",
+    "capability_metrics_note": "The 'capability' block in derived_metrics contains durability trend (aggregate decoupling 7d/28d), efficiency factor trend (aggregate EF 7d/28d), HRRc trend (heart rate recovery 7d/28d), TID comparison (7d vs 28d distribution drift), and power curve delta (MMP shift at anchor durations across 28d windows \u2014 energy system adaptation direction). These measure HOW the athlete expresses fitness, not just load. Use these for coaching context alongside traditional load metrics. Durability and EF trend direction matters more than absolute values. HRRc is display only \u2014 higher = better parasympathetic recovery. Power curve delta rotation_index reveals whether gains are sprint-biased (positive) or endurance-biased (negative).",
     "readiness_decision_note": "The 'readiness_decision' block contains a pre-computed go/modify/skip recommendation with priority level (P0=safety, P1=overload, P2=fatigue, P3=green), individual signal statuses, phase-adjusted thresholds, and structured modification guidance. Use this as the baseline for pre-workout recommendations. Override with explanation in the coach note if the AI's contextual judgment disagrees.",
     "zone_preference": "default (power preferred, HR fallback)",
     "wellness_field_scales": {
@@ -73,7 +73,7 @@
     "last_updated": "2026-01-20T12:00:00.000000",
     "data_range_days": 7,
     "extended_range_days": 28,
-    "version": "3.86"
+    "version": "3.87"
   },
   "alerts": [],
   "readiness_decision": {
@@ -363,6 +363,46 @@
         "pi_delta": -0.07,
         "drift": "consistent",
         "note": "Compares 7d vs 28d Seiler TID to detect distribution shifts. pi_delta positive = more polarized acutely."
+      },
+      "power_curve_delta": {
+        "window_days": 28,
+        "current_window": {
+          "start": "2026-02-23",
+          "end": "2026-03-22"
+        },
+        "previous_window": {
+          "start": "2026-01-26",
+          "end": "2026-02-22"
+        },
+        "anchors": {
+          "5s": {
+            "current_watts": 826,
+            "previous_watts": 789,
+            "pct_change": 4.7
+          },
+          "60s": {
+            "current_watts": 286,
+            "previous_watts": 288,
+            "pct_change": -0.7
+          },
+          "300s": {
+            "current_watts": 274,
+            "previous_watts": 272,
+            "pct_change": 0.7
+          },
+          "1200s": {
+            "current_watts": 239,
+            "previous_watts": 237,
+            "pct_change": 0.8
+          },
+          "3600s": {
+            "current_watts": 222,
+            "previous_watts": 221,
+            "pct_change": 0.5
+          }
+        },
+        "rotation_index": 1.4,
+        "note": "Compares MMP at 5 anchor durations (5s neuromuscular, 60s anaerobic, 300s MAP, 1200s threshold, 3600s endurance) across two 28d windows. rotation_index = mean(5s,60s pct_change) - mean(1200s,3600s pct_change). Positive = sprint-biased gains, negative = endurance-biased. 300s excluded from rotation (transitional). Null when either window has fewer than 3 valid anchor durations."
       }
     },
     "consistency_index": 0.83,
