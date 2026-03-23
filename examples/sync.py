@@ -4,6 +4,11 @@ Intervals.icu → GitHub/Local JSON Export
 Exports training data for LLM access.
 Supports both automated GitHub sync and manual local export.
 
+Version 3.89 - Phase detection current-week patch: overlay fresh CTL/TSS/hard_days/ACWR/monotony
+  onto the current week's weekly_180d row at runtime, so phase classification always uses live data
+  instead of stale history.json snapshot (up to 28 days old). Fixes phase flip caused by stale
+  current-week row. Runtime only — does not write back to history.json. Respects week_start_day.
+
 Version 3.88 - HR Curve Delta: max sustained HR comparison at 4 anchor durations (60s/300s/1200s/3600s)
   across two 28-day windows. New hr-curves API call (no sport filter — HR is cross-sport physiological).
   Data key is 'values' (not 'watts'). Rotation index: mean(60s,300s) - mean(1200s,3600s).
@@ -49,7 +54,7 @@ class IntervalsSync:
     HISTORY_FILE = "history.json"
     UPSTREAM_REPO = "CrankAddict/section-11"
     CHANGELOG_FILE = "changelog.json"
-    VERSION = "3.88"
+    VERSION = "3.89"
     INTERVALS_FILE = "intervals.json"
 
     # Sport families eligible for interval-level data extraction.
@@ -1102,9 +1107,52 @@ class IntervalsSync:
         
         # Load weekly_180d lookback from history.json
         weekly_rows = self._load_weekly_rows_for_phase()
+        
+        # === PATCH CURRENT WEEK IN WEEKLY ROWS (v3.89) ===
+        # history.json regenerates every 28 days, but the current week's row
+        # changes every ride. Overlay fresh values from this sync run so
+        # phase detection always sees up-to-date data. Runtime only —
+        # does NOT write back to history.json.
+        now_dt = datetime.now()
+        days_since_ws = (now_dt.weekday() - self.week_start_day) % 7
+        current_ws = (now_dt - timedelta(days=days_since_ws)).strftime("%Y-%m-%d")
+        
+        # Compute current calendar-week TSS from activities_7d
+        cw_tss = 0
+        cw_primary_tss = 0
+        for a in activities_7d:
+            a_date = a.get("start_date_local", "")[:10]
+            if a_date >= current_ws:
+                a_tss = a.get("icu_training_load", 0) or 0
+                cw_tss += a_tss
+                sf = self.SPORT_FAMILIES.get(a.get("type", ""), None)
+                if sf == primary_sport:
+                    cw_primary_tss += a_tss
+        
+        fresh_row = {
+            "week_start": current_ws,
+            "total_tss": round(cw_tss, 0),
+            "primary_sport_tss": round(cw_primary_tss, 0),
+            "primary_sport": primary_sport,
+            "hard_days": hard_days_this_week,
+            "ctl_end": round(current_ctl, 1) if current_ctl else None,
+            "atl_end": round(current_atl, 1) if current_atl else None,
+            "acwr": acwr,
+            "monotony": monotony,
+        }
+        
+        if weekly_rows and weekly_rows[-1].get("week_start") == current_ws:
+            # Overlay: same week exists in history — patch it
+            weekly_rows[-1].update(fresh_row)
+        else:
+            # Append: current week not in history yet (generated before this week)
+            weekly_rows.append(fresh_row)
+        
+        # In both cases, [-1] is now the current week (being classified).
+        # previous_phase must come from [-2] (last completed week).
         previous_phase = None
-        if weekly_rows:
-            previous_phase = weekly_rows[-1].get("phase_detected")
+        if len(weekly_rows) >= 2:
+            previous_phase = weekly_rows[-2].get("phase_detected")
         
         phase_result = self._detect_phase_v2(
             weekly_rows=weekly_rows,
@@ -2393,15 +2441,17 @@ class IntervalsSync:
         )
         reason_codes.extend(extra_reasons)
         
-        # Phase duration: count consecutive weeks of same phase from recent weekly rows
+        # Phase duration: count consecutive weeks of same phase from history.
+        # Skip weekly_rows[-1] — it's the current week (being classified now,
+        # phase_detected is stale or absent). Count from [-2] backward, +1 for current.
         phase_duration = 0
         if phase and weekly_rows:
-            for row in reversed(weekly_rows):
+            for row in reversed(weekly_rows[:-1]):
                 if row.get("phase_detected") == phase:
                     phase_duration += 1
                 else:
                     break
-            phase_duration += 1  # include current in-progress week
+            phase_duration += 1  # current week (just classified)
         
         # Dossier agreement
         dossier_agreement = None
