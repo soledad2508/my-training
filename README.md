@@ -43,6 +43,8 @@ Your data stays on your machine or in repos you control. Section 11 does not run
 
 The setup paths documented here are proven starting points — not the only ways to use Section 11. The protocol is open, and the data is yours. Build what fits you.
 
+For the full experience, agentic platforms with persistent memory and code execution unlock the complete protocol: automated reports, heartbeat coaching, calendar sync, and proactive observations. See [Agentic Setup](#agentic-setup).
+
 ---
 
 ## Quick Start
@@ -69,8 +71,8 @@ Keep your Intervals.icu data fresh for your AI coach automatically.
 
 Choose your path:
 
+- **[Agentic Platforms](#agentic-setup)** — OpenClaw, Claude Code, Claude Cowork, ChatGPT Codex, Gemini CLI (code execution, push workouts to calendar) ← **full protocol experience**
 - **[Web Chat Platforms](#web-chat-setup)** — ChatGPT Projects, Claude Projects, Gemini Gems, Grok, Mistral Le Chat
-- **[Agentic Platforms](#agentic-setup)** — OpenClaw, Claude Code, Claude Cowork, ChatGPT Codex, Gemini CLI (code execution, push workouts to calendar)
 
 ### 4. Make Files Available to Your AI
 
@@ -80,6 +82,55 @@ Your AI needs access to `SECTION_11.md` (the protocol) and `DOSSIER.md` (your pr
 - **Cloud connector (Google Drive, OneDrive — [platform support varies](#platform-setup)):** If these files are in your synced folder, the AI reads them through the connector — no upload needed.
 - **Local/agentic:** The AI reads directly from the filesystem — no upload needed.
 - **URL fetch (no connector):** Upload both files to your AI platform's knowledge base manually.
+
+---
+
+## Agentic Setup
+
+For AI platforms that can execute code, access the filesystem, and run shell commands. These platforms can read your JSON files directly (no web fetch needed), push planned workouts to your Intervals.icu calendar, and run sync.py locally.
+
+> **Recommended for agentic: [Local sync](examples/json-local-sync/SETUP.md).** sync.py runs on a 60-second timer, the agent reads files directly. Cheapest, fastest, most reliable. No GitHub needed.
+
+> **Alternative: GitHub sync.** A private repo with GitHub Actions gives you multi-device access and backup. Follow the per-platform instructions below.
+
+### OpenClaw (formerly ClawdBot/MoltBot)
+
+This is the reference setup. Section 11 works well with [OpenClaw](https://github.com/openclaw/openclaw): persistent memory, heartbeat scheduling, autonomous execution, and structured validation.
+
+1. Clone or copy the Section 11 skill folder into your OpenClaw skills directory (skills are just directories with a `SKILL.md`)
+2. Authenticate: `gh auth login`
+3. For limited access, use a [fine-grained personal access token](https://github.com/settings/tokens?type=beta) scoped to your data repo only
+
+### Claude Code
+
+1. Install the Claude GitHub App at [github.com/apps/claude](https://github.com/apps/claude/installations/select_target) and grant access to your private data repo
+2. Or clone the repo locally and work with local files
+3. Claude Code has full filesystem access — point it at your data directory
+
+### Claude Cowork
+
+Cowork runs on your local machine and can read files directly from your filesystem.
+
+1. Clone your private data repo locally and grant Cowork access to that folder
+2. Or use the GitHub MCP connector in Cowork settings to access repos directly via a personal access token
+
+### ChatGPT Codex
+
+1. Connect your GitHub account via the ChatGPT GitHub connector at [chatgpt.com/codex](https://chatgpt.com/codex)
+2. Authorize access to your private training data repo during setup
+3. Codex clones the repo into an isolated container and reads `latest.json`, `history.json`, and `intervals.json` directly
+4. The Codex CLI works locally with your existing filesystem and Git setup
+
+### Gemini CLI
+
+1. Install: `npm install -g @google/gemini-cli` (or `npx @google/gemini-cli`)
+2. Clone your data repo locally — Gemini CLI has full filesystem access
+
+### Pushing Workouts to Calendar
+
+Agentic platforms can write planned workouts to your Intervals.icu calendar using [push.py](examples/agentic/). This requires code execution — web chat platforms cannot use this feature.
+
+See [examples/agentic/README.md](examples/agentic/README.md) for setup, commands, and workout syntax.
 
 ---
 
@@ -225,55 +276,6 @@ Most major AI platforms now have native GitHub connectors that can access privat
 2. Add instructions
 3. **GitHub connector:** Available on Pro, Max, and Enterprise plans via App Connectors.
 4. **No connector?** Upload SECTION_11.md and DOSSIER.md to the Space. Free users without connector access should use URL-based fetch (requires public repo) or upload files manually.
-
----
-
-## Agentic Setup
-
-For AI platforms that can execute code, access the filesystem, and run shell commands. These platforms can read your JSON files directly (no web fetch needed), push planned workouts to your Intervals.icu calendar, and run sync.py locally.
-
-> **Recommended for agentic: [Local sync](examples/json-local-sync/SETUP.md).** sync.py runs on a 60-second timer, the agent reads files directly. Cheapest, fastest, most reliable. No GitHub needed.
-
-> **Alternative: GitHub sync.** A private repo with GitHub Actions gives you multi-device access and backup. Follow the per-platform instructions below.
-
-### OpenClaw (formerly ClawdBot/MoltBot)
-
-Section 11 works well with [OpenClaw](https://github.com/openclaw/openclaw). The combination of persistent memory + autonomous execution + structured validation makes for a capable coaching setup.
-
-1. Clone or copy the Section 11 skill folder into your OpenClaw skills directory (skills are just directories with a `SKILL.md`)
-2. Authenticate: `gh auth login`
-3. For limited access, use a [fine-grained personal access token](https://github.com/settings/tokens?type=beta) scoped to your data repo only
-
-### Claude Code
-
-1. Install the Claude GitHub App at [github.com/apps/claude](https://github.com/apps/claude/installations/select_target) and grant access to your private data repo
-2. Or clone the repo locally and work with local files
-3. Claude Code has full filesystem access — point it at your data directory
-
-### Claude Cowork
-
-Cowork runs on your local machine and can read files directly from your filesystem.
-
-1. Clone your private data repo locally and grant Cowork access to that folder
-2. Or use the GitHub MCP connector in Cowork settings to access repos directly via a personal access token
-
-### ChatGPT Codex
-
-1. Connect your GitHub account via the ChatGPT GitHub connector at [chatgpt.com/codex](https://chatgpt.com/codex)
-2. Authorize access to your private training data repo during setup
-3. Codex clones the repo into an isolated container and reads `latest.json`, `history.json`, and `intervals.json` directly
-4. The Codex CLI works locally with your existing filesystem and Git setup
-
-### Gemini CLI
-
-1. Install: `npm install -g @google/gemini-cli` (or `npx @google/gemini-cli`)
-2. Clone your data repo locally — Gemini CLI has full filesystem access
-
-### Pushing Workouts to Calendar
-
-Agentic platforms can write planned workouts to your Intervals.icu calendar using [push.py](examples/agentic/). This requires code execution — web chat platforms cannot use this feature.
-
-See [examples/agentic/README.md](examples/agentic/README.md) for setup, commands, and workout syntax.
 
 ---
 
