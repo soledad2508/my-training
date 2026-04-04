@@ -1,10 +1,20 @@
 # Section 11 — AI Coach Protocol
 
-**Protocol Version:** 11.24  
-**Last Updated:** 2026-03-30
+**Protocol Version:** 11.26  
+**Last Updated:** 2026-04-03
 **License:** [MIT](https://opensource.org/licenses/MIT)
 
 ### Changelog
+
+**v11.26 — Nutrition & Pacing Protocol (VirtualDS Intelligence Migration):**
+- Nutrition Protocol expansion: kJ→carbs dosing table, absorption limits by carb type, glycogen budget model, temperature-driven hydration frequency
+- Fast-start penalty emphasis (pacing literature, no specific magnitude claim)
+- W′ depletion under glycogen deficit: ~20% W′ reduction (Miura et al., 2000)
+- Evidence base: 4 new entries (Jeukendrup 2014 expanded, Hearris et al. 2022, CTS/Rutberg 2025, Miura et al. 2000)
+
+**v11.25 — Course Character Fix:**
+- Course character classification uses elevation_per_km only (distance-blind absolute thresholds removed)
+- start_time added to routes.json events
 
 **v11.24 — Route & Terrain Protocol:**
 - New section: route analysis, terrain-adjusted power estimation, wind overlay, drafting, segment reasoning, nutrition timing, weather, pre-ride briefing flow
@@ -1308,6 +1318,7 @@ Cold weather is a minor environmental modifier. It does not require tiers, sessi
 | Steadman (1979) | Heat index formula combining air temperature and relative humidity | Practical alternative to WBGT for field-based heat assessment |
 | Racinais et al. (2023) Br J Sports Med — IOC consensus | Updated IOC recommendations on event regulations in heat; WBGT-based risk classification | Environmental risk classification framework |
 | Montain & Coyle (1992) | Dehydration exacerbates thermal and cardiovascular strain during exercise in heat | Hydration as heat stress modifier |
+| Maunder et al. (2020) | At moderate heat stress (34–35°C), increased carbohydrate oxidation at higher intensities | Glycogen depletes faster in heat; adjust nutrition frequency in Tier 1+ conditions |
 | Rundell et al. (2004, 2013) | Higher prevalence of airway hyperresponsiveness and EIB in athletes training in cold/dry air at high ventilation rates; repeated exposure causes airway damage | Flag high-intensity sessions below 0°C; cold weather bronchospasm risk |
 
 ---
@@ -1372,7 +1383,7 @@ The time savings from increasing power are disproportionately large on climbs an
 
 **Reduction rate honesty:** The ~5% per hour linear guideline is a practical heuristic informed by the Maunder (~10% at 2h) and Leo (durability decay beyond 60 kJ/kg) findings, not a directly cited threshold from a single study. Actual decay rates vary by athlete — the individual `durability_7d_mean` and `durability_28d_mean` baselines are the calibration signal. The heuristic provides a starting point when individual data is sparse.
 
-**Fast starts are costly.** Exceeding planned power by more than 5% in the opening minutes consistently produces slower overall finishing times in events over 30 minutes. The AI should flag early overcooking, not just late fading.
+**Fast starts are costly.** Exceeding planned power by more than 5% in the opening minutes consistently produces significantly worse overall finishing times in events over 30 minutes. The direction is well-established in pacing literature; specific magnitude varies by event duration and overcooking severity. The AI should flag early overcooking, not just late fading.
 
 #### Wind Overlay
 
@@ -1444,6 +1455,55 @@ Terrain structure dictates when the athlete can and cannot eat. Fueling during a
 - On flat and rolling courses, nutrition timing is less constrained — the athlete can fuel at any point. Follow standard kJ-based dosing: approximately 250–300 kJ between fuel cues as a backstop.
 - The AI should connect terrain to the nutrition skeleton in a pre-ride briefing: "Eat at km 15 on the flat before the Cat 3. Next opportunity is the descent at km 35. Fuel again at km 52 before the Cat 2."
 
+**kJ-Based Carbohydrate Dosing:**
+
+The terrain rules above govern *when* to fuel. This table governs *how much*. Carbohydrate requirements scale with actual energy expenditure (kJ output), not fixed gram-per-hour targets. The AI computes kJ/hour from ride data and maps to the appropriate intake rate:
+
+| kJ/hour Output | Carb Target (g/hour) | Typical Context |
+|---|---|---|
+| 400–500 | 50–60 | Endurance pace, recreational athlete |
+| 600–800 | 75–100 | Hard training day, fit amateur |
+| 800+ | 90–120 | Race intensity, requires gut training |
+
+**Dosing convention honesty:** The kJ→carbs mapping is a practical guideline synthesized from Jeukendrup (2014) dose-response findings and CTS/Rutberg (2025) field recommendations, not a single directly cited table. The relationship is physiologically grounded — higher output burns more glycogen, requiring proportionally more exogenous carbohydrate — but the specific g/hour figures per kJ band are applied engineering.
+
+**Absorption limits by carbohydrate type:**
+
+| Carb Source | Max Absorption Rate | Mechanism |
+|---|---|---|
+| Single source (glucose only) | ~60 g/hour | Saturates SGLT1 transporter |
+| Glucose + fructose (1:0.8 ratio) | ~90 g/hour | Dual transporters (SGLT1 + GLUT5) |
+| Gut-trained elite athletes | Up to 120 g/hour | Trained absorption capacity (Hearris et al., 2022) |
+
+The absorption ceiling constrains what's achievable regardless of expenditure rate. An athlete burning 900 kJ/hour who hasn't gut-trained above 60 g/hour cannot absorb 90 g/hour just because the dosing table says so. The AI should match intake recommendations to the athlete's trained absorption capacity when known (from dossier or conversation), and default to 60 g/hour single-source when unknown.
+
+Absorption form does not matter — drinks, gels, and chews produce equivalent exogenous carbohydrate oxidation rates at matched doses (Hearris et al., 2022).
+
+**Glycogen Budget Model:**
+
+The body stores approximately 2,000 kcal of glycogen (liver + muscle combined). Due to human mechanical efficiency (~22.5%), the kJ-to-kcal relationship is approximately 1:1 — kilojoules of work measured by a power meter roughly equal kilocalories burned. This means `kj_total` (or `kcal` from the activity payload) is a direct proxy for energy expenditure.
+
+The AI can estimate glycogen status for pre-ride planning and post-ride analysis:
+
+- **Pre-ride:** Estimate total kJ for the planned ride (from duration × expected NP, or from route profile and sustainability data). Compare against glycogen stores + planned intake to verify the nutrition plan is sufficient. A 4-hour ride at 200W NP burns ~2,880 kJ — more than glycogen stores alone. Without fueling, the athlete bonks.
+- **Post-ride:** Compare `kj_total` against estimated carbohydrate intake. If the deficit exceeds 1,500–1,800 kcal, the athlete was in or approaching bonk territory. Use this to explain performance collapse in the final hour.
+- **Glycogen depletion compounds with heat:** At 34–35°C, carbohydrate oxidation increases at high intensities (Maunder et al., 2020). In heat stress conditions (Tier 1+), the AI should assume glycogen burns faster and adjust nutrition recommendations accordingly.
+
+CHO ingestion during exercise does not spare muscle glycogen — it maintains blood glucose, which is the actual fatigue trigger (Coyle et al., 1986). Low blood glucose signals the brain to terminate exercise. The practical implication: fueling prevents the bonk by maintaining blood glucose, not by topping up glycogen stores mid-ride.
+
+**Glycogen budget honesty:** The ~2,000 kcal glycogen figure and the kJ≈kcal equivalence are well-established in exercise physiology. The 1,500–1,800 kcal deficit threshold for bonk risk is a practical heuristic — individual glycogen stores vary by body mass, muscle fiber composition, and pre-ride carbohydrate loading status. Athletes who carb-load effectively (10–12 g/kg from D-4, per Section 11's event preparation section) start with higher stores.
+
+**Temperature-Driven Hydration Frequency:**
+
+| Condition | Reminder Frequency | Notes |
+|---|---|---|
+| Below 15°C | Every 30–40 minutes | Easy to forget in cold; still losing fluid |
+| 15–20°C | Every 20–30 minutes | Thermoneutral; standard hydration |
+| 20–30°C | Every 15–20 minutes | Increased sweat rate |
+| Above 30°C | Every 10–15 minutes | Aggressive; dehydration exacerbates cardiac drift (Montain & Coyle, 1992) |
+
+HR drift at stable power in heat is a dehydration signal — the AI should combine drink cues with cardiac drift observations when both are present. Cross-reference with the Environmental Conditions Protocol for heat stress tier assessment.
+
 #### Weather Data Source
 
 For pre-ride weather and wind data, yr.no (Norwegian Meteorological Institute) provides free, high-quality forecasts with wind direction, speed, temperature, and precipitation. No API key required for reasonable usage.
@@ -1482,8 +1542,11 @@ When route data is available, the AI can produce a structured pre-ride briefing 
 | Maunder et al. (2022), Eur J Appl Physiol | Power at moderate-to-heavy transition decreased ~10% after 2h cycling at 90% VT1 | Progressive target reduction for long events; cross-ref sustainability profile |
 | Leo et al. (2023/2025) | Five Monuments top-5 vs 6th–30th: stable power beyond 60 kJ/kg vs significant decline | Durability as differentiator; calibrate targets to accumulated work |
 | Blocken et al. (2018) | CFD analysis of peloton aerodynamics: position-dependent drag reduction from ~5–10% (second wheel) to 40%+ (deep in peloton) | Drafting estimate for group riding power calculations |
-| Jeukendrup (2014) | Carbohydrate absorption requires 15–20 min; dose-response confirmed up to absorption ceiling | Nutrition timing: fuel before climbs, not during |
-| Coyle et al. | CHO ingestion maintains blood glucose (actual fatigue trigger), does not spare muscle glycogen | Fueling prevents bonk via blood glucose, not glycogen sparing |
+| Jeukendrup (2014) | Carbohydrate absorption requires 15–20 min; dose-response confirmed up to absorption ceiling; single source max ~60 g/h, dual source (glucose+fructose) ~90 g/h | Nutrition timing, absorption limits, kJ-based dosing foundation |
+| Hearris et al. (2022) | Absorption rates identical across sports drinks, gels, and chews at 120 g/h; gut-trained athletes achieve higher oxidation rates | Absorption form doesn't matter; gut training extends ceiling |
+| CTS / Rutberg (2025) | kJ-to-carb dosing table linking output (400–800+ kJ/h) to intake recommendations (50–120 g/h) for amateur through elite | kJ-based nutrition dosing by output level |
+| Miura et al. (2000) | W′ reduced ~20% (12.83→10.33 kJ) by glycogen depletion; CP unaffected | Late-ride segment feasibility: W′-dependent efforts degraded by glycogen deficit |
+| Coyle et al. (1986) | CHO ingestion maintains blood glucose (actual fatigue trigger), does not spare muscle glycogen | Fueling prevents bonk via blood glucose, not glycogen sparing |
 | Springer Nature (2025) | Power response to wind is non-linear and velocity-dependent; headwind substantially increases power cost at speed | Wind impact scales with speed regime, not gradient directly |
 | Climb classification | UCI/Tour conventional categories — elevation-based thresholds | Industry convention, not a single research finding |
 | Course character heuristic | Section 11 convention — flat/rolling/hilly/mountain boundaries from elevation density (m/km) + climb presence | Engineering decision for route classification |
@@ -1954,6 +2017,12 @@ If workout files include W′ balance data (from Intervals.icu or WKO), the foll
 - These metrics are most relevant for VO₂max, threshold, and anaerobic interval sessions
 - Do not apply to Z1–Z2 endurance sessions
 - W′ metrics are **Tier 3 (tertiary)** — use for diagnostics, not primary load decisions
+
+**W′ Depletion Under Glycogen Deficit:**
+
+Glycogen depletion significantly reduces W′ (anaerobic work capacity) while Critical Power remains relatively unchanged. Miura et al. (2000) found W′ dropped from 12.83 kJ to 10.33 kJ (~20% reduction) after a glycogen depletion protocol. This means the athlete's ability to surge above threshold — for attacks, climbs, segment attempts — shrinks as the ride progresses and glycogen depletes.
+
+The AI should reduce above-threshold expectations late in long rides. A segment that requires 5 minutes above CP at km 20 may be feasible, but the same effort at km 100 after 3,000+ kJ of expenditure faces a smaller W′ reservoir. Cross-reference with the glycogen budget model in the Nutrition Protocol — if the estimated glycogen deficit exceeds 1,500 kcal, W′-dependent efforts should carry wider feasibility margins in segment reasoning.
 
 ---
 
