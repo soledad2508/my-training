@@ -141,7 +141,7 @@ Pre-calculated values for Section 11 compliance — AI should use these, not cal
 | `monotony` / `strain` | Training variability (Foster) |
 | `grey_zone_percentage` | Z3 time % — minimize in polarized training |
 | `quality_intensity_percentage` | Z4+ time % — target ~20% |
-| `polarisation_index` | Easy time ratio — target ~0.80 |
+| `easy_time_ratio` | Easy time ratio — target ~0.80 |
 | `consistency_index` | Plan adherence (completed/planned) |
 | `phase_detected` | Auto-detected: Build, Base, Peak, Taper, Deload, Recovery, Overreached, null |
 | `phase_detection` | Full phase detection object: phase, confidence, reason_codes, basis (dual-stream), phase_duration_weeks |

@@ -1,6 +1,6 @@
 # Section 11 — AI Coach Protocol
 
-**Protocol Version:** 11.27  
+**Protocol Version:** 11.28  
 **Last Updated:** 2026-04-05
 **License:** [MIT](https://opensource.org/licenses/MIT)
 
@@ -381,7 +381,7 @@ This system applies Seiler's 3-zone endurance framework (Z1 = < LT1, Z2 = LT1–
 | Polarization Combined (All-Sport)| (Z1 + Z2) / Total zone time (HR + Power)| Foster et al. (2001); Seiler & Tønnessen (2009)| Global endurance load structure; ≥ 0.8 = strongly polarized      |
 | Training Monotony Index          | Mean Load / SD(Load)                    | Foster (1998)                             | Evaluates load variation; high values = risk of uniformity or overuse |
 
-**Simple Polarisation Index** (used in `derived_metrics.polarisation_index`):
+**Easy Time Ratio** (used in `derived_metrics.easy_time_ratio`):
 - Formula: `(Z1 + Z2) / Total zone time` — a 0–1 ratio of easy time
 - Target: ≥0.80 for polarized training
 - This is a quick sanity check for 80/20 compliance
@@ -729,7 +729,7 @@ When validating datasets, cross-check computed fatigue and load ratios against v
 | HRV                          | Within personal baseline                           | ↓ > 20% vs baseline               | Persists > 2 days                   | Use 7-day rolling baseline                                          |
 | RHR                          | Within personal baseline                           | ↑ ≥ 5 bpm vs baseline             | Persists > 2 days                   | Use 7-day rolling baseline                                          |
 | Fatigue Trend                | −0.2 to +0.2                                       | —                                  | —                                   | ΔATL − ΔCTL (stable range)                                          |
-| Polarisation Ratio           | 0.75–0.9                                           | —                                  | —                                   | ~80/20 distribution                                                 |
+| Easy Time Ratio              | 0.75–0.9                                           | —                                  | —                                   | ~80/20 distribution                                                 |
 | Durability Index (DI)        | ≥ 0.9                                              | —                                  | —                                   | Avg Power last hour ÷ first hour                                    |
 | Readiness Decision         | Pre-computed go/modify/skip (P0–P3 ladder)         | —                                  | —                                   | See Readiness Decision section. sync.py v3.72+          |
 | Load Ratio                   | < 3500                                             | —                                  | —                                   | Monotony × Mean Load — cumulative stress indicator                  |
@@ -1545,7 +1545,7 @@ Both measurements are valid but serve different purposes. For **high-volume athl
 |----------------------------------|-----------------------------------------|-----------------------------------------------------------|
 | **Grey Zone Percentage**         | `Z3 Time ÷ Total Time × 100`            | Grey zone (tempo) monitoring — **minimize this**          |
 | **Quality Intensity Percentage** | `(Z4+Z5+Z6+Z7) Time ÷ Total Time × 100` | Quality intensity — hard work above threshold             |
-| **Polarisation Index**           | `(Z1+Z2) Time ÷ Total Time`             | Easy time ratio — validates 80/20 distribution by time    |
+| **Easy Time Ratio**              | `(Z1+Z2) Time ÷ Total Time`             | Validates 80/20 distribution by time                      |
 | **Hard Days per Week**           | Count of days with Z4+ work             | Session-based intensity tracking for high-volume athletes |
 
 **Zone Classification (7-Zone to Seiler 3-Zone Mapping):**
@@ -1560,7 +1560,7 @@ Both measurements are valid but serve different purposes. For **high-volume athl
 
 For athletes training **<10 hours/week** (time-based targets more practical):
 
-| **Phase** | **Grey Zone % Target** | **Quality Intensity % Target** | **Polarisation Index** |
+| **Phase** | **Grey Zone % Target** | **Quality Intensity % Target** | **Easy Time Ratio** |
 |-----------|------------------------|--------------------------------|------------------------|
 | Base      | <5%                    | 10–15%                         | ≥0.85                  |
 | Build     | <8%                    | 15–20%                         | ≥0.80                  |
@@ -1979,7 +1979,7 @@ To ensure AI systems evaluate metrics in the correct order:
 │  ─────────────────────────────────────────────              │
 │  • Grey Zone Percentage (grey zone monitoring)              │
 │  • Quality Intensity Percentage / Hard Days                 │
-│  • Polarisation Index                                       │
+│  • Easy Time Ratio                                          │
 │  • Durability Sub-Metrics (Endurance Decay, Z2 Stability)   │
 │  • Specificity Volume Ratio                                 │
 │  • Benchmark Index (with seasonal context)                  │
@@ -2002,12 +2002,12 @@ To ensure AI systems evaluate metrics in the correct order:
 | Load-Recovery Ratio          | Fatigue Index Ratio (FIR) | **Different purpose.** FIR measures power sustainability (20min vs 60min). Load-Recovery Ratio measures load vs recovery capacity.   |
 | Specificity Volume Ratio     | Specificity Score         | **Complementary.** Volume Ratio tracks *how much* time is event-specific. Score tracks *how well* sessions match event demands.      |
 | Endurance Decay              | Durability Index (DI)     | **Diagnostic breakdown.** DI is the primary metric. Endurance Decay provides detail when DI <0.95.                                   |
-| Grey Zone Percentage         | Polarisation Index        | **Complementary.** Polarisation Index validates 80/20 by easy time. Grey Zone Percentage specifically flags grey zone creep.         |
-| Quality Intensity Percentage | Polarisation Index        | **Complementary.** Quality Intensity Percentage tracks quality intensity. For high-volume athletes, Hard Days per Week is preferred. |
+| Grey Zone Percentage         | Easy Time Ratio           | **Complementary.** Easy Time Ratio validates 80/20 by easy time. Grey Zone Percentage specifically flags grey zone creep.            |
+| Quality Intensity Percentage | Easy Time Ratio           | **Complementary.** Quality Intensity Percentage tracks quality intensity. For high-volume athletes, Hard Days per Week is preferred. |
 | Stress Tolerance             | Strain                    | **Derived from.** Stress Tolerance = (Strain ÷ Monotony) ÷ 100, providing absorption capacity context.                               |
 | Aggregate Durability         | HR–Power Decoupling       | **Aggregates.** Per-session decoupling is the raw input; aggregate durability provides the 7d/28d trend view.                        |
 | Aggregate Durability         | Durability Index (DI)     | **Complementary.** DI = power output sustainability. Aggregate Durability = cardiovascular efficiency trend across sessions.          |
-| Seiler TID (Treff PI)        | Polarisation Index        | **Different scale.** Simple Polarisation Index = 0–1 easy-time ratio. Treff PI = logarithmic scale with 5-class classification.      |
+| Seiler TID (Treff PI)        | Easy Time Ratio           | **Different scale.** Easy Time Ratio = 0–1 easy-time share. Treff PI = logarithmic scale with 5-class classification.                |
 | TID Drift                    | Seiler TID                | **Temporal comparison.** TID Drift compares 7d vs 28d Seiler TID to detect distribution shifts over time.                            |
 
 ---
@@ -2367,7 +2367,7 @@ This subsection defines the formal self-validation and audit metadata structure 
     "grey_zone_percentage": 3.2,
     "quality_intensity_percentage": 2.7,
     "hard_days_this_week": 2,
-    "polarisation_index": 0.97,
+    "easy_time_ratio": 0.97,
     "specificity_volume_ratio": 0.58,
     "load_recovery_ratio": 1.8,
     "primary_readiness_status": "RI 0.84 — Good",
@@ -2438,7 +2438,7 @@ This subsection defines the formal self-validation and audit metadata structure 
 | `grey_zone_percentage`         | number   | Grey zone time as percentage — to minimize                                          |
 | `quality_intensity_percentage` | number   | Quality intensity time as percentage                                                |
 | `hard_days_this_week`          | number/null | Count of days meeting zone ladder thresholds. **Power ladder** (5 rungs): Z3+ ≥ 30min, Z4+ ≥ 10min, Z5+ ≥ 5min, Z6+ ≥ 2min, or Z7 ≥ 1min. **HR fallback** (2 rungs, when no power zones): Z4+ ≥ 10min or Z5+ ≥ 5min. `null` if no zone data exists. Per Seiler 3-zone model + Foster |
-| `polarisation_index`           | number   | Easy time (Z1+Z2) as ratio of total                                                 |
+| `easy_time_ratio`              | number   | Easy time (Z1+Z2) as ratio of total                                                 |
 | `specificity_volume_ratio`     | number   | Event-specific volume ratio (0–1)                                                   |
 | `load_recovery_ratio`          | number   | 7-day load divided by RI (secondary metric)                                         |
 | `primary_readiness_status`     | string   | Summary of primary readiness marker (RI)                                            |

@@ -93,7 +93,7 @@ Also includes period summaries, FTP timeline, and data gap detection. Generated 
 
 ## What's Included
 
-The export includes pre-calculated **derived metrics** for Section 11 compliance — AI should use these, not calculate its own. Key metrics: ACWR, Recovery Index, Monotony/Strain, Grey Zone %, Quality Intensity %, Polarisation Index, Benchmark Index, Phase Detection, Seiler TID, Aggregate Durability, and TID Drift.
+The export includes pre-calculated **derived metrics** for Section 11 compliance — AI should use these, not calculate its own. Key metrics: ACWR, Recovery Index, Monotony/Strain, Grey Zone %, Quality Intensity %, Easy Time Ratio, Benchmark Index, Phase Detection, Seiler TID, Aggregate Durability, and TID Drift.
 
 See [examples/README.md](../README.md#derived-metrics) for the full derived metrics table.
 

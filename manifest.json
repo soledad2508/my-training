@@ -11,10 +11,10 @@
       "hash": "0683b6ae3ded5701305dae4114d317d4346c175824d8db87a22d18e05a61ff77"
     },
     "README.md": {
-      "hash": "3e8a3a00371dd32538697915973daa10d863411ff21d8e5c98d19766e09a22cc"
+      "hash": "151904c3bed212e419404958ddd7595f23cb4a8a5ba55e0fbde02e9a093c3918"
     },
     "SECTION_11.md": {
-      "hash": "7fa66c492bfc7014f13cbb3f4c3ba6d488370c6f120821a4f106b53cc3e1927b",
+      "hash": "14601171b76da52c66e30581b1f0849f0bea31ab3d6050bb7b492c43a68b54c7",
       "description": "Coaching protocol"
     },
     "SECURITY.md": {
@@ -30,7 +30,7 @@
       "hash": "cae89487951a8403e6827acb3b06716f737e9d2856a420f99f8f72651355ac29"
     },
     "examples/README.md": {
-      "hash": "084c95e056d56bf33417578b01e56f55f09db85168a5e10ce477a60ce488fdb6"
+      "hash": "fe7dd9966b7f72b8f6f474b34c7f712f0de10636c16bd72069984b5b40848aa9"
     },
     "examples/agentic/EXTERNAL_APIS.md": {
       "hash": "81a83a2b1f84de2fbe3b9fc20618e2bb363d44e40b87ee7acd52bf1f2185c622"
@@ -78,7 +78,7 @@
       "hash": "fbc7460706f034edef17f048308a193df6294963c42c9f71f728d0c52b1d5498"
     },
     "examples/json-manual/SETUP.md": {
-      "hash": "72d25be1cdefbd64e84abb4d5c2cc9540ef07278289254217db36a0de2e26dc3"
+      "hash": "707fb39e9ed6a350a8a22e96eac0ee67e5e7b8326bf7b52d5d11adae8511f6c7"
     },
     "examples/json-on-demand/SETUP.md": {
       "hash": "8a4cf6b9f4406ee0c237f23ca26cbc423ecc4d97f0c81f79b0ac79df47a4d102"
@@ -114,7 +114,7 @@
       "hash": "dea437cb289785c243314d11d1fdb897a0e367420e0c4336931f443cb23a44a2"
     },
     "examples/sync.py": {
-      "hash": "a238094f19c606db7fb739a9de3be582ac23942e6824f355f51cf0f8a7e96a6f"
+      "hash": "02e4f2d6c77c4d2187a18f1db545952995f01621c98b9ce779e44e0d306f15cf"
     },
     "examples/workout-library/README.md": {
       "hash": "f22d96050da8a601aac627ddb44b717f31daa9adc88b1cedf3f56a0b87dec6f4"

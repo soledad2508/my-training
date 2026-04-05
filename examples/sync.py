@@ -92,7 +92,7 @@ class IntervalsSync:
     HISTORY_FILE = "history.json"
     UPSTREAM_REPO = "CrankAddict/section-11"
     CHANGELOG_FILE = "changelog.json"
-    VERSION = "3.97"
+    VERSION = "3.98"
     INTERVALS_FILE = "intervals.json"
     ROUTES_FILE = "routes.json"
 
@@ -1731,10 +1731,10 @@ class IntervalsSync:
         # This is the "hard" work that should be ~20% in polarized training
         quality_intensity_percentage = round((z4_plus_time / total_zone_time) * 100, 1) if total_zone_time > 0 else None
         
-        # === POLARISATION INDEX ===
+        # === EASY TIME RATIO ===
         # Formula: (Z1 + Z2) / Total - measures how much time is "easy"
         # Target: ~80% for polarized training
-        polarisation_index = round((z1_time + z2_time) / total_zone_time, 2) if total_zone_time > 0 else None
+        easy_time_ratio = round((z1_time + z2_time) / total_zone_time, 2) if total_zone_time > 0 else None
         
         # === SEILER TID (Training Intensity Distribution) ===
         # Dual calculation: all-sport and primary-sport (like monotony)
@@ -1957,8 +1957,8 @@ class IntervalsSync:
             "grey_zone_note": "Gray Zone % (Z3/tempo) - minimize in polarized training",
             "quality_intensity_percentage": quality_intensity_percentage,
             "quality_intensity_note": "Quality Intensity % (Z4+/threshold+) - target ~20% in polarized training",
-            "polarisation_index": polarisation_index,
-            "polarisation_note": "Easy time (Z1+Z2) / Total - target ~80% in polarized training",
+            "easy_time_ratio": easy_time_ratio,
+            "easy_time_ratio_note": "Easy time (Z1+Z2) / Total - target ~80% in polarized training",
             "hard_days_this_week": hard_days_this_week,
             "hard_days_note": "Power ladder: z3+ >= 30min, z4+ >= 10min, z5+ >= 5min, z6+ >= 2min, z7 >= 1min. HR fallback (when no power): z4+ >= 10min, z5+ >= 5min. Per Seiler 3-zone model + Foster. HR-based days flagged with intensity_basis: hr",
             
@@ -7847,7 +7847,7 @@ def main():
         print(f"   Strain: {dm.get('strain')}")
         print(f"   Gray Zone %: {dm.get('grey_zone_percentage')}%")
         print(f"   Quality Intensity %: {dm.get('quality_intensity_percentage')}%")
-        print(f"   Polarisation: {dm.get('polarisation_index')} (target ~0.80)")
+        print(f"   Easy Time Ratio: {dm.get('easy_time_ratio')} (target ~0.80)")
         tid = dm.get('seiler_tid_7d', {})
         tid_ps = dm.get('seiler_tid_7d_primary', {})
         print(f"   Seiler TID: {tid.get('classification')} (PI: {tid.get('polarization_index')}) — Z1:{tid.get('z1_pct')}% Z2:{tid.get('z2_pct')}% Z3:{tid.get('z3_pct')}%")
