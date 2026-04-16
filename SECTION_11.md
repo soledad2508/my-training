@@ -2523,8 +2523,8 @@ This subsection defines the formal self-validation and audit metadata structure 
   "validation_metadata": {
     "data_source_fetched": true,
     "json_fetch_status": "success",
-    "protocol_version": "11.32",
-    "checklist_passed": [1, 2, 3, 4, 5, "5b", 6, "6b", 7, 8, 9, 10],
+    "protocol_version": "11.33",
+    "checklist_passed": [0, 1, 2, 3, 4, 5, "5b", 6, "6b", 7, 8, 9, 10],
     "checklist_failed": [],
     "data_timestamp": "2026-01-13T22:32:05Z",
     "data_age_hours": 2.3,
@@ -2602,7 +2602,7 @@ This subsection defines the formal self-validation and audit metadata structure 
 | `data_source_fetched`          | boolean  | Whether JSON was successfully loaded from data source (local files, connector, or URL) |
 | `json_fetch_status`            | string   | "success" / "failed" / "unavailable" — stop and request manual input if not success |
 | `protocol_version`             | string   | Section 11 version being followed                                                   |
-| `checklist_passed`             | array    | List of checklist items (1–10) that passed validation                               |
+| `checklist_passed`             | array    | List of checklist items (0–10, including 5b and 6b) that passed validation                               |
 | `checklist_failed`             | array    | List of checklist items that failed, with reasons                                   |
 | `data_timestamp`               | ISO 8601 | Timestamp of the data being referenced                                              |
 | `data_age_hours`               | number   | Hours since data was last updated                                                   |

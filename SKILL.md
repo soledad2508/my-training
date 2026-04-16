@@ -55,7 +55,7 @@ Load the coaching protocol using this precedence:
 
 If both root and `section11/` copies exist, prefer the root copy.
 
-**Current version:** 11.32
+**Current version:** 11.33
 
 ## External Sources
 
