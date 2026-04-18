@@ -141,7 +141,10 @@ jobs:
             fi
             
             # Now pull - autostash will safely stash staged changes
-            git pull --rebase --autostash origin main
+            # git pull --rebase --autostash origin main
+
+            git fetch origin main
+            git reset --soft origin/main
             
             # Only commit if there are changes
             if ! git diff --staged --quiet; then
