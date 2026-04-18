@@ -86,7 +86,7 @@ jobs:
             echo "⚠️ latest.json not found - might be no changes detected"
           fi
 
-      - name: Archive and commit all files
+      - name: Archive latest.json with timestamp
         if: success()
         run: |
           YEAR_MONTH=$(date -u +"%Y-%m")
@@ -98,34 +98,7 @@ jobs:
             echo "✅ Archived to archive/${YEAR_MONTH}/${TIMESTAMP}.json"
           else
             echo "⚠️ Skipping archive - no latest.json to archive"
-            exit 0
           fi
-
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-
-          # Pull latest remote changes FIRST (before staging anything)
-          # This avoids autostash conflicts on files the remote also modified
-          git fetch origin main
-          git rebase origin/main
-
-          # Now stage everything after we're up to date
-          git add archive/
-          for f in ftp_history.json history.json all_activities.json latest.json intervals.json routes.json README.md; do
-            if [ -f "$f" ]; then
-              git add "$f"
-              echo "✅ Staged $f"
-            fi
-          done
-
-          if git diff --staged --quiet; then
-            echo "⏭️  No changes to commit"
-            exit 0
-          fi
-
-          git commit -m "Auto sync - $(date -u +"%Y-%m-%d %H:%M:%S UTC")"
-          git push origin HEAD:main
-          echo "✅ Committed and pushed"
 
       - name: Update README with last sync time
         if: success()
@@ -140,6 +113,22 @@ jobs:
             fi
             echo "✅ README updated with sync time: ${SYNC_TIME}"
           fi
+
+      - name: Commit and push generated files
+        if: success()
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+
+          git add -A
+
+          if git diff --cached --quiet; then
+            echo "⏭️ No changes to commit"
+            exit 0
+          fi
+
+          git commit -m "Auto sync - $(date -u +"%Y-%m-%d %H:%M:%S UTC")"
+          git push origin HEAD:main
 
       - name: Upload data files for download
         if: github.event_name == 'workflow_dispatch'
