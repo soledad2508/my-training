@@ -5753,7 +5753,7 @@ class IntervalsSync:
         
         # === MONTHLY TIERS ===
         monthly_tiers = {}
-        for years in range(1, 11):
+        for years in range(1, 5):
             label = f"{years}y"
             days_back = years * 365
             if total_months >= years * 12 * 0.5:  # Only generate if enough data
@@ -6332,15 +6332,22 @@ class IntervalsSync:
             }
         
         # Yearly summaries from monthly data
-        for key in ["monthly_1y", "monthly_2y", "monthly_3y"]:
+        for key in ["monthly_1y", "monthly_2y", "monthly_3y", "monthly_4y", "monthly_5y"]:
             monthly = monthly_tiers.get(key, [])
             if monthly:
                 tss_values = [m["total_tss"] for m in monthly if m["total_tss"]]
                 ctl_values = [m["ctl_end"] for m in monthly if m["ctl_end"]]
+                hours_values = [m["total_hours"] for m in monthly if m.get("total_hours")]
+                distance_values = [m["total_distance_km"] for m in monthly if m.get("total_distance_km")]
                 
                 label = key.replace("monthly_", "")
                 summaries[label] = {
                     "avg_monthly_tss": round(statistics.mean(tss_values), 0) if tss_values else None,
+                    "total_tss": round(sum(tss_values), 0) if tss_values else None,
+                    "avg_monthly_hours": round(statistics.mean(hours_values), 1) if hours_values else None,
+                    "total_hours": round(sum(hours_values), 1) if hours_values else None,
+                    "avg_monthly_distance_km": round(statistics.mean(distance_values), 1) if distance_values else None,
+                    "total_distance_km": round(sum(distance_values), 1) if distance_values else None,
                     "ctl_peak": round(max(ctl_values), 1) if ctl_values else None,
                     "ctl_low": round(min(ctl_values), 1) if ctl_values else None,
                     "months_tracked": len(monthly)
