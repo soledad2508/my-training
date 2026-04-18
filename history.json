@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-04-18T02:49:15.865807",
+  "generated_at": "2026-04-18T03:50:04.768516",
   "source": "Intervals.icu API",
   "sync_version": "3.103",
-  "script_hash": "504417168730",
+  "script_hash": "e76006582746",
   "data_range": {
-    "earliest": "2023-04-19",
+    "earliest": "2019-12-11",
     "latest": "2026-04-18",
-    "total_months": 35
+    "total_months": 76
   },
   "ftp_timeline": [
     {
@@ -17,6 +17,218 @@
     }
   ],
   "data_gaps": [
+    {
+      "period": "2019-12-12 to 2019-12-15",
+      "days_missing": 4
+    },
+    {
+      "period": "2019-12-18 to 2019-12-20",
+      "days_missing": 3
+    },
+    {
+      "period": "2019-12-28 to 2020-01-01",
+      "days_missing": 5
+    },
+    {
+      "period": "2020-01-10 to 2020-01-12",
+      "days_missing": 3
+    },
+    {
+      "period": "2020-01-14 to 2020-02-02",
+      "days_missing": 20
+    },
+    {
+      "period": "2020-02-05 to 2020-02-07",
+      "days_missing": 3
+    },
+    {
+      "period": "2020-02-09 to 2020-02-23",
+      "days_missing": 15
+    },
+    {
+      "period": "2020-02-28 to 2020-03-01",
+      "days_missing": 3
+    },
+    {
+      "period": "2020-03-05 to 2020-03-09",
+      "days_missing": 5
+    },
+    {
+      "period": "2020-03-13 to 2020-03-16",
+      "days_missing": 4
+    },
+    {
+      "period": "2020-03-26 to 2020-04-19",
+      "days_missing": 25
+    },
+    {
+      "period": "2020-05-16 to 2020-05-20",
+      "days_missing": 5
+    },
+    {
+      "period": "2020-05-22 to 2020-05-28",
+      "days_missing": 7
+    },
+    {
+      "period": "2020-06-12 to 2020-06-20",
+      "days_missing": 9
+    },
+    {
+      "period": "2020-06-22 to 2020-07-05",
+      "days_missing": 14
+    },
+    {
+      "period": "2020-07-26 to 2020-07-29",
+      "days_missing": 4
+    },
+    {
+      "period": "2020-07-31 to 2020-08-19",
+      "days_missing": 20
+    },
+    {
+      "period": "2020-08-21 to 2020-09-04",
+      "days_missing": 15
+    },
+    {
+      "period": "2020-09-06 to 2020-09-14",
+      "days_missing": 9
+    },
+    {
+      "period": "2020-09-27 to 2020-10-05",
+      "days_missing": 9
+    },
+    {
+      "period": "2020-10-11 to 2020-10-14",
+      "days_missing": 4
+    },
+    {
+      "period": "2020-10-18 to 2020-10-23",
+      "days_missing": 6
+    },
+    {
+      "period": "2020-10-26 to 2020-10-28",
+      "days_missing": 3
+    },
+    {
+      "period": "2020-11-23 to 2020-11-25",
+      "days_missing": 3
+    },
+    {
+      "period": "2020-11-29 to 2020-12-01",
+      "days_missing": 3
+    },
+    {
+      "period": "2020-12-09 to 2020-12-11",
+      "days_missing": 3
+    },
+    {
+      "period": "2020-12-26 to 2020-12-30",
+      "days_missing": 5
+    },
+    {
+      "period": "2021-01-08 to 2021-01-13",
+      "days_missing": 6
+    },
+    {
+      "period": "2021-01-20 to 2021-01-22",
+      "days_missing": 3
+    },
+    {
+      "period": "2021-02-14 to 2021-02-18",
+      "days_missing": 5
+    },
+    {
+      "period": "2021-03-21 to 2021-03-23",
+      "days_missing": 3
+    },
+    {
+      "period": "2021-05-10 to 2021-05-12",
+      "days_missing": 3
+    },
+    {
+      "period": "2021-05-14 to 2021-05-16",
+      "days_missing": 3
+    },
+    {
+      "period": "2021-05-31 to 2021-06-02",
+      "days_missing": 3
+    },
+    {
+      "period": "2021-06-16 to 2021-06-18",
+      "days_missing": 3
+    },
+    {
+      "period": "2021-06-27 to 2021-07-04",
+      "days_missing": 8
+    },
+    {
+      "period": "2021-07-09 to 2021-08-20",
+      "days_missing": 43
+    },
+    {
+      "period": "2021-10-28 to 2021-10-30",
+      "days_missing": 3
+    },
+    {
+      "period": "2021-11-22 to 2021-11-25",
+      "days_missing": 4
+    },
+    {
+      "period": "2022-01-09 to 2022-01-14",
+      "days_missing": 6
+    },
+    {
+      "period": "2022-01-18 to 2022-01-20",
+      "days_missing": 3
+    },
+    {
+      "period": "2022-01-23 to 2022-01-25",
+      "days_missing": 3
+    },
+    {
+      "period": "2022-01-28 to 2022-02-05",
+      "days_missing": 9
+    },
+    {
+      "period": "2022-02-23 to 2022-02-25",
+      "days_missing": 3
+    },
+    {
+      "period": "2022-04-06 to 2022-04-08",
+      "days_missing": 3
+    },
+    {
+      "period": "2022-06-06 to 2022-06-08",
+      "days_missing": 3
+    },
+    {
+      "period": "2022-06-16 to 2022-06-18",
+      "days_missing": 3
+    },
+    {
+      "period": "2022-06-22 to 2022-06-25",
+      "days_missing": 4
+    },
+    {
+      "period": "2022-11-21 to 2022-11-23",
+      "days_missing": 3
+    },
+    {
+      "period": "2023-01-09 to 2023-01-11",
+      "days_missing": 3
+    },
+    {
+      "period": "2023-01-21 to 2023-01-23",
+      "days_missing": 3
+    },
+    {
+      "period": "2023-03-01 to 2023-03-03",
+      "days_missing": 3
+    },
+    {
+      "period": "2023-03-05 to 2023-03-08",
+      "days_missing": 4
+    },
     {
       "period": "2023-04-28 to 2023-05-02",
       "days_missing": 5
@@ -200,7 +412,7 @@
       "months_tracked": 25
     },
     "3y": {
-      "avg_monthly_tss": 1250.0,
+      "avg_monthly_tss": 1276.0,
       "ctl_peak": 70.0,
       "ctl_low": 14.8,
       "months_tracked": 37
@@ -4157,7 +4369,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": 8508,
+      "steps": 9555,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -5794,22 +6006,22 @@
   "monthly_3y": [
     {
       "month": "2023-04",
-      "total_hours": 8.23,
-      "total_tss": 461,
-      "activity_count": 13,
-      "ctl_peak": 53.0,
-      "ctl_low": 49.2,
+      "total_hours": 23.63,
+      "total_tss": 1414,
+      "activity_count": 33,
+      "ctl_peak": 54.2,
+      "ctl_low": 47.7,
       "ctl_end": 49.2,
       "avg_hrv": null,
       "avg_rhr": null,
-      "z1_z2_pct": 85.5,
-      "z3_pct": 10.6,
-      "z4_plus_pct": 3.9,
-      "hard_days_avg_per_week": 0.2,
-      "longest_ride_hours": 2.01,
+      "z1_z2_pct": 65.9,
+      "z3_pct": 26.2,
+      "z4_plus_pct": 7.8,
+      "hard_days_avg_per_week": 1.2,
+      "longest_ride_hours": 3.97,
       "avg_weight_kg": null,
-      "dominant_phase": "Recovery",
-      "days_with_data": 12
+      "dominant_phase": "Maintenance",
+      "days_with_data": 30
     },
     {
       "month": "2023-05",
