@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-04-18T03:55:59.412714",
+  "generated_at": "2026-04-18T04:18:14.866542",
   "source": "Intervals.icu API",
   "sync_version": "3.103",
-  "script_hash": "05dc18e2dd06",
+  "script_hash": "cb5a75547685",
   "data_range": {
     "earliest": "2019-12-11",
     "latest": "2026-04-18",
@@ -4384,6 +4384,7 @@
     {
       "week_start": "2025-10-20",
       "total_hours": 4.62,
+      "total_distance_km": 31.9,
       "total_tss": 264,
       "primary_sport": "run",
       "primary_sport_tss": 212.0,
@@ -4420,6 +4421,7 @@
     {
       "week_start": "2025-10-27",
       "total_hours": 4.39,
+      "total_distance_km": 25.7,
       "total_tss": 206,
       "primary_sport": "run",
       "primary_sport_tss": 159.0,
@@ -4453,6 +4455,7 @@
     {
       "week_start": "2025-11-03",
       "total_hours": 0.22,
+      "total_distance_km": 1.4,
       "total_tss": 5,
       "primary_sport": "run",
       "primary_sport_tss": 5.0,
@@ -4485,6 +4488,7 @@
     {
       "week_start": "2025-11-10",
       "total_hours": 3.93,
+      "total_distance_km": 33.6,
       "total_tss": 233,
       "primary_sport": "run",
       "primary_sport_tss": 225.0,
@@ -4518,6 +4522,7 @@
     {
       "week_start": "2025-11-17",
       "total_hours": 1.25,
+      "total_distance_km": 8.1,
       "total_tss": 62,
       "primary_sport": "run",
       "primary_sport_tss": 56.0,
@@ -4554,6 +4559,7 @@
     {
       "week_start": "2025-11-24",
       "total_hours": 2.47,
+      "total_distance_km": 23.5,
       "total_tss": 164,
       "primary_sport": "run",
       "primary_sport_tss": 164.0,
@@ -4589,6 +4595,7 @@
     {
       "week_start": "2025-12-01",
       "total_hours": 7.37,
+      "total_distance_km": 65.5,
       "total_tss": 497,
       "primary_sport": "run",
       "primary_sport_tss": 497.0,
@@ -4624,6 +4631,7 @@
     {
       "week_start": "2025-12-08",
       "total_hours": 6.56,
+      "total_distance_km": 53.0,
       "total_tss": 361,
       "primary_sport": "run",
       "primary_sport_tss": 332.0,
@@ -4658,6 +4666,7 @@
     {
       "week_start": "2025-12-15",
       "total_hours": 3.04,
+      "total_distance_km": 28.3,
       "total_tss": 195,
       "primary_sport": "run",
       "primary_sport_tss": 195.0,
@@ -4693,6 +4702,7 @@
     {
       "week_start": "2025-12-22",
       "total_hours": 4.79,
+      "total_distance_km": 39.4,
       "total_tss": 268,
       "primary_sport": "run",
       "primary_sport_tss": 248.0,
@@ -4730,6 +4740,7 @@
     {
       "week_start": "2025-12-29",
       "total_hours": 7.23,
+      "total_distance_km": 48.5,
       "total_tss": 369,
       "primary_sport": "run",
       "primary_sport_tss": 322.0,
@@ -4768,6 +4779,7 @@
     {
       "week_start": "2026-01-05",
       "total_hours": 5.04,
+      "total_distance_km": 47.5,
       "total_tss": 335,
       "primary_sport": "run",
       "primary_sport_tss": 324.0,
@@ -4804,6 +4816,7 @@
     {
       "week_start": "2026-01-12",
       "total_hours": 2.82,
+      "total_distance_km": 24.6,
       "total_tss": 159,
       "primary_sport": "run",
       "primary_sport_tss": 149.0,
@@ -4837,6 +4850,7 @@
     {
       "week_start": "2026-01-19",
       "total_hours": 7.08,
+      "total_distance_km": 56.1,
       "total_tss": 365,
       "primary_sport": "run",
       "primary_sport_tss": 337.0,
@@ -4876,6 +4890,7 @@
     {
       "week_start": "2026-01-26",
       "total_hours": 2.9,
+      "total_distance_km": 34.4,
       "total_tss": 134,
       "primary_sport": "run",
       "primary_sport_tss": 101.0,
@@ -4913,6 +4928,7 @@
     {
       "week_start": "2026-02-02",
       "total_hours": 4.11,
+      "total_distance_km": 39.8,
       "total_tss": 250,
       "primary_sport": "run",
       "primary_sport_tss": 250.0,
@@ -4945,6 +4961,7 @@
     {
       "week_start": "2026-02-09",
       "total_hours": 5.02,
+      "total_distance_km": 39.0,
       "total_tss": 256,
       "primary_sport": "run",
       "primary_sport_tss": 237.0,
@@ -4981,6 +4998,7 @@
     {
       "week_start": "2026-02-16",
       "total_hours": 1.84,
+      "total_distance_km": 16.9,
       "total_tss": 110,
       "primary_sport": "run",
       "primary_sport_tss": 110.0,
@@ -5013,6 +5031,7 @@
     {
       "week_start": "2026-02-23",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "primary_sport": null,
       "primary_sport_tss": null,
@@ -5043,6 +5062,7 @@
     {
       "week_start": "2026-03-02",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "primary_sport": null,
       "primary_sport_tss": null,
@@ -5073,6 +5093,7 @@
     {
       "week_start": "2026-03-09",
       "total_hours": 0.79,
+      "total_distance_km": 7.3,
       "total_tss": 47,
       "primary_sport": "run",
       "primary_sport_tss": 47.0,
@@ -5105,6 +5126,7 @@
     {
       "week_start": "2026-03-16",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "primary_sport": null,
       "primary_sport_tss": null,
@@ -5135,6 +5157,7 @@
     {
       "week_start": "2026-03-23",
       "total_hours": 0.6,
+      "total_distance_km": 5.0,
       "total_tss": 34,
       "primary_sport": "run",
       "primary_sport_tss": 34.0,
@@ -5167,6 +5190,7 @@
     {
       "week_start": "2026-03-30",
       "total_hours": 1.79,
+      "total_distance_km": 9.0,
       "total_tss": 68,
       "primary_sport": "run",
       "primary_sport_tss": 55.0,
@@ -5204,6 +5228,7 @@
     {
       "week_start": "2026-04-06",
       "total_hours": 8.64,
+      "total_distance_km": 47.7,
       "total_tss": 377,
       "primary_sport": "run",
       "primary_sport_tss": 324.0,
@@ -5244,6 +5269,7 @@
     {
       "week_start": "2026-04-13",
       "total_hours": 8.47,
+      "total_distance_km": 56.4,
       "total_tss": 234,
       "primary_sport": "run",
       "primary_sport_tss": 190.0,
