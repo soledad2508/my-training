@@ -76,6 +76,12 @@ jobs:
               echo "❌ Sync script failed with exit code $?"
               exit 1
             }
+          echo "📦 Generating full history dataset..."
+          python sync.py \
+            --athlete-id "$ATHLETE_ID" \
+            --intervals-key "$INTERVALS_KEY" \
+            --days 3650 \
+            --output all_activities.json
       
       - name: Verify latest.json was created/updated
         run: |
@@ -116,6 +122,10 @@ jobs:
             if [ -f history.json ]; then
               git add history.json
               echo "✅ Staged history.json"
+            fi
+            if [ -f all_activities.json ]; then
+              git add all_activities.json
+              echo "✅ Staged all_activities.json"
             fi
             if [ -f latest.json ]; then
               git add latest.json
