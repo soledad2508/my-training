@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-04-18T04:18:14.866542",
+  "generated_at": "2026-04-18T04:28:54.006169",
   "source": "Intervals.icu API",
   "sync_version": "3.103",
-  "script_hash": "cb5a75547685",
+  "script_hash": "42bf03ded332",
   "data_range": {
     "earliest": "2019-12-11",
     "latest": "2026-04-18",
@@ -5307,6 +5307,7 @@
     {
       "month": "2025-04",
       "total_hours": 16.58,
+      "total_distance_km": 106.7,
       "total_tss": 838,
       "activity_count": 29,
       "ctl_peak": 29.5,
@@ -5326,6 +5327,7 @@
     {
       "month": "2025-05",
       "total_hours": 7.48,
+      "total_distance_km": 55.4,
       "total_tss": 384,
       "activity_count": 17,
       "ctl_peak": 27.1,
@@ -5345,6 +5347,7 @@
     {
       "month": "2025-06",
       "total_hours": 18.47,
+      "total_distance_km": 102.0,
       "total_tss": 751,
       "activity_count": 32,
       "ctl_peak": 25.6,
@@ -5364,6 +5367,7 @@
     {
       "month": "2025-07",
       "total_hours": 13.6,
+      "total_distance_km": 96.8,
       "total_tss": 735,
       "activity_count": 21,
       "ctl_peak": 22.6,
@@ -5383,6 +5387,7 @@
     {
       "month": "2025-08",
       "total_hours": 25.69,
+      "total_distance_km": 221.2,
       "total_tss": 1460,
       "activity_count": 32,
       "ctl_peak": 35.6,
@@ -5402,6 +5407,7 @@
     {
       "month": "2025-09",
       "total_hours": 25.34,
+      "total_distance_km": 216.6,
       "total_tss": 1343,
       "activity_count": 31,
       "ctl_peak": 39.7,
@@ -5421,6 +5427,7 @@
     {
       "month": "2025-10",
       "total_hours": 26.16,
+      "total_distance_km": 198.6,
       "total_tss": 1368,
       "activity_count": 36,
       "ctl_peak": 44.4,
@@ -5440,6 +5447,7 @@
     {
       "month": "2025-11",
       "total_hours": 9.12,
+      "total_distance_km": 73.3,
       "total_tss": 519,
       "activity_count": 13,
       "ctl_peak": 40.2,
@@ -5459,6 +5467,7 @@
     {
       "month": "2025-12",
       "total_hours": 25.25,
+      "total_distance_km": 206.0,
       "total_tss": 1486,
       "activity_count": 35,
       "ctl_peak": 37.3,
@@ -5478,6 +5487,7 @@
     {
       "month": "2026-01",
       "total_hours": 21.59,
+      "total_distance_km": 191.3,
       "total_tss": 1197,
       "activity_count": 37,
       "ctl_peak": 39.1,
@@ -5497,6 +5507,7 @@
     {
       "month": "2026-02",
       "total_hours": 10.97,
+      "total_distance_km": 95.7,
       "total_tss": 616,
       "activity_count": 15,
       "ctl_peak": 37.1,
@@ -5516,6 +5527,7 @@
     {
       "month": "2026-03",
       "total_hours": 1.4,
+      "total_distance_km": 12.3,
       "total_tss": 81,
       "activity_count": 2,
       "ctl_peak": 27.2,
@@ -5535,6 +5547,7 @@
     {
       "month": "2026-04",
       "total_hours": 18.9,
+      "total_distance_km": 113.0,
       "total_tss": 679,
       "activity_count": 34,
       "ctl_peak": 22.6,
@@ -5556,6 +5569,7 @@
     {
       "month": "2024-04",
       "total_hours": 19.26,
+      "total_distance_km": 87.7,
       "total_tss": 701,
       "activity_count": 23,
       "ctl_peak": 50.4,
@@ -5575,6 +5589,7 @@
     {
       "month": "2024-05",
       "total_hours": 24.58,
+      "total_distance_km": 119.4,
       "total_tss": 931,
       "activity_count": 27,
       "ctl_peak": 34.9,
@@ -5594,6 +5609,7 @@
     {
       "month": "2024-06",
       "total_hours": 28.87,
+      "total_distance_km": 206.6,
       "total_tss": 1345,
       "activity_count": 35,
       "ctl_peak": 36.6,
@@ -5613,6 +5629,7 @@
     {
       "month": "2024-07",
       "total_hours": 25.72,
+      "total_distance_km": 225.0,
       "total_tss": 1387,
       "activity_count": 26,
       "ctl_peak": 41.5,
@@ -5632,6 +5649,7 @@
     {
       "month": "2024-08",
       "total_hours": 26.17,
+      "total_distance_km": 252.5,
       "total_tss": 1487,
       "activity_count": 22,
       "ctl_peak": 49.1,
@@ -5651,6 +5669,7 @@
     {
       "month": "2024-09",
       "total_hours": 32.56,
+      "total_distance_km": 300.2,
       "total_tss": 1709,
       "activity_count": 25,
       "ctl_peak": 55.2,
@@ -5670,6 +5689,7 @@
     {
       "month": "2024-10",
       "total_hours": 51.85,
+      "total_distance_km": 503.7,
       "total_tss": 2591,
       "activity_count": 47,
       "ctl_peak": 70.0,
@@ -5689,6 +5709,7 @@
     {
       "month": "2024-11",
       "total_hours": 37.58,
+      "total_distance_km": 289.0,
       "total_tss": 1699,
       "activity_count": 32,
       "ctl_peak": 73.6,
@@ -5708,6 +5729,7 @@
     {
       "month": "2024-12",
       "total_hours": 63.09,
+      "total_distance_km": 410.1,
       "total_tss": 1754,
       "activity_count": 31,
       "ctl_peak": 71.7,
@@ -5727,6 +5749,7 @@
     {
       "month": "2025-01",
       "total_hours": 4.0,
+      "total_distance_km": 35.5,
       "total_tss": 207,
       "activity_count": 4,
       "ctl_peak": 56.8,
@@ -5746,6 +5769,7 @@
     {
       "month": "2025-02",
       "total_hours": 18.82,
+      "total_distance_km": 150.5,
       "total_tss": 1032,
       "activity_count": 18,
       "ctl_peak": 34.0,
@@ -5765,6 +5789,7 @@
     {
       "month": "2025-03",
       "total_hours": 33.79,
+      "total_distance_km": 148.7,
       "total_tss": 1126,
       "activity_count": 44,
       "ctl_peak": 38.2,
@@ -5784,6 +5809,7 @@
     {
       "month": "2025-04",
       "total_hours": 16.58,
+      "total_distance_km": 106.7,
       "total_tss": 838,
       "activity_count": 29,
       "ctl_peak": 29.5,
@@ -5803,6 +5829,7 @@
     {
       "month": "2025-05",
       "total_hours": 7.48,
+      "total_distance_km": 55.4,
       "total_tss": 384,
       "activity_count": 17,
       "ctl_peak": 27.1,
@@ -5822,6 +5849,7 @@
     {
       "month": "2025-06",
       "total_hours": 18.47,
+      "total_distance_km": 102.0,
       "total_tss": 751,
       "activity_count": 32,
       "ctl_peak": 25.6,
@@ -5841,6 +5869,7 @@
     {
       "month": "2025-07",
       "total_hours": 13.6,
+      "total_distance_km": 96.8,
       "total_tss": 735,
       "activity_count": 21,
       "ctl_peak": 22.6,
@@ -5860,6 +5889,7 @@
     {
       "month": "2025-08",
       "total_hours": 25.69,
+      "total_distance_km": 221.2,
       "total_tss": 1460,
       "activity_count": 32,
       "ctl_peak": 35.6,
@@ -5879,6 +5909,7 @@
     {
       "month": "2025-09",
       "total_hours": 25.34,
+      "total_distance_km": 216.6,
       "total_tss": 1343,
       "activity_count": 31,
       "ctl_peak": 39.7,
@@ -5898,6 +5929,7 @@
     {
       "month": "2025-10",
       "total_hours": 26.16,
+      "total_distance_km": 198.6,
       "total_tss": 1368,
       "activity_count": 36,
       "ctl_peak": 44.4,
@@ -5917,6 +5949,7 @@
     {
       "month": "2025-11",
       "total_hours": 9.12,
+      "total_distance_km": 73.3,
       "total_tss": 519,
       "activity_count": 13,
       "ctl_peak": 40.2,
@@ -5936,6 +5969,7 @@
     {
       "month": "2025-12",
       "total_hours": 25.25,
+      "total_distance_km": 206.0,
       "total_tss": 1486,
       "activity_count": 35,
       "ctl_peak": 37.3,
@@ -5955,6 +5989,7 @@
     {
       "month": "2026-01",
       "total_hours": 21.59,
+      "total_distance_km": 191.3,
       "total_tss": 1197,
       "activity_count": 37,
       "ctl_peak": 39.1,
@@ -5974,6 +6009,7 @@
     {
       "month": "2026-02",
       "total_hours": 10.97,
+      "total_distance_km": 95.7,
       "total_tss": 616,
       "activity_count": 15,
       "ctl_peak": 37.1,
@@ -5993,6 +6029,7 @@
     {
       "month": "2026-03",
       "total_hours": 1.4,
+      "total_distance_km": 12.3,
       "total_tss": 81,
       "activity_count": 2,
       "ctl_peak": 27.2,
@@ -6012,6 +6049,7 @@
     {
       "month": "2026-04",
       "total_hours": 18.9,
+      "total_distance_km": 113.0,
       "total_tss": 679,
       "activity_count": 34,
       "ctl_peak": 22.6,
@@ -6033,6 +6071,7 @@
     {
       "month": "2023-04",
       "total_hours": 23.63,
+      "total_distance_km": 227.4,
       "total_tss": 1414,
       "activity_count": 33,
       "ctl_peak": 54.2,
@@ -6052,6 +6091,7 @@
     {
       "month": "2023-05",
       "total_hours": 28.47,
+      "total_distance_km": 273.9,
       "total_tss": 1779,
       "activity_count": 39,
       "ctl_peak": 54.2,
@@ -6071,6 +6111,7 @@
     {
       "month": "2023-06",
       "total_hours": 27.21,
+      "total_distance_km": 254.7,
       "total_tss": 1564,
       "activity_count": 35,
       "ctl_peak": 54.8,
@@ -6090,6 +6131,7 @@
     {
       "month": "2023-07",
       "total_hours": 31.57,
+      "total_distance_km": 302.4,
       "total_tss": 1867,
       "activity_count": 64,
       "ctl_peak": 58.3,
@@ -6109,6 +6151,7 @@
     {
       "month": "2023-08",
       "total_hours": 28.1,
+      "total_distance_km": 273.0,
       "total_tss": 1770,
       "activity_count": 33,
       "ctl_peak": 59.7,
@@ -6128,6 +6171,7 @@
     {
       "month": "2023-09",
       "total_hours": 32.04,
+      "total_distance_km": 301.0,
       "total_tss": 1729,
       "activity_count": 55,
       "ctl_peak": 59.9,
@@ -6147,6 +6191,7 @@
     {
       "month": "2023-10",
       "total_hours": 29.65,
+      "total_distance_km": 300.2,
       "total_tss": 1870,
       "activity_count": 41,
       "ctl_peak": 61.2,
@@ -6166,6 +6211,7 @@
     {
       "month": "2023-11",
       "total_hours": 32.27,
+      "total_distance_km": 304.8,
       "total_tss": 1779,
       "activity_count": 38,
       "ctl_peak": 62.1,
@@ -6185,6 +6231,7 @@
     {
       "month": "2023-12",
       "total_hours": 36.55,
+      "total_distance_km": 306.2,
       "total_tss": 1806,
       "activity_count": 48,
       "ctl_peak": 63.7,
@@ -6204,6 +6251,7 @@
     {
       "month": "2024-01",
       "total_hours": 26.68,
+      "total_distance_km": 254.5,
       "total_tss": 1601,
       "activity_count": 27,
       "ctl_peak": 58.8,
@@ -6223,6 +6271,7 @@
     {
       "month": "2024-02",
       "total_hours": 14.27,
+      "total_distance_km": 127.3,
       "total_tss": 769,
       "activity_count": 19,
       "ctl_peak": 53.3,
@@ -6242,6 +6291,7 @@
     {
       "month": "2024-03",
       "total_hours": 29.72,
+      "total_distance_km": 283.3,
       "total_tss": 1826,
       "activity_count": 30,
       "ctl_peak": 51.6,
@@ -6261,6 +6311,7 @@
     {
       "month": "2024-04",
       "total_hours": 19.26,
+      "total_distance_km": 87.7,
       "total_tss": 701,
       "activity_count": 23,
       "ctl_peak": 50.4,
@@ -6280,6 +6331,7 @@
     {
       "month": "2024-05",
       "total_hours": 24.58,
+      "total_distance_km": 119.4,
       "total_tss": 931,
       "activity_count": 27,
       "ctl_peak": 34.9,
@@ -6299,6 +6351,7 @@
     {
       "month": "2024-06",
       "total_hours": 28.87,
+      "total_distance_km": 206.6,
       "total_tss": 1345,
       "activity_count": 35,
       "ctl_peak": 36.6,
@@ -6318,6 +6371,7 @@
     {
       "month": "2024-07",
       "total_hours": 25.72,
+      "total_distance_km": 225.0,
       "total_tss": 1387,
       "activity_count": 26,
       "ctl_peak": 41.5,
@@ -6337,6 +6391,7 @@
     {
       "month": "2024-08",
       "total_hours": 26.17,
+      "total_distance_km": 252.5,
       "total_tss": 1487,
       "activity_count": 22,
       "ctl_peak": 49.1,
@@ -6356,6 +6411,7 @@
     {
       "month": "2024-09",
       "total_hours": 32.56,
+      "total_distance_km": 300.2,
       "total_tss": 1709,
       "activity_count": 25,
       "ctl_peak": 55.2,
@@ -6375,6 +6431,7 @@
     {
       "month": "2024-10",
       "total_hours": 51.85,
+      "total_distance_km": 503.7,
       "total_tss": 2591,
       "activity_count": 47,
       "ctl_peak": 70.0,
@@ -6394,6 +6451,7 @@
     {
       "month": "2024-11",
       "total_hours": 37.58,
+      "total_distance_km": 289.0,
       "total_tss": 1699,
       "activity_count": 32,
       "ctl_peak": 73.6,
@@ -6413,6 +6471,7 @@
     {
       "month": "2024-12",
       "total_hours": 63.09,
+      "total_distance_km": 410.1,
       "total_tss": 1754,
       "activity_count": 31,
       "ctl_peak": 71.7,
@@ -6432,6 +6491,7 @@
     {
       "month": "2025-01",
       "total_hours": 4.0,
+      "total_distance_km": 35.5,
       "total_tss": 207,
       "activity_count": 4,
       "ctl_peak": 56.8,
@@ -6451,6 +6511,7 @@
     {
       "month": "2025-02",
       "total_hours": 18.82,
+      "total_distance_km": 150.5,
       "total_tss": 1032,
       "activity_count": 18,
       "ctl_peak": 34.0,
@@ -6470,6 +6531,7 @@
     {
       "month": "2025-03",
       "total_hours": 33.79,
+      "total_distance_km": 148.7,
       "total_tss": 1126,
       "activity_count": 44,
       "ctl_peak": 38.2,
@@ -6489,6 +6551,7 @@
     {
       "month": "2025-04",
       "total_hours": 16.58,
+      "total_distance_km": 106.7,
       "total_tss": 838,
       "activity_count": 29,
       "ctl_peak": 29.5,
@@ -6508,6 +6571,7 @@
     {
       "month": "2025-05",
       "total_hours": 7.48,
+      "total_distance_km": 55.4,
       "total_tss": 384,
       "activity_count": 17,
       "ctl_peak": 27.1,
@@ -6527,6 +6591,7 @@
     {
       "month": "2025-06",
       "total_hours": 18.47,
+      "total_distance_km": 102.0,
       "total_tss": 751,
       "activity_count": 32,
       "ctl_peak": 25.6,
@@ -6546,6 +6611,7 @@
     {
       "month": "2025-07",
       "total_hours": 13.6,
+      "total_distance_km": 96.8,
       "total_tss": 735,
       "activity_count": 21,
       "ctl_peak": 22.6,
@@ -6565,6 +6631,7 @@
     {
       "month": "2025-08",
       "total_hours": 25.69,
+      "total_distance_km": 221.2,
       "total_tss": 1460,
       "activity_count": 32,
       "ctl_peak": 35.6,
@@ -6584,6 +6651,7 @@
     {
       "month": "2025-09",
       "total_hours": 25.34,
+      "total_distance_km": 216.6,
       "total_tss": 1343,
       "activity_count": 31,
       "ctl_peak": 39.7,
@@ -6603,6 +6671,7 @@
     {
       "month": "2025-10",
       "total_hours": 26.16,
+      "total_distance_km": 198.6,
       "total_tss": 1368,
       "activity_count": 36,
       "ctl_peak": 44.4,
@@ -6622,6 +6691,7 @@
     {
       "month": "2025-11",
       "total_hours": 9.12,
+      "total_distance_km": 73.3,
       "total_tss": 519,
       "activity_count": 13,
       "ctl_peak": 40.2,
@@ -6641,6 +6711,7 @@
     {
       "month": "2025-12",
       "total_hours": 25.25,
+      "total_distance_km": 206.0,
       "total_tss": 1486,
       "activity_count": 35,
       "ctl_peak": 37.3,
@@ -6660,6 +6731,7 @@
     {
       "month": "2026-01",
       "total_hours": 21.59,
+      "total_distance_km": 191.3,
       "total_tss": 1197,
       "activity_count": 37,
       "ctl_peak": 39.1,
@@ -6679,6 +6751,7 @@
     {
       "month": "2026-02",
       "total_hours": 10.97,
+      "total_distance_km": 95.7,
       "total_tss": 616,
       "activity_count": 15,
       "ctl_peak": 37.1,
@@ -6698,6 +6771,7 @@
     {
       "month": "2026-03",
       "total_hours": 1.4,
+      "total_distance_km": 12.3,
       "total_tss": 81,
       "activity_count": 2,
       "ctl_peak": 27.2,
@@ -6717,6 +6791,7 @@
     {
       "month": "2026-04",
       "total_hours": 18.9,
+      "total_distance_km": 113.0,
       "total_tss": 679,
       "activity_count": 34,
       "ctl_peak": 22.6,
@@ -6738,6 +6813,7 @@
     {
       "month": "2022-04",
       "total_hours": 27.66,
+      "total_distance_km": 270.9,
       "total_tss": 1603,
       "activity_count": 24,
       "ctl_peak": 55.8,
@@ -6757,6 +6833,7 @@
     {
       "month": "2022-05",
       "total_hours": 31.38,
+      "total_distance_km": 279.9,
       "total_tss": 1664,
       "activity_count": 37,
       "ctl_peak": 56.2,
@@ -6776,6 +6853,7 @@
     {
       "month": "2022-06",
       "total_hours": 18.21,
+      "total_distance_km": 166.8,
       "total_tss": 1057,
       "activity_count": 20,
       "ctl_peak": 57.7,
@@ -6795,6 +6873,7 @@
     {
       "month": "2022-07",
       "total_hours": 31.88,
+      "total_distance_km": 278.2,
       "total_tss": 1881,
       "activity_count": 28,
       "ctl_peak": 54.6,
@@ -6814,6 +6893,7 @@
     {
       "month": "2022-08",
       "total_hours": 26.12,
+      "total_distance_km": 237.7,
       "total_tss": 1590,
       "activity_count": 34,
       "ctl_peak": 56.5,
@@ -6833,6 +6913,7 @@
     {
       "month": "2022-09",
       "total_hours": -286629.14,
+      "total_distance_km": 42959.0,
       "total_tss": 1032,
       "activity_count": 27,
       "ctl_peak": 52.2,
@@ -6852,6 +6933,7 @@
     {
       "month": "2022-10",
       "total_hours": 39.82,
+      "total_distance_km": 322.1,
       "total_tss": 1949,
       "activity_count": 41,
       "ctl_peak": 56.3,
@@ -6871,6 +6953,7 @@
     {
       "month": "2022-11",
       "total_hours": 33.93,
+      "total_distance_km": 275.1,
       "total_tss": 1684,
       "activity_count": 37,
       "ctl_peak": 61.6,
@@ -6890,6 +6973,7 @@
     {
       "month": "2022-12",
       "total_hours": 33.09,
+      "total_distance_km": 269.3,
       "total_tss": 1846,
       "activity_count": 33,
       "ctl_peak": 67.1,
@@ -6909,6 +6993,7 @@
     {
       "month": "2023-01",
       "total_hours": 25.04,
+      "total_distance_km": 241.2,
       "total_tss": 1451,
       "activity_count": 24,
       "ctl_peak": 56.7,
@@ -6928,6 +7013,7 @@
     {
       "month": "2023-02",
       "total_hours": 25.97,
+      "total_distance_km": 234.1,
       "total_tss": 1514,
       "activity_count": 25,
       "ctl_peak": 55.5,
@@ -6947,6 +7033,7 @@
     {
       "month": "2023-03",
       "total_hours": 36.36,
+      "total_distance_km": 258.7,
       "total_tss": 1695,
       "activity_count": 30,
       "ctl_peak": 60.5,
@@ -6966,6 +7053,7 @@
     {
       "month": "2023-04",
       "total_hours": 23.63,
+      "total_distance_km": 227.4,
       "total_tss": 1414,
       "activity_count": 33,
       "ctl_peak": 54.2,
@@ -6985,6 +7073,7 @@
     {
       "month": "2023-05",
       "total_hours": 28.47,
+      "total_distance_km": 273.9,
       "total_tss": 1779,
       "activity_count": 39,
       "ctl_peak": 54.2,
@@ -7004,6 +7093,7 @@
     {
       "month": "2023-06",
       "total_hours": 27.21,
+      "total_distance_km": 254.7,
       "total_tss": 1564,
       "activity_count": 35,
       "ctl_peak": 54.8,
@@ -7023,6 +7113,7 @@
     {
       "month": "2023-07",
       "total_hours": 31.57,
+      "total_distance_km": 302.4,
       "total_tss": 1867,
       "activity_count": 64,
       "ctl_peak": 58.3,
@@ -7042,6 +7133,7 @@
     {
       "month": "2023-08",
       "total_hours": 28.1,
+      "total_distance_km": 273.0,
       "total_tss": 1770,
       "activity_count": 33,
       "ctl_peak": 59.7,
@@ -7061,6 +7153,7 @@
     {
       "month": "2023-09",
       "total_hours": 32.04,
+      "total_distance_km": 301.0,
       "total_tss": 1729,
       "activity_count": 55,
       "ctl_peak": 59.9,
@@ -7080,6 +7173,7 @@
     {
       "month": "2023-10",
       "total_hours": 29.65,
+      "total_distance_km": 300.2,
       "total_tss": 1870,
       "activity_count": 41,
       "ctl_peak": 61.2,
@@ -7099,6 +7193,7 @@
     {
       "month": "2023-11",
       "total_hours": 32.27,
+      "total_distance_km": 304.8,
       "total_tss": 1779,
       "activity_count": 38,
       "ctl_peak": 62.1,
@@ -7118,6 +7213,7 @@
     {
       "month": "2023-12",
       "total_hours": 36.55,
+      "total_distance_km": 306.2,
       "total_tss": 1806,
       "activity_count": 48,
       "ctl_peak": 63.7,
@@ -7137,6 +7233,7 @@
     {
       "month": "2024-01",
       "total_hours": 26.68,
+      "total_distance_km": 254.5,
       "total_tss": 1601,
       "activity_count": 27,
       "ctl_peak": 58.8,
@@ -7156,6 +7253,7 @@
     {
       "month": "2024-02",
       "total_hours": 14.27,
+      "total_distance_km": 127.3,
       "total_tss": 769,
       "activity_count": 19,
       "ctl_peak": 53.3,
@@ -7175,6 +7273,7 @@
     {
       "month": "2024-03",
       "total_hours": 29.72,
+      "total_distance_km": 283.3,
       "total_tss": 1826,
       "activity_count": 30,
       "ctl_peak": 51.6,
@@ -7194,6 +7293,7 @@
     {
       "month": "2024-04",
       "total_hours": 19.26,
+      "total_distance_km": 87.7,
       "total_tss": 701,
       "activity_count": 23,
       "ctl_peak": 50.4,
@@ -7213,6 +7313,7 @@
     {
       "month": "2024-05",
       "total_hours": 24.58,
+      "total_distance_km": 119.4,
       "total_tss": 931,
       "activity_count": 27,
       "ctl_peak": 34.9,
@@ -7232,6 +7333,7 @@
     {
       "month": "2024-06",
       "total_hours": 28.87,
+      "total_distance_km": 206.6,
       "total_tss": 1345,
       "activity_count": 35,
       "ctl_peak": 36.6,
@@ -7251,6 +7353,7 @@
     {
       "month": "2024-07",
       "total_hours": 25.72,
+      "total_distance_km": 225.0,
       "total_tss": 1387,
       "activity_count": 26,
       "ctl_peak": 41.5,
@@ -7270,6 +7373,7 @@
     {
       "month": "2024-08",
       "total_hours": 26.17,
+      "total_distance_km": 252.5,
       "total_tss": 1487,
       "activity_count": 22,
       "ctl_peak": 49.1,
@@ -7289,6 +7393,7 @@
     {
       "month": "2024-09",
       "total_hours": 32.56,
+      "total_distance_km": 300.2,
       "total_tss": 1709,
       "activity_count": 25,
       "ctl_peak": 55.2,
@@ -7308,6 +7413,7 @@
     {
       "month": "2024-10",
       "total_hours": 51.85,
+      "total_distance_km": 503.7,
       "total_tss": 2591,
       "activity_count": 47,
       "ctl_peak": 70.0,
@@ -7327,6 +7433,7 @@
     {
       "month": "2024-11",
       "total_hours": 37.58,
+      "total_distance_km": 289.0,
       "total_tss": 1699,
       "activity_count": 32,
       "ctl_peak": 73.6,
@@ -7346,6 +7453,7 @@
     {
       "month": "2024-12",
       "total_hours": 63.09,
+      "total_distance_km": 410.1,
       "total_tss": 1754,
       "activity_count": 31,
       "ctl_peak": 71.7,
@@ -7365,6 +7473,7 @@
     {
       "month": "2025-01",
       "total_hours": 4.0,
+      "total_distance_km": 35.5,
       "total_tss": 207,
       "activity_count": 4,
       "ctl_peak": 56.8,
@@ -7384,6 +7493,7 @@
     {
       "month": "2025-02",
       "total_hours": 18.82,
+      "total_distance_km": 150.5,
       "total_tss": 1032,
       "activity_count": 18,
       "ctl_peak": 34.0,
@@ -7403,6 +7513,7 @@
     {
       "month": "2025-03",
       "total_hours": 33.79,
+      "total_distance_km": 148.7,
       "total_tss": 1126,
       "activity_count": 44,
       "ctl_peak": 38.2,
@@ -7422,6 +7533,7 @@
     {
       "month": "2025-04",
       "total_hours": 16.58,
+      "total_distance_km": 106.7,
       "total_tss": 838,
       "activity_count": 29,
       "ctl_peak": 29.5,
@@ -7441,6 +7553,7 @@
     {
       "month": "2025-05",
       "total_hours": 7.48,
+      "total_distance_km": 55.4,
       "total_tss": 384,
       "activity_count": 17,
       "ctl_peak": 27.1,
@@ -7460,6 +7573,7 @@
     {
       "month": "2025-06",
       "total_hours": 18.47,
+      "total_distance_km": 102.0,
       "total_tss": 751,
       "activity_count": 32,
       "ctl_peak": 25.6,
@@ -7479,6 +7593,7 @@
     {
       "month": "2025-07",
       "total_hours": 13.6,
+      "total_distance_km": 96.8,
       "total_tss": 735,
       "activity_count": 21,
       "ctl_peak": 22.6,
@@ -7498,6 +7613,7 @@
     {
       "month": "2025-08",
       "total_hours": 25.69,
+      "total_distance_km": 221.2,
       "total_tss": 1460,
       "activity_count": 32,
       "ctl_peak": 35.6,
@@ -7517,6 +7633,7 @@
     {
       "month": "2025-09",
       "total_hours": 25.34,
+      "total_distance_km": 216.6,
       "total_tss": 1343,
       "activity_count": 31,
       "ctl_peak": 39.7,
@@ -7536,6 +7653,7 @@
     {
       "month": "2025-10",
       "total_hours": 26.16,
+      "total_distance_km": 198.6,
       "total_tss": 1368,
       "activity_count": 36,
       "ctl_peak": 44.4,
@@ -7555,6 +7673,7 @@
     {
       "month": "2025-11",
       "total_hours": 9.12,
+      "total_distance_km": 73.3,
       "total_tss": 519,
       "activity_count": 13,
       "ctl_peak": 40.2,
@@ -7574,6 +7693,7 @@
     {
       "month": "2025-12",
       "total_hours": 25.25,
+      "total_distance_km": 206.0,
       "total_tss": 1486,
       "activity_count": 35,
       "ctl_peak": 37.3,
@@ -7593,6 +7713,7 @@
     {
       "month": "2026-01",
       "total_hours": 21.59,
+      "total_distance_km": 191.3,
       "total_tss": 1197,
       "activity_count": 37,
       "ctl_peak": 39.1,
@@ -7612,6 +7733,7 @@
     {
       "month": "2026-02",
       "total_hours": 10.97,
+      "total_distance_km": 95.7,
       "total_tss": 616,
       "activity_count": 15,
       "ctl_peak": 37.1,
@@ -7631,6 +7753,7 @@
     {
       "month": "2026-03",
       "total_hours": 1.4,
+      "total_distance_km": 12.3,
       "total_tss": 81,
       "activity_count": 2,
       "ctl_peak": 27.2,
@@ -7650,6 +7773,7 @@
     {
       "month": "2026-04",
       "total_hours": 18.9,
+      "total_distance_km": 113.0,
       "total_tss": 679,
       "activity_count": 34,
       "ctl_peak": 22.6,
@@ -7671,6 +7795,7 @@
     {
       "month": "2021-04",
       "total_hours": 28.78,
+      "total_distance_km": 313.3,
       "total_tss": 1677,
       "activity_count": 25,
       "ctl_peak": 55.4,
@@ -7690,6 +7815,7 @@
     {
       "month": "2021-05",
       "total_hours": 24.8,
+      "total_distance_km": 200.3,
       "total_tss": 1438,
       "activity_count": 26,
       "ctl_peak": 57.1,
@@ -7709,6 +7835,7 @@
     {
       "month": "2021-06",
       "total_hours": 26.52,
+      "total_distance_km": 368.1,
       "total_tss": 1269,
       "activity_count": 20,
       "ctl_peak": 57.0,
@@ -7728,6 +7855,7 @@
     {
       "month": "2021-07",
       "total_hours": 2.82,
+      "total_distance_km": 21.6,
       "total_tss": 187,
       "activity_count": 5,
       "ctl_peak": 42.4,
@@ -7747,6 +7875,7 @@
     {
       "month": "2021-08",
       "total_hours": 4.86,
+      "total_distance_km": 40.5,
       "total_tss": 236,
       "activity_count": 8,
       "ctl_peak": 22.6,
@@ -7766,6 +7895,7 @@
     {
       "month": "2021-09",
       "total_hours": 31.09,
+      "total_distance_km": 264.5,
       "total_tss": 1535,
       "activity_count": 41,
       "ctl_peak": 32.3,
@@ -7785,6 +7915,7 @@
     {
       "month": "2021-10",
       "total_hours": 35.67,
+      "total_distance_km": 395.8,
       "total_tss": 2069,
       "activity_count": 29,
       "ctl_peak": 51.5,
@@ -7804,6 +7935,7 @@
     {
       "month": "2021-11",
       "total_hours": 53.48,
+      "total_distance_km": 408.2,
       "total_tss": 2330,
       "activity_count": 44,
       "ctl_peak": 73.6,
@@ -7823,6 +7955,7 @@
     {
       "month": "2021-12",
       "total_hours": 29.1,
+      "total_distance_km": 285.7,
       "total_tss": 1869,
       "activity_count": 29,
       "ctl_peak": 65.0,
@@ -7842,6 +7975,7 @@
     {
       "month": "2022-01",
       "total_hours": 19.16,
+      "total_distance_km": 226.2,
       "total_tss": 843,
       "activity_count": 12,
       "ctl_peak": 63.6,
@@ -7861,6 +7995,7 @@
     {
       "month": "2022-02",
       "total_hours": 23.59,
+      "total_distance_km": 200.9,
       "total_tss": 1488,
       "activity_count": 19,
       "ctl_peak": 48.9,
@@ -7880,6 +8015,7 @@
     {
       "month": "2022-03",
       "total_hours": 32.38,
+      "total_distance_km": 277.5,
       "total_tss": 1836,
       "activity_count": 36,
       "ctl_peak": 57.6,
@@ -7899,6 +8035,7 @@
     {
       "month": "2022-04",
       "total_hours": 27.66,
+      "total_distance_km": 270.9,
       "total_tss": 1603,
       "activity_count": 24,
       "ctl_peak": 55.8,
@@ -7918,6 +8055,7 @@
     {
       "month": "2022-05",
       "total_hours": 31.38,
+      "total_distance_km": 279.9,
       "total_tss": 1664,
       "activity_count": 37,
       "ctl_peak": 56.2,
@@ -7937,6 +8075,7 @@
     {
       "month": "2022-06",
       "total_hours": 18.21,
+      "total_distance_km": 166.8,
       "total_tss": 1057,
       "activity_count": 20,
       "ctl_peak": 57.7,
@@ -7956,6 +8095,7 @@
     {
       "month": "2022-07",
       "total_hours": 31.88,
+      "total_distance_km": 278.2,
       "total_tss": 1881,
       "activity_count": 28,
       "ctl_peak": 54.6,
@@ -7975,6 +8115,7 @@
     {
       "month": "2022-08",
       "total_hours": 26.12,
+      "total_distance_km": 237.7,
       "total_tss": 1590,
       "activity_count": 34,
       "ctl_peak": 56.5,
@@ -7994,6 +8135,7 @@
     {
       "month": "2022-09",
       "total_hours": -286629.14,
+      "total_distance_km": 42959.0,
       "total_tss": 1032,
       "activity_count": 27,
       "ctl_peak": 52.2,
@@ -8013,6 +8155,7 @@
     {
       "month": "2022-10",
       "total_hours": 39.82,
+      "total_distance_km": 322.1,
       "total_tss": 1949,
       "activity_count": 41,
       "ctl_peak": 56.3,
@@ -8032,6 +8175,7 @@
     {
       "month": "2022-11",
       "total_hours": 33.93,
+      "total_distance_km": 275.1,
       "total_tss": 1684,
       "activity_count": 37,
       "ctl_peak": 61.6,
@@ -8051,6 +8195,7 @@
     {
       "month": "2022-12",
       "total_hours": 33.09,
+      "total_distance_km": 269.3,
       "total_tss": 1846,
       "activity_count": 33,
       "ctl_peak": 67.1,
@@ -8070,6 +8215,7 @@
     {
       "month": "2023-01",
       "total_hours": 25.04,
+      "total_distance_km": 241.2,
       "total_tss": 1451,
       "activity_count": 24,
       "ctl_peak": 56.7,
@@ -8089,6 +8235,7 @@
     {
       "month": "2023-02",
       "total_hours": 25.97,
+      "total_distance_km": 234.1,
       "total_tss": 1514,
       "activity_count": 25,
       "ctl_peak": 55.5,
@@ -8108,6 +8255,7 @@
     {
       "month": "2023-03",
       "total_hours": 36.36,
+      "total_distance_km": 258.7,
       "total_tss": 1695,
       "activity_count": 30,
       "ctl_peak": 60.5,
@@ -8127,6 +8275,7 @@
     {
       "month": "2023-04",
       "total_hours": 23.63,
+      "total_distance_km": 227.4,
       "total_tss": 1414,
       "activity_count": 33,
       "ctl_peak": 54.2,
@@ -8146,6 +8295,7 @@
     {
       "month": "2023-05",
       "total_hours": 28.47,
+      "total_distance_km": 273.9,
       "total_tss": 1779,
       "activity_count": 39,
       "ctl_peak": 54.2,
@@ -8165,6 +8315,7 @@
     {
       "month": "2023-06",
       "total_hours": 27.21,
+      "total_distance_km": 254.7,
       "total_tss": 1564,
       "activity_count": 35,
       "ctl_peak": 54.8,
@@ -8184,6 +8335,7 @@
     {
       "month": "2023-07",
       "total_hours": 31.57,
+      "total_distance_km": 302.4,
       "total_tss": 1867,
       "activity_count": 64,
       "ctl_peak": 58.3,
@@ -8203,6 +8355,7 @@
     {
       "month": "2023-08",
       "total_hours": 28.1,
+      "total_distance_km": 273.0,
       "total_tss": 1770,
       "activity_count": 33,
       "ctl_peak": 59.7,
@@ -8222,6 +8375,7 @@
     {
       "month": "2023-09",
       "total_hours": 32.04,
+      "total_distance_km": 301.0,
       "total_tss": 1729,
       "activity_count": 55,
       "ctl_peak": 59.9,
@@ -8241,6 +8395,7 @@
     {
       "month": "2023-10",
       "total_hours": 29.65,
+      "total_distance_km": 300.2,
       "total_tss": 1870,
       "activity_count": 41,
       "ctl_peak": 61.2,
@@ -8260,6 +8415,7 @@
     {
       "month": "2023-11",
       "total_hours": 32.27,
+      "total_distance_km": 304.8,
       "total_tss": 1779,
       "activity_count": 38,
       "ctl_peak": 62.1,
@@ -8279,6 +8435,7 @@
     {
       "month": "2023-12",
       "total_hours": 36.55,
+      "total_distance_km": 306.2,
       "total_tss": 1806,
       "activity_count": 48,
       "ctl_peak": 63.7,
@@ -8298,6 +8455,7 @@
     {
       "month": "2024-01",
       "total_hours": 26.68,
+      "total_distance_km": 254.5,
       "total_tss": 1601,
       "activity_count": 27,
       "ctl_peak": 58.8,
@@ -8317,6 +8475,7 @@
     {
       "month": "2024-02",
       "total_hours": 14.27,
+      "total_distance_km": 127.3,
       "total_tss": 769,
       "activity_count": 19,
       "ctl_peak": 53.3,
@@ -8336,6 +8495,7 @@
     {
       "month": "2024-03",
       "total_hours": 29.72,
+      "total_distance_km": 283.3,
       "total_tss": 1826,
       "activity_count": 30,
       "ctl_peak": 51.6,
@@ -8355,6 +8515,7 @@
     {
       "month": "2024-04",
       "total_hours": 19.26,
+      "total_distance_km": 87.7,
       "total_tss": 701,
       "activity_count": 23,
       "ctl_peak": 50.4,
@@ -8374,6 +8535,7 @@
     {
       "month": "2024-05",
       "total_hours": 24.58,
+      "total_distance_km": 119.4,
       "total_tss": 931,
       "activity_count": 27,
       "ctl_peak": 34.9,
@@ -8393,6 +8555,7 @@
     {
       "month": "2024-06",
       "total_hours": 28.87,
+      "total_distance_km": 206.6,
       "total_tss": 1345,
       "activity_count": 35,
       "ctl_peak": 36.6,
@@ -8412,6 +8575,7 @@
     {
       "month": "2024-07",
       "total_hours": 25.72,
+      "total_distance_km": 225.0,
       "total_tss": 1387,
       "activity_count": 26,
       "ctl_peak": 41.5,
@@ -8431,6 +8595,7 @@
     {
       "month": "2024-08",
       "total_hours": 26.17,
+      "total_distance_km": 252.5,
       "total_tss": 1487,
       "activity_count": 22,
       "ctl_peak": 49.1,
@@ -8450,6 +8615,7 @@
     {
       "month": "2024-09",
       "total_hours": 32.56,
+      "total_distance_km": 300.2,
       "total_tss": 1709,
       "activity_count": 25,
       "ctl_peak": 55.2,
@@ -8469,6 +8635,7 @@
     {
       "month": "2024-10",
       "total_hours": 51.85,
+      "total_distance_km": 503.7,
       "total_tss": 2591,
       "activity_count": 47,
       "ctl_peak": 70.0,
@@ -8488,6 +8655,7 @@
     {
       "month": "2024-11",
       "total_hours": 37.58,
+      "total_distance_km": 289.0,
       "total_tss": 1699,
       "activity_count": 32,
       "ctl_peak": 73.6,
@@ -8507,6 +8675,7 @@
     {
       "month": "2024-12",
       "total_hours": 63.09,
+      "total_distance_km": 410.1,
       "total_tss": 1754,
       "activity_count": 31,
       "ctl_peak": 71.7,
@@ -8526,6 +8695,7 @@
     {
       "month": "2025-01",
       "total_hours": 4.0,
+      "total_distance_km": 35.5,
       "total_tss": 207,
       "activity_count": 4,
       "ctl_peak": 56.8,
@@ -8545,6 +8715,7 @@
     {
       "month": "2025-02",
       "total_hours": 18.82,
+      "total_distance_km": 150.5,
       "total_tss": 1032,
       "activity_count": 18,
       "ctl_peak": 34.0,
@@ -8564,6 +8735,7 @@
     {
       "month": "2025-03",
       "total_hours": 33.79,
+      "total_distance_km": 148.7,
       "total_tss": 1126,
       "activity_count": 44,
       "ctl_peak": 38.2,
@@ -8583,6 +8755,7 @@
     {
       "month": "2025-04",
       "total_hours": 16.58,
+      "total_distance_km": 106.7,
       "total_tss": 838,
       "activity_count": 29,
       "ctl_peak": 29.5,
@@ -8602,6 +8775,7 @@
     {
       "month": "2025-05",
       "total_hours": 7.48,
+      "total_distance_km": 55.4,
       "total_tss": 384,
       "activity_count": 17,
       "ctl_peak": 27.1,
@@ -8621,6 +8795,7 @@
     {
       "month": "2025-06",
       "total_hours": 18.47,
+      "total_distance_km": 102.0,
       "total_tss": 751,
       "activity_count": 32,
       "ctl_peak": 25.6,
@@ -8640,6 +8815,7 @@
     {
       "month": "2025-07",
       "total_hours": 13.6,
+      "total_distance_km": 96.8,
       "total_tss": 735,
       "activity_count": 21,
       "ctl_peak": 22.6,
@@ -8659,6 +8835,7 @@
     {
       "month": "2025-08",
       "total_hours": 25.69,
+      "total_distance_km": 221.2,
       "total_tss": 1460,
       "activity_count": 32,
       "ctl_peak": 35.6,
@@ -8678,6 +8855,7 @@
     {
       "month": "2025-09",
       "total_hours": 25.34,
+      "total_distance_km": 216.6,
       "total_tss": 1343,
       "activity_count": 31,
       "ctl_peak": 39.7,
@@ -8697,6 +8875,7 @@
     {
       "month": "2025-10",
       "total_hours": 26.16,
+      "total_distance_km": 198.6,
       "total_tss": 1368,
       "activity_count": 36,
       "ctl_peak": 44.4,
@@ -8716,6 +8895,7 @@
     {
       "month": "2025-11",
       "total_hours": 9.12,
+      "total_distance_km": 73.3,
       "total_tss": 519,
       "activity_count": 13,
       "ctl_peak": 40.2,
@@ -8735,6 +8915,7 @@
     {
       "month": "2025-12",
       "total_hours": 25.25,
+      "total_distance_km": 206.0,
       "total_tss": 1486,
       "activity_count": 35,
       "ctl_peak": 37.3,
@@ -8754,6 +8935,7 @@
     {
       "month": "2026-01",
       "total_hours": 21.59,
+      "total_distance_km": 191.3,
       "total_tss": 1197,
       "activity_count": 37,
       "ctl_peak": 39.1,
@@ -8773,6 +8955,7 @@
     {
       "month": "2026-02",
       "total_hours": 10.97,
+      "total_distance_km": 95.7,
       "total_tss": 616,
       "activity_count": 15,
       "ctl_peak": 37.1,
@@ -8792,6 +8975,7 @@
     {
       "month": "2026-03",
       "total_hours": 1.4,
+      "total_distance_km": 12.3,
       "total_tss": 81,
       "activity_count": 2,
       "ctl_peak": 27.2,
@@ -8811,6 +8995,7 @@
     {
       "month": "2026-04",
       "total_hours": 18.9,
+      "total_distance_km": 113.0,
       "total_tss": 679,
       "activity_count": 34,
       "ctl_peak": 22.6,
@@ -8832,6 +9017,7 @@
     {
       "month": "2020-04",
       "total_hours": 9.68,
+      "total_distance_km": 0.0,
       "total_tss": 474,
       "activity_count": 10,
       "ctl_peak": 14.2,
@@ -8851,6 +9037,7 @@
     {
       "month": "2020-05",
       "total_hours": 12.55,
+      "total_distance_km": 0.0,
       "total_tss": 635,
       "activity_count": 12,
       "ctl_peak": 6.9,
@@ -8870,6 +9057,7 @@
     {
       "month": "2020-06",
       "total_hours": 8.53,
+      "total_distance_km": 57.4,
       "total_tss": 417,
       "activity_count": 8,
       "ctl_peak": 5.6,
@@ -8889,6 +9077,7 @@
     {
       "month": "2020-07",
       "total_hours": 17.27,
+      "total_distance_km": 135.0,
       "total_tss": 831,
       "activity_count": 15,
       "ctl_peak": 13.2,
@@ -8908,6 +9097,7 @@
     {
       "month": "2020-08",
       "total_hours": 0.88,
+      "total_distance_km": 0.0,
       "total_tss": 65,
       "activity_count": 1,
       "ctl_peak": 11.1,
@@ -8927,6 +9117,7 @@
     {
       "month": "2020-09",
       "total_hours": 12.39,
+      "total_distance_km": 140.3,
       "total_tss": 846,
       "activity_count": 10,
       "ctl_peak": 17.2,
@@ -8946,6 +9137,7 @@
     {
       "month": "2020-10",
       "total_hours": 17.56,
+      "total_distance_km": 260.5,
       "total_tss": 1011,
       "activity_count": 12,
       "ctl_peak": 25.2,
@@ -8965,6 +9157,7 @@
     {
       "month": "2020-11",
       "total_hours": 23.82,
+      "total_distance_km": 292.1,
       "total_tss": 1416,
       "activity_count": 16,
       "ctl_peak": 35.9,
@@ -8984,6 +9177,7 @@
     {
       "month": "2020-12",
       "total_hours": 26.1,
+      "total_distance_km": 346.4,
       "total_tss": 1433,
       "activity_count": 22,
       "ctl_peak": 41.0,
@@ -9003,6 +9197,7 @@
     {
       "month": "2021-01",
       "total_hours": 24.36,
+      "total_distance_km": 294.0,
       "total_tss": 1278,
       "activity_count": 21,
       "ctl_peak": 42.1,
@@ -9022,6 +9217,7 @@
     {
       "month": "2021-02",
       "total_hours": 24.34,
+      "total_distance_km": 210.1,
       "total_tss": 1293,
       "activity_count": 23,
       "ctl_peak": 43.7,
@@ -9041,6 +9237,7 @@
     {
       "month": "2021-03",
       "total_hours": 29.65,
+      "total_distance_km": 286.6,
       "total_tss": 1775,
       "activity_count": 30,
       "ctl_peak": 52.8,
@@ -9060,6 +9257,7 @@
     {
       "month": "2021-04",
       "total_hours": 28.78,
+      "total_distance_km": 313.3,
       "total_tss": 1677,
       "activity_count": 25,
       "ctl_peak": 55.4,
@@ -9079,6 +9277,7 @@
     {
       "month": "2021-05",
       "total_hours": 24.8,
+      "total_distance_km": 200.3,
       "total_tss": 1438,
       "activity_count": 26,
       "ctl_peak": 57.1,
@@ -9098,6 +9297,7 @@
     {
       "month": "2021-06",
       "total_hours": 26.52,
+      "total_distance_km": 368.1,
       "total_tss": 1269,
       "activity_count": 20,
       "ctl_peak": 57.0,
@@ -9117,6 +9317,7 @@
     {
       "month": "2021-07",
       "total_hours": 2.82,
+      "total_distance_km": 21.6,
       "total_tss": 187,
       "activity_count": 5,
       "ctl_peak": 42.4,
@@ -9136,6 +9337,7 @@
     {
       "month": "2021-08",
       "total_hours": 4.86,
+      "total_distance_km": 40.5,
       "total_tss": 236,
       "activity_count": 8,
       "ctl_peak": 22.6,
@@ -9155,6 +9357,7 @@
     {
       "month": "2021-09",
       "total_hours": 31.09,
+      "total_distance_km": 264.5,
       "total_tss": 1535,
       "activity_count": 41,
       "ctl_peak": 32.3,
@@ -9174,6 +9377,7 @@
     {
       "month": "2021-10",
       "total_hours": 35.67,
+      "total_distance_km": 395.8,
       "total_tss": 2069,
       "activity_count": 29,
       "ctl_peak": 51.5,
@@ -9193,6 +9397,7 @@
     {
       "month": "2021-11",
       "total_hours": 53.48,
+      "total_distance_km": 408.2,
       "total_tss": 2330,
       "activity_count": 44,
       "ctl_peak": 73.6,
@@ -9212,6 +9417,7 @@
     {
       "month": "2021-12",
       "total_hours": 29.1,
+      "total_distance_km": 285.7,
       "total_tss": 1869,
       "activity_count": 29,
       "ctl_peak": 65.0,
@@ -9231,6 +9437,7 @@
     {
       "month": "2022-01",
       "total_hours": 19.16,
+      "total_distance_km": 226.2,
       "total_tss": 843,
       "activity_count": 12,
       "ctl_peak": 63.6,
@@ -9250,6 +9457,7 @@
     {
       "month": "2022-02",
       "total_hours": 23.59,
+      "total_distance_km": 200.9,
       "total_tss": 1488,
       "activity_count": 19,
       "ctl_peak": 48.9,
@@ -9269,6 +9477,7 @@
     {
       "month": "2022-03",
       "total_hours": 32.38,
+      "total_distance_km": 277.5,
       "total_tss": 1836,
       "activity_count": 36,
       "ctl_peak": 57.6,
@@ -9288,6 +9497,7 @@
     {
       "month": "2022-04",
       "total_hours": 27.66,
+      "total_distance_km": 270.9,
       "total_tss": 1603,
       "activity_count": 24,
       "ctl_peak": 55.8,
@@ -9307,6 +9517,7 @@
     {
       "month": "2022-05",
       "total_hours": 31.38,
+      "total_distance_km": 279.9,
       "total_tss": 1664,
       "activity_count": 37,
       "ctl_peak": 56.2,
@@ -9326,6 +9537,7 @@
     {
       "month": "2022-06",
       "total_hours": 18.21,
+      "total_distance_km": 166.8,
       "total_tss": 1057,
       "activity_count": 20,
       "ctl_peak": 57.7,
@@ -9345,6 +9557,7 @@
     {
       "month": "2022-07",
       "total_hours": 31.88,
+      "total_distance_km": 278.2,
       "total_tss": 1881,
       "activity_count": 28,
       "ctl_peak": 54.6,
@@ -9364,6 +9577,7 @@
     {
       "month": "2022-08",
       "total_hours": 26.12,
+      "total_distance_km": 237.7,
       "total_tss": 1590,
       "activity_count": 34,
       "ctl_peak": 56.5,
@@ -9383,6 +9597,7 @@
     {
       "month": "2022-09",
       "total_hours": -286629.14,
+      "total_distance_km": 42959.0,
       "total_tss": 1032,
       "activity_count": 27,
       "ctl_peak": 52.2,
@@ -9402,6 +9617,7 @@
     {
       "month": "2022-10",
       "total_hours": 39.82,
+      "total_distance_km": 322.1,
       "total_tss": 1949,
       "activity_count": 41,
       "ctl_peak": 56.3,
@@ -9421,6 +9637,7 @@
     {
       "month": "2022-11",
       "total_hours": 33.93,
+      "total_distance_km": 275.1,
       "total_tss": 1684,
       "activity_count": 37,
       "ctl_peak": 61.6,
@@ -9440,6 +9657,7 @@
     {
       "month": "2022-12",
       "total_hours": 33.09,
+      "total_distance_km": 269.3,
       "total_tss": 1846,
       "activity_count": 33,
       "ctl_peak": 67.1,
@@ -9459,6 +9677,7 @@
     {
       "month": "2023-01",
       "total_hours": 25.04,
+      "total_distance_km": 241.2,
       "total_tss": 1451,
       "activity_count": 24,
       "ctl_peak": 56.7,
@@ -9478,6 +9697,7 @@
     {
       "month": "2023-02",
       "total_hours": 25.97,
+      "total_distance_km": 234.1,
       "total_tss": 1514,
       "activity_count": 25,
       "ctl_peak": 55.5,
@@ -9497,6 +9717,7 @@
     {
       "month": "2023-03",
       "total_hours": 36.36,
+      "total_distance_km": 258.7,
       "total_tss": 1695,
       "activity_count": 30,
       "ctl_peak": 60.5,
@@ -9516,6 +9737,7 @@
     {
       "month": "2023-04",
       "total_hours": 23.63,
+      "total_distance_km": 227.4,
       "total_tss": 1414,
       "activity_count": 33,
       "ctl_peak": 54.2,
@@ -9535,6 +9757,7 @@
     {
       "month": "2023-05",
       "total_hours": 28.47,
+      "total_distance_km": 273.9,
       "total_tss": 1779,
       "activity_count": 39,
       "ctl_peak": 54.2,
@@ -9554,6 +9777,7 @@
     {
       "month": "2023-06",
       "total_hours": 27.21,
+      "total_distance_km": 254.7,
       "total_tss": 1564,
       "activity_count": 35,
       "ctl_peak": 54.8,
@@ -9573,6 +9797,7 @@
     {
       "month": "2023-07",
       "total_hours": 31.57,
+      "total_distance_km": 302.4,
       "total_tss": 1867,
       "activity_count": 64,
       "ctl_peak": 58.3,
@@ -9592,6 +9817,7 @@
     {
       "month": "2023-08",
       "total_hours": 28.1,
+      "total_distance_km": 273.0,
       "total_tss": 1770,
       "activity_count": 33,
       "ctl_peak": 59.7,
@@ -9611,6 +9837,7 @@
     {
       "month": "2023-09",
       "total_hours": 32.04,
+      "total_distance_km": 301.0,
       "total_tss": 1729,
       "activity_count": 55,
       "ctl_peak": 59.9,
@@ -9630,6 +9857,7 @@
     {
       "month": "2023-10",
       "total_hours": 29.65,
+      "total_distance_km": 300.2,
       "total_tss": 1870,
       "activity_count": 41,
       "ctl_peak": 61.2,
@@ -9649,6 +9877,7 @@
     {
       "month": "2023-11",
       "total_hours": 32.27,
+      "total_distance_km": 304.8,
       "total_tss": 1779,
       "activity_count": 38,
       "ctl_peak": 62.1,
@@ -9668,6 +9897,7 @@
     {
       "month": "2023-12",
       "total_hours": 36.55,
+      "total_distance_km": 306.2,
       "total_tss": 1806,
       "activity_count": 48,
       "ctl_peak": 63.7,
@@ -9687,6 +9917,7 @@
     {
       "month": "2024-01",
       "total_hours": 26.68,
+      "total_distance_km": 254.5,
       "total_tss": 1601,
       "activity_count": 27,
       "ctl_peak": 58.8,
@@ -9706,6 +9937,7 @@
     {
       "month": "2024-02",
       "total_hours": 14.27,
+      "total_distance_km": 127.3,
       "total_tss": 769,
       "activity_count": 19,
       "ctl_peak": 53.3,
@@ -9725,6 +9957,7 @@
     {
       "month": "2024-03",
       "total_hours": 29.72,
+      "total_distance_km": 283.3,
       "total_tss": 1826,
       "activity_count": 30,
       "ctl_peak": 51.6,
@@ -9744,6 +9977,7 @@
     {
       "month": "2024-04",
       "total_hours": 19.26,
+      "total_distance_km": 87.7,
       "total_tss": 701,
       "activity_count": 23,
       "ctl_peak": 50.4,
@@ -9763,6 +9997,7 @@
     {
       "month": "2024-05",
       "total_hours": 24.58,
+      "total_distance_km": 119.4,
       "total_tss": 931,
       "activity_count": 27,
       "ctl_peak": 34.9,
@@ -9782,6 +10017,7 @@
     {
       "month": "2024-06",
       "total_hours": 28.87,
+      "total_distance_km": 206.6,
       "total_tss": 1345,
       "activity_count": 35,
       "ctl_peak": 36.6,
@@ -9801,6 +10037,7 @@
     {
       "month": "2024-07",
       "total_hours": 25.72,
+      "total_distance_km": 225.0,
       "total_tss": 1387,
       "activity_count": 26,
       "ctl_peak": 41.5,
@@ -9820,6 +10057,7 @@
     {
       "month": "2024-08",
       "total_hours": 26.17,
+      "total_distance_km": 252.5,
       "total_tss": 1487,
       "activity_count": 22,
       "ctl_peak": 49.1,
@@ -9839,6 +10077,7 @@
     {
       "month": "2024-09",
       "total_hours": 32.56,
+      "total_distance_km": 300.2,
       "total_tss": 1709,
       "activity_count": 25,
       "ctl_peak": 55.2,
@@ -9858,6 +10097,7 @@
     {
       "month": "2024-10",
       "total_hours": 51.85,
+      "total_distance_km": 503.7,
       "total_tss": 2591,
       "activity_count": 47,
       "ctl_peak": 70.0,
@@ -9877,6 +10117,7 @@
     {
       "month": "2024-11",
       "total_hours": 37.58,
+      "total_distance_km": 289.0,
       "total_tss": 1699,
       "activity_count": 32,
       "ctl_peak": 73.6,
@@ -9896,6 +10137,7 @@
     {
       "month": "2024-12",
       "total_hours": 63.09,
+      "total_distance_km": 410.1,
       "total_tss": 1754,
       "activity_count": 31,
       "ctl_peak": 71.7,
@@ -9915,6 +10157,7 @@
     {
       "month": "2025-01",
       "total_hours": 4.0,
+      "total_distance_km": 35.5,
       "total_tss": 207,
       "activity_count": 4,
       "ctl_peak": 56.8,
@@ -9934,6 +10177,7 @@
     {
       "month": "2025-02",
       "total_hours": 18.82,
+      "total_distance_km": 150.5,
       "total_tss": 1032,
       "activity_count": 18,
       "ctl_peak": 34.0,
@@ -9953,6 +10197,7 @@
     {
       "month": "2025-03",
       "total_hours": 33.79,
+      "total_distance_km": 148.7,
       "total_tss": 1126,
       "activity_count": 44,
       "ctl_peak": 38.2,
@@ -9972,6 +10217,7 @@
     {
       "month": "2025-04",
       "total_hours": 16.58,
+      "total_distance_km": 106.7,
       "total_tss": 838,
       "activity_count": 29,
       "ctl_peak": 29.5,
@@ -9991,6 +10237,7 @@
     {
       "month": "2025-05",
       "total_hours": 7.48,
+      "total_distance_km": 55.4,
       "total_tss": 384,
       "activity_count": 17,
       "ctl_peak": 27.1,
@@ -10010,6 +10257,7 @@
     {
       "month": "2025-06",
       "total_hours": 18.47,
+      "total_distance_km": 102.0,
       "total_tss": 751,
       "activity_count": 32,
       "ctl_peak": 25.6,
@@ -10029,6 +10277,7 @@
     {
       "month": "2025-07",
       "total_hours": 13.6,
+      "total_distance_km": 96.8,
       "total_tss": 735,
       "activity_count": 21,
       "ctl_peak": 22.6,
@@ -10048,6 +10297,7 @@
     {
       "month": "2025-08",
       "total_hours": 25.69,
+      "total_distance_km": 221.2,
       "total_tss": 1460,
       "activity_count": 32,
       "ctl_peak": 35.6,
@@ -10067,6 +10317,7 @@
     {
       "month": "2025-09",
       "total_hours": 25.34,
+      "total_distance_km": 216.6,
       "total_tss": 1343,
       "activity_count": 31,
       "ctl_peak": 39.7,
@@ -10086,6 +10337,7 @@
     {
       "month": "2025-10",
       "total_hours": 26.16,
+      "total_distance_km": 198.6,
       "total_tss": 1368,
       "activity_count": 36,
       "ctl_peak": 44.4,
@@ -10105,6 +10357,7 @@
     {
       "month": "2025-11",
       "total_hours": 9.12,
+      "total_distance_km": 73.3,
       "total_tss": 519,
       "activity_count": 13,
       "ctl_peak": 40.2,
@@ -10124,6 +10377,7 @@
     {
       "month": "2025-12",
       "total_hours": 25.25,
+      "total_distance_km": 206.0,
       "total_tss": 1486,
       "activity_count": 35,
       "ctl_peak": 37.3,
@@ -10143,6 +10397,7 @@
     {
       "month": "2026-01",
       "total_hours": 21.59,
+      "total_distance_km": 191.3,
       "total_tss": 1197,
       "activity_count": 37,
       "ctl_peak": 39.1,
@@ -10162,6 +10417,7 @@
     {
       "month": "2026-02",
       "total_hours": 10.97,
+      "total_distance_km": 95.7,
       "total_tss": 616,
       "activity_count": 15,
       "ctl_peak": 37.1,
@@ -10181,6 +10437,7 @@
     {
       "month": "2026-03",
       "total_hours": 1.4,
+      "total_distance_km": 12.3,
       "total_tss": 81,
       "activity_count": 2,
       "ctl_peak": 27.2,
@@ -10200,6 +10457,7 @@
     {
       "month": "2026-04",
       "total_hours": 18.9,
+      "total_distance_km": 113.0,
       "total_tss": 679,
       "activity_count": 34,
       "ctl_peak": 22.6,
@@ -10221,6 +10479,7 @@
     {
       "month": "2019-04",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -10240,6 +10499,7 @@
     {
       "month": "2019-05",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -10259,6 +10519,7 @@
     {
       "month": "2019-06",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -10278,6 +10539,7 @@
     {
       "month": "2019-07",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -10297,6 +10559,7 @@
     {
       "month": "2019-08",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -10316,6 +10579,7 @@
     {
       "month": "2019-09",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -10335,6 +10599,7 @@
     {
       "month": "2019-10",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -10354,6 +10619,7 @@
     {
       "month": "2019-11",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -10373,6 +10639,7 @@
     {
       "month": "2019-12",
       "total_hours": 6.66,
+      "total_distance_km": 30.8,
       "total_tss": 348,
       "activity_count": 11,
       "ctl_peak": 5.5,
@@ -10392,6 +10659,7 @@
     {
       "month": "2020-01",
       "total_hours": 6.26,
+      "total_distance_km": 5.0,
       "total_tss": 216,
       "activity_count": 7,
       "ctl_peak": 4.9,
@@ -10411,6 +10679,7 @@
     {
       "month": "2020-02",
       "total_hours": 8.47,
+      "total_distance_km": 26.7,
       "total_tss": 307,
       "activity_count": 6,
       "ctl_peak": 6.8,
@@ -10430,6 +10699,7 @@
     {
       "month": "2020-03",
       "total_hours": 9.93,
+      "total_distance_km": 90.6,
       "total_tss": 681,
       "activity_count": 10,
       "ctl_peak": 16.8,
@@ -10449,6 +10719,7 @@
     {
       "month": "2020-04",
       "total_hours": 9.68,
+      "total_distance_km": 0.0,
       "total_tss": 474,
       "activity_count": 10,
       "ctl_peak": 14.2,
@@ -10468,6 +10739,7 @@
     {
       "month": "2020-05",
       "total_hours": 12.55,
+      "total_distance_km": 0.0,
       "total_tss": 635,
       "activity_count": 12,
       "ctl_peak": 6.9,
@@ -10487,6 +10759,7 @@
     {
       "month": "2020-06",
       "total_hours": 8.53,
+      "total_distance_km": 57.4,
       "total_tss": 417,
       "activity_count": 8,
       "ctl_peak": 5.6,
@@ -10506,6 +10779,7 @@
     {
       "month": "2020-07",
       "total_hours": 17.27,
+      "total_distance_km": 135.0,
       "total_tss": 831,
       "activity_count": 15,
       "ctl_peak": 13.2,
@@ -10525,6 +10799,7 @@
     {
       "month": "2020-08",
       "total_hours": 0.88,
+      "total_distance_km": 0.0,
       "total_tss": 65,
       "activity_count": 1,
       "ctl_peak": 11.1,
@@ -10544,6 +10819,7 @@
     {
       "month": "2020-09",
       "total_hours": 12.39,
+      "total_distance_km": 140.3,
       "total_tss": 846,
       "activity_count": 10,
       "ctl_peak": 17.2,
@@ -10563,6 +10839,7 @@
     {
       "month": "2020-10",
       "total_hours": 17.56,
+      "total_distance_km": 260.5,
       "total_tss": 1011,
       "activity_count": 12,
       "ctl_peak": 25.2,
@@ -10582,6 +10859,7 @@
     {
       "month": "2020-11",
       "total_hours": 23.82,
+      "total_distance_km": 292.1,
       "total_tss": 1416,
       "activity_count": 16,
       "ctl_peak": 35.9,
@@ -10601,6 +10879,7 @@
     {
       "month": "2020-12",
       "total_hours": 26.1,
+      "total_distance_km": 346.4,
       "total_tss": 1433,
       "activity_count": 22,
       "ctl_peak": 41.0,
@@ -10620,6 +10899,7 @@
     {
       "month": "2021-01",
       "total_hours": 24.36,
+      "total_distance_km": 294.0,
       "total_tss": 1278,
       "activity_count": 21,
       "ctl_peak": 42.1,
@@ -10639,6 +10919,7 @@
     {
       "month": "2021-02",
       "total_hours": 24.34,
+      "total_distance_km": 210.1,
       "total_tss": 1293,
       "activity_count": 23,
       "ctl_peak": 43.7,
@@ -10658,6 +10939,7 @@
     {
       "month": "2021-03",
       "total_hours": 29.65,
+      "total_distance_km": 286.6,
       "total_tss": 1775,
       "activity_count": 30,
       "ctl_peak": 52.8,
@@ -10677,6 +10959,7 @@
     {
       "month": "2021-04",
       "total_hours": 28.78,
+      "total_distance_km": 313.3,
       "total_tss": 1677,
       "activity_count": 25,
       "ctl_peak": 55.4,
@@ -10696,6 +10979,7 @@
     {
       "month": "2021-05",
       "total_hours": 24.8,
+      "total_distance_km": 200.3,
       "total_tss": 1438,
       "activity_count": 26,
       "ctl_peak": 57.1,
@@ -10715,6 +10999,7 @@
     {
       "month": "2021-06",
       "total_hours": 26.52,
+      "total_distance_km": 368.1,
       "total_tss": 1269,
       "activity_count": 20,
       "ctl_peak": 57.0,
@@ -10734,6 +11019,7 @@
     {
       "month": "2021-07",
       "total_hours": 2.82,
+      "total_distance_km": 21.6,
       "total_tss": 187,
       "activity_count": 5,
       "ctl_peak": 42.4,
@@ -10753,6 +11039,7 @@
     {
       "month": "2021-08",
       "total_hours": 4.86,
+      "total_distance_km": 40.5,
       "total_tss": 236,
       "activity_count": 8,
       "ctl_peak": 22.6,
@@ -10772,6 +11059,7 @@
     {
       "month": "2021-09",
       "total_hours": 31.09,
+      "total_distance_km": 264.5,
       "total_tss": 1535,
       "activity_count": 41,
       "ctl_peak": 32.3,
@@ -10791,6 +11079,7 @@
     {
       "month": "2021-10",
       "total_hours": 35.67,
+      "total_distance_km": 395.8,
       "total_tss": 2069,
       "activity_count": 29,
       "ctl_peak": 51.5,
@@ -10810,6 +11099,7 @@
     {
       "month": "2021-11",
       "total_hours": 53.48,
+      "total_distance_km": 408.2,
       "total_tss": 2330,
       "activity_count": 44,
       "ctl_peak": 73.6,
@@ -10829,6 +11119,7 @@
     {
       "month": "2021-12",
       "total_hours": 29.1,
+      "total_distance_km": 285.7,
       "total_tss": 1869,
       "activity_count": 29,
       "ctl_peak": 65.0,
@@ -10848,6 +11139,7 @@
     {
       "month": "2022-01",
       "total_hours": 19.16,
+      "total_distance_km": 226.2,
       "total_tss": 843,
       "activity_count": 12,
       "ctl_peak": 63.6,
@@ -10867,6 +11159,7 @@
     {
       "month": "2022-02",
       "total_hours": 23.59,
+      "total_distance_km": 200.9,
       "total_tss": 1488,
       "activity_count": 19,
       "ctl_peak": 48.9,
@@ -10886,6 +11179,7 @@
     {
       "month": "2022-03",
       "total_hours": 32.38,
+      "total_distance_km": 277.5,
       "total_tss": 1836,
       "activity_count": 36,
       "ctl_peak": 57.6,
@@ -10905,6 +11199,7 @@
     {
       "month": "2022-04",
       "total_hours": 27.66,
+      "total_distance_km": 270.9,
       "total_tss": 1603,
       "activity_count": 24,
       "ctl_peak": 55.8,
@@ -10924,6 +11219,7 @@
     {
       "month": "2022-05",
       "total_hours": 31.38,
+      "total_distance_km": 279.9,
       "total_tss": 1664,
       "activity_count": 37,
       "ctl_peak": 56.2,
@@ -10943,6 +11239,7 @@
     {
       "month": "2022-06",
       "total_hours": 18.21,
+      "total_distance_km": 166.8,
       "total_tss": 1057,
       "activity_count": 20,
       "ctl_peak": 57.7,
@@ -10962,6 +11259,7 @@
     {
       "month": "2022-07",
       "total_hours": 31.88,
+      "total_distance_km": 278.2,
       "total_tss": 1881,
       "activity_count": 28,
       "ctl_peak": 54.6,
@@ -10981,6 +11279,7 @@
     {
       "month": "2022-08",
       "total_hours": 26.12,
+      "total_distance_km": 237.7,
       "total_tss": 1590,
       "activity_count": 34,
       "ctl_peak": 56.5,
@@ -11000,6 +11299,7 @@
     {
       "month": "2022-09",
       "total_hours": -286629.14,
+      "total_distance_km": 42959.0,
       "total_tss": 1032,
       "activity_count": 27,
       "ctl_peak": 52.2,
@@ -11019,6 +11319,7 @@
     {
       "month": "2022-10",
       "total_hours": 39.82,
+      "total_distance_km": 322.1,
       "total_tss": 1949,
       "activity_count": 41,
       "ctl_peak": 56.3,
@@ -11038,6 +11339,7 @@
     {
       "month": "2022-11",
       "total_hours": 33.93,
+      "total_distance_km": 275.1,
       "total_tss": 1684,
       "activity_count": 37,
       "ctl_peak": 61.6,
@@ -11057,6 +11359,7 @@
     {
       "month": "2022-12",
       "total_hours": 33.09,
+      "total_distance_km": 269.3,
       "total_tss": 1846,
       "activity_count": 33,
       "ctl_peak": 67.1,
@@ -11076,6 +11379,7 @@
     {
       "month": "2023-01",
       "total_hours": 25.04,
+      "total_distance_km": 241.2,
       "total_tss": 1451,
       "activity_count": 24,
       "ctl_peak": 56.7,
@@ -11095,6 +11399,7 @@
     {
       "month": "2023-02",
       "total_hours": 25.97,
+      "total_distance_km": 234.1,
       "total_tss": 1514,
       "activity_count": 25,
       "ctl_peak": 55.5,
@@ -11114,6 +11419,7 @@
     {
       "month": "2023-03",
       "total_hours": 36.36,
+      "total_distance_km": 258.7,
       "total_tss": 1695,
       "activity_count": 30,
       "ctl_peak": 60.5,
@@ -11133,6 +11439,7 @@
     {
       "month": "2023-04",
       "total_hours": 23.63,
+      "total_distance_km": 227.4,
       "total_tss": 1414,
       "activity_count": 33,
       "ctl_peak": 54.2,
@@ -11152,6 +11459,7 @@
     {
       "month": "2023-05",
       "total_hours": 28.47,
+      "total_distance_km": 273.9,
       "total_tss": 1779,
       "activity_count": 39,
       "ctl_peak": 54.2,
@@ -11171,6 +11479,7 @@
     {
       "month": "2023-06",
       "total_hours": 27.21,
+      "total_distance_km": 254.7,
       "total_tss": 1564,
       "activity_count": 35,
       "ctl_peak": 54.8,
@@ -11190,6 +11499,7 @@
     {
       "month": "2023-07",
       "total_hours": 31.57,
+      "total_distance_km": 302.4,
       "total_tss": 1867,
       "activity_count": 64,
       "ctl_peak": 58.3,
@@ -11209,6 +11519,7 @@
     {
       "month": "2023-08",
       "total_hours": 28.1,
+      "total_distance_km": 273.0,
       "total_tss": 1770,
       "activity_count": 33,
       "ctl_peak": 59.7,
@@ -11228,6 +11539,7 @@
     {
       "month": "2023-09",
       "total_hours": 32.04,
+      "total_distance_km": 301.0,
       "total_tss": 1729,
       "activity_count": 55,
       "ctl_peak": 59.9,
@@ -11247,6 +11559,7 @@
     {
       "month": "2023-10",
       "total_hours": 29.65,
+      "total_distance_km": 300.2,
       "total_tss": 1870,
       "activity_count": 41,
       "ctl_peak": 61.2,
@@ -11266,6 +11579,7 @@
     {
       "month": "2023-11",
       "total_hours": 32.27,
+      "total_distance_km": 304.8,
       "total_tss": 1779,
       "activity_count": 38,
       "ctl_peak": 62.1,
@@ -11285,6 +11599,7 @@
     {
       "month": "2023-12",
       "total_hours": 36.55,
+      "total_distance_km": 306.2,
       "total_tss": 1806,
       "activity_count": 48,
       "ctl_peak": 63.7,
@@ -11304,6 +11619,7 @@
     {
       "month": "2024-01",
       "total_hours": 26.68,
+      "total_distance_km": 254.5,
       "total_tss": 1601,
       "activity_count": 27,
       "ctl_peak": 58.8,
@@ -11323,6 +11639,7 @@
     {
       "month": "2024-02",
       "total_hours": 14.27,
+      "total_distance_km": 127.3,
       "total_tss": 769,
       "activity_count": 19,
       "ctl_peak": 53.3,
@@ -11342,6 +11659,7 @@
     {
       "month": "2024-03",
       "total_hours": 29.72,
+      "total_distance_km": 283.3,
       "total_tss": 1826,
       "activity_count": 30,
       "ctl_peak": 51.6,
@@ -11361,6 +11679,7 @@
     {
       "month": "2024-04",
       "total_hours": 19.26,
+      "total_distance_km": 87.7,
       "total_tss": 701,
       "activity_count": 23,
       "ctl_peak": 50.4,
@@ -11380,6 +11699,7 @@
     {
       "month": "2024-05",
       "total_hours": 24.58,
+      "total_distance_km": 119.4,
       "total_tss": 931,
       "activity_count": 27,
       "ctl_peak": 34.9,
@@ -11399,6 +11719,7 @@
     {
       "month": "2024-06",
       "total_hours": 28.87,
+      "total_distance_km": 206.6,
       "total_tss": 1345,
       "activity_count": 35,
       "ctl_peak": 36.6,
@@ -11418,6 +11739,7 @@
     {
       "month": "2024-07",
       "total_hours": 25.72,
+      "total_distance_km": 225.0,
       "total_tss": 1387,
       "activity_count": 26,
       "ctl_peak": 41.5,
@@ -11437,6 +11759,7 @@
     {
       "month": "2024-08",
       "total_hours": 26.17,
+      "total_distance_km": 252.5,
       "total_tss": 1487,
       "activity_count": 22,
       "ctl_peak": 49.1,
@@ -11456,6 +11779,7 @@
     {
       "month": "2024-09",
       "total_hours": 32.56,
+      "total_distance_km": 300.2,
       "total_tss": 1709,
       "activity_count": 25,
       "ctl_peak": 55.2,
@@ -11475,6 +11799,7 @@
     {
       "month": "2024-10",
       "total_hours": 51.85,
+      "total_distance_km": 503.7,
       "total_tss": 2591,
       "activity_count": 47,
       "ctl_peak": 70.0,
@@ -11494,6 +11819,7 @@
     {
       "month": "2024-11",
       "total_hours": 37.58,
+      "total_distance_km": 289.0,
       "total_tss": 1699,
       "activity_count": 32,
       "ctl_peak": 73.6,
@@ -11513,6 +11839,7 @@
     {
       "month": "2024-12",
       "total_hours": 63.09,
+      "total_distance_km": 410.1,
       "total_tss": 1754,
       "activity_count": 31,
       "ctl_peak": 71.7,
@@ -11532,6 +11859,7 @@
     {
       "month": "2025-01",
       "total_hours": 4.0,
+      "total_distance_km": 35.5,
       "total_tss": 207,
       "activity_count": 4,
       "ctl_peak": 56.8,
@@ -11551,6 +11879,7 @@
     {
       "month": "2025-02",
       "total_hours": 18.82,
+      "total_distance_km": 150.5,
       "total_tss": 1032,
       "activity_count": 18,
       "ctl_peak": 34.0,
@@ -11570,6 +11899,7 @@
     {
       "month": "2025-03",
       "total_hours": 33.79,
+      "total_distance_km": 148.7,
       "total_tss": 1126,
       "activity_count": 44,
       "ctl_peak": 38.2,
@@ -11589,6 +11919,7 @@
     {
       "month": "2025-04",
       "total_hours": 16.58,
+      "total_distance_km": 106.7,
       "total_tss": 838,
       "activity_count": 29,
       "ctl_peak": 29.5,
@@ -11608,6 +11939,7 @@
     {
       "month": "2025-05",
       "total_hours": 7.48,
+      "total_distance_km": 55.4,
       "total_tss": 384,
       "activity_count": 17,
       "ctl_peak": 27.1,
@@ -11627,6 +11959,7 @@
     {
       "month": "2025-06",
       "total_hours": 18.47,
+      "total_distance_km": 102.0,
       "total_tss": 751,
       "activity_count": 32,
       "ctl_peak": 25.6,
@@ -11646,6 +11979,7 @@
     {
       "month": "2025-07",
       "total_hours": 13.6,
+      "total_distance_km": 96.8,
       "total_tss": 735,
       "activity_count": 21,
       "ctl_peak": 22.6,
@@ -11665,6 +11999,7 @@
     {
       "month": "2025-08",
       "total_hours": 25.69,
+      "total_distance_km": 221.2,
       "total_tss": 1460,
       "activity_count": 32,
       "ctl_peak": 35.6,
@@ -11684,6 +12019,7 @@
     {
       "month": "2025-09",
       "total_hours": 25.34,
+      "total_distance_km": 216.6,
       "total_tss": 1343,
       "activity_count": 31,
       "ctl_peak": 39.7,
@@ -11703,6 +12039,7 @@
     {
       "month": "2025-10",
       "total_hours": 26.16,
+      "total_distance_km": 198.6,
       "total_tss": 1368,
       "activity_count": 36,
       "ctl_peak": 44.4,
@@ -11722,6 +12059,7 @@
     {
       "month": "2025-11",
       "total_hours": 9.12,
+      "total_distance_km": 73.3,
       "total_tss": 519,
       "activity_count": 13,
       "ctl_peak": 40.2,
@@ -11741,6 +12079,7 @@
     {
       "month": "2025-12",
       "total_hours": 25.25,
+      "total_distance_km": 206.0,
       "total_tss": 1486,
       "activity_count": 35,
       "ctl_peak": 37.3,
@@ -11760,6 +12099,7 @@
     {
       "month": "2026-01",
       "total_hours": 21.59,
+      "total_distance_km": 191.3,
       "total_tss": 1197,
       "activity_count": 37,
       "ctl_peak": 39.1,
@@ -11779,6 +12119,7 @@
     {
       "month": "2026-02",
       "total_hours": 10.97,
+      "total_distance_km": 95.7,
       "total_tss": 616,
       "activity_count": 15,
       "ctl_peak": 37.1,
@@ -11798,6 +12139,7 @@
     {
       "month": "2026-03",
       "total_hours": 1.4,
+      "total_distance_km": 12.3,
       "total_tss": 81,
       "activity_count": 2,
       "ctl_peak": 27.2,
@@ -11817,6 +12159,7 @@
     {
       "month": "2026-04",
       "total_hours": 18.9,
+      "total_distance_km": 113.0,
       "total_tss": 679,
       "activity_count": 34,
       "ctl_peak": 22.6,
@@ -11838,6 +12181,7 @@
     {
       "month": "2018-04",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -11857,6 +12201,7 @@
     {
       "month": "2018-05",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -11876,6 +12221,7 @@
     {
       "month": "2018-06",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -11895,6 +12241,7 @@
     {
       "month": "2018-07",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -11914,6 +12261,7 @@
     {
       "month": "2018-08",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -11933,6 +12281,7 @@
     {
       "month": "2018-09",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -11952,6 +12301,7 @@
     {
       "month": "2018-10",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -11971,6 +12321,7 @@
     {
       "month": "2018-11",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -11990,6 +12341,7 @@
     {
       "month": "2018-12",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -12009,6 +12361,7 @@
     {
       "month": "2019-01",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -12028,6 +12381,7 @@
     {
       "month": "2019-02",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -12047,6 +12401,7 @@
     {
       "month": "2019-03",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -12066,6 +12421,7 @@
     {
       "month": "2019-04",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -12085,6 +12441,7 @@
     {
       "month": "2019-05",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -12104,6 +12461,7 @@
     {
       "month": "2019-06",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -12123,6 +12481,7 @@
     {
       "month": "2019-07",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -12142,6 +12501,7 @@
     {
       "month": "2019-08",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -12161,6 +12521,7 @@
     {
       "month": "2019-09",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -12180,6 +12541,7 @@
     {
       "month": "2019-10",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -12199,6 +12561,7 @@
     {
       "month": "2019-11",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -12218,6 +12581,7 @@
     {
       "month": "2019-12",
       "total_hours": 6.66,
+      "total_distance_km": 30.8,
       "total_tss": 348,
       "activity_count": 11,
       "ctl_peak": 5.5,
@@ -12237,6 +12601,7 @@
     {
       "month": "2020-01",
       "total_hours": 6.26,
+      "total_distance_km": 5.0,
       "total_tss": 216,
       "activity_count": 7,
       "ctl_peak": 4.9,
@@ -12256,6 +12621,7 @@
     {
       "month": "2020-02",
       "total_hours": 8.47,
+      "total_distance_km": 26.7,
       "total_tss": 307,
       "activity_count": 6,
       "ctl_peak": 6.8,
@@ -12275,6 +12641,7 @@
     {
       "month": "2020-03",
       "total_hours": 9.93,
+      "total_distance_km": 90.6,
       "total_tss": 681,
       "activity_count": 10,
       "ctl_peak": 16.8,
@@ -12294,6 +12661,7 @@
     {
       "month": "2020-04",
       "total_hours": 9.68,
+      "total_distance_km": 0.0,
       "total_tss": 474,
       "activity_count": 10,
       "ctl_peak": 14.2,
@@ -12313,6 +12681,7 @@
     {
       "month": "2020-05",
       "total_hours": 12.55,
+      "total_distance_km": 0.0,
       "total_tss": 635,
       "activity_count": 12,
       "ctl_peak": 6.9,
@@ -12332,6 +12701,7 @@
     {
       "month": "2020-06",
       "total_hours": 8.53,
+      "total_distance_km": 57.4,
       "total_tss": 417,
       "activity_count": 8,
       "ctl_peak": 5.6,
@@ -12351,6 +12721,7 @@
     {
       "month": "2020-07",
       "total_hours": 17.27,
+      "total_distance_km": 135.0,
       "total_tss": 831,
       "activity_count": 15,
       "ctl_peak": 13.2,
@@ -12370,6 +12741,7 @@
     {
       "month": "2020-08",
       "total_hours": 0.88,
+      "total_distance_km": 0.0,
       "total_tss": 65,
       "activity_count": 1,
       "ctl_peak": 11.1,
@@ -12389,6 +12761,7 @@
     {
       "month": "2020-09",
       "total_hours": 12.39,
+      "total_distance_km": 140.3,
       "total_tss": 846,
       "activity_count": 10,
       "ctl_peak": 17.2,
@@ -12408,6 +12781,7 @@
     {
       "month": "2020-10",
       "total_hours": 17.56,
+      "total_distance_km": 260.5,
       "total_tss": 1011,
       "activity_count": 12,
       "ctl_peak": 25.2,
@@ -12427,6 +12801,7 @@
     {
       "month": "2020-11",
       "total_hours": 23.82,
+      "total_distance_km": 292.1,
       "total_tss": 1416,
       "activity_count": 16,
       "ctl_peak": 35.9,
@@ -12446,6 +12821,7 @@
     {
       "month": "2020-12",
       "total_hours": 26.1,
+      "total_distance_km": 346.4,
       "total_tss": 1433,
       "activity_count": 22,
       "ctl_peak": 41.0,
@@ -12465,6 +12841,7 @@
     {
       "month": "2021-01",
       "total_hours": 24.36,
+      "total_distance_km": 294.0,
       "total_tss": 1278,
       "activity_count": 21,
       "ctl_peak": 42.1,
@@ -12484,6 +12861,7 @@
     {
       "month": "2021-02",
       "total_hours": 24.34,
+      "total_distance_km": 210.1,
       "total_tss": 1293,
       "activity_count": 23,
       "ctl_peak": 43.7,
@@ -12503,6 +12881,7 @@
     {
       "month": "2021-03",
       "total_hours": 29.65,
+      "total_distance_km": 286.6,
       "total_tss": 1775,
       "activity_count": 30,
       "ctl_peak": 52.8,
@@ -12522,6 +12901,7 @@
     {
       "month": "2021-04",
       "total_hours": 28.78,
+      "total_distance_km": 313.3,
       "total_tss": 1677,
       "activity_count": 25,
       "ctl_peak": 55.4,
@@ -12541,6 +12921,7 @@
     {
       "month": "2021-05",
       "total_hours": 24.8,
+      "total_distance_km": 200.3,
       "total_tss": 1438,
       "activity_count": 26,
       "ctl_peak": 57.1,
@@ -12560,6 +12941,7 @@
     {
       "month": "2021-06",
       "total_hours": 26.52,
+      "total_distance_km": 368.1,
       "total_tss": 1269,
       "activity_count": 20,
       "ctl_peak": 57.0,
@@ -12579,6 +12961,7 @@
     {
       "month": "2021-07",
       "total_hours": 2.82,
+      "total_distance_km": 21.6,
       "total_tss": 187,
       "activity_count": 5,
       "ctl_peak": 42.4,
@@ -12598,6 +12981,7 @@
     {
       "month": "2021-08",
       "total_hours": 4.86,
+      "total_distance_km": 40.5,
       "total_tss": 236,
       "activity_count": 8,
       "ctl_peak": 22.6,
@@ -12617,6 +13001,7 @@
     {
       "month": "2021-09",
       "total_hours": 31.09,
+      "total_distance_km": 264.5,
       "total_tss": 1535,
       "activity_count": 41,
       "ctl_peak": 32.3,
@@ -12636,6 +13021,7 @@
     {
       "month": "2021-10",
       "total_hours": 35.67,
+      "total_distance_km": 395.8,
       "total_tss": 2069,
       "activity_count": 29,
       "ctl_peak": 51.5,
@@ -12655,6 +13041,7 @@
     {
       "month": "2021-11",
       "total_hours": 53.48,
+      "total_distance_km": 408.2,
       "total_tss": 2330,
       "activity_count": 44,
       "ctl_peak": 73.6,
@@ -12674,6 +13061,7 @@
     {
       "month": "2021-12",
       "total_hours": 29.1,
+      "total_distance_km": 285.7,
       "total_tss": 1869,
       "activity_count": 29,
       "ctl_peak": 65.0,
@@ -12693,6 +13081,7 @@
     {
       "month": "2022-01",
       "total_hours": 19.16,
+      "total_distance_km": 226.2,
       "total_tss": 843,
       "activity_count": 12,
       "ctl_peak": 63.6,
@@ -12712,6 +13101,7 @@
     {
       "month": "2022-02",
       "total_hours": 23.59,
+      "total_distance_km": 200.9,
       "total_tss": 1488,
       "activity_count": 19,
       "ctl_peak": 48.9,
@@ -12731,6 +13121,7 @@
     {
       "month": "2022-03",
       "total_hours": 32.38,
+      "total_distance_km": 277.5,
       "total_tss": 1836,
       "activity_count": 36,
       "ctl_peak": 57.6,
@@ -12750,6 +13141,7 @@
     {
       "month": "2022-04",
       "total_hours": 27.66,
+      "total_distance_km": 270.9,
       "total_tss": 1603,
       "activity_count": 24,
       "ctl_peak": 55.8,
@@ -12769,6 +13161,7 @@
     {
       "month": "2022-05",
       "total_hours": 31.38,
+      "total_distance_km": 279.9,
       "total_tss": 1664,
       "activity_count": 37,
       "ctl_peak": 56.2,
@@ -12788,6 +13181,7 @@
     {
       "month": "2022-06",
       "total_hours": 18.21,
+      "total_distance_km": 166.8,
       "total_tss": 1057,
       "activity_count": 20,
       "ctl_peak": 57.7,
@@ -12807,6 +13201,7 @@
     {
       "month": "2022-07",
       "total_hours": 31.88,
+      "total_distance_km": 278.2,
       "total_tss": 1881,
       "activity_count": 28,
       "ctl_peak": 54.6,
@@ -12826,6 +13221,7 @@
     {
       "month": "2022-08",
       "total_hours": 26.12,
+      "total_distance_km": 237.7,
       "total_tss": 1590,
       "activity_count": 34,
       "ctl_peak": 56.5,
@@ -12845,6 +13241,7 @@
     {
       "month": "2022-09",
       "total_hours": -286629.14,
+      "total_distance_km": 42959.0,
       "total_tss": 1032,
       "activity_count": 27,
       "ctl_peak": 52.2,
@@ -12864,6 +13261,7 @@
     {
       "month": "2022-10",
       "total_hours": 39.82,
+      "total_distance_km": 322.1,
       "total_tss": 1949,
       "activity_count": 41,
       "ctl_peak": 56.3,
@@ -12883,6 +13281,7 @@
     {
       "month": "2022-11",
       "total_hours": 33.93,
+      "total_distance_km": 275.1,
       "total_tss": 1684,
       "activity_count": 37,
       "ctl_peak": 61.6,
@@ -12902,6 +13301,7 @@
     {
       "month": "2022-12",
       "total_hours": 33.09,
+      "total_distance_km": 269.3,
       "total_tss": 1846,
       "activity_count": 33,
       "ctl_peak": 67.1,
@@ -12921,6 +13321,7 @@
     {
       "month": "2023-01",
       "total_hours": 25.04,
+      "total_distance_km": 241.2,
       "total_tss": 1451,
       "activity_count": 24,
       "ctl_peak": 56.7,
@@ -12940,6 +13341,7 @@
     {
       "month": "2023-02",
       "total_hours": 25.97,
+      "total_distance_km": 234.1,
       "total_tss": 1514,
       "activity_count": 25,
       "ctl_peak": 55.5,
@@ -12959,6 +13361,7 @@
     {
       "month": "2023-03",
       "total_hours": 36.36,
+      "total_distance_km": 258.7,
       "total_tss": 1695,
       "activity_count": 30,
       "ctl_peak": 60.5,
@@ -12978,6 +13381,7 @@
     {
       "month": "2023-04",
       "total_hours": 23.63,
+      "total_distance_km": 227.4,
       "total_tss": 1414,
       "activity_count": 33,
       "ctl_peak": 54.2,
@@ -12997,6 +13401,7 @@
     {
       "month": "2023-05",
       "total_hours": 28.47,
+      "total_distance_km": 273.9,
       "total_tss": 1779,
       "activity_count": 39,
       "ctl_peak": 54.2,
@@ -13016,6 +13421,7 @@
     {
       "month": "2023-06",
       "total_hours": 27.21,
+      "total_distance_km": 254.7,
       "total_tss": 1564,
       "activity_count": 35,
       "ctl_peak": 54.8,
@@ -13035,6 +13441,7 @@
     {
       "month": "2023-07",
       "total_hours": 31.57,
+      "total_distance_km": 302.4,
       "total_tss": 1867,
       "activity_count": 64,
       "ctl_peak": 58.3,
@@ -13054,6 +13461,7 @@
     {
       "month": "2023-08",
       "total_hours": 28.1,
+      "total_distance_km": 273.0,
       "total_tss": 1770,
       "activity_count": 33,
       "ctl_peak": 59.7,
@@ -13073,6 +13481,7 @@
     {
       "month": "2023-09",
       "total_hours": 32.04,
+      "total_distance_km": 301.0,
       "total_tss": 1729,
       "activity_count": 55,
       "ctl_peak": 59.9,
@@ -13092,6 +13501,7 @@
     {
       "month": "2023-10",
       "total_hours": 29.65,
+      "total_distance_km": 300.2,
       "total_tss": 1870,
       "activity_count": 41,
       "ctl_peak": 61.2,
@@ -13111,6 +13521,7 @@
     {
       "month": "2023-11",
       "total_hours": 32.27,
+      "total_distance_km": 304.8,
       "total_tss": 1779,
       "activity_count": 38,
       "ctl_peak": 62.1,
@@ -13130,6 +13541,7 @@
     {
       "month": "2023-12",
       "total_hours": 36.55,
+      "total_distance_km": 306.2,
       "total_tss": 1806,
       "activity_count": 48,
       "ctl_peak": 63.7,
@@ -13149,6 +13561,7 @@
     {
       "month": "2024-01",
       "total_hours": 26.68,
+      "total_distance_km": 254.5,
       "total_tss": 1601,
       "activity_count": 27,
       "ctl_peak": 58.8,
@@ -13168,6 +13581,7 @@
     {
       "month": "2024-02",
       "total_hours": 14.27,
+      "total_distance_km": 127.3,
       "total_tss": 769,
       "activity_count": 19,
       "ctl_peak": 53.3,
@@ -13187,6 +13601,7 @@
     {
       "month": "2024-03",
       "total_hours": 29.72,
+      "total_distance_km": 283.3,
       "total_tss": 1826,
       "activity_count": 30,
       "ctl_peak": 51.6,
@@ -13206,6 +13621,7 @@
     {
       "month": "2024-04",
       "total_hours": 19.26,
+      "total_distance_km": 87.7,
       "total_tss": 701,
       "activity_count": 23,
       "ctl_peak": 50.4,
@@ -13225,6 +13641,7 @@
     {
       "month": "2024-05",
       "total_hours": 24.58,
+      "total_distance_km": 119.4,
       "total_tss": 931,
       "activity_count": 27,
       "ctl_peak": 34.9,
@@ -13244,6 +13661,7 @@
     {
       "month": "2024-06",
       "total_hours": 28.87,
+      "total_distance_km": 206.6,
       "total_tss": 1345,
       "activity_count": 35,
       "ctl_peak": 36.6,
@@ -13263,6 +13681,7 @@
     {
       "month": "2024-07",
       "total_hours": 25.72,
+      "total_distance_km": 225.0,
       "total_tss": 1387,
       "activity_count": 26,
       "ctl_peak": 41.5,
@@ -13282,6 +13701,7 @@
     {
       "month": "2024-08",
       "total_hours": 26.17,
+      "total_distance_km": 252.5,
       "total_tss": 1487,
       "activity_count": 22,
       "ctl_peak": 49.1,
@@ -13301,6 +13721,7 @@
     {
       "month": "2024-09",
       "total_hours": 32.56,
+      "total_distance_km": 300.2,
       "total_tss": 1709,
       "activity_count": 25,
       "ctl_peak": 55.2,
@@ -13320,6 +13741,7 @@
     {
       "month": "2024-10",
       "total_hours": 51.85,
+      "total_distance_km": 503.7,
       "total_tss": 2591,
       "activity_count": 47,
       "ctl_peak": 70.0,
@@ -13339,6 +13761,7 @@
     {
       "month": "2024-11",
       "total_hours": 37.58,
+      "total_distance_km": 289.0,
       "total_tss": 1699,
       "activity_count": 32,
       "ctl_peak": 73.6,
@@ -13358,6 +13781,7 @@
     {
       "month": "2024-12",
       "total_hours": 63.09,
+      "total_distance_km": 410.1,
       "total_tss": 1754,
       "activity_count": 31,
       "ctl_peak": 71.7,
@@ -13377,6 +13801,7 @@
     {
       "month": "2025-01",
       "total_hours": 4.0,
+      "total_distance_km": 35.5,
       "total_tss": 207,
       "activity_count": 4,
       "ctl_peak": 56.8,
@@ -13396,6 +13821,7 @@
     {
       "month": "2025-02",
       "total_hours": 18.82,
+      "total_distance_km": 150.5,
       "total_tss": 1032,
       "activity_count": 18,
       "ctl_peak": 34.0,
@@ -13415,6 +13841,7 @@
     {
       "month": "2025-03",
       "total_hours": 33.79,
+      "total_distance_km": 148.7,
       "total_tss": 1126,
       "activity_count": 44,
       "ctl_peak": 38.2,
@@ -13434,6 +13861,7 @@
     {
       "month": "2025-04",
       "total_hours": 16.58,
+      "total_distance_km": 106.7,
       "total_tss": 838,
       "activity_count": 29,
       "ctl_peak": 29.5,
@@ -13453,6 +13881,7 @@
     {
       "month": "2025-05",
       "total_hours": 7.48,
+      "total_distance_km": 55.4,
       "total_tss": 384,
       "activity_count": 17,
       "ctl_peak": 27.1,
@@ -13472,6 +13901,7 @@
     {
       "month": "2025-06",
       "total_hours": 18.47,
+      "total_distance_km": 102.0,
       "total_tss": 751,
       "activity_count": 32,
       "ctl_peak": 25.6,
@@ -13491,6 +13921,7 @@
     {
       "month": "2025-07",
       "total_hours": 13.6,
+      "total_distance_km": 96.8,
       "total_tss": 735,
       "activity_count": 21,
       "ctl_peak": 22.6,
@@ -13510,6 +13941,7 @@
     {
       "month": "2025-08",
       "total_hours": 25.69,
+      "total_distance_km": 221.2,
       "total_tss": 1460,
       "activity_count": 32,
       "ctl_peak": 35.6,
@@ -13529,6 +13961,7 @@
     {
       "month": "2025-09",
       "total_hours": 25.34,
+      "total_distance_km": 216.6,
       "total_tss": 1343,
       "activity_count": 31,
       "ctl_peak": 39.7,
@@ -13548,6 +13981,7 @@
     {
       "month": "2025-10",
       "total_hours": 26.16,
+      "total_distance_km": 198.6,
       "total_tss": 1368,
       "activity_count": 36,
       "ctl_peak": 44.4,
@@ -13567,6 +14001,7 @@
     {
       "month": "2025-11",
       "total_hours": 9.12,
+      "total_distance_km": 73.3,
       "total_tss": 519,
       "activity_count": 13,
       "ctl_peak": 40.2,
@@ -13586,6 +14021,7 @@
     {
       "month": "2025-12",
       "total_hours": 25.25,
+      "total_distance_km": 206.0,
       "total_tss": 1486,
       "activity_count": 35,
       "ctl_peak": 37.3,
@@ -13605,6 +14041,7 @@
     {
       "month": "2026-01",
       "total_hours": 21.59,
+      "total_distance_km": 191.3,
       "total_tss": 1197,
       "activity_count": 37,
       "ctl_peak": 39.1,
@@ -13624,6 +14061,7 @@
     {
       "month": "2026-02",
       "total_hours": 10.97,
+      "total_distance_km": 95.7,
       "total_tss": 616,
       "activity_count": 15,
       "ctl_peak": 37.1,
@@ -13643,6 +14081,7 @@
     {
       "month": "2026-03",
       "total_hours": 1.4,
+      "total_distance_km": 12.3,
       "total_tss": 81,
       "activity_count": 2,
       "ctl_peak": 27.2,
@@ -13662,6 +14101,7 @@
     {
       "month": "2026-04",
       "total_hours": 18.9,
+      "total_distance_km": 113.0,
       "total_tss": 679,
       "activity_count": 34,
       "ctl_peak": 22.6,
@@ -13683,6 +14123,7 @@
     {
       "month": "2017-04",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -13702,6 +14143,7 @@
     {
       "month": "2017-05",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -13721,6 +14163,7 @@
     {
       "month": "2017-06",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -13740,6 +14183,7 @@
     {
       "month": "2017-07",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -13759,6 +14203,7 @@
     {
       "month": "2017-08",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -13778,6 +14223,7 @@
     {
       "month": "2017-09",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -13797,6 +14243,7 @@
     {
       "month": "2017-10",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -13816,6 +14263,7 @@
     {
       "month": "2017-11",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -13835,6 +14283,7 @@
     {
       "month": "2017-12",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -13854,6 +14303,7 @@
     {
       "month": "2018-01",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -13873,6 +14323,7 @@
     {
       "month": "2018-02",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -13892,6 +14343,7 @@
     {
       "month": "2018-03",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -13911,6 +14363,7 @@
     {
       "month": "2018-04",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -13930,6 +14383,7 @@
     {
       "month": "2018-05",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -13949,6 +14403,7 @@
     {
       "month": "2018-06",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -13968,6 +14423,7 @@
     {
       "month": "2018-07",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -13987,6 +14443,7 @@
     {
       "month": "2018-08",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -14006,6 +14463,7 @@
     {
       "month": "2018-09",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -14025,6 +14483,7 @@
     {
       "month": "2018-10",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -14044,6 +14503,7 @@
     {
       "month": "2018-11",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -14063,6 +14523,7 @@
     {
       "month": "2018-12",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -14082,6 +14543,7 @@
     {
       "month": "2019-01",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -14101,6 +14563,7 @@
     {
       "month": "2019-02",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -14120,6 +14583,7 @@
     {
       "month": "2019-03",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -14139,6 +14603,7 @@
     {
       "month": "2019-04",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -14158,6 +14623,7 @@
     {
       "month": "2019-05",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -14177,6 +14643,7 @@
     {
       "month": "2019-06",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -14196,6 +14663,7 @@
     {
       "month": "2019-07",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -14215,6 +14683,7 @@
     {
       "month": "2019-08",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -14234,6 +14703,7 @@
     {
       "month": "2019-09",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -14253,6 +14723,7 @@
     {
       "month": "2019-10",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -14272,6 +14743,7 @@
     {
       "month": "2019-11",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -14291,6 +14763,7 @@
     {
       "month": "2019-12",
       "total_hours": 6.66,
+      "total_distance_km": 30.8,
       "total_tss": 348,
       "activity_count": 11,
       "ctl_peak": 5.5,
@@ -14310,6 +14783,7 @@
     {
       "month": "2020-01",
       "total_hours": 6.26,
+      "total_distance_km": 5.0,
       "total_tss": 216,
       "activity_count": 7,
       "ctl_peak": 4.9,
@@ -14329,6 +14803,7 @@
     {
       "month": "2020-02",
       "total_hours": 8.47,
+      "total_distance_km": 26.7,
       "total_tss": 307,
       "activity_count": 6,
       "ctl_peak": 6.8,
@@ -14348,6 +14823,7 @@
     {
       "month": "2020-03",
       "total_hours": 9.93,
+      "total_distance_km": 90.6,
       "total_tss": 681,
       "activity_count": 10,
       "ctl_peak": 16.8,
@@ -14367,6 +14843,7 @@
     {
       "month": "2020-04",
       "total_hours": 9.68,
+      "total_distance_km": 0.0,
       "total_tss": 474,
       "activity_count": 10,
       "ctl_peak": 14.2,
@@ -14386,6 +14863,7 @@
     {
       "month": "2020-05",
       "total_hours": 12.55,
+      "total_distance_km": 0.0,
       "total_tss": 635,
       "activity_count": 12,
       "ctl_peak": 6.9,
@@ -14405,6 +14883,7 @@
     {
       "month": "2020-06",
       "total_hours": 8.53,
+      "total_distance_km": 57.4,
       "total_tss": 417,
       "activity_count": 8,
       "ctl_peak": 5.6,
@@ -14424,6 +14903,7 @@
     {
       "month": "2020-07",
       "total_hours": 17.27,
+      "total_distance_km": 135.0,
       "total_tss": 831,
       "activity_count": 15,
       "ctl_peak": 13.2,
@@ -14443,6 +14923,7 @@
     {
       "month": "2020-08",
       "total_hours": 0.88,
+      "total_distance_km": 0.0,
       "total_tss": 65,
       "activity_count": 1,
       "ctl_peak": 11.1,
@@ -14462,6 +14943,7 @@
     {
       "month": "2020-09",
       "total_hours": 12.39,
+      "total_distance_km": 140.3,
       "total_tss": 846,
       "activity_count": 10,
       "ctl_peak": 17.2,
@@ -14481,6 +14963,7 @@
     {
       "month": "2020-10",
       "total_hours": 17.56,
+      "total_distance_km": 260.5,
       "total_tss": 1011,
       "activity_count": 12,
       "ctl_peak": 25.2,
@@ -14500,6 +14983,7 @@
     {
       "month": "2020-11",
       "total_hours": 23.82,
+      "total_distance_km": 292.1,
       "total_tss": 1416,
       "activity_count": 16,
       "ctl_peak": 35.9,
@@ -14519,6 +15003,7 @@
     {
       "month": "2020-12",
       "total_hours": 26.1,
+      "total_distance_km": 346.4,
       "total_tss": 1433,
       "activity_count": 22,
       "ctl_peak": 41.0,
@@ -14538,6 +15023,7 @@
     {
       "month": "2021-01",
       "total_hours": 24.36,
+      "total_distance_km": 294.0,
       "total_tss": 1278,
       "activity_count": 21,
       "ctl_peak": 42.1,
@@ -14557,6 +15043,7 @@
     {
       "month": "2021-02",
       "total_hours": 24.34,
+      "total_distance_km": 210.1,
       "total_tss": 1293,
       "activity_count": 23,
       "ctl_peak": 43.7,
@@ -14576,6 +15063,7 @@
     {
       "month": "2021-03",
       "total_hours": 29.65,
+      "total_distance_km": 286.6,
       "total_tss": 1775,
       "activity_count": 30,
       "ctl_peak": 52.8,
@@ -14595,6 +15083,7 @@
     {
       "month": "2021-04",
       "total_hours": 28.78,
+      "total_distance_km": 313.3,
       "total_tss": 1677,
       "activity_count": 25,
       "ctl_peak": 55.4,
@@ -14614,6 +15103,7 @@
     {
       "month": "2021-05",
       "total_hours": 24.8,
+      "total_distance_km": 200.3,
       "total_tss": 1438,
       "activity_count": 26,
       "ctl_peak": 57.1,
@@ -14633,6 +15123,7 @@
     {
       "month": "2021-06",
       "total_hours": 26.52,
+      "total_distance_km": 368.1,
       "total_tss": 1269,
       "activity_count": 20,
       "ctl_peak": 57.0,
@@ -14652,6 +15143,7 @@
     {
       "month": "2021-07",
       "total_hours": 2.82,
+      "total_distance_km": 21.6,
       "total_tss": 187,
       "activity_count": 5,
       "ctl_peak": 42.4,
@@ -14671,6 +15163,7 @@
     {
       "month": "2021-08",
       "total_hours": 4.86,
+      "total_distance_km": 40.5,
       "total_tss": 236,
       "activity_count": 8,
       "ctl_peak": 22.6,
@@ -14690,6 +15183,7 @@
     {
       "month": "2021-09",
       "total_hours": 31.09,
+      "total_distance_km": 264.5,
       "total_tss": 1535,
       "activity_count": 41,
       "ctl_peak": 32.3,
@@ -14709,6 +15203,7 @@
     {
       "month": "2021-10",
       "total_hours": 35.67,
+      "total_distance_km": 395.8,
       "total_tss": 2069,
       "activity_count": 29,
       "ctl_peak": 51.5,
@@ -14728,6 +15223,7 @@
     {
       "month": "2021-11",
       "total_hours": 53.48,
+      "total_distance_km": 408.2,
       "total_tss": 2330,
       "activity_count": 44,
       "ctl_peak": 73.6,
@@ -14747,6 +15243,7 @@
     {
       "month": "2021-12",
       "total_hours": 29.1,
+      "total_distance_km": 285.7,
       "total_tss": 1869,
       "activity_count": 29,
       "ctl_peak": 65.0,
@@ -14766,6 +15263,7 @@
     {
       "month": "2022-01",
       "total_hours": 19.16,
+      "total_distance_km": 226.2,
       "total_tss": 843,
       "activity_count": 12,
       "ctl_peak": 63.6,
@@ -14785,6 +15283,7 @@
     {
       "month": "2022-02",
       "total_hours": 23.59,
+      "total_distance_km": 200.9,
       "total_tss": 1488,
       "activity_count": 19,
       "ctl_peak": 48.9,
@@ -14804,6 +15303,7 @@
     {
       "month": "2022-03",
       "total_hours": 32.38,
+      "total_distance_km": 277.5,
       "total_tss": 1836,
       "activity_count": 36,
       "ctl_peak": 57.6,
@@ -14823,6 +15323,7 @@
     {
       "month": "2022-04",
       "total_hours": 27.66,
+      "total_distance_km": 270.9,
       "total_tss": 1603,
       "activity_count": 24,
       "ctl_peak": 55.8,
@@ -14842,6 +15343,7 @@
     {
       "month": "2022-05",
       "total_hours": 31.38,
+      "total_distance_km": 279.9,
       "total_tss": 1664,
       "activity_count": 37,
       "ctl_peak": 56.2,
@@ -14861,6 +15363,7 @@
     {
       "month": "2022-06",
       "total_hours": 18.21,
+      "total_distance_km": 166.8,
       "total_tss": 1057,
       "activity_count": 20,
       "ctl_peak": 57.7,
@@ -14880,6 +15383,7 @@
     {
       "month": "2022-07",
       "total_hours": 31.88,
+      "total_distance_km": 278.2,
       "total_tss": 1881,
       "activity_count": 28,
       "ctl_peak": 54.6,
@@ -14899,6 +15403,7 @@
     {
       "month": "2022-08",
       "total_hours": 26.12,
+      "total_distance_km": 237.7,
       "total_tss": 1590,
       "activity_count": 34,
       "ctl_peak": 56.5,
@@ -14918,6 +15423,7 @@
     {
       "month": "2022-09",
       "total_hours": -286629.14,
+      "total_distance_km": 42959.0,
       "total_tss": 1032,
       "activity_count": 27,
       "ctl_peak": 52.2,
@@ -14937,6 +15443,7 @@
     {
       "month": "2022-10",
       "total_hours": 39.82,
+      "total_distance_km": 322.1,
       "total_tss": 1949,
       "activity_count": 41,
       "ctl_peak": 56.3,
@@ -14956,6 +15463,7 @@
     {
       "month": "2022-11",
       "total_hours": 33.93,
+      "total_distance_km": 275.1,
       "total_tss": 1684,
       "activity_count": 37,
       "ctl_peak": 61.6,
@@ -14975,6 +15483,7 @@
     {
       "month": "2022-12",
       "total_hours": 33.09,
+      "total_distance_km": 269.3,
       "total_tss": 1846,
       "activity_count": 33,
       "ctl_peak": 67.1,
@@ -14994,6 +15503,7 @@
     {
       "month": "2023-01",
       "total_hours": 25.04,
+      "total_distance_km": 241.2,
       "total_tss": 1451,
       "activity_count": 24,
       "ctl_peak": 56.7,
@@ -15013,6 +15523,7 @@
     {
       "month": "2023-02",
       "total_hours": 25.97,
+      "total_distance_km": 234.1,
       "total_tss": 1514,
       "activity_count": 25,
       "ctl_peak": 55.5,
@@ -15032,6 +15543,7 @@
     {
       "month": "2023-03",
       "total_hours": 36.36,
+      "total_distance_km": 258.7,
       "total_tss": 1695,
       "activity_count": 30,
       "ctl_peak": 60.5,
@@ -15051,6 +15563,7 @@
     {
       "month": "2023-04",
       "total_hours": 23.63,
+      "total_distance_km": 227.4,
       "total_tss": 1414,
       "activity_count": 33,
       "ctl_peak": 54.2,
@@ -15070,6 +15583,7 @@
     {
       "month": "2023-05",
       "total_hours": 28.47,
+      "total_distance_km": 273.9,
       "total_tss": 1779,
       "activity_count": 39,
       "ctl_peak": 54.2,
@@ -15089,6 +15603,7 @@
     {
       "month": "2023-06",
       "total_hours": 27.21,
+      "total_distance_km": 254.7,
       "total_tss": 1564,
       "activity_count": 35,
       "ctl_peak": 54.8,
@@ -15108,6 +15623,7 @@
     {
       "month": "2023-07",
       "total_hours": 31.57,
+      "total_distance_km": 302.4,
       "total_tss": 1867,
       "activity_count": 64,
       "ctl_peak": 58.3,
@@ -15127,6 +15643,7 @@
     {
       "month": "2023-08",
       "total_hours": 28.1,
+      "total_distance_km": 273.0,
       "total_tss": 1770,
       "activity_count": 33,
       "ctl_peak": 59.7,
@@ -15146,6 +15663,7 @@
     {
       "month": "2023-09",
       "total_hours": 32.04,
+      "total_distance_km": 301.0,
       "total_tss": 1729,
       "activity_count": 55,
       "ctl_peak": 59.9,
@@ -15165,6 +15683,7 @@
     {
       "month": "2023-10",
       "total_hours": 29.65,
+      "total_distance_km": 300.2,
       "total_tss": 1870,
       "activity_count": 41,
       "ctl_peak": 61.2,
@@ -15184,6 +15703,7 @@
     {
       "month": "2023-11",
       "total_hours": 32.27,
+      "total_distance_km": 304.8,
       "total_tss": 1779,
       "activity_count": 38,
       "ctl_peak": 62.1,
@@ -15203,6 +15723,7 @@
     {
       "month": "2023-12",
       "total_hours": 36.55,
+      "total_distance_km": 306.2,
       "total_tss": 1806,
       "activity_count": 48,
       "ctl_peak": 63.7,
@@ -15222,6 +15743,7 @@
     {
       "month": "2024-01",
       "total_hours": 26.68,
+      "total_distance_km": 254.5,
       "total_tss": 1601,
       "activity_count": 27,
       "ctl_peak": 58.8,
@@ -15241,6 +15763,7 @@
     {
       "month": "2024-02",
       "total_hours": 14.27,
+      "total_distance_km": 127.3,
       "total_tss": 769,
       "activity_count": 19,
       "ctl_peak": 53.3,
@@ -15260,6 +15783,7 @@
     {
       "month": "2024-03",
       "total_hours": 29.72,
+      "total_distance_km": 283.3,
       "total_tss": 1826,
       "activity_count": 30,
       "ctl_peak": 51.6,
@@ -15279,6 +15803,7 @@
     {
       "month": "2024-04",
       "total_hours": 19.26,
+      "total_distance_km": 87.7,
       "total_tss": 701,
       "activity_count": 23,
       "ctl_peak": 50.4,
@@ -15298,6 +15823,7 @@
     {
       "month": "2024-05",
       "total_hours": 24.58,
+      "total_distance_km": 119.4,
       "total_tss": 931,
       "activity_count": 27,
       "ctl_peak": 34.9,
@@ -15317,6 +15843,7 @@
     {
       "month": "2024-06",
       "total_hours": 28.87,
+      "total_distance_km": 206.6,
       "total_tss": 1345,
       "activity_count": 35,
       "ctl_peak": 36.6,
@@ -15336,6 +15863,7 @@
     {
       "month": "2024-07",
       "total_hours": 25.72,
+      "total_distance_km": 225.0,
       "total_tss": 1387,
       "activity_count": 26,
       "ctl_peak": 41.5,
@@ -15355,6 +15883,7 @@
     {
       "month": "2024-08",
       "total_hours": 26.17,
+      "total_distance_km": 252.5,
       "total_tss": 1487,
       "activity_count": 22,
       "ctl_peak": 49.1,
@@ -15374,6 +15903,7 @@
     {
       "month": "2024-09",
       "total_hours": 32.56,
+      "total_distance_km": 300.2,
       "total_tss": 1709,
       "activity_count": 25,
       "ctl_peak": 55.2,
@@ -15393,6 +15923,7 @@
     {
       "month": "2024-10",
       "total_hours": 51.85,
+      "total_distance_km": 503.7,
       "total_tss": 2591,
       "activity_count": 47,
       "ctl_peak": 70.0,
@@ -15412,6 +15943,7 @@
     {
       "month": "2024-11",
       "total_hours": 37.58,
+      "total_distance_km": 289.0,
       "total_tss": 1699,
       "activity_count": 32,
       "ctl_peak": 73.6,
@@ -15431,6 +15963,7 @@
     {
       "month": "2024-12",
       "total_hours": 63.09,
+      "total_distance_km": 410.1,
       "total_tss": 1754,
       "activity_count": 31,
       "ctl_peak": 71.7,
@@ -15450,6 +15983,7 @@
     {
       "month": "2025-01",
       "total_hours": 4.0,
+      "total_distance_km": 35.5,
       "total_tss": 207,
       "activity_count": 4,
       "ctl_peak": 56.8,
@@ -15469,6 +16003,7 @@
     {
       "month": "2025-02",
       "total_hours": 18.82,
+      "total_distance_km": 150.5,
       "total_tss": 1032,
       "activity_count": 18,
       "ctl_peak": 34.0,
@@ -15488,6 +16023,7 @@
     {
       "month": "2025-03",
       "total_hours": 33.79,
+      "total_distance_km": 148.7,
       "total_tss": 1126,
       "activity_count": 44,
       "ctl_peak": 38.2,
@@ -15507,6 +16043,7 @@
     {
       "month": "2025-04",
       "total_hours": 16.58,
+      "total_distance_km": 106.7,
       "total_tss": 838,
       "activity_count": 29,
       "ctl_peak": 29.5,
@@ -15526,6 +16063,7 @@
     {
       "month": "2025-05",
       "total_hours": 7.48,
+      "total_distance_km": 55.4,
       "total_tss": 384,
       "activity_count": 17,
       "ctl_peak": 27.1,
@@ -15545,6 +16083,7 @@
     {
       "month": "2025-06",
       "total_hours": 18.47,
+      "total_distance_km": 102.0,
       "total_tss": 751,
       "activity_count": 32,
       "ctl_peak": 25.6,
@@ -15564,6 +16103,7 @@
     {
       "month": "2025-07",
       "total_hours": 13.6,
+      "total_distance_km": 96.8,
       "total_tss": 735,
       "activity_count": 21,
       "ctl_peak": 22.6,
@@ -15583,6 +16123,7 @@
     {
       "month": "2025-08",
       "total_hours": 25.69,
+      "total_distance_km": 221.2,
       "total_tss": 1460,
       "activity_count": 32,
       "ctl_peak": 35.6,
@@ -15602,6 +16143,7 @@
     {
       "month": "2025-09",
       "total_hours": 25.34,
+      "total_distance_km": 216.6,
       "total_tss": 1343,
       "activity_count": 31,
       "ctl_peak": 39.7,
@@ -15621,6 +16163,7 @@
     {
       "month": "2025-10",
       "total_hours": 26.16,
+      "total_distance_km": 198.6,
       "total_tss": 1368,
       "activity_count": 36,
       "ctl_peak": 44.4,
@@ -15640,6 +16183,7 @@
     {
       "month": "2025-11",
       "total_hours": 9.12,
+      "total_distance_km": 73.3,
       "total_tss": 519,
       "activity_count": 13,
       "ctl_peak": 40.2,
@@ -15659,6 +16203,7 @@
     {
       "month": "2025-12",
       "total_hours": 25.25,
+      "total_distance_km": 206.0,
       "total_tss": 1486,
       "activity_count": 35,
       "ctl_peak": 37.3,
@@ -15678,6 +16223,7 @@
     {
       "month": "2026-01",
       "total_hours": 21.59,
+      "total_distance_km": 191.3,
       "total_tss": 1197,
       "activity_count": 37,
       "ctl_peak": 39.1,
@@ -15697,6 +16243,7 @@
     {
       "month": "2026-02",
       "total_hours": 10.97,
+      "total_distance_km": 95.7,
       "total_tss": 616,
       "activity_count": 15,
       "ctl_peak": 37.1,
@@ -15716,6 +16263,7 @@
     {
       "month": "2026-03",
       "total_hours": 1.4,
+      "total_distance_km": 12.3,
       "total_tss": 81,
       "activity_count": 2,
       "ctl_peak": 27.2,
@@ -15735,6 +16283,7 @@
     {
       "month": "2026-04",
       "total_hours": 18.9,
+      "total_distance_km": 113.0,
       "total_tss": 679,
       "activity_count": 34,
       "ctl_peak": 22.6,
@@ -15756,6 +16305,7 @@
     {
       "month": "2016-04",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -15775,6 +16325,7 @@
     {
       "month": "2016-05",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -15794,6 +16345,7 @@
     {
       "month": "2016-06",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -15813,6 +16365,7 @@
     {
       "month": "2016-07",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -15832,6 +16385,7 @@
     {
       "month": "2016-08",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -15851,6 +16405,7 @@
     {
       "month": "2016-09",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -15870,6 +16425,7 @@
     {
       "month": "2016-10",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -15889,6 +16445,7 @@
     {
       "month": "2016-11",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -15908,6 +16465,7 @@
     {
       "month": "2016-12",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -15927,6 +16485,7 @@
     {
       "month": "2017-01",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -15946,6 +16505,7 @@
     {
       "month": "2017-02",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -15965,6 +16525,7 @@
     {
       "month": "2017-03",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -15984,6 +16545,7 @@
     {
       "month": "2017-04",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -16003,6 +16565,7 @@
     {
       "month": "2017-05",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -16022,6 +16585,7 @@
     {
       "month": "2017-06",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -16041,6 +16605,7 @@
     {
       "month": "2017-07",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -16060,6 +16625,7 @@
     {
       "month": "2017-08",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -16079,6 +16645,7 @@
     {
       "month": "2017-09",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -16098,6 +16665,7 @@
     {
       "month": "2017-10",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -16117,6 +16685,7 @@
     {
       "month": "2017-11",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -16136,6 +16705,7 @@
     {
       "month": "2017-12",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -16155,6 +16725,7 @@
     {
       "month": "2018-01",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -16174,6 +16745,7 @@
     {
       "month": "2018-02",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -16193,6 +16765,7 @@
     {
       "month": "2018-03",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -16212,6 +16785,7 @@
     {
       "month": "2018-04",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -16231,6 +16805,7 @@
     {
       "month": "2018-05",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -16250,6 +16825,7 @@
     {
       "month": "2018-06",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -16269,6 +16845,7 @@
     {
       "month": "2018-07",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -16288,6 +16865,7 @@
     {
       "month": "2018-08",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -16307,6 +16885,7 @@
     {
       "month": "2018-09",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -16326,6 +16905,7 @@
     {
       "month": "2018-10",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -16345,6 +16925,7 @@
     {
       "month": "2018-11",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -16364,6 +16945,7 @@
     {
       "month": "2018-12",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -16383,6 +16965,7 @@
     {
       "month": "2019-01",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -16402,6 +16985,7 @@
     {
       "month": "2019-02",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -16421,6 +17005,7 @@
     {
       "month": "2019-03",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -16440,6 +17025,7 @@
     {
       "month": "2019-04",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -16459,6 +17045,7 @@
     {
       "month": "2019-05",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -16478,6 +17065,7 @@
     {
       "month": "2019-06",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -16497,6 +17085,7 @@
     {
       "month": "2019-07",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -16516,6 +17105,7 @@
     {
       "month": "2019-08",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -16535,6 +17125,7 @@
     {
       "month": "2019-09",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -16554,6 +17145,7 @@
     {
       "month": "2019-10",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -16573,6 +17165,7 @@
     {
       "month": "2019-11",
       "total_hours": 0.0,
+      "total_distance_km": 0,
       "total_tss": 0,
       "activity_count": 0,
       "ctl_peak": null,
@@ -16592,6 +17185,7 @@
     {
       "month": "2019-12",
       "total_hours": 6.66,
+      "total_distance_km": 30.8,
       "total_tss": 348,
       "activity_count": 11,
       "ctl_peak": 5.5,
@@ -16611,6 +17205,7 @@
     {
       "month": "2020-01",
       "total_hours": 6.26,
+      "total_distance_km": 5.0,
       "total_tss": 216,
       "activity_count": 7,
       "ctl_peak": 4.9,
@@ -16630,6 +17225,7 @@
     {
       "month": "2020-02",
       "total_hours": 8.47,
+      "total_distance_km": 26.7,
       "total_tss": 307,
       "activity_count": 6,
       "ctl_peak": 6.8,
@@ -16649,6 +17245,7 @@
     {
       "month": "2020-03",
       "total_hours": 9.93,
+      "total_distance_km": 90.6,
       "total_tss": 681,
       "activity_count": 10,
       "ctl_peak": 16.8,
@@ -16668,6 +17265,7 @@
     {
       "month": "2020-04",
       "total_hours": 9.68,
+      "total_distance_km": 0.0,
       "total_tss": 474,
       "activity_count": 10,
       "ctl_peak": 14.2,
@@ -16687,6 +17285,7 @@
     {
       "month": "2020-05",
       "total_hours": 12.55,
+      "total_distance_km": 0.0,
       "total_tss": 635,
       "activity_count": 12,
       "ctl_peak": 6.9,
@@ -16706,6 +17305,7 @@
     {
       "month": "2020-06",
       "total_hours": 8.53,
+      "total_distance_km": 57.4,
       "total_tss": 417,
       "activity_count": 8,
       "ctl_peak": 5.6,
@@ -16725,6 +17325,7 @@
     {
       "month": "2020-07",
       "total_hours": 17.27,
+      "total_distance_km": 135.0,
       "total_tss": 831,
       "activity_count": 15,
       "ctl_peak": 13.2,
@@ -16744,6 +17345,7 @@
     {
       "month": "2020-08",
       "total_hours": 0.88,
+      "total_distance_km": 0.0,
       "total_tss": 65,
       "activity_count": 1,
       "ctl_peak": 11.1,
@@ -16763,6 +17365,7 @@
     {
       "month": "2020-09",
       "total_hours": 12.39,
+      "total_distance_km": 140.3,
       "total_tss": 846,
       "activity_count": 10,
       "ctl_peak": 17.2,
@@ -16782,6 +17385,7 @@
     {
       "month": "2020-10",
       "total_hours": 17.56,
+      "total_distance_km": 260.5,
       "total_tss": 1011,
       "activity_count": 12,
       "ctl_peak": 25.2,
@@ -16801,6 +17405,7 @@
     {
       "month": "2020-11",
       "total_hours": 23.82,
+      "total_distance_km": 292.1,
       "total_tss": 1416,
       "activity_count": 16,
       "ctl_peak": 35.9,
@@ -16820,6 +17425,7 @@
     {
       "month": "2020-12",
       "total_hours": 26.1,
+      "total_distance_km": 346.4,
       "total_tss": 1433,
       "activity_count": 22,
       "ctl_peak": 41.0,
@@ -16839,6 +17445,7 @@
     {
       "month": "2021-01",
       "total_hours": 24.36,
+      "total_distance_km": 294.0,
       "total_tss": 1278,
       "activity_count": 21,
       "ctl_peak": 42.1,
@@ -16858,6 +17465,7 @@
     {
       "month": "2021-02",
       "total_hours": 24.34,
+      "total_distance_km": 210.1,
       "total_tss": 1293,
       "activity_count": 23,
       "ctl_peak": 43.7,
@@ -16877,6 +17485,7 @@
     {
       "month": "2021-03",
       "total_hours": 29.65,
+      "total_distance_km": 286.6,
       "total_tss": 1775,
       "activity_count": 30,
       "ctl_peak": 52.8,
@@ -16896,6 +17505,7 @@
     {
       "month": "2021-04",
       "total_hours": 28.78,
+      "total_distance_km": 313.3,
       "total_tss": 1677,
       "activity_count": 25,
       "ctl_peak": 55.4,
@@ -16915,6 +17525,7 @@
     {
       "month": "2021-05",
       "total_hours": 24.8,
+      "total_distance_km": 200.3,
       "total_tss": 1438,
       "activity_count": 26,
       "ctl_peak": 57.1,
@@ -16934,6 +17545,7 @@
     {
       "month": "2021-06",
       "total_hours": 26.52,
+      "total_distance_km": 368.1,
       "total_tss": 1269,
       "activity_count": 20,
       "ctl_peak": 57.0,
@@ -16953,6 +17565,7 @@
     {
       "month": "2021-07",
       "total_hours": 2.82,
+      "total_distance_km": 21.6,
       "total_tss": 187,
       "activity_count": 5,
       "ctl_peak": 42.4,
@@ -16972,6 +17585,7 @@
     {
       "month": "2021-08",
       "total_hours": 4.86,
+      "total_distance_km": 40.5,
       "total_tss": 236,
       "activity_count": 8,
       "ctl_peak": 22.6,
@@ -16991,6 +17605,7 @@
     {
       "month": "2021-09",
       "total_hours": 31.09,
+      "total_distance_km": 264.5,
       "total_tss": 1535,
       "activity_count": 41,
       "ctl_peak": 32.3,
@@ -17010,6 +17625,7 @@
     {
       "month": "2021-10",
       "total_hours": 35.67,
+      "total_distance_km": 395.8,
       "total_tss": 2069,
       "activity_count": 29,
       "ctl_peak": 51.5,
@@ -17029,6 +17645,7 @@
     {
       "month": "2021-11",
       "total_hours": 53.48,
+      "total_distance_km": 408.2,
       "total_tss": 2330,
       "activity_count": 44,
       "ctl_peak": 73.6,
@@ -17048,6 +17665,7 @@
     {
       "month": "2021-12",
       "total_hours": 29.1,
+      "total_distance_km": 285.7,
       "total_tss": 1869,
       "activity_count": 29,
       "ctl_peak": 65.0,
@@ -17067,6 +17685,7 @@
     {
       "month": "2022-01",
       "total_hours": 19.16,
+      "total_distance_km": 226.2,
       "total_tss": 843,
       "activity_count": 12,
       "ctl_peak": 63.6,
@@ -17086,6 +17705,7 @@
     {
       "month": "2022-02",
       "total_hours": 23.59,
+      "total_distance_km": 200.9,
       "total_tss": 1488,
       "activity_count": 19,
       "ctl_peak": 48.9,
@@ -17105,6 +17725,7 @@
     {
       "month": "2022-03",
       "total_hours": 32.38,
+      "total_distance_km": 277.5,
       "total_tss": 1836,
       "activity_count": 36,
       "ctl_peak": 57.6,
@@ -17124,6 +17745,7 @@
     {
       "month": "2022-04",
       "total_hours": 27.66,
+      "total_distance_km": 270.9,
       "total_tss": 1603,
       "activity_count": 24,
       "ctl_peak": 55.8,
@@ -17143,6 +17765,7 @@
     {
       "month": "2022-05",
       "total_hours": 31.38,
+      "total_distance_km": 279.9,
       "total_tss": 1664,
       "activity_count": 37,
       "ctl_peak": 56.2,
@@ -17162,6 +17785,7 @@
     {
       "month": "2022-06",
       "total_hours": 18.21,
+      "total_distance_km": 166.8,
       "total_tss": 1057,
       "activity_count": 20,
       "ctl_peak": 57.7,
@@ -17181,6 +17805,7 @@
     {
       "month": "2022-07",
       "total_hours": 31.88,
+      "total_distance_km": 278.2,
       "total_tss": 1881,
       "activity_count": 28,
       "ctl_peak": 54.6,
@@ -17200,6 +17825,7 @@
     {
       "month": "2022-08",
       "total_hours": 26.12,
+      "total_distance_km": 237.7,
       "total_tss": 1590,
       "activity_count": 34,
       "ctl_peak": 56.5,
@@ -17219,6 +17845,7 @@
     {
       "month": "2022-09",
       "total_hours": -286629.14,
+      "total_distance_km": 42959.0,
       "total_tss": 1032,
       "activity_count": 27,
       "ctl_peak": 52.2,
@@ -17238,6 +17865,7 @@
     {
       "month": "2022-10",
       "total_hours": 39.82,
+      "total_distance_km": 322.1,
       "total_tss": 1949,
       "activity_count": 41,
       "ctl_peak": 56.3,
@@ -17257,6 +17885,7 @@
     {
       "month": "2022-11",
       "total_hours": 33.93,
+      "total_distance_km": 275.1,
       "total_tss": 1684,
       "activity_count": 37,
       "ctl_peak": 61.6,
@@ -17276,6 +17905,7 @@
     {
       "month": "2022-12",
       "total_hours": 33.09,
+      "total_distance_km": 269.3,
       "total_tss": 1846,
       "activity_count": 33,
       "ctl_peak": 67.1,
@@ -17295,6 +17925,7 @@
     {
       "month": "2023-01",
       "total_hours": 25.04,
+      "total_distance_km": 241.2,
       "total_tss": 1451,
       "activity_count": 24,
       "ctl_peak": 56.7,
@@ -17314,6 +17945,7 @@
     {
       "month": "2023-02",
       "total_hours": 25.97,
+      "total_distance_km": 234.1,
       "total_tss": 1514,
       "activity_count": 25,
       "ctl_peak": 55.5,
@@ -17333,6 +17965,7 @@
     {
       "month": "2023-03",
       "total_hours": 36.36,
+      "total_distance_km": 258.7,
       "total_tss": 1695,
       "activity_count": 30,
       "ctl_peak": 60.5,
@@ -17352,6 +17985,7 @@
     {
       "month": "2023-04",
       "total_hours": 23.63,
+      "total_distance_km": 227.4,
       "total_tss": 1414,
       "activity_count": 33,
       "ctl_peak": 54.2,
@@ -17371,6 +18005,7 @@
     {
       "month": "2023-05",
       "total_hours": 28.47,
+      "total_distance_km": 273.9,
       "total_tss": 1779,
       "activity_count": 39,
       "ctl_peak": 54.2,
@@ -17390,6 +18025,7 @@
     {
       "month": "2023-06",
       "total_hours": 27.21,
+      "total_distance_km": 254.7,
       "total_tss": 1564,
       "activity_count": 35,
       "ctl_peak": 54.8,
@@ -17409,6 +18045,7 @@
     {
       "month": "2023-07",
       "total_hours": 31.57,
+      "total_distance_km": 302.4,
       "total_tss": 1867,
       "activity_count": 64,
       "ctl_peak": 58.3,
@@ -17428,6 +18065,7 @@
     {
       "month": "2023-08",
       "total_hours": 28.1,
+      "total_distance_km": 273.0,
       "total_tss": 1770,
       "activity_count": 33,
       "ctl_peak": 59.7,
@@ -17447,6 +18085,7 @@
     {
       "month": "2023-09",
       "total_hours": 32.04,
+      "total_distance_km": 301.0,
       "total_tss": 1729,
       "activity_count": 55,
       "ctl_peak": 59.9,
@@ -17466,6 +18105,7 @@
     {
       "month": "2023-10",
       "total_hours": 29.65,
+      "total_distance_km": 300.2,
       "total_tss": 1870,
       "activity_count": 41,
       "ctl_peak": 61.2,
@@ -17485,6 +18125,7 @@
     {
       "month": "2023-11",
       "total_hours": 32.27,
+      "total_distance_km": 304.8,
       "total_tss": 1779,
       "activity_count": 38,
       "ctl_peak": 62.1,
@@ -17504,6 +18145,7 @@
     {
       "month": "2023-12",
       "total_hours": 36.55,
+      "total_distance_km": 306.2,
       "total_tss": 1806,
       "activity_count": 48,
       "ctl_peak": 63.7,
@@ -17523,6 +18165,7 @@
     {
       "month": "2024-01",
       "total_hours": 26.68,
+      "total_distance_km": 254.5,
       "total_tss": 1601,
       "activity_count": 27,
       "ctl_peak": 58.8,
@@ -17542,6 +18185,7 @@
     {
       "month": "2024-02",
       "total_hours": 14.27,
+      "total_distance_km": 127.3,
       "total_tss": 769,
       "activity_count": 19,
       "ctl_peak": 53.3,
@@ -17561,6 +18205,7 @@
     {
       "month": "2024-03",
       "total_hours": 29.72,
+      "total_distance_km": 283.3,
       "total_tss": 1826,
       "activity_count": 30,
       "ctl_peak": 51.6,
@@ -17580,6 +18225,7 @@
     {
       "month": "2024-04",
       "total_hours": 19.26,
+      "total_distance_km": 87.7,
       "total_tss": 701,
       "activity_count": 23,
       "ctl_peak": 50.4,
@@ -17599,6 +18245,7 @@
     {
       "month": "2024-05",
       "total_hours": 24.58,
+      "total_distance_km": 119.4,
       "total_tss": 931,
       "activity_count": 27,
       "ctl_peak": 34.9,
@@ -17618,6 +18265,7 @@
     {
       "month": "2024-06",
       "total_hours": 28.87,
+      "total_distance_km": 206.6,
       "total_tss": 1345,
       "activity_count": 35,
       "ctl_peak": 36.6,
@@ -17637,6 +18285,7 @@
     {
       "month": "2024-07",
       "total_hours": 25.72,
+      "total_distance_km": 225.0,
       "total_tss": 1387,
       "activity_count": 26,
       "ctl_peak": 41.5,
@@ -17656,6 +18305,7 @@
     {
       "month": "2024-08",
       "total_hours": 26.17,
+      "total_distance_km": 252.5,
       "total_tss": 1487,
       "activity_count": 22,
       "ctl_peak": 49.1,
@@ -17675,6 +18325,7 @@
     {
       "month": "2024-09",
       "total_hours": 32.56,
+      "total_distance_km": 300.2,
       "total_tss": 1709,
       "activity_count": 25,
       "ctl_peak": 55.2,
@@ -17694,6 +18345,7 @@
     {
       "month": "2024-10",
       "total_hours": 51.85,
+      "total_distance_km": 503.7,
       "total_tss": 2591,
       "activity_count": 47,
       "ctl_peak": 70.0,
@@ -17713,6 +18365,7 @@
     {
       "month": "2024-11",
       "total_hours": 37.58,
+      "total_distance_km": 289.0,
       "total_tss": 1699,
       "activity_count": 32,
       "ctl_peak": 73.6,
@@ -17732,6 +18385,7 @@
     {
       "month": "2024-12",
       "total_hours": 63.09,
+      "total_distance_km": 410.1,
       "total_tss": 1754,
       "activity_count": 31,
       "ctl_peak": 71.7,
@@ -17751,6 +18405,7 @@
     {
       "month": "2025-01",
       "total_hours": 4.0,
+      "total_distance_km": 35.5,
       "total_tss": 207,
       "activity_count": 4,
       "ctl_peak": 56.8,
@@ -17770,6 +18425,7 @@
     {
       "month": "2025-02",
       "total_hours": 18.82,
+      "total_distance_km": 150.5,
       "total_tss": 1032,
       "activity_count": 18,
       "ctl_peak": 34.0,
@@ -17789,6 +18445,7 @@
     {
       "month": "2025-03",
       "total_hours": 33.79,
+      "total_distance_km": 148.7,
       "total_tss": 1126,
       "activity_count": 44,
       "ctl_peak": 38.2,
@@ -17808,6 +18465,7 @@
     {
       "month": "2025-04",
       "total_hours": 16.58,
+      "total_distance_km": 106.7,
       "total_tss": 838,
       "activity_count": 29,
       "ctl_peak": 29.5,
@@ -17827,6 +18485,7 @@
     {
       "month": "2025-05",
       "total_hours": 7.48,
+      "total_distance_km": 55.4,
       "total_tss": 384,
       "activity_count": 17,
       "ctl_peak": 27.1,
@@ -17846,6 +18505,7 @@
     {
       "month": "2025-06",
       "total_hours": 18.47,
+      "total_distance_km": 102.0,
       "total_tss": 751,
       "activity_count": 32,
       "ctl_peak": 25.6,
@@ -17865,6 +18525,7 @@
     {
       "month": "2025-07",
       "total_hours": 13.6,
+      "total_distance_km": 96.8,
       "total_tss": 735,
       "activity_count": 21,
       "ctl_peak": 22.6,
@@ -17884,6 +18545,7 @@
     {
       "month": "2025-08",
       "total_hours": 25.69,
+      "total_distance_km": 221.2,
       "total_tss": 1460,
       "activity_count": 32,
       "ctl_peak": 35.6,
@@ -17903,6 +18565,7 @@
     {
       "month": "2025-09",
       "total_hours": 25.34,
+      "total_distance_km": 216.6,
       "total_tss": 1343,
       "activity_count": 31,
       "ctl_peak": 39.7,
@@ -17922,6 +18585,7 @@
     {
       "month": "2025-10",
       "total_hours": 26.16,
+      "total_distance_km": 198.6,
       "total_tss": 1368,
       "activity_count": 36,
       "ctl_peak": 44.4,
@@ -17941,6 +18605,7 @@
     {
       "month": "2025-11",
       "total_hours": 9.12,
+      "total_distance_km": 73.3,
       "total_tss": 519,
       "activity_count": 13,
       "ctl_peak": 40.2,
@@ -17960,6 +18625,7 @@
     {
       "month": "2025-12",
       "total_hours": 25.25,
+      "total_distance_km": 206.0,
       "total_tss": 1486,
       "activity_count": 35,
       "ctl_peak": 37.3,
@@ -17979,6 +18645,7 @@
     {
       "month": "2026-01",
       "total_hours": 21.59,
+      "total_distance_km": 191.3,
       "total_tss": 1197,
       "activity_count": 37,
       "ctl_peak": 39.1,
@@ -17998,6 +18665,7 @@
     {
       "month": "2026-02",
       "total_hours": 10.97,
+      "total_distance_km": 95.7,
       "total_tss": 616,
       "activity_count": 15,
       "ctl_peak": 37.1,
@@ -18017,6 +18685,7 @@
     {
       "month": "2026-03",
       "total_hours": 1.4,
+      "total_distance_km": 12.3,
       "total_tss": 81,
       "activity_count": 2,
       "ctl_peak": 27.2,
@@ -18036,6 +18705,7 @@
     {
       "month": "2026-04",
       "total_hours": 18.9,
+      "total_distance_km": 113.0,
       "total_tss": 679,
       "activity_count": 34,
       "ctl_peak": 22.6,
