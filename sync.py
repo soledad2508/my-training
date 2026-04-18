@@ -5897,6 +5897,7 @@ class IntervalsSync:
             week_tss = 0
             week_seconds = 0
             week_activities = 0
+            week_distance_km = 0
             week_hrv = []
             week_rhr = []
             week_sleep = []
@@ -5932,6 +5933,7 @@ class IntervalsSync:
                 week_tss += day_tss
                 week_seconds += day_seconds
                 week_activities += len(day_activities)
+                week_distance_km += sum((a.get("distance") or 0) / 1000 for a in day_activities)
                 daily_tss_list.append(day_tss)
 
                 if self._is_valid_hrv(wellness.get("hrv")):
@@ -6011,6 +6013,7 @@ class IntervalsSync:
             rows.append({
                 "week_start": current.strftime("%Y-%m-%d"),
                 "total_hours": round(week_seconds / 3600, 2),
+                "total_distance_km": round(week_distance_km, 1),
                 "total_tss": round(week_tss, 0),
                 "primary_sport": week_primary_sport,
                 "primary_sport_tss": week_primary_sport_tss,
