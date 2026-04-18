@@ -5753,7 +5753,7 @@ class IntervalsSync:
         
         # === MONTHLY TIERS ===
         monthly_tiers = {}
-        for years in [1, 2, 3]:
+        for years in range(1, 11):
             label = f"{years}y"
             days_back = years * 365
             if total_months >= years * 12 * 0.5:  # Only generate if enough data
