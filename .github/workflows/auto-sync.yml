@@ -104,19 +104,45 @@ jobs:
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
 
-          # Pull latest remote changes FIRST (before staging anything)
-          # This avoids autostash conflicts on files the remote also modified
-          git fetch origin main
-          git rebase origin/main
-
-          # Now stage everything after we're up to date
-          git add archive/
-          for f in ftp_history.json history.json all_activities.json latest.json intervals.json routes.json README.md; do
+          # Save all generated files to a temp location outside the repo
+          mkdir -p /tmp/sync-output
+          for f in ftp_history.json history.json all_activities.json latest.json intervals.json routes.json; do
             if [ -f "$f" ]; then
-              git add "$f"
-              echo "✅ Staged $f"
+              cp "$f" "/tmp/sync-output/$f"
+              echo "✅ Saved $f to temp"
             fi
           done
+          cp -r "archive/${YEAR_MONTH}" /tmp/sync-output/archive-month
+
+          # Hard reset to remote — eliminates ALL unstaged changes, zero conflicts
+          git fetch origin main
+          git reset --hard origin/main
+
+          # Restore generated files on top of clean remote state
+          for f in ftp_history.json history.json all_activities.json latest.json intervals.json routes.json; do
+            if [ -f "/tmp/sync-output/$f" ]; then
+              cp "/tmp/sync-output/$f" "$f"
+              git add "$f"
+              echo "✅ Restored and staged $f"
+            fi
+          done
+
+          # Restore archive
+          mkdir -p "archive/${YEAR_MONTH}"
+          cp -r /tmp/sync-output/archive-month/. "archive/${YEAR_MONTH}/"
+          git add archive/
+
+          # Update README
+          SYNC_TIME=$(date -u +"%Y-%m-%d %H:%M:%S UTC")
+          if [ -f README.md ]; then
+            if grep -q "Last successful sync:" README.md; then
+              sed -i "s/\*\*Last successful sync:\*\*.*/\*\*Last successful sync:\*\* ${SYNC_TIME}/" README.md
+            else
+              echo -e "\n**Last successful sync:** ${SYNC_TIME}" >> README.md
+            fi
+            git add README.md
+            echo "✅ README updated"
+          fi
 
           if git diff --staged --quiet; then
             echo "⏭️  No changes to commit"
@@ -126,20 +152,6 @@ jobs:
           git commit -m "Auto sync - $(date -u +"%Y-%m-%d %H:%M:%S UTC")"
           git push origin HEAD:main
           echo "✅ Committed and pushed"
-
-      - name: Update README with last sync time
-        if: success()
-        run: |
-          SYNC_TIME=$(date -u +"%Y-%m-%d %H:%M:%S UTC")
-
-          if [ -f README.md ]; then
-            if grep -q "Last successful sync:" README.md; then
-              sed -i "s/\*\*Last successful sync:\*\*.*/\*\*Last successful sync:\*\* ${SYNC_TIME}/" README.md
-            else
-              sed -i "/badge.svg)/a\\\n\*\*Last successful sync:\*\* ${SYNC_TIME}\n" README.md
-            fi
-            echo "✅ README updated with sync time: ${SYNC_TIME}"
-          fi
 
       - name: Upload data files for download
         if: github.event_name == 'workflow_dispatch'
