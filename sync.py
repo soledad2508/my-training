@@ -5659,11 +5659,11 @@ class IntervalsSync:
         now = datetime.now()
         
         # Determine how far back we can go (up to 3 years)
-        earliest_3y = (now - timedelta(days=365 * 3)).strftime("%Y-%m-%d")
+        earliest_3y = (now - timedelta(days=365 * 10)).strftime("%Y-%m-%d")
         newest = now.strftime("%Y-%m-%d")
         
         # Fetch all activities for full range
-        print("  Fetching full activity history (up to 3 years)...")
+        print("  Fetching full activity history (up to 10 years)...")
         try:
             all_activities = self._intervals_get("activities", {
                 "oldest": earliest_3y, "newest": newest
