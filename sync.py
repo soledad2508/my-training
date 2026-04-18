@@ -5753,7 +5753,7 @@ class IntervalsSync:
         
         # === MONTHLY TIERS ===
         monthly_tiers = {}
-        for years in range(1, 5):
+        for years in range(1, 7):
             label = f"{years}y"
             days_back = years * 365
             if total_months >= years * 12 * 0.5:  # Only generate if enough data
@@ -6067,6 +6067,12 @@ class IntervalsSync:
         
         # Group by month
         current_month = datetime(start_date.year, start_date.month, 1)
+
+        # If days_back covers more than the calculated start, extend to cover it
+        # This ensures 2021 data isn't cut off by mid-month boundary
+        earliest_possible = datetime(start_date.year, start_date.month, 1)
+        if earliest_possible > start_date:
+            current_month = earliest_possible
         
         while current_month <= now:
             month_str = current_month.strftime("%Y-%m")
@@ -6332,7 +6338,7 @@ class IntervalsSync:
             }
         
         # Yearly summaries from monthly data
-        for key in ["monthly_1y", "monthly_2y", "monthly_3y", "monthly_4y", "monthly_5y"]:
+        for key in ["monthly_1y", "monthly_2y", "monthly_3y", "monthly_4y", "monthly_5y", "monthly_6y"]:
             monthly = monthly_tiers.get(key, [])
             if monthly:
                 tss_values = [m["total_tss"] for m in monthly if m["total_tss"]]
