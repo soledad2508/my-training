@@ -6080,6 +6080,7 @@ class IntervalsSync:
             month_tss = 0
             month_seconds = 0
             month_activities = 0
+            month_distance_km = 0
             month_hrv = []
             month_rhr = []
             month_weight = []
@@ -6109,6 +6110,7 @@ class IntervalsSync:
                 
                 month_tss += day_tss
                 month_seconds += day_seconds
+                month_distance_km += sum((a.get("distance") or 0) / 1000 for a in day_activities)
                 month_activities += len(day_activities)
 
 
@@ -6173,6 +6175,7 @@ class IntervalsSync:
             rows.append({
                 "month": month_str,
                 "total_hours": round(month_seconds / 3600, 2),
+                "total_distance_km": round(month_distance_km, 1),
                 "total_tss": round(month_tss, 0),
                 "activity_count": month_activities,
                 "ctl_peak": round(max(ctl_values), 1) if ctl_values else None,
