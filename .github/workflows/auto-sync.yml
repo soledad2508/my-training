@@ -141,16 +141,13 @@ jobs:
             fi
             
             # Now pull - autostash will safely stash staged changes
-            # git pull --rebase --autostash origin main
-
-            git fetch origin main
-            git reset --soft origin/main
+            git push --force-with-lease origin HEAD:main
             
             # Only commit if there are changes
             if ! git diff --staged --quiet; then
               git commit -m "Archive training data + FTP history - $(date -u +"%Y-%m-%d %H:%M:%S UTC")"
-              git push
-              echo "✅ Archive and FTP history committed and pushed"
+              git push origin HEAD:main
+              echo "✅ Archive and generated files committed and pushed"
             else
               echo "⏭️  No new archive to commit"
             fi
