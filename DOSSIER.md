@@ -181,9 +181,14 @@ Improve 5K race performance (August 2026)
 
 ## Data Mirror Configuration
 
-**Path:** latest.json  
-**History:** history.json  
-**Intervals:** intervals.json  
+latest.json:
+https://raw.githubusercontent.com/soledad2508/my-training/main/latest.json
+
+history.json:
+https://raw.githubusercontent.com/soledad2508/my-training/main/history.json
+
+intervals.json
+https://raw.githubusercontent.com/soledad2508/my-training/main/intervals.json  
 
 ---
 
