@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-19T23:20:49.507482",
+  "generated_at": "2026-04-20T00:01:24.228632",
   "version": "3.103",
   "script_hash": "ed549cafdc97",
   "scan_hours": 72,
@@ -689,6 +689,25 @@
           "avg_hr": 111,
           "max_hr": 147,
           "avg_cadence": 55.813007,
+          "zone": 1
+        }
+      ]
+    },
+    {
+      "activity_id": "i141287344",
+      "date": "2026-04-20",
+      "type": "VirtualRide",
+      "name": "\u0110\u1ea1p xe trong nh\u00e0",
+      "interval_summary": [
+        "1x 22m3s 73bpm"
+      ],
+      "intervals": [
+        {
+          "type": "WORK",
+          "label": "1323s@73bpm",
+          "duration_secs": 1323,
+          "avg_hr": 73,
+          "max_hr": 114,
           "zone": 1
         }
       ]
