@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T23:09:54.549763",
+  "generated_at": "2026-04-30T00:07:11.862428",
   "version": "3.103",
   "script_hash": "ed549cafdc97",
   "scan_hours": 72,
@@ -247,61 +247,6 @@
           "avg_hr": 96,
           "max_hr": 146,
           "avg_cadence": 20.025393,
-          "zone": 1
-        }
-      ]
-    },
-    {
-      "activity_id": "i139915159",
-      "date": "2026-04-15",
-      "type": "EBikeRide",
-      "name": "Qu\u1eadn 9 \u0110\u1ea1p xe \u0111\u1ea1p \u0111i\u1ec7n",
-      "interval_summary": [
-        "1x 18m43s 77bpm",
-        "1x 35m33s 84bpm",
-        "1x 9m31s 81bpm",
-        "1x 15m25s 83bpm",
-        "1x 8m11s 84bpm"
-      ],
-      "intervals": [
-        {
-          "type": "WORK",
-          "label": "1123s@77bpm",
-          "duration_secs": 1123,
-          "avg_hr": 77,
-          "max_hr": 101,
-          "zone": 1
-        },
-        {
-          "type": "WORK",
-          "label": "2133s@84bpm",
-          "duration_secs": 2133,
-          "avg_hr": 84,
-          "max_hr": 111,
-          "zone": 1
-        },
-        {
-          "type": "WORK",
-          "label": "571s@81bpm",
-          "duration_secs": 571,
-          "avg_hr": 81,
-          "max_hr": 106,
-          "zone": 1
-        },
-        {
-          "type": "WORK",
-          "label": "925s@83bpm",
-          "duration_secs": 925,
-          "avg_hr": 83,
-          "max_hr": 102,
-          "zone": 1
-        },
-        {
-          "type": "WORK",
-          "label": "491s@84bpm",
-          "duration_secs": 491,
-          "avg_hr": 84,
-          "max_hr": 105,
           "zone": 1
         }
       ]
