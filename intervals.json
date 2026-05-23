@@ -1,86 +1,10 @@
 {
-  "generated_at": "2026-05-22T23:46:43.351476",
+  "generated_at": "2026-05-23T02:37:49.090096",
   "version": "3.103",
   "script_hash": "ed549cafdc97",
   "scan_hours": 72,
   "retention_days": 14,
   "activities": [
-    {
-      "activity_id": "i146442630",
-      "date": "2026-05-08",
-      "type": "Run",
-      "name": "Qu\u1eadn 9 Cha\u0323y",
-      "interval_summary": [
-        "5x 7m2s 137bpm",
-        "1x 4m47s 161bpm",
-        "1x 5m28s 128bpm"
-      ],
-      "intervals": [
-        {
-          "type": "WORK",
-          "label": "422s@137bpm86rpm",
-          "duration_secs": 455,
-          "avg_hr": 125,
-          "max_hr": 134,
-          "avg_cadence": 83.76483,
-          "zone": 1
-        },
-        {
-          "type": "WORK",
-          "label": "422s@137bpm86rpm",
-          "duration_secs": 424,
-          "avg_hr": 132,
-          "max_hr": 141,
-          "avg_cadence": 85.42217,
-          "zone": 1
-        },
-        {
-          "type": "WORK",
-          "label": "422s@137bpm86rpm",
-          "duration_secs": 411,
-          "avg_hr": 140,
-          "max_hr": 144,
-          "avg_cadence": 86.81752,
-          "zone": 1
-        },
-        {
-          "type": "WORK",
-          "label": "422s@137bpm86rpm",
-          "duration_secs": 410,
-          "avg_hr": 144,
-          "max_hr": 149,
-          "avg_cadence": 86.063416,
-          "zone": 1
-        },
-        {
-          "type": "WORK",
-          "label": "422s@137bpm86rpm",
-          "duration_secs": 408,
-          "avg_hr": 146,
-          "max_hr": 150,
-          "avg_cadence": 86.77696,
-          "zone": 1
-        },
-        {
-          "type": "WORK",
-          "label": "287s@161bpm89rpm",
-          "duration_secs": 287,
-          "avg_hr": 161,
-          "max_hr": 176,
-          "avg_cadence": 89.33101,
-          "zone": 3
-        },
-        {
-          "type": "WORK",
-          "label": "328s@128bpm55rpm",
-          "duration_secs": 328,
-          "avg_hr": 128,
-          "max_hr": 176,
-          "avg_cadence": 55.219513,
-          "zone": 1
-        }
-      ]
-    },
     {
       "activity_id": "i146603252",
       "date": "2026-05-09",
