@@ -72,7 +72,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-05-26T01:29:16.711431",
+    "last_updated": "2026-05-26T05:44:32.742983",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.103"
@@ -154,7 +154,7 @@
   "history": {
     "available": true,
     "last_generated": "2026-04-18",
-    "age_days": 37,
+    "age_days": 38,
     "total_months": 76,
     "history_confidence": "high"
   },
@@ -237,7 +237,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": 7210,
+      "steps": 8469,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -428,19 +428,20 @@
       },
       "dfa_a1_profile": null
     },
-    "consistency_index": null,
+    "consistency_index": 0.0,
     "consistency_details": {
-      "planned_days": 0,
+      "planned_days": 1,
       "completed_days": 0,
       "matched_days": 0,
-      "note": "No planned workouts in period"
+      "planned_dates": [
+        "2026-05-26"
+      ],
+      "completed_dates": []
     },
     "phase_detection": {
       "phase": "Base",
       "confidence": "medium",
-      "reason_codes": [
-        "NO_PLANNED_WORKOUTS"
-      ],
+      "reason_codes": [],
       "basis": {
         "stream_1": {
           "ctl_slope": null,
@@ -450,13 +451,13 @@
         },
         "stream_2": {
           "planned_tss_delta": null,
-          "hard_sessions_planned": 0,
+          "hard_sessions_planned": 7,
           "current_week_hard_days_completed": 0,
-          "current_week_hard_days_total": 0,
+          "current_week_hard_days_total": 7,
           "race_proximity": null,
           "next_week_load": null,
-          "plan_coverage_current_week": 0.0,
-          "plan_coverage_next_week": 0.0
+          "plan_coverage_current_week": 1.4,
+          "plan_coverage_next_week": 0.4
         },
         "data_quality": "good",
         "stream_agreement": null
@@ -467,9 +468,7 @@
       "dossier_agreement": null
     },
     "phase_detected": "Base",
-    "phase_triggers": [
-      "NO_PLANNED_WORKOUTS"
-    ],
+    "phase_triggers": [],
     "seasonal_context": "Build / Early Race Season",
     "benchmark_indoor": {
       "current_ftp": null,
@@ -491,13 +490,13 @@
     "p_max": null,
     "power_model_source": "wellness.sportInfo",
     "vo2max": 51.0,
-    "calculation_timestamp": "2026-05-26T01:29:16.709617",
+    "calculation_timestamp": "2026-05-26T05:44:32.741327",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
       "activities_7d": 4,
       "activities_28d": 17,
-      "planned_workouts_7d": 0,
+      "planned_workouts_7d": 2,
       "ftp_history_days": {
         "indoor": 0,
         "outdoor": 0
@@ -1620,7 +1619,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": 7210,
+      "steps": 8469,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -1631,14 +1630,141 @@
       "readiness": null
     }
   ],
-  "planned_workouts": [],
+  "planned_workouts": [
+    {
+      "id": 112370471,
+      "date": "2026-05-26",
+      "name": "IntervalCoach - Neuromuscular Intervals",
+      "type": "WORKOUT",
+      "sport_type": "Run",
+      "planned_tss": null,
+      "duration_hours": 1.0,
+      "duration_formatted": "59m50s",
+      "workout_summary": "3 \u00d7 3m | 5\u00d78m / 10s rec | 4m | 2 \u00d7 3m",
+      "has_terrain": false,
+      "start_time": "09:00",
+      "description": "Warmup\n- Sy, ready for endurance and speed? 3m 65% pace\n- 3m 76% pace\n- 3m 87% pace\n\nMain Set\n5x\n- Aerobic 8m 78-87% pace\n- Sprint 10s 130% pace\n\nRecovery\n- Endurance 4m 60-70% pace\n\nCooldown\n- 3m 78% pace\n- Fantastic work, recover well! 3m 65% pace\n\n[Weekly Plan - Build]"
+    },
+    {
+      "id": 112370472,
+      "date": "2026-05-26",
+      "name": "IntervalCoach - Lower Body Strength",
+      "type": "WORKOUT",
+      "sport_type": "WeightTraining",
+      "planned_tss": null,
+      "duration_hours": 0.5,
+      "duration_formatted": "30m",
+      "workout_summary": null,
+      "has_terrain": false,
+      "start_time": "09:00",
+      "description": "Lower Body Strength\n\nLeg strength for cycling power and running economy\n\n1. Goblet Squat: 3 sets \u00d7 12 reps (Weight at chest, sit back into heels) [Rest: 60 sec]\n2. Romanian Deadlift: 3 sets \u00d7 10 reps (Hinge at hips, slight knee bend) [Rest: 60 sec]\n3. Walking Lunges: 3 sets \u00d7 10 reps each leg (Keep torso upright, knee tracks over toe) [Rest: 45 sec]\n4. Step-ups: 3 sets \u00d7 10 reps each leg (Use bench or box, drive through heel) [Rest: 45 sec]\n5. Calf Raises: 3 sets \u00d7 15 reps (Full range of motion, hold at top) [Rest: 30 sec]\n6. Single Leg Glute Bridge: 3 sets \u00d7 10 reps each leg (Keep hips level throughout) [Rest: 30 sec]\n\nBuild phase: increase weight, lower reps (6-10) for strength gains.\n\n[Duration: ~45 min]\n\n[Weekly Plan - Build]"
+    },
+    {
+      "id": 112370478,
+      "date": "2026-05-27",
+      "name": "IntervalCoach - Lower Body Strength",
+      "type": "WORKOUT",
+      "sport_type": "WeightTraining",
+      "planned_tss": null,
+      "duration_hours": 0.5,
+      "duration_formatted": "30m",
+      "workout_summary": null,
+      "has_terrain": false,
+      "start_time": "09:00",
+      "description": "Lower Body Strength\n\nLeg strength for cycling power and running economy\n\n1. Goblet Squat: 3 sets \u00d7 12 reps (Weight at chest, sit back into heels) [Rest: 60 sec]\n2. Romanian Deadlift: 3 sets \u00d7 10 reps (Hinge at hips, slight knee bend) [Rest: 60 sec]\n3. Walking Lunges: 3 sets \u00d7 10 reps each leg (Keep torso upright, knee tracks over toe) [Rest: 45 sec]\n4. Step-ups: 3 sets \u00d7 10 reps each leg (Use bench or box, drive through heel) [Rest: 45 sec]\n5. Calf Raises: 3 sets \u00d7 15 reps (Full range of motion, hold at top) [Rest: 30 sec]\n6. Single Leg Glute Bridge: 3 sets \u00d7 10 reps each leg (Keep hips level throughout) [Rest: 30 sec]\n\nBuild phase: increase weight, lower reps (6-10) for strength gains.\n\n[Duration: ~45 min]\n\n[Weekly Plan - Build]"
+    },
+    {
+      "id": 112370480,
+      "date": "2026-05-27",
+      "name": "IntervalCoach - Neuromuscular Intervals",
+      "type": "WORKOUT",
+      "sport_type": "Run",
+      "planned_tss": null,
+      "duration_hours": 1.0,
+      "duration_formatted": "59m50s",
+      "workout_summary": "3 \u00d7 3m | 5\u00d78m / 10s rec | 4m | 2 \u00d7 3m",
+      "has_terrain": false,
+      "start_time": "09:00",
+      "description": "Warmup\n- Hey Sy! Endurance and speed await. 3m 65% pace\n- 3m 76% pace\n- 3m 87% pace\n\nMain Set\n5x\n- Aerobic 8m 78-87% pace\n- Sprint 10s 130% pace\n\nRecovery\n- Endurance 4m 60-70% pace\n\nCooldown\n- 3m 78% pace\n- Great job, Sy! Recover well. 3m 65% pace\n\n[Weekly Plan - Build]"
+    },
+    {
+      "id": 112370476,
+      "date": "2026-05-28",
+      "name": "IntervalCoach - VO2max Intervals",
+      "type": "WORKOUT",
+      "sport_type": "Run",
+      "planned_tss": null,
+      "duration_hours": 1.0,
+      "duration_formatted": "1h",
+      "workout_summary": "3 \u00d7 3m | 8m | 12\u00d730s / 30s rec | 4m | 12\u00d730s / 30s rec | 9m | 2 \u00d7 3m",
+      "has_terrain": false,
+      "start_time": "09:00",
+      "description": "Warmup\n- Hey Sy! Billat 30/30 time! 3m 65% pace\n- 3m 76% pace\n- 3m 87% pace\n\nMain Set\n- Endurance 8m 77% pace\n\n12x\n- Hard 30s 101-115% pace\n- Float 30s 77% pace\n\nRecovery\n- Set Recovery 4m 65-77% pace\n\n12x\n- Hard 30s 101-115% pace\n- Float 30s 77% pace\n\n- Endurance 9m 77% pace\n\nCooldown\n- 3m 78% pace\n- Great job, Sy! Recover well 3m 65% pace\n\n[Weekly Plan - Build]"
+    },
+    {
+      "id": 112370483,
+      "date": "2026-05-30",
+      "name": "IntervalCoach - Aerobic Tempo Run",
+      "type": "WORKOUT",
+      "sport_type": "Run",
+      "planned_tss": null,
+      "duration_hours": 1.5,
+      "duration_formatted": "1h30m",
+      "workout_summary": null,
+      "has_terrain": false,
+      "start_time": "09:00",
+      "description": "Warmup\n- Hey Sy! Long run building endurance today. 5m 65% pace\n- 5m 76% pace\n- 4m 87% pace\n\nMain Set\n- Aerobic 44m 78-87% pace\n- Tempo Touch 17m 88-94% pace\n- Easy Finish 6m 77% pace\n\nCooldown\n- 5m 78% pace\n- Awesome work, Sy! Recover well. 4m 65% pace\n\n[Weekly Plan - Build]"
+    },
+    {
+      "id": 112370487,
+      "date": "2026-05-31",
+      "name": "IntervalCoach - Aerobic Endurance Run",
+      "type": "WORKOUT",
+      "sport_type": "Run",
+      "planned_tss": null,
+      "duration_hours": 1.5,
+      "duration_formatted": "1h30m",
+      "workout_summary": null,
+      "has_terrain": false,
+      "start_time": "09:00",
+      "description": "Warmup\n- Hey Sy! Long aerobic run today. 5m 65% pace\n- 5m 76% pace\n- 4m 87% pace\n\nMain Set\n- Settle In 22m 77% pace\n- Aerobic 22m 78-87% pace\n- Endurance 23m 60-70% pace\n\nCooldown\n- 5m 78% pace\n- Well done, Sy! Enjoy your recovery. 4m 65% pace\n\n[Weekly Plan - Build]"
+    },
+    {
+      "id": 112370491,
+      "date": "2026-06-02",
+      "name": "IntervalCoach - Neuromuscular Strides",
+      "type": "WORKOUT",
+      "sport_type": "Run",
+      "planned_tss": null,
+      "duration_hours": 1.08,
+      "duration_formatted": "1h5m",
+      "workout_summary": "3 \u00d7 3m | 2m | 31m | 6\u00d720s / 2m rec | 3 \u00d7 3m",
+      "has_terrain": false,
+      "start_time": "09:00",
+      "description": "Warmup\n- Hey Sy! Easy pace with strides today 3m 65% pace\n- 3m 76% pace\n- 3m 87% pace\n\nMain Set\n- Endurance 2m 77% pace\n- Easy Run 31m 65-77% pace\n\n6x\n- Stride 20s 100% pace\n- Jog 2m 65-77% pace\n\n- Endurance 3m 77% pace\n\nCooldown\n- 3m 78% pace\n- Well done, Sy! Enjoy the cool down 3m 65% pace\n\n[Weekly Plan - Build]"
+    },
+    {
+      "id": 112370493,
+      "date": "2026-06-02",
+      "name": "IntervalCoach - Lower Body Strength",
+      "type": "WORKOUT",
+      "sport_type": "WeightTraining",
+      "planned_tss": null,
+      "duration_hours": 0.5,
+      "duration_formatted": "30m",
+      "workout_summary": null,
+      "has_terrain": false,
+      "start_time": "09:00",
+      "description": "Lower Body Strength\n\nLeg strength for cycling power and running economy\n\n1. Goblet Squat: 3 sets \u00d7 12 reps (Weight at chest, sit back into heels) [Rest: 60 sec]\n2. Romanian Deadlift: 3 sets \u00d7 10 reps (Hinge at hips, slight knee bend) [Rest: 60 sec]\n3. Walking Lunges: 3 sets \u00d7 10 reps each leg (Keep torso upright, knee tracks over toe) [Rest: 45 sec]\n4. Step-ups: 3 sets \u00d7 10 reps each leg (Use bench or box, drive through heel) [Rest: 45 sec]\n5. Calf Raises: 3 sets \u00d7 15 reps (Full range of motion, hold at top) [Rest: 30 sec]\n6. Single Leg Glute Bridge: 3 sets \u00d7 10 reps each leg (Keep hips level throughout) [Rest: 30 sec]\n\nBuild phase: increase weight, lower reps (6-10) for strength gains.\n\n[Duration: ~45 min]\n\n[Weekly Plan - Build]"
+    }
+  ],
   "workout_summary_stats": {
-    "attempted": 0,
-    "success": 0,
-    "patternA": 0,
+    "attempted": 6,
+    "success": 4,
+    "patternA": 4,
     "patternB": 0,
-    "bail_no_workout_doc": 0,
-    "bail_no_match": 0
+    "bail_no_workout_doc": 3,
+    "bail_no_match": 2
   },
   "weekly_summary": {
     "total_training_hours": 2.26,
