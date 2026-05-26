@@ -72,7 +72,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-05-26T22:11:23.378092",
+    "last_updated": "2026-05-26T23:33:09.559835",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.103"
@@ -457,7 +457,7 @@
           "race_proximity": null,
           "next_week_load": null,
           "plan_coverage_current_week": 1.4,
-          "plan_coverage_next_week": 0.4
+          "plan_coverage_next_week": 0.8
         },
         "data_quality": "good",
         "stream_agreement": null
@@ -490,7 +490,7 @@
     "p_max": null,
     "power_model_source": "wellness.sportInfo",
     "vo2max": 51.0,
-    "calculation_timestamp": "2026-05-26T22:11:23.376122",
+    "calculation_timestamp": "2026-05-26T23:33:09.558138",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -1756,15 +1756,43 @@
       "has_terrain": false,
       "start_time": "09:00",
       "description": "Lower Body Strength\n\nLeg strength for cycling power and running economy\n\n1. Goblet Squat: 3 sets \u00d7 12 reps (Weight at chest, sit back into heels) [Rest: 60 sec]\n2. Romanian Deadlift: 3 sets \u00d7 10 reps (Hinge at hips, slight knee bend) [Rest: 60 sec]\n3. Walking Lunges: 3 sets \u00d7 10 reps each leg (Keep torso upright, knee tracks over toe) [Rest: 45 sec]\n4. Step-ups: 3 sets \u00d7 10 reps each leg (Use bench or box, drive through heel) [Rest: 45 sec]\n5. Calf Raises: 3 sets \u00d7 15 reps (Full range of motion, hold at top) [Rest: 30 sec]\n6. Single Leg Glute Bridge: 3 sets \u00d7 10 reps each leg (Keep hips level throughout) [Rest: 30 sec]\n\nBuild phase: increase weight, lower reps (6-10) for strength gains.\n\n[Duration: ~45 min]\n\n[Weekly Plan - Build]"
+    },
+    {
+      "id": 112559146,
+      "date": "2026-06-03",
+      "name": "IntervalCoach - Threshold Fartlek",
+      "type": "WORKOUT",
+      "sport_type": "Run",
+      "planned_tss": null,
+      "duration_hours": 1.0,
+      "duration_formatted": "1h",
+      "workout_summary": null,
+      "has_terrain": false,
+      "start_time": "09:00",
+      "description_preview": "Warmup\n- Hey Sy! Threshold fartlek awaits. 3m 65% pace\n- 3m 76% pace"
+    },
+    {
+      "id": 112559147,
+      "date": "2026-06-03",
+      "name": "IntervalCoach - Lower Body Strength",
+      "type": "WORKOUT",
+      "sport_type": "WeightTraining",
+      "planned_tss": null,
+      "duration_hours": 0.5,
+      "duration_formatted": "30m",
+      "workout_summary": null,
+      "has_terrain": false,
+      "start_time": "09:00",
+      "description_preview": "Lower Body Strength\nLeg strength for cycling power and running economy\n1. Goblet Squat: 3 sets \u00d7 12 reps (Weight at chest, sit back into heels) [Rest: 60 sec]"
     }
   ],
   "workout_summary_stats": {
-    "attempted": 6,
+    "attempted": 7,
     "success": 4,
     "patternA": 4,
     "patternB": 0,
-    "bail_no_workout_doc": 3,
-    "bail_no_match": 2
+    "bail_no_workout_doc": 4,
+    "bail_no_match": 3
   },
   "weekly_summary": {
     "total_training_hours": 2.26,
