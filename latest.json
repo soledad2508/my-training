@@ -72,7 +72,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-05-30T21:57:31.574065",
+    "last_updated": "2026-05-30T22:58:36.834341",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.103"
@@ -460,7 +460,7 @@
           "race_proximity": null,
           "next_week_load": null,
           "plan_coverage_current_week": 0.4,
-          "plan_coverage_next_week": 1.2
+          "plan_coverage_next_week": 1.4
         },
         "data_quality": "good",
         "stream_agreement": null
@@ -493,7 +493,7 @@
     "p_max": null,
     "power_model_source": "wellness.sportInfo",
     "vo2max": 51.0,
-    "calculation_timestamp": "2026-05-30T21:57:31.572399",
+    "calculation_timestamp": "2026-05-30T22:58:36.831806",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -1752,18 +1752,18 @@
       "description": "Warmup\n- Hey Sy! Long run building endurance today. 5m 65% pace\n- 5m 76% pace\n- 4m 87% pace\n\nMain Set\n- Aerobic 44m 78-87% pace\n- Tempo Touch 17m 88-94% pace\n- Easy Finish 6m 77% pace\n\nCooldown\n- 5m 78% pace\n- Awesome work, Sy! Recover well. 4m 65% pace\n\n[Weekly Plan - Build]"
     },
     {
-      "id": 112370487,
+      "id": 113207739,
       "date": "2026-05-31",
-      "name": "IntervalCoach - Aerobic Endurance Run",
+      "name": "IntervalCoach - Aerobic Cruise",
       "type": "WORKOUT",
       "sport_type": "Run",
       "planned_tss": null,
-      "duration_hours": 1.5,
-      "duration_formatted": "1h30m",
+      "duration_hours": 1.12,
+      "duration_formatted": "1h7m",
       "workout_summary": null,
       "has_terrain": false,
       "start_time": "09:00",
-      "description": "Warmup\n- Hey Sy! Long aerobic run today. 5m 65% pace\n- 5m 76% pace\n- 4m 87% pace\n\nMain Set\n- Settle In 22m 77% pace\n- Aerobic 22m 78-87% pace\n- Endurance 23m 60-70% pace\n\nCooldown\n- 5m 78% pace\n- Well done, Sy! Enjoy your recovery. 4m 65% pace\n\n[Weekly Plan - Build]"
+      "description": "Warmup\n- Hey Sy! Easy recovery miles coming up. 3m 65% pace\n- 3m 71% pace\n- 4m 77% pace\n\nMain Set\n- Easy 25m 60-66% pace\n- Shake Out 25m 66-71% pace\n\nCooldown\n- 4m 71% pace\n- Well done, Sy! Enjoy the cool down. 3m 65% pace"
     },
     {
       "id": 112370491,
@@ -1848,15 +1848,29 @@
       "has_terrain": false,
       "start_time": "09:00",
       "description": "Warmup\n- Hey Sy! Ready for that long run? 5m 65% pace\n- 5m 76% pace\n- 4m 87% pace\n\nMain Set\n- Ultra 67m 65-77% pace\n\nCooldown\n- 5m 77% pace\n- Awesome job, Sy! Time to recover 4m 65% pace\n\n[Weekly Plan - Build]"
+    },
+    {
+      "id": 113207733,
+      "date": "2026-06-07",
+      "name": "IntervalCoach - Threshold Climb Repeats",
+      "type": "WORKOUT",
+      "sport_type": "Run",
+      "planned_tss": null,
+      "duration_hours": 1.5,
+      "duration_formatted": "1h30m",
+      "workout_summary": null,
+      "has_terrain": false,
+      "start_time": "09:00",
+      "description_preview": "Warmup\n- Hey Sy! Long climb ahead 5m 65% pace\n- 5m 76% pace"
     }
   ],
   "workout_summary_stats": {
-    "attempted": 6,
+    "attempted": 7,
     "success": 1,
     "patternA": 1,
     "patternB": 0,
     "bail_no_workout_doc": 2,
-    "bail_no_match": 5
+    "bail_no_match": 6
   },
   "weekly_summary": {
     "total_training_hours": 2.73,
