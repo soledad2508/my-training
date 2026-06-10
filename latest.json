@@ -72,7 +72,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-06-10T12:02:42.933272",
+    "last_updated": "2026-06-10T18:41:49.306306",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.103"
@@ -456,9 +456,9 @@
           "current_week_hard_days_completed": 0,
           "current_week_hard_days_total": 1,
           "race_proximity": null,
-          "next_week_load": 1.56,
+          "next_week_load": 2.24,
           "plan_coverage_current_week": 0.33,
-          "plan_coverage_next_week": 1.33
+          "plan_coverage_next_week": 1.67
         },
         "data_quality": "good",
         "stream_agreement": null
@@ -491,7 +491,7 @@
     "p_max": null,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-06-10T12:02:42.931614",
+    "calculation_timestamp": "2026-06-10T18:41:49.304201",
     "data_quality": {
       "hrv_data_points": 6,
       "rhr_data_points": 6,
@@ -1455,15 +1455,29 @@
       "has_terrain": false,
       "start_time": "09:00",
       "description": "Lower Body Strength\n\nLeg strength for cycling power and running economy\n\n1. Goblet Squat: 3 sets \u00d7 12 reps (Weight at chest, sit back into heels) [Rest: 60 sec]\n2. Romanian Deadlift: 3 sets \u00d7 10 reps (Hinge at hips, slight knee bend) [Rest: 60 sec]\n3. Walking Lunges: 3 sets \u00d7 10 reps each leg (Keep torso upright, knee tracks over toe) [Rest: 45 sec]\n4. Step-ups: 3 sets \u00d7 10 reps each leg (Use bench or box, drive through heel) [Rest: 45 sec]\n5. Calf Raises: 3 sets \u00d7 15 reps (Full range of motion, hold at top) [Rest: 30 sec]\n6. Single Leg Glute Bridge: 3 sets \u00d7 10 reps each leg (Keep hips level throughout) [Rest: 30 sec]\n\nBuild phase: increase weight, lower reps (6-10) for strength gains.\n\n[Duration: ~45 min]\n\n[Weekly Plan - Build]"
+    },
+    {
+      "id": 115399688,
+      "date": "2026-06-18",
+      "name": "IntervalCoach - Aerobic Endurance",
+      "type": "WORKOUT",
+      "sport_type": "Run",
+      "planned_tss": 56,
+      "duration_hours": 1.0,
+      "duration_formatted": "1h",
+      "workout_summary": null,
+      "has_terrain": false,
+      "start_time": "09:00",
+      "description_preview": "Warmup\n- Hey Sy! Ready for a strong endurance run? 3m 65% pace\n- 3m 76% pace"
     }
   ],
   "workout_summary_stats": {
-    "attempted": 2,
+    "attempted": 3,
     "success": 1,
     "patternA": 1,
     "patternB": 0,
     "bail_no_workout_doc": 3,
-    "bail_no_match": 1
+    "bail_no_match": 2
   },
   "weekly_summary": {
     "total_training_hours": 0.83,
