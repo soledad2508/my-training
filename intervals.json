@@ -1,86 +1,10 @@
 {
-  "generated_at": "2026-06-10T22:58:07.147218",
+  "generated_at": "2026-06-11T00:18:44.556408",
   "version": "3.103",
   "script_hash": "ed549cafdc97",
   "scan_hours": 72,
   "retention_days": 14,
   "activities": [
-    {
-      "activity_id": "i151783612",
-      "date": "2026-05-27",
-      "type": "Run",
-      "name": "IntervalCoach - Neuromuscular Intervals",
-      "interval_summary": [
-        "1x 7m9s 125bpm",
-        "3x 6m41s 145bpm",
-        "1x 7m43s 144bpm",
-        "1x 56s 120bpm"
-      ],
-      "intervals": [
-        {
-          "type": "WORK",
-          "label": "429s@125bpm88rpm",
-          "duration_secs": 429,
-          "avg_hr": 125,
-          "max_hr": 143,
-          "avg_cadence": 87.59673,
-          "zone": 1
-        },
-        {
-          "type": "RECOVERY",
-          "duration_secs": 1,
-          "avg_hr": 130,
-          "max_hr": 130,
-          "avg_cadence": 89.0,
-          "zone": 1
-        },
-        {
-          "type": "WORK",
-          "label": "401s@145bpm88rpm",
-          "duration_secs": 395,
-          "avg_hr": 141,
-          "max_hr": 147,
-          "avg_cadence": 87.68607,
-          "zone": 1
-        },
-        {
-          "type": "WORK",
-          "label": "401s@145bpm88rpm",
-          "duration_secs": 401,
-          "avg_hr": 145,
-          "max_hr": 150,
-          "avg_cadence": 87.66583,
-          "zone": 1
-        },
-        {
-          "type": "WORK",
-          "label": "401s@145bpm88rpm",
-          "duration_secs": 408,
-          "avg_hr": 148,
-          "max_hr": 153,
-          "avg_cadence": 87.34068,
-          "zone": 1
-        },
-        {
-          "type": "WORK",
-          "label": "463s@144bpm82rpm",
-          "duration_secs": 463,
-          "avg_hr": 144,
-          "max_hr": 152,
-          "avg_cadence": 81.84881,
-          "zone": 1
-        },
-        {
-          "type": "WORK",
-          "label": "56s@120bpm57rpm",
-          "duration_secs": 56,
-          "avg_hr": 120,
-          "max_hr": 123,
-          "avg_cadence": 57.19643,
-          "zone": 1
-        }
-      ]
-    },
     {
       "activity_id": "i152100109",
       "date": "2026-05-28",
