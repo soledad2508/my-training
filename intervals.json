@@ -1,85 +1,10 @@
 {
-  "generated_at": "2026-06-11T23:18:44.410961",
+  "generated_at": "2026-06-12T01:43:40.418564",
   "version": "3.103",
   "script_hash": "ed549cafdc97",
   "scan_hours": 72,
   "retention_days": 14,
   "activities": [
-    {
-      "activity_id": "i152100109",
-      "date": "2026-05-28",
-      "type": "Run",
-      "name": "IntervalCoach - VO2max Intervals",
-      "interval_summary": [
-        "6x 7m4s 147bpm",
-        "1x 9m51s 130bpm"
-      ],
-      "intervals": [
-        {
-          "type": "WORK",
-          "label": "424s@147bpm86rpm",
-          "duration_secs": 458,
-          "avg_hr": 131,
-          "max_hr": 149,
-          "avg_cadence": 82.96943,
-          "zone": 1
-        },
-        {
-          "type": "WORK",
-          "label": "424s@147bpm86rpm",
-          "duration_secs": 420,
-          "avg_hr": 145,
-          "max_hr": 150,
-          "avg_cadence": 87.65714,
-          "zone": 1
-        },
-        {
-          "type": "WORK",
-          "label": "424s@147bpm86rpm",
-          "duration_secs": 411,
-          "avg_hr": 150,
-          "max_hr": 154,
-          "avg_cadence": 87.10462,
-          "zone": 2
-        },
-        {
-          "type": "WORK",
-          "label": "424s@147bpm86rpm",
-          "duration_secs": 411,
-          "avg_hr": 152,
-          "max_hr": 157,
-          "avg_cadence": 86.50365,
-          "zone": 2
-        },
-        {
-          "type": "WORK",
-          "label": "424s@147bpm86rpm",
-          "duration_secs": 425,
-          "avg_hr": 152,
-          "max_hr": 158,
-          "avg_cadence": 84.36706,
-          "zone": 2
-        },
-        {
-          "type": "WORK",
-          "label": "424s@147bpm86rpm",
-          "duration_secs": 418,
-          "avg_hr": 152,
-          "max_hr": 162,
-          "avg_cadence": 85.66507,
-          "zone": 2
-        },
-        {
-          "type": "WORK",
-          "label": "591s@130bpm47rpm",
-          "duration_secs": 591,
-          "avg_hr": 130,
-          "max_hr": 158,
-          "avg_cadence": 46.516075,
-          "zone": 1
-        }
-      ]
-    },
     {
       "activity_id": "i152613027",
       "date": "2026-05-30",
