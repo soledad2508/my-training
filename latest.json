@@ -72,7 +72,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-06-12T14:07:28.794370",
+    "last_updated": "2026-06-12T17:14:18.791067",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.103"
@@ -461,9 +461,9 @@
           "current_week_hard_days_completed": 1,
           "current_week_hard_days_total": 1,
           "race_proximity": null,
-          "next_week_load": 2.24,
+          "next_week_load": 3.57,
           "plan_coverage_current_week": 0.0,
-          "plan_coverage_next_week": 1.67
+          "plan_coverage_next_week": 2.0
         },
         "data_quality": "good",
         "stream_agreement": null
@@ -496,7 +496,7 @@
     "p_max": null,
     "power_model_source": "wellness.sportInfo",
     "vo2max": 52.0,
-    "calculation_timestamp": "2026-06-12T14:07:28.792587",
+    "calculation_timestamp": "2026-06-12T17:14:18.789302",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -1512,15 +1512,29 @@
       "has_terrain": false,
       "start_time": "09:00",
       "description": "Warmup\n- Hey Sy! Ready for a strong endurance run? 3m 65% pace\n- 3m 76% pace\n- 3m 87% pace\n\nMain Set\n- Settle In 15m 77% pace\n- Aerobic 15m 78-87% pace\n- Endurance 15m 60-70% pace\n\nCooldown\n- 3m 78% pace\n- Awesome job, Sy! Enjoy the cool down 3m 65% pace\n\n[Weekly Plan - Build]"
+    },
+    {
+      "id": 115745457,
+      "date": "2026-06-20",
+      "name": "IntervalCoach - Progressive Threshold Build",
+      "type": "WORKOUT",
+      "sport_type": "Run",
+      "planned_tss": 109,
+      "duration_hours": 1.5,
+      "duration_formatted": "1h30m",
+      "workout_summary": null,
+      "has_terrain": false,
+      "start_time": "09:00",
+      "description_preview": "Warmup\n- Hey Sy! Progressive threshold awaits. 5m 65% pace\n- 5m 76% pace"
     }
   ],
   "workout_summary_stats": {
-    "attempted": 3,
+    "attempted": 4,
     "success": 1,
     "patternA": 1,
     "patternB": 0,
     "bail_no_workout_doc": 2,
-    "bail_no_match": 2
+    "bail_no_match": 3
   },
   "weekly_summary": {
     "total_training_hours": 2.33,
