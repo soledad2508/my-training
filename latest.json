@@ -72,7 +72,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-06-17T16:02:14.717943",
+    "last_updated": "2026-06-17T18:32:16.531809",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.103"
@@ -452,9 +452,9 @@
           "current_week_hard_days_completed": 0,
           "current_week_hard_days_total": 1,
           "race_proximity": null,
-          "next_week_load": 2.13,
+          "next_week_load": 2.72,
           "plan_coverage_current_week": 0.33,
-          "plan_coverage_next_week": 1.33
+          "plan_coverage_next_week": 1.67
         },
         "data_quality": "good",
         "stream_agreement": null
@@ -487,7 +487,7 @@
     "p_max": null,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-06-17T16:02:14.716296",
+    "calculation_timestamp": "2026-06-17T18:32:16.529988",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -1304,12 +1304,25 @@
       "has_terrain": false,
       "start_time": "09:00",
       "description": "Lower Body Strength\n\nLeg strength for cycling power and running economy\n\n1. Goblet Squat: 3 sets \u00d7 12 reps (Weight at chest, sit back into heels) [Rest: 60 sec]\n2. Romanian Deadlift: 3 sets \u00d7 10 reps (Hinge at hips, slight knee bend) [Rest: 60 sec]\n3. Walking Lunges: 3 sets \u00d7 10 reps each leg (Keep torso upright, knee tracks over toe) [Rest: 45 sec]\n4. Step-ups: 3 sets \u00d7 10 reps each leg (Use bench or box, drive through heel) [Rest: 45 sec]\n5. Calf Raises: 3 sets \u00d7 15 reps (Full range of motion, hold at top) [Rest: 30 sec]\n6. Single Leg Glute Bridge: 3 sets \u00d7 10 reps each leg (Keep hips level throughout) [Rest: 30 sec]\n\nBuild phase: increase weight, lower reps (6-10) for strength gains.\n\n[Duration: ~45 min]\n\n[Weekly Plan - Build]"
+    },
+    {
+      "id": 116707644,
+      "date": "2026-06-25",
+      "name": "IntervalCoach - Neuromuscular Intervals",
+      "type": "WORKOUT",
+      "sport_type": "Run",
+      "planned_tss": 64,
+      "duration_hours": 1.0,
+      "duration_formatted": "59m50s",
+      "workout_summary": "3 \u00d7 3m | 5\u00d78m / 10s rec | 4m | 2 \u00d7 3m",
+      "has_terrain": false,
+      "start_time": "09:00"
     }
   ],
   "workout_summary_stats": {
-    "attempted": 2,
-    "success": 2,
-    "patternA": 2,
+    "attempted": 3,
+    "success": 3,
+    "patternA": 3,
     "patternB": 0,
     "bail_no_workout_doc": 3,
     "bail_no_match": 0
