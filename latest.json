@@ -72,7 +72,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-06-19T14:54:47.172649",
+    "last_updated": "2026-06-19T17:15:21.696958",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.103"
@@ -227,7 +227,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": 2561,
+      "steps": 3116,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -446,9 +446,9 @@
           "current_week_hard_days_completed": 0,
           "current_week_hard_days_total": 0,
           "race_proximity": null,
-          "next_week_load": 2.72,
+          "next_week_load": 3.6,
           "plan_coverage_current_week": 0.0,
-          "plan_coverage_next_week": 1.67
+          "plan_coverage_next_week": 2.0
         },
         "data_quality": "good",
         "stream_agreement": null
@@ -481,7 +481,7 @@
     "p_max": null,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-06-19T14:54:47.170874",
+    "calculation_timestamp": "2026-06-19T17:15:21.695306",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -1167,7 +1167,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": 2561,
+      "steps": 3116,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -1248,15 +1248,29 @@
       "has_terrain": false,
       "start_time": "09:00",
       "description": "Warmup\n- Hey Sy! Endurance and speed today. 3m 63-67% pace\n- 3m 74-78% pace\n- 3m 85-89% pace\n\nMain Set\n5x\n- Aerobic 8m 78-87% pace\n- Sprint 10s 128-132% pace\n\nRecovery\n- Endurance 4m 60-70% pace\n\nCooldown\n- 3m 76-80% pace\n- Awesome job, Sy! Recover well. 3m 63-67% pace\n\n[Weekly Plan - Build]"
+    },
+    {
+      "id": 117302046,
+      "date": "2026-06-27",
+      "name": "IntervalCoach - Sustained Threshold",
+      "type": "WORKOUT",
+      "sport_type": "Run",
+      "planned_tss": 97,
+      "duration_hours": 1.33,
+      "duration_formatted": "1h20m",
+      "workout_summary": null,
+      "has_terrain": false,
+      "start_time": "09:00",
+      "description_preview": "Warmup\n- Hey Sy, threshold run ahead! 4m 63-67% pace\n- 4m 74-78% pace"
     }
   ],
   "workout_summary_stats": {
-    "attempted": 3,
+    "attempted": 4,
     "success": 3,
     "patternA": 3,
     "patternB": 0,
     "bail_no_workout_doc": 2,
-    "bail_no_match": 0
+    "bail_no_match": 1
   },
   "weekly_summary": {
     "total_training_hours": 1.02,
