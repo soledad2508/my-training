@@ -72,7 +72,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-06-20T16:48:52.824446",
+    "last_updated": "2026-06-20T18:07:32.115277",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.103"
@@ -456,9 +456,9 @@
           "current_week_hard_days_completed": 0,
           "current_week_hard_days_total": 0,
           "race_proximity": null,
-          "next_week_load": 3.6,
+          "next_week_load": 4.23,
           "plan_coverage_current_week": 0.0,
-          "plan_coverage_next_week": 2.0
+          "plan_coverage_next_week": 2.33
         },
         "data_quality": "good",
         "stream_agreement": null
@@ -491,7 +491,7 @@
     "p_max": null,
     "power_model_source": "wellness.sportInfo",
     "vo2max": 53.0,
-    "calculation_timestamp": "2026-06-20T16:48:52.822462",
+    "calculation_timestamp": "2026-06-20T18:07:32.113619",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -1323,15 +1323,29 @@
       "has_terrain": false,
       "start_time": "09:00",
       "description": "Warmup\n- Hey Sy, threshold run ahead! 4m 63-67% pace\n- 4m 74-78% pace\n- 4m 85-89% pace\n\nMain Set\n- Endurance 15m 76-80% pace\n- Sustained Threshold 30m 95-100% pace\n- Endurance 15m 76-80% pace\n\nCooldown\n- 4m 76-80% pace\n- Great job, recover well! 4m 63-67% pace\n\n[Weekly Plan - Build]"
+    },
+    {
+      "id": 117432561,
+      "date": "2026-06-28",
+      "name": "IntervalCoach - Aerobic Endurance",
+      "type": "WORKOUT",
+      "sport_type": "Run",
+      "planned_tss": 69,
+      "duration_hours": 1.33,
+      "duration_formatted": "1h20m",
+      "workout_summary": null,
+      "has_terrain": false,
+      "start_time": "09:00",
+      "description_preview": "Warmup\n- Hey Sy! Time on feet awaits 4m 63-67% pace\n- 4m 74-78% pace"
     }
   ],
   "workout_summary_stats": {
-    "attempted": 4,
+    "attempted": 5,
     "success": 3,
     "patternA": 3,
     "patternB": 0,
     "bail_no_workout_doc": 2,
-    "bail_no_match": 1
+    "bail_no_match": 2
   },
   "weekly_summary": {
     "total_training_hours": 0.75,
