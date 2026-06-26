@@ -72,7 +72,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-06-26T16:57:52.311776",
+    "last_updated": "2026-06-26T18:54:06.054641",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.103"
@@ -446,9 +446,9 @@
           "current_week_hard_days_completed": 0,
           "current_week_hard_days_total": 2,
           "race_proximity": null,
-          "next_week_load": 2.46,
+          "next_week_load": 3.8,
           "plan_coverage_current_week": 1.0,
-          "plan_coverage_next_week": 2.5
+          "plan_coverage_next_week": 3.0
         },
         "data_quality": "good",
         "stream_agreement": null
@@ -481,7 +481,7 @@
     "p_max": null,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-06-26T16:57:52.310040",
+    "calculation_timestamp": "2026-06-26T18:54:06.052875",
     "data_quality": {
       "hrv_data_points": 3,
       "rhr_data_points": 3,
@@ -1226,12 +1226,25 @@
       "has_terrain": false,
       "start_time": "09:00",
       "description": "Warmup\n- Hey Sy! Threshold fartlek time! 3m 63-67% pace\n- 3m 74-78% pace\n- 3m 85-89% pace\n\nMain Set\n- Float 1 4m 86-90% pace\n- Fartlek Surge 1 2m 95-101% pace\n- Float 2 4m 86-90% pace\n- Fartlek Surge 2 3m 95-101% pace\n- Float 3 3m 86-90% pace\n- Fartlek Surge 3 4m 95-101% pace\n- Float 4 3m 86-90% pace\n- Fartlek Surge 4 3m 95-101% pace\n- Float 5 3m 86-90% pace\n- Fartlek Surge 5 2m 95-101% pace\n- Float 6 3m 86-90% pace\n- Fartlek Surge 6 2m 95-101% pace\n- Float 7 3m 86-90% pace\n- Fartlek Surge 7 3m 95-101% pace\n- Float 8 3m 86-90% pace\n\nCooldown\n- 3m 76-80% pace\n- Great work, recover well 3m 63-67% pace\n\n[Weekly Plan - Build]"
+    },
+    {
+      "id": 118834359,
+      "date": "2026-07-04",
+      "name": "IntervalCoach - Threshold Repeats",
+      "type": "WORKOUT",
+      "sport_type": "Run",
+      "planned_tss": 120,
+      "duration_hours": 1.38,
+      "duration_formatted": "1h23m",
+      "workout_summary": "4 \u00d7 4m | 5\u00d78m / 3m rec | 3 \u00d7 4m",
+      "has_terrain": false,
+      "start_time": "09:00"
     }
   ],
   "workout_summary_stats": {
-    "attempted": 5,
-    "success": 2,
-    "patternA": 2,
+    "attempted": 6,
+    "success": 3,
+    "patternA": 3,
     "patternB": 0,
     "bail_no_workout_doc": 2,
     "bail_no_match": 3
