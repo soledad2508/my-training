@@ -72,7 +72,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-06-28T12:52:57.831573",
+    "last_updated": "2026-06-28T14:46:03.282500",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.103"
@@ -448,9 +448,9 @@
           "current_week_hard_days_completed": 1,
           "current_week_hard_days_total": 2,
           "race_proximity": null,
-          "next_week_load": 4.76,
+          "next_week_load": null,
           "plan_coverage_current_week": 0.5,
-          "plan_coverage_next_week": 3.5
+          "plan_coverage_next_week": 0.0
         },
         "data_quality": "good",
         "stream_agreement": null
@@ -483,7 +483,7 @@
     "p_max": null,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-06-28T12:52:57.829863",
+    "calculation_timestamp": "2026-06-28T14:46:03.280724",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -1144,113 +1144,15 @@
       "has_terrain": false,
       "start_time": "09:00",
       "description": "Warmup\n- Hey Sy! Endurance and tempo pushes await. 4m 63-67% pace\n- 4m 74-78% pace\n- 4m 85-89% pace\n\nMain Set\n4x\n- Aerobic 11m 78-87% pace\n- Tempo 5m 88-94% pace\n\nCooldown\n- 5m 76-80% pace\n- Fantastic work, Sy! Enjoy the cool down. 4m 63-67% pace\n\n[Weekly Plan - Build]"
-    },
-    {
-      "id": 118076522,
-      "date": "2026-06-30",
-      "name": "IntervalCoach - Aerobic Endurance",
-      "type": "WORKOUT",
-      "sport_type": "Run",
-      "planned_tss": 51,
-      "duration_hours": 1.0,
-      "duration_formatted": "1h",
-      "workout_summary": null,
-      "has_terrain": false,
-      "start_time": "09:00",
-      "description": "Warmup\n- Hey Sy! Let's get ready for a long one 3m 63-67% pace\n- 3m 74-78% pace\n- 3m 75-79% pace\n\nMain Set\n- Ultra 45m 65-77% pace\n\nCooldown\n- 3m 75-79% pace\n- Awesome work, Sy. Enjoy the recovery 3m 63-67% pace\n\n[Weekly Plan - Build]"
-    },
-    {
-      "id": 118076524,
-      "date": "2026-06-30",
-      "name": "IntervalCoach - Lower Body Strength",
-      "type": "WORKOUT",
-      "sport_type": "WeightTraining",
-      "planned_tss": 37,
-      "duration_hours": 0.5,
-      "duration_formatted": "30m",
-      "workout_summary": null,
-      "has_terrain": false,
-      "start_time": "09:00",
-      "description": "Lower Body Strength\n\nLeg strength for cycling power and running economy\n\n1. Goblet Squat: 3 sets \u00d7 12 reps (Weight at chest, sit back into heels) [Rest: 60 sec]\n2. Romanian Deadlift: 3 sets \u00d7 10 reps (Hinge at hips, slight knee bend) [Rest: 60 sec]\n3. Walking Lunges: 3 sets \u00d7 10 reps each leg (Keep torso upright, knee tracks over toe) [Rest: 45 sec]\n4. Step-ups: 3 sets \u00d7 10 reps each leg (Use bench or box, drive through heel) [Rest: 45 sec]\n5. Calf Raises: 3 sets \u00d7 15 reps (Full range of motion, hold at top) [Rest: 30 sec]\n6. Single Leg Glute Bridge: 3 sets \u00d7 10 reps each leg (Keep hips level throughout) [Rest: 30 sec]\n\nBuild phase: increase weight, lower reps (6-10) for strength gains.\n\n[Duration: ~45 min]\n\n[Weekly Plan - Build]"
-    },
-    {
-      "id": 118076547,
-      "date": "2026-07-01",
-      "name": "IntervalCoach - Aerobic Pickups",
-      "type": "WORKOUT",
-      "sport_type": "Run",
-      "planned_tss": 92,
-      "duration_hours": 1.01,
-      "duration_formatted": "1h30s",
-      "workout_summary": "3 \u00d7 3m | 4\u00d79m / 30s rec | 7m | 30s | 2 \u00d7 3m",
-      "has_terrain": false,
-      "start_time": "09:00",
-      "description": "Warmup\n- Hey Sy! Endurance with pickups today 3m 63-67% pace\n- 3m 74-78% pace\n- 3m 85-89% pace\n\nMain Set\n4x\n- Aerobic 9m 78-87% pace\n- Pickup 30s 88-94% pace\n\n- Aerobic 5 7m 78-87% pace\n- Pickup 5 30s 88-94% pace\n\nCooldown\n- 3m 76-80% pace\n- Awesome job, time to recover 3m 63-67% pace\n\n[Weekly Plan - Build]"
-    },
-    {
-      "id": 118076548,
-      "date": "2026-07-01",
-      "name": "IntervalCoach - Lower Body Strength",
-      "type": "WORKOUT",
-      "sport_type": "WeightTraining",
-      "planned_tss": 37,
-      "duration_hours": 0.5,
-      "duration_formatted": "30m",
-      "workout_summary": null,
-      "has_terrain": false,
-      "start_time": "09:00",
-      "description": "Lower Body Strength\n\nLeg strength for cycling power and running economy\n\n1. Goblet Squat: 3 sets \u00d7 12 reps (Weight at chest, sit back into heels) [Rest: 60 sec]\n2. Romanian Deadlift: 3 sets \u00d7 10 reps (Hinge at hips, slight knee bend) [Rest: 60 sec]\n3. Walking Lunges: 3 sets \u00d7 10 reps each leg (Keep torso upright, knee tracks over toe) [Rest: 45 sec]\n4. Step-ups: 3 sets \u00d7 10 reps each leg (Use bench or box, drive through heel) [Rest: 45 sec]\n5. Calf Raises: 3 sets \u00d7 15 reps (Full range of motion, hold at top) [Rest: 30 sec]\n6. Single Leg Glute Bridge: 3 sets \u00d7 10 reps each leg (Keep hips level throughout) [Rest: 30 sec]\n\nBuild phase: increase weight, lower reps (6-10) for strength gains.\n\n[Duration: ~45 min]\n\n[Weekly Plan - Build]"
-    },
-    {
-      "id": 118287843,
-      "date": "2026-07-02",
-      "name": "IntervalCoach - Threshold Fartlek",
-      "type": "WORKOUT",
-      "sport_type": "Run",
-      "planned_tss": 78,
-      "duration_hours": 1.0,
-      "duration_formatted": "1h",
-      "workout_summary": null,
-      "has_terrain": false,
-      "start_time": "09:00",
-      "description": "Warmup\n- Hey Sy! Threshold fartlek time! 3m 63-67% pace\n- 3m 74-78% pace\n- 3m 85-89% pace\n\nMain Set\n- Float 1 4m 86-90% pace\n- Fartlek Surge 1 2m 95-101% pace\n- Float 2 4m 86-90% pace\n- Fartlek Surge 2 3m 95-101% pace\n- Float 3 3m 86-90% pace\n- Fartlek Surge 3 4m 95-101% pace\n- Float 4 3m 86-90% pace\n- Fartlek Surge 4 3m 95-101% pace\n- Float 5 3m 86-90% pace\n- Fartlek Surge 5 2m 95-101% pace\n- Float 6 3m 86-90% pace\n- Fartlek Surge 6 2m 95-101% pace\n- Float 7 3m 86-90% pace\n- Fartlek Surge 7 3m 95-101% pace\n- Float 8 3m 86-90% pace\n\nCooldown\n- 3m 76-80% pace\n- Great work, recover well 3m 63-67% pace\n\n[Weekly Plan - Build]"
-    },
-    {
-      "id": 118834359,
-      "date": "2026-07-04",
-      "name": "IntervalCoach - Threshold Repeats",
-      "type": "WORKOUT",
-      "sport_type": "Run",
-      "planned_tss": 120,
-      "duration_hours": 1.38,
-      "duration_formatted": "1h23m",
-      "workout_summary": "4 \u00d7 4m | 5\u00d78m / 3m rec | 3 \u00d7 4m",
-      "has_terrain": false,
-      "start_time": "09:00",
-      "description": "Warmup\n- Hey Sy! Long climb ahead 4m 63-67% pace\n- 4m 74-78% pace\n- 4m 76-80% pace\n\nMain Set\n- Endurance 4m 76-80% pace\n\n5x\n- Threshold 8m 95-100% pace\n- Recovery 3m 75-79% pace\n\n- Endurance 4m 76-80% pace\n\nCooldown\n- 4m 76-80% pace\n- Nice work, recover well 4m 63-67% pace\n\n[Weekly Plan - Build]"
-    },
-    {
-      "id": 118962684,
-      "date": "2026-07-05",
-      "name": "IntervalCoach - Endurance + Sprints",
-      "type": "WORKOUT",
-      "sport_type": "Run",
-      "planned_tss": 86,
-      "duration_hours": 1.33,
-      "duration_formatted": "1h20m",
-      "workout_summary": "3 \u00d7 4m | 6\u00d79m / 10s rec | 5m | 2 \u00d7 4m",
-      "has_terrain": false,
-      "start_time": "09:00",
-      "description": "Warmup\n- Hey Sy! Endurance and speed await 4m 63-67% pace\n- 4m 74-78% pace\n- 4m 85-89% pace\n\nMain Set\n6x\n- Aerobic 9m 78-87% pace\n- Sprint 10s 128-132% pace\n\nRecovery\n- Endurance 5m 60-70% pace\n\nCooldown\n- 4m 76-80% pace\n- Fantastic work, Sy! Enjoy the recovery 4m 63-67% pace\n\n[Weekly Plan - Build]"
     }
   ],
   "workout_summary_stats": {
-    "attempted": 6,
-    "success": 4,
-    "patternA": 4,
+    "attempted": 1,
+    "success": 1,
+    "patternA": 1,
     "patternB": 0,
-    "bail_no_workout_doc": 2,
-    "bail_no_match": 2
+    "bail_no_workout_doc": 0,
+    "bail_no_match": 0
   },
   "weekly_summary": {
     "total_training_hours": 0.97,
