@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-12T00:09:27.112444",
+  "generated_at": "2026-07-12T03:54:57.776502",
   "version": "3.103",
   "script_hash": "ed549cafdc97",
   "scan_hours": 72,
@@ -104,6 +104,34 @@
           "max_hr": 160,
           "avg_cadence": 65.0,
           "zone": 3
+        }
+      ]
+    },
+    {
+      "activity_id": "i164891250",
+      "date": "2026-07-11",
+      "type": "Run",
+      "name": "Qu\u1eadn 2 Cha\u0323y",
+      "interval_summary": [
+        "1x 3m42s 132bpm"
+      ],
+      "intervals": [
+        {
+          "type": "WORK",
+          "label": "222s@132bpm89rpm",
+          "duration_secs": 222,
+          "avg_hr": 132,
+          "max_hr": 148,
+          "avg_cadence": 88.73874,
+          "zone": 1
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 1,
+          "avg_hr": 147,
+          "max_hr": 147,
+          "avg_cadence": 88.0,
+          "zone": 1
         }
       ]
     }
