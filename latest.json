@@ -72,7 +72,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-07-17T00:58:06.668815",
+    "last_updated": "2026-07-17T04:09:04.162695",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.103"
@@ -131,7 +131,7 @@
       },
       "tsb": {
         "status": "green",
-        "value": 4.5
+        "value": 10.0
       }
     },
     "signal_summary": {
@@ -174,10 +174,10 @@
   },
   "current_status": {
     "fitness": {
-      "ctl": 13.52,
-      "atl": 9.07,
-      "tsb": 4.45,
-      "ramp_rate": -0.75,
+      "ctl": 12.14,
+      "atl": 2.15,
+      "tsb": 9.99,
+      "ramp_rate": -2.13,
       "fitness_source": "From Intervals.icu API (reflects completed workouts)"
     },
     "thresholds": {
@@ -237,7 +237,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": 194,
+      "steps": 964,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -494,7 +494,7 @@
     "p_max": null,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-07-17T00:58:06.667491",
+    "calculation_timestamp": "2026-07-17T04:09:04.161024",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -1027,7 +1027,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": 194,
+      "steps": 964,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
