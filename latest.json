@@ -72,7 +72,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-07-21T01:07:29.082388",
+    "last_updated": "2026-07-21T04:30:17.486130",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.103"
@@ -201,7 +201,7 @@
       "atl": 6.41,
       "tsb": 5.94,
       "ramp_rate": -0.69,
-      "fitness_source": "From Intervals.icu API (reflects completed workouts)"
+      "fitness_source": "Decayed from yesterday (today's planned workouts not yet completed)"
     },
     "thresholds": {
       "eftp": null,
@@ -453,14 +453,15 @@
     },
     "consistency_index": 0.0,
     "consistency_details": {
-      "planned_days": 4,
+      "planned_days": 5,
       "completed_days": 0,
       "matched_days": 0,
       "planned_dates": [
         "2026-07-15",
         "2026-07-16",
         "2026-07-18",
-        "2026-07-19"
+        "2026-07-19",
+        "2026-07-21"
       ],
       "completed_dates": []
     },
@@ -476,14 +477,14 @@
           "weeks_available": 4
         },
         "stream_2": {
-          "planned_tss_delta": 4.5,
-          "hard_sessions_planned": 3,
+          "planned_tss_delta": 8.63,
+          "hard_sessions_planned": 4,
           "current_week_hard_days_completed": 0,
-          "current_week_hard_days_total": 3,
+          "current_week_hard_days_total": 4,
           "race_proximity": 88,
           "next_week_load": null,
-          "plan_coverage_current_week": 3.0,
-          "plan_coverage_next_week": 0.0
+          "plan_coverage_current_week": 4.0,
+          "plan_coverage_next_week": 1.0
         },
         "data_quality": "good",
         "stream_agreement": null
@@ -516,13 +517,13 @@
     "p_max": null,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-07-21T01:07:29.081117",
+    "calculation_timestamp": "2026-07-21T04:30:17.484304",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
       "activities_7d": 1,
       "activities_28d": 4,
-      "planned_workouts_7d": 5,
+      "planned_workouts_7d": 6,
       "ftp_history_days": {
         "indoor": 0,
         "outdoor": 0
@@ -1011,6 +1012,34 @@
   ],
   "planned_workouts": [
     {
+      "id": 124298567,
+      "date": "2026-07-21",
+      "name": "IntervalCoach - VO2max Intervals",
+      "type": "WORKOUT",
+      "sport_type": "Run",
+      "planned_tss": 117,
+      "duration_hours": 0.72,
+      "duration_formatted": "43m30s",
+      "workout_summary": "2m | 2 \u00d7 4m | 13\u00d730s / 15s rec | 5m | 13\u00d730s / 15s rec | 5m | 2 \u00d7 2m",
+      "has_terrain": false,
+      "start_time": "09:00",
+      "description": "Warmup\n- Sy, let's get ready for some fast running! 2m 63-67% pace\n- 4m 75-79% pace\n\nMain Set\n- Endurance 4m 76-80% pace\n\n13x\n- On 30s 113-117% pace\n- Off 15s 65-77% pace\n\nRecovery\n- Set Recovery 5m 65-77% pace\n\n13x\n- On 30s 113-117% pace\n- Off 15s 65-77% pace\n\n- Endurance 5m 76-80% pace\n\nCooldown\n- 2m 76-80% pace\n- Awesome work, Sy! Jog easy now. 2m 63-67% pace\n\n[Weekly Plan - Build]"
+    },
+    {
+      "id": 124298568,
+      "date": "2026-07-22",
+      "name": "IntervalCoach - Aerobic Intervals",
+      "type": "WORKOUT",
+      "sport_type": "Run",
+      "planned_tss": 74,
+      "duration_hours": 0.83,
+      "duration_formatted": "50m",
+      "workout_summary": "2 \u00d7 3m | 2m | 3\u00d79m / 30s rec | 8m | 30s | 3m | 2m",
+      "has_terrain": false,
+      "start_time": "09:00",
+      "description": "Warmup\n- Hey Sy! Endurance run with pickups. 3m 63-67% pace\n- 3m 74-78% pace\n- 2m 85-89% pace\n\nMain Set\n3x\n- Aerobic 9m 78-87% pace\n- Pickup 30s 88-94% pace\n\n- Aerobic 4 8m 78-87% pace\n- Pickup 4 30s 88-94% pace\n\nCooldown\n- 3m 76-80% pace\n- Great work, Sy! Easy jog to finish. 2m 63-67% pace\n\n[Weekly Plan - Build]"
+    },
+    {
       "id": 120141237,
       "date": "2026-07-23",
       "name": "IntervalCoach - Aerobic Cruise",
@@ -1025,20 +1054,6 @@
       "description": "Warmup\n- Hey Sy! Easy recovery miles today. 3m 63-67% pace\n- 3m 64-68% pace\n- 2m 64-68% pace\n\nMain Set\n- Easy 21m 60-66% pace\n- Shake Out 21m 66-71% pace\n\nCooldown\n- 3m 69-73% pace\n- Nice work, Sy! Relax and recover. 3m 63-67% pace\n\n[Weekly Plan - Recovery]"
     },
     {
-      "id": 120141242,
-      "date": "2026-07-25",
-      "name": "IntervalCoach - Aerobic Cruise",
-      "type": "WORKOUT",
-      "sport_type": "Run",
-      "planned_tss": 54,
-      "duration_hours": 1.23,
-      "duration_formatted": "1h14m",
-      "workout_summary": null,
-      "has_terrain": false,
-      "start_time": "09:00",
-      "description": "Warmup\n- Hey Sy! Easy recovery run ahead. 4m 63-67% pace\n- 4m 64-68% pace\n- 3m 64-68% pace\n\nMain Set\n- Easy 28m 60-66% pace\n- Shake Out 28m 66-71% pace\n\nCooldown\n- 4m 69-73% pace\n- Great job, Sy! Enjoy the cooldown. 3m 63-67% pace\n\n[Weekly Plan - Recovery]"
-    },
-    {
       "id": 120141245,
       "date": "2026-07-26",
       "name": "IntervalCoach - Aerobic Cruise",
@@ -1051,15 +1066,29 @@
       "has_terrain": false,
       "start_time": "09:00",
       "description": "Warmup\n- Hey Sy! Easy recovery run ahead 4m 63-67% pace\n- 4m 64-68% pace\n- 3m 64-68% pace\n\nMain Set\n- Easy 28m 60-66% pace\n- Shake Out 28m 66-71% pace\n\nCooldown\n- 4m 69-73% pace\n- Great job, enjoy the cool-down 3m 63-67% pace\n\n[Weekly Plan - Recovery]"
+    },
+    {
+      "id": 124298570,
+      "date": "2026-07-28",
+      "name": "IntervalCoach - Core Stability",
+      "type": "WORKOUT",
+      "sport_type": "WeightTraining",
+      "planned_tss": 37,
+      "duration_hours": 0.75,
+      "duration_formatted": "45m",
+      "workout_summary": null,
+      "has_terrain": false,
+      "start_time": "09:00",
+      "description": "Core Stability\n\nCore exercises to improve stability, posture, and power transfer\n\n1. Plank: 5 sets \u00d7 45-60 sec (Keep body in straight line, engage glutes) [Rest: 30 sec]\n2. Side Plank: 3 sets \u00d7 30 sec each side (Stack feet or stagger for stability) [Rest: 15 sec]\n3. Dead Bug: 5 sets \u00d7 10 reps each side (Keep lower back pressed to floor) [Rest: 30 sec]\n4. Bird Dog: 5 sets \u00d7 10 reps each side (Extend opposite arm and leg, hold 2s) [Rest: 30 sec]\n5. Glute Bridge: 5 sets \u00d7 15 reps (Squeeze glutes at top, hold 2s) [Rest: 30 sec]\n6. Pallof Press: 5 sets \u00d7 10 reps each side (Band at chest height, press and hold, resist rotation) [Rest: 30 sec]\n\n[Duration: ~45 min]\n\n[Weekly Plan - Recovery]"
     }
   ],
   "workout_summary_stats": {
-    "attempted": 3,
-    "success": 0,
-    "patternA": 0,
+    "attempted": 4,
+    "success": 2,
+    "patternA": 2,
     "patternB": 0,
-    "bail_no_workout_doc": 0,
-    "bail_no_match": 3
+    "bail_no_workout_doc": 1,
+    "bail_no_match": 2
   },
   "weekly_summary": {
     "total_training_hours": 0.75,
