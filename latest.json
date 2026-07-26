@@ -72,7 +72,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-07-25T23:42:24.352703",
+    "last_updated": "2026-07-26T01:14:59.897149",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.103"
@@ -100,45 +100,45 @@
     }
   ],
   "readiness_decision": {
-    "recommendation": "modify",
-    "priority": 2,
+    "recommendation": "go",
+    "priority": 3,
     "signals": {
       "hrv": {
-        "status": "green",
-        "value": 104.0,
-        "baseline_7d": 96.9,
-        "delta_pct": 7.3
+        "status": "unavailable",
+        "value": null,
+        "baseline_7d": 95.5,
+        "delta_pct": null
       },
       "rhr": {
-        "status": "green",
-        "value": 46,
+        "status": "unavailable",
+        "value": null,
         "baseline_7d": 45,
-        "delta_bpm": 1
+        "delta_bpm": null
       },
       "sleep": {
-        "status": "red",
-        "hours": 4.98,
-        "quality": 3
+        "status": "unavailable",
+        "hours": null,
+        "quality": null
       },
       "acwr": {
         "status": "green",
         "value": 1.03
       },
       "ri": {
-        "status": "green",
-        "value": 1.05,
-        "value_yesterday": 1.12
+        "status": "unavailable",
+        "value": null,
+        "value_yesterday": 1.07
       },
       "tsb": {
         "status": "green",
-        "value": 3.2
+        "value": 4.1
       }
     },
     "signal_summary": {
-      "green": 5,
+      "green": 2,
       "amber": 0,
-      "red": 1,
-      "unavailable": 0
+      "red": 0,
+      "unavailable": 4
     },
     "phase_context": {
       "phase": "Base",
@@ -147,23 +147,14 @@
       "modifier_applied": "default"
     },
     "race_week_defers": false,
-    "modification": {
-      "triggers": [
-        "sleep"
-      ],
-      "suggested_adjustments": {
-        "intensity": "preserve",
-        "volume": "reduce",
-        "cap_zone": null
-      }
-    },
-    "reason": "P2 signal count. 1 red (sleep), 0 amber ().",
+    "modification": null,
+    "reason": "P3 green light. 2 green, 0 amber (threshold 2), 0 red. Note: 4 signals unavailable \u2014 limited data.",
     "alarm_refs": []
   },
   "history": {
     "available": true,
     "last_generated": "2026-07-12",
-    "age_days": 13,
+    "age_days": 14,
     "total_months": 79,
     "history_confidence": "high"
   },
@@ -183,18 +174,18 @@
   },
   "current_status": {
     "fitness": {
-      "ctl": 12.17,
-      "atl": 8.95,
-      "tsb": 3.22,
-      "ramp_rate": -1.1,
-      "fitness_source": "From Intervals.icu API (reflects completed workouts)"
+      "ctl": 11.88,
+      "atl": 7.76,
+      "tsb": 4.12,
+      "ramp_rate": -1.07,
+      "fitness_source": "Decayed from yesterday (today's planned workouts not yet completed)"
     },
     "thresholds": {
       "eftp": null,
       "w_prime": null,
       "w_prime_kj": null,
       "p_max": null,
-      "vo2max": 52.0,
+      "vo2max": null,
       "sports": {
         "cycling": {
           "lthr": 179,
@@ -225,11 +216,11 @@
     "current_metrics": {
       "weight_kg": 65.5,
       "resting_hr": 46,
-      "hrv": 104.0,
-      "sleep_quality": 3,
-      "sleep_hours": 4.98,
-      "sleep_formatted": "4h59m",
-      "sleep_score": 61.0,
+      "hrv": null,
+      "sleep_quality": null,
+      "sleep_hours": null,
+      "sleep_formatted": null,
+      "sleep_score": null,
       "fatigue": null,
       "soreness": null,
       "stress": null,
@@ -246,7 +237,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": 10661,
+      "steps": null,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -258,14 +249,14 @@
     }
   },
   "derived_metrics": {
-    "recovery_index": 1.05,
-    "recovery_index_yesterday": 1.12,
-    "hrv_baseline_7d": 96.9,
+    "recovery_index": null,
+    "recovery_index_yesterday": 1.07,
+    "hrv_baseline_7d": 95.5,
     "rhr_baseline_7d": 45,
-    "hrv_baseline_28d": 98.1,
+    "hrv_baseline_28d": 97.6,
     "rhr_baseline_28d": 45.3,
-    "latest_hrv": 104.0,
-    "latest_rhr": 46,
+    "latest_hrv": null,
+    "latest_rhr": null,
     "acwr": 1.03,
     "acwr_interpretation": "optimal",
     "monotony": 0.38,
@@ -277,7 +268,7 @@
     "multi_sport_detected": false,
     "strain": 15.0,
     "stress_tolerance": 0.4,
-    "load_recovery_ratio": 0.4,
+    "load_recovery_ratio": null,
     "tss_7d_total": 40.0,
     "tss_28d_total": 156.0,
     "zone_distribution_7d": {
@@ -381,12 +372,12 @@
       "power_curve_delta": {
         "window_days": 28,
         "current_window": {
-          "start": "2026-06-28",
-          "end": "2026-07-25"
+          "start": "2026-06-29",
+          "end": "2026-07-26"
         },
         "previous_window": {
-          "start": "2026-05-31",
-          "end": "2026-06-27"
+          "start": "2026-06-01",
+          "end": "2026-06-28"
         },
         "anchors": null,
         "rotation_index": null,
@@ -395,12 +386,12 @@
       "hr_curve_delta": {
         "window_days": 28,
         "current_window": {
-          "start": "2026-06-28",
-          "end": "2026-07-25"
+          "start": "2026-06-29",
+          "end": "2026-07-26"
         },
         "previous_window": {
-          "start": "2026-05-31",
-          "end": "2026-06-27"
+          "start": "2026-06-01",
+          "end": "2026-06-28"
         },
         "anchors": {
           "60s": {
@@ -431,8 +422,8 @@
         "note": "No sustainability data available.",
         "window": {
           "days": 42,
-          "start": "2026-06-14",
-          "end": "2026-07-25"
+          "start": "2026-06-15",
+          "end": "2026-07-26"
         }
       },
       "dfa_a1_profile": null
@@ -443,10 +434,10 @@
       "completed_days": 0,
       "matched_days": 0,
       "planned_dates": [
-        "2026-07-19",
         "2026-07-21",
         "2026-07-22",
-        "2026-07-23"
+        "2026-07-23",
+        "2026-07-26"
       ],
       "completed_dates": []
     },
@@ -462,14 +453,14 @@
           "weeks_available": 4
         },
         "stream_2": {
-          "planned_tss_delta": 4.89,
+          "planned_tss_delta": 9.78,
           "hard_sessions_planned": 1,
           "current_week_hard_days_completed": 0,
           "current_week_hard_days_total": 1,
-          "race_proximity": 84,
-          "next_week_load": null,
+          "race_proximity": 83,
+          "next_week_load": 7.63,
           "plan_coverage_current_week": 1.0,
-          "plan_coverage_next_week": 1.0
+          "plan_coverage_next_week": 5.0
         },
         "data_quality": "good",
         "stream_agreement": null
@@ -501,11 +492,11 @@
     "w_prime_kj": null,
     "p_max": null,
     "power_model_source": "wellness.sportInfo",
-    "vo2max": 52.0,
-    "calculation_timestamp": "2026-07-25T23:42:24.351183",
+    "vo2max": null,
+    "calculation_timestamp": "2026-07-26T01:14:59.895337",
     "data_quality": {
-      "hrv_data_points": 7,
-      "rhr_data_points": 7,
+      "hrv_data_points": 6,
+      "rhr_data_points": 6,
       "activities_7d": 1,
       "activities_28d": 4,
       "planned_workouts_7d": 4,
@@ -665,7 +656,7 @@
           "z7_time": 0
         }
       },
-      "has_intervals": true,
+      "has_intervals": false,
       "has_dfa": false
     },
     {
@@ -721,45 +712,6 @@
     }
   ],
   "wellness_data": [
-    {
-      "date": "2026-07-19",
-      "weight_kg": null,
-      "resting_hr": 45,
-      "hrv_rmssd": 105.0,
-      "hrv_sdnn": null,
-      "sleep_hours": 7.03,
-      "sleep_formatted": "7h2m",
-      "sleep_quality": 2,
-      "sleep_score": 80.0,
-      "mental_energy": null,
-      "avg_sleeping_hr": null,
-      "vo2max": null,
-      "fatigue": null,
-      "soreness": null,
-      "stress": null,
-      "mood": null,
-      "motivation": null,
-      "injury": null,
-      "hydration": null,
-      "spO2": null,
-      "blood_glucose": null,
-      "systolic": null,
-      "diastolic": null,
-      "baevsky_si": null,
-      "lactate": null,
-      "respiration": null,
-      "body_fat_pct": null,
-      "abdomen_cm": null,
-      "steps": 5543,
-      "hydration_volume_l": null,
-      "kcal_consumed": null,
-      "carbohydrates_g": null,
-      "protein_g": null,
-      "fat_g": null,
-      "menstrual_phase": null,
-      "menstrual_phase_predicted": null,
-      "readiness": null
-    },
     {
       "date": "2026-07-20",
       "weight_kg": null,
@@ -993,6 +945,45 @@
       "menstrual_phase": null,
       "menstrual_phase_predicted": null,
       "readiness": null
+    },
+    {
+      "date": "2026-07-26",
+      "weight_kg": null,
+      "resting_hr": null,
+      "hrv_rmssd": null,
+      "hrv_sdnn": null,
+      "sleep_hours": null,
+      "sleep_formatted": null,
+      "sleep_quality": null,
+      "sleep_score": null,
+      "mental_energy": null,
+      "avg_sleeping_hr": null,
+      "vo2max": null,
+      "fatigue": null,
+      "soreness": null,
+      "stress": null,
+      "mood": null,
+      "motivation": null,
+      "injury": null,
+      "hydration": null,
+      "spO2": null,
+      "blood_glucose": null,
+      "systolic": null,
+      "diastolic": null,
+      "baevsky_si": null,
+      "lactate": null,
+      "respiration": null,
+      "body_fat_pct": null,
+      "abdomen_cm": null,
+      "steps": null,
+      "hydration_volume_l": null,
+      "kcal_consumed": null,
+      "carbohydrates_g": null,
+      "protein_g": null,
+      "fat_g": null,
+      "menstrual_phase": null,
+      "menstrual_phase_predicted": null,
+      "readiness": null
     }
   ],
   "planned_workouts": [
@@ -1011,34 +1002,90 @@
       "description": "Warmup\n- Hey Sy! Easy recovery run ahead 4m 63-67% pace\n- 4m 64-68% pace\n- 3m 64-68% pace\n\nMain Set\n- Easy 28m 60-66% pace\n- Shake Out 28m 66-71% pace\n\nCooldown\n- 4m 69-73% pace\n- Great job, enjoy the cool-down 3m 63-67% pace\n\n[Weekly Plan - Recovery]"
     },
     {
-      "id": 124298570,
+      "id": 125118745,
       "date": "2026-07-28",
-      "name": "IntervalCoach - Core Stability",
+      "name": "IntervalCoach - Threshold Repeats",
       "type": "WORKOUT",
-      "sport_type": "WeightTraining",
-      "planned_tss": 37,
-      "duration_hours": 0.75,
-      "duration_formatted": "45m",
+      "sport_type": "Run",
+      "planned_tss": 52,
+      "duration_hours": 0.72,
+      "duration_formatted": "43m",
       "workout_summary": null,
       "has_terrain": false,
       "start_time": "09:00",
-      "description": "Core Stability\n\nCore exercises to improve stability, posture, and power transfer\n\n1. Plank: 5 sets \u00d7 45-60 sec (Keep body in straight line, engage glutes) [Rest: 30 sec]\n2. Side Plank: 3 sets \u00d7 30 sec each side (Stack feet or stagger for stability) [Rest: 15 sec]\n3. Dead Bug: 5 sets \u00d7 10 reps each side (Keep lower back pressed to floor) [Rest: 30 sec]\n4. Bird Dog: 5 sets \u00d7 10 reps each side (Extend opposite arm and leg, hold 2s) [Rest: 30 sec]\n5. Glute Bridge: 5 sets \u00d7 15 reps (Squeeze glutes at top, hold 2s) [Rest: 30 sec]\n6. Pallof Press: 5 sets \u00d7 10 reps each side (Band at chest height, press and hold, resist rotation) [Rest: 30 sec]\n\n[Duration: ~45 min]\n\n[Weekly Plan - Recovery]"
+      "description": "Main Set\n- Hey Sy! Threshold run ahead 2m 63-67% pace\n\nWarmup\n- 4m ramp 75-79% pace\n\nMain Set\n- Endurance 5m 76-80% pace\n- Threshold 1 8m 95-99% pace\n- Jog Recovery 2m 65-77% pace\n- Threshold 2 6m 96-100% pace\n- Jog Recovery 2m 65-77% pace\n- Threshold 3 5m 97-101% pace\n- Endurance 5m 76-80% pace\n\nCooldown\n- 2m ramp 80-76% pace\n\nMain Set\n- Great work, Sy! Jog it out easy 2m 63-67% pace"
+    },
+    {
+      "id": 125118756,
+      "date": "2026-07-29",
+      "name": "IntervalCoach - Aerobic Cruise",
+      "type": "WORKOUT",
+      "sport_type": "Run",
+      "planned_tss": 52,
+      "duration_hours": 1.02,
+      "duration_formatted": "1h1m",
+      "workout_summary": null,
+      "has_terrain": false,
+      "start_time": "09:00",
+      "description": "Warmup\n- Hey Sy! Time for a long, steady run. 3m 63-67% pace\n- 6m 75-79% pace\n\nMain Set\n- Ultra 46m 65-77% pace\n\nCooldown\n- 3m 75-79% pace\n- Awesome work, Sy! Easy jog to finish. 3m 63-67% pace\n\n[Weekly Plan - Build]"
+    },
+    {
+      "id": 125118765,
+      "date": "2026-07-30",
+      "name": "IntervalCoach - Aerobic Tempo",
+      "type": "WORKOUT",
+      "sport_type": "Run",
+      "planned_tss": 52,
+      "duration_hours": 0.77,
+      "duration_formatted": "46m",
+      "workout_summary": null,
+      "has_terrain": false,
+      "start_time": "09:00",
+      "description": "Main Set\n- Hey Sy! Let's get this run started. 3m 63-67% pace\n\nWarmup\n- 3m ramp 74-78% pace\n- 2m ramp 85-89% pace\n\nMain Set\n- Aerobic 1 8m 78-87% pace\n- Tempo 1 4m 88-94% pace\n- Aerobic 2 8m 78-87% pace\n- Tempo 2 4m 88-94% pace\n- Aerobic 3 8m 78-87% pace\n\nCooldown\n- 3m ramp 80-76% pace\n\nMain Set\n- Awesome job Sy, jog easy now. 3m 63-67% pace"
+    },
+    {
+      "id": 125118771,
+      "date": "2026-08-01",
+      "name": "IntervalCoach - Aerobic Cruise",
+      "type": "WORKOUT",
+      "sport_type": "Run",
+      "planned_tss": 70,
+      "duration_hours": 1.12,
+      "duration_formatted": "1h7m",
+      "workout_summary": null,
+      "has_terrain": false,
+      "start_time": "09:00",
+      "description": "Warmup\n- Sy, get ready for your endurance run! 3m 63-67% pace\n- 7m 75-79% pace\n\nMain Set\n- Settle In 17m 76-80% pace\n- Aerobic 17m 78-87% pace\n- Cruise 16m 87-78% pace\n\nCooldown\n- 4m 76-80% pace\n- Great work, Sy! Easy jog to finish. 3m 63-67% pace\n\n[Weekly Plan - Build]"
+    },
+    {
+      "id": 125118774,
+      "date": "2026-08-02",
+      "name": "IntervalCoach - Endurance + Sprints",
+      "type": "WORKOUT",
+      "sport_type": "Run",
+      "planned_tss": 69,
+      "duration_hours": 1.06,
+      "duration_formatted": "1h3m50s",
+      "workout_summary": "2 \u00d7 3m | 4m | 5\u00d79m / 10s rec | 2m | 2 \u00d7 3m",
+      "has_terrain": false,
+      "start_time": "09:00",
+      "description": "Warmup\n- Hey Sy! Endurance and sprints await. 3m 63-67% pace\n- 3m 74-78% pace\n- 4m 85-89% pace\n\nMain Set\n5x\n- Aerobic 9m 78-87% pace\n- Sprint 10s 128-132% pace\n\nRecovery\n- Endurance 2m 60-70% pace\n\nCooldown\n- 3m 68-72% pace\n- Awesome work, Sy, easy jog now. 3m 63-67% pace\n\n[Weekly Plan - Build]"
     }
   ],
   "workout_summary_stats": {
-    "attempted": 1,
-    "success": 0,
-    "patternA": 0,
+    "attempted": 6,
+    "success": 1,
+    "patternA": 1,
     "patternB": 0,
-    "bail_no_workout_doc": 1,
-    "bail_no_match": 1
+    "bail_no_workout_doc": 0,
+    "bail_no_match": 5
   },
   "weekly_summary": {
     "total_training_hours": 0.73,
     "total_training_formatted": "43m",
     "total_tss": 40,
     "activities_count": 1,
-    "avg_hrv": 96.9,
+    "avg_hrv": 95.5,
     "avg_resting_hr": 45.0
   },
   "race_calendar": {
@@ -1047,7 +1094,7 @@
       "date": "2026-10-17",
       "category": "RACE_B",
       "type": "Run",
-      "days_until": 84,
+      "days_until": 83,
       "moving_time_seconds": null,
       "distance_meters": null,
       "has_terrain": false
@@ -1058,7 +1105,7 @@
         "date": "2026-10-17",
         "category": "RACE_B",
         "type": "Run",
-        "days_until": 84,
+        "days_until": 83,
         "moving_time_seconds": null,
         "distance_meters": null,
         "has_terrain": false
