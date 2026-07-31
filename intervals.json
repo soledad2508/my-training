@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-31T12:25:39.517584",
+  "generated_at": "2026-07-31T14:56:42.524214",
   "version": "3.103",
   "script_hash": "ed549cafdc97",
   "scan_hours": 72,
@@ -272,6 +272,54 @@
           "avg_hr": 131,
           "max_hr": 139,
           "avg_cadence": 29.0,
+          "zone": 1
+        }
+      ]
+    },
+    {
+      "activity_id": "i171129383",
+      "date": "2026-07-31",
+      "type": "Run",
+      "name": "Qu\u1eadn 2 Cha\u0323y",
+      "interval_summary": [
+        "3x 7m17s 136bpm",
+        "1x 8m37s 137bpm"
+      ],
+      "intervals": [
+        {
+          "type": "WORK",
+          "label": "437s@136bpm84rpm",
+          "duration_secs": 444,
+          "avg_hr": 129,
+          "max_hr": 138,
+          "avg_cadence": 85.59234,
+          "zone": 1
+        },
+        {
+          "type": "WORK",
+          "label": "437s@136bpm84rpm",
+          "duration_secs": 422,
+          "avg_hr": 139,
+          "max_hr": 145,
+          "avg_cadence": 84.182465,
+          "zone": 1
+        },
+        {
+          "type": "WORK",
+          "label": "437s@136bpm84rpm",
+          "duration_secs": 444,
+          "avg_hr": 141,
+          "max_hr": 146,
+          "avg_cadence": 83.67342,
+          "zone": 1
+        },
+        {
+          "type": "WORK",
+          "label": "517s@137bpm76rpm",
+          "duration_secs": 517,
+          "avg_hr": 137,
+          "max_hr": 145,
+          "avg_cadence": 76.11992,
           "zone": 1
         }
       ]
