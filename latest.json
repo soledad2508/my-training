@@ -72,7 +72,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-08-04T12:56:48.500056",
+    "last_updated": "2026-08-04T15:23:21.697207",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.103"
@@ -239,7 +239,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": 10781,
+      "steps": 10949,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -461,9 +461,9 @@
           "current_week_hard_days_completed": 1,
           "current_week_hard_days_total": 6,
           "race_proximity": 74,
-          "next_week_load": null,
+          "next_week_load": 0.68,
           "plan_coverage_current_week": 2.5,
-          "plan_coverage_next_week": 0.0
+          "plan_coverage_next_week": 0.5
         },
         "data_quality": "good",
         "stream_agreement": null
@@ -496,7 +496,7 @@
     "p_max": null,
     "power_model_source": "wellness.sportInfo",
     "vo2max": 52.0,
-    "calculation_timestamp": "2026-08-04T12:56:48.498338",
+    "calculation_timestamp": "2026-08-04T15:23:21.695555",
     "data_quality": {
       "hrv_data_points": 5,
       "rhr_data_points": 6,
@@ -1233,7 +1233,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": 10781,
+      "steps": 10949,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -1314,15 +1314,29 @@
       "has_terrain": false,
       "start_time": "09:00",
       "description": "Main Set\n- Sy, ready for endurance and speed! 3m 63-67% pace\n\nWarmup\n- 3m ramp 74-78% pace\n- 2m ramp 83-87% pace\n\nMain Set\n5x\n- Aerobic 7m 78-87% pace\n- Sprint 9s 128-132% pace\n\nCooldown\n- 3m ramp 80-76% pace\n- Awesome work, Sy, cool down easy 3m ramp 67-63% pace"
+    },
+    {
+      "id": 127289532,
+      "date": "2026-08-11",
+      "name": "IntervalCoach - Threshold Fartlek",
+      "type": "WORKOUT",
+      "sport_type": "Run",
+      "planned_tss": 52,
+      "duration_hours": 0.62,
+      "duration_formatted": "37m",
+      "workout_summary": null,
+      "has_terrain": false,
+      "start_time": "09:00",
+      "description": "Main Set\n- Hey Sy! Threshold fartlek today. 2m 63-67% pace\n\nWarmup\n- 2m ramp 74-78% pace\n- 1m ramp 85-89% pace\n\nMain Set\n- Float 1 3m 86-90% pace\n- Fartlek Surge 1 1m 95-101% pace\n- Float 2 3m 86-90% pace\n- Fartlek Surge 2 2m 95-101% pace\n- Float 3 3m 86-90% pace\n- Fartlek Surge 3 3m 95-101% pace\n- Float 4 3m 86-90% pace\n- Fartlek Surge 4 2m 95-101% pace\n- Float 5 2m 86-90% pace\n- Fartlek Surge 5 1m 95-101% pace\n- Float 6 2m 86-90% pace\n- Fartlek Surge 6 1m 95-101% pace\n- Float 7 2m 86-90% pace\n\nCooldown\n- 2m ramp 80-76% pace\n- Great work, Sy! Ease into a cool down. 2m ramp 67-63% pace"
     }
   ],
   "workout_summary_stats": {
-    "attempted": 5,
+    "attempted": 6,
     "success": 2,
     "patternA": 2,
     "patternB": 0,
     "bail_no_workout_doc": 0,
-    "bail_no_match": 3
+    "bail_no_match": 4
   },
   "weekly_summary": {
     "total_training_hours": 2.8,
