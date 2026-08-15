@@ -72,7 +72,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-08-15T14:29:32.677506",
+    "last_updated": "2026-08-15T14:50:14.093797",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.103"
@@ -458,14 +458,14 @@
           "weeks_available": 4
         },
         "stream_2": {
-          "planned_tss_delta": 3.4,
-          "hard_sessions_planned": 1,
+          "planned_tss_delta": null,
+          "hard_sessions_planned": 0,
           "current_week_hard_days_completed": 0,
-          "current_week_hard_days_total": 1,
+          "current_week_hard_days_total": 0,
           "race_proximity": 63,
           "next_week_load": null,
-          "plan_coverage_current_week": 0.33,
-          "plan_coverage_next_week": 0.67
+          "plan_coverage_current_week": 0.0,
+          "plan_coverage_next_week": 1.0
         },
         "data_quality": "good",
         "stream_agreement": null
@@ -498,7 +498,7 @@
     "p_max": null,
     "power_model_source": "wellness.sportInfo",
     "vo2max": 51.0,
-    "calculation_timestamp": "2026-08-15T14:29:32.676122",
+    "calculation_timestamp": "2026-08-15T14:50:14.092118",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -1402,20 +1402,6 @@
   ],
   "planned_workouts": [
     {
-      "id": 128856546,
-      "date": "2026-08-16",
-      "name": "IntervalCoach - Endurance + Sprints",
-      "type": "WORKOUT",
-      "sport_type": "Run",
-      "planned_tss": 81,
-      "duration_hours": 1.23,
-      "duration_formatted": "1h13m50s",
-      "workout_summary": "2 \u00d7 4m | 3m | 5\u00d711m / 10s rec | 4m | 3m",
-      "has_terrain": false,
-      "start_time": "09:00",
-      "description": "Warmup\n- Hey Sy! Endurance run with sprints today. 4m 63-67% pace\n- 4m 74-78% pace\n- 3m 83-87% pace\n\nMain Set\n5x\n- Aerobic 11m 78-87% pace\n- Sprint 10s 128-132% pace\n\nCooldown\n- 4m 76-80% pace\n- Awesome work, Sy! Easy jog to finish. 3m 63-67% pace\n\n[Weekly Plan - Build]"
-    },
-    {
       "id": 128817627,
       "date": "2026-08-18",
       "name": "IntervalCoach - Core-Stability",
@@ -1442,14 +1428,28 @@
       "has_terrain": false,
       "start_time": "09:00",
       "description": "Core Stability\n\nCore exercises to improve stability, posture, and power transfer\n\n1. Plank: 5 sets \u00d7 45-60 sec (Keep body in straight line, engage glutes) [Rest: 30 sec]\n2. Side Plank: 3 sets \u00d7 30 sec each side (Stack feet or stagger for stability) [Rest: 15 sec]\n3. Dead Bug: 5 sets \u00d7 10 reps each side (Keep lower back pressed to floor) [Rest: 30 sec]\n4. Bird Dog: 5 sets \u00d7 10 reps each side (Extend opposite arm and leg, hold 2s) [Rest: 30 sec]\n5. Glute Bridge: 5 sets \u00d7 15 reps (Squeeze glutes at top, hold 2s) [Rest: 30 sec]\n6. Pallof Press: 5 sets \u00d7 10 reps each side (Band at chest height, press and hold, resist rotation) [Rest: 30 sec]\n\n[Duration: ~45 min]\n\n[Weekly Plan - Recovery]"
+    },
+    {
+      "id": 129344299,
+      "date": "2026-08-20",
+      "name": "IntervalCoach - Core-Stability",
+      "type": "WORKOUT",
+      "sport_type": "WeightTraining",
+      "planned_tss": 37,
+      "duration_hours": 0.75,
+      "duration_formatted": "45m",
+      "workout_summary": null,
+      "has_terrain": false,
+      "start_time": "09:00",
+      "description": "Core Stability\n\nCore exercises to improve stability, posture, and power transfer\n\n1. Plank: 5 sets \u00d7 45-60 sec (Keep body in straight line, engage glutes) [Rest: 30 sec]\n2. Side Plank: 3 sets \u00d7 30 sec each side (Stack feet or stagger for stability) [Rest: 15 sec]\n3. Dead Bug: 5 sets \u00d7 10 reps each side (Keep lower back pressed to floor) [Rest: 30 sec]\n4. Bird Dog: 5 sets \u00d7 10 reps each side (Extend opposite arm and leg, hold 2s) [Rest: 30 sec]\n5. Glute Bridge: 5 sets \u00d7 15 reps (Squeeze glutes at top, hold 2s) [Rest: 30 sec]\n6. Pallof Press: 5 sets \u00d7 10 reps each side (Band at chest height, press and hold, resist rotation) [Rest: 30 sec]\n\n[Duration: ~45 min]\n\n[Weekly Plan - Recovery]"
     }
   ],
   "workout_summary_stats": {
-    "attempted": 1,
-    "success": 1,
-    "patternA": 1,
+    "attempted": 0,
+    "success": 0,
+    "patternA": 0,
     "patternB": 0,
-    "bail_no_workout_doc": 2,
+    "bail_no_workout_doc": 3,
     "bail_no_match": 0
   },
   "weekly_summary": {
