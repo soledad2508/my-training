@@ -72,7 +72,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-08-23T14:47:35.103408",
+    "last_updated": "2026-08-23T15:16:47.181101",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.103"
@@ -446,7 +446,7 @@
           "current_week_hard_days_completed": 0,
           "current_week_hard_days_total": 1,
           "race_proximity": 55,
-          "next_week_load": 2.1,
+          "next_week_load": 2.17,
           "plan_coverage_current_week": 0.25,
           "plan_coverage_next_week": 1.25
         },
@@ -481,7 +481,7 @@
     "p_max": null,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-08-23T14:47:35.101623",
+    "calculation_timestamp": "2026-08-23T15:16:47.179466",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -1551,22 +1551,8 @@
       "description": "Main Set\n- Hey Sy! Gentle recovery run today. 5m 62-66% pace\n- Easy 12m 60-66% pace\n- Shake Out 12m 66-71% pace\n\nCooldown\n- 3m ramp 69-65% pace"
     },
     {
-      "id": 130986369,
-      "date": "2026-08-25",
-      "name": "IntervalCoach - Steady Aerobic",
-      "type": "WORKOUT",
-      "sport_type": "Run",
-      "planned_tss": 52,
-      "duration_hours": 0.8,
-      "duration_formatted": "48m",
-      "workout_summary": null,
-      "has_terrain": false,
-      "start_time": "09:00",
-      "description": "Warmup\n- Hey Sy! Long aerobic run today 2m 63-67% pace\n- 2m 74-78% pace\n- 3m 79-83% pace\n\nMain Set\n- Settle In 5m 77-83% pace\n- Steady Aerobic 31m 81-85% pace\n\nCooldown\n- 3m 76-80% pace\n- Awesome job, recover with an easy jog 2m 63-67% pace\n\n[Weekly Plan - Build]"
-    },
-    {
       "id": 130986372,
-      "date": "2026-08-26",
+      "date": "2026-08-25",
       "name": "IntervalCoach - 6x1 VO2max Pyramid",
       "type": "WORKOUT",
       "sport_type": "Run",
@@ -1580,7 +1566,7 @@
     },
     {
       "id": 130986375,
-      "date": "2026-08-27",
+      "date": "2026-08-26",
       "name": "IntervalCoach - Endurance + Sprints",
       "type": "WORKOUT",
       "sport_type": "Run",
@@ -1594,7 +1580,7 @@
     },
     {
       "id": 130986383,
-      "date": "2026-08-29",
+      "date": "2026-08-27",
       "name": "IntervalCoach - 6x5 Aerobic Pickups",
       "type": "WORKOUT",
       "sport_type": "Run",
@@ -1607,18 +1593,32 @@
       "description": "Warmup\n- Hey Sy! Endurance and pickups today 2m ramp 63-67% pace\n- 2m ramp 74-78% pace\n- 2m ramp 83-87% pace\n\nMain Set\n6x\n- Aerobic 5m 78-87% pace\n- Pickup 18s 88-94% pace\n- Aerobic 7 4m 78-87% pace\n- Pickup 7 18s 88-94% pace\n\nCooldown\n- 2m ramp 80-76% pace\n- Awesome work, Sy! Easy jog now 2m ramp 67-63% pace"
     },
     {
-      "id": 130986386,
-      "date": "2026-08-30",
-      "name": "IntervalCoach - Progressive Aerobic",
+      "id": 131105699,
+      "date": "2026-08-29",
+      "name": "IntervalCoach - Fat Max",
       "type": "WORKOUT",
       "sport_type": "Run",
-      "planned_tss": 81,
-      "duration_hours": 1.25,
-      "duration_formatted": "1h15m",
+      "planned_tss": 66,
+      "duration_hours": 1.5,
+      "duration_formatted": "1h30m",
       "workout_summary": null,
       "has_terrain": false,
       "start_time": "09:00",
-      "description": "Warmup\n- Hey Sy! Progressive aerobic run awaits 4m 63-67% pace\n- 7m 75-79% pace\n\nMain Set\n- Low Aerobic 19m 76-80% pace\n- Mid Aerobic 19m 78-87% pace\n- Upper Aerobic 18m 86-90% pace\n\nCooldown\n- 4m 76-80% pace\n- Fantastic run, cool down with a jog 4m 63-67% pace\n\n[Weekly Plan - Build]"
+      "description": "Warmup\n- Hey Sy, ready for your Fat Max run! 14m 63-67% pace\n\nMain Set\n- Settle In 22m 63-67% pace\n- Fat Max 22m 65-72% pace\n- Cruise 23m 65-72% pace\n\nCooldown\n- 9m 61-65% pace\n\n[Weekly Plan - Build]"
+    },
+    {
+      "id": 131105709,
+      "date": "2026-08-30",
+      "name": "IntervalCoach - 8x3 VO2max Intervals",
+      "type": "WORKOUT",
+      "sport_type": "Run",
+      "planned_tss": 78,
+      "duration_hours": 1.18,
+      "duration_formatted": "1h11m",
+      "workout_summary": null,
+      "has_terrain": false,
+      "start_time": "09:00",
+      "description": "Warmup\n- Hey Sy! VO2max short run today. 3m ramp 63-67% pace\n- 5m ramp 75-79% pace\n\nMain Set\n- Endurance 2m 76-80% pace\n\n8x\n- Interval 2m 101-115% pace\n- Recovery 2m 58-62% pace\n- Endurance 3m 76-80% pace\n\nCooldown\n- 3m ramp 80-76% pace\n- Awesome job, Sy! Jog it out easy. 2m ramp 67-63% pace"
     }
   ],
   "workout_summary_stats": {
