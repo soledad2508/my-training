@@ -1,94 +1,10 @@
 {
-  "generated_at": "2026-08-27T20:00:31.346455",
+  "generated_at": "2026-08-28T04:21:30.485344",
   "version": "3.103",
   "script_hash": "ed549cafdc97",
   "scan_hours": 72,
   "retention_days": 14,
   "activities": [
-    {
-      "activity_id": "i175307037",
-      "date": "2026-08-13",
-      "type": "Run",
-      "name": "IntervalCoach - 3x6 Aerobic Pickups",
-      "interval_summary": [
-        "7x 6m23s 148bpm",
-        "1x 41s 147bpm"
-      ],
-      "intervals": [
-        {
-          "type": "WORK",
-          "label": "383s@148bpm90rpm",
-          "duration_secs": 411,
-          "avg_hr": 130,
-          "max_hr": 144,
-          "avg_cadence": 87.51095,
-          "zone": 1
-        },
-        {
-          "type": "WORK",
-          "label": "383s@148bpm90rpm",
-          "duration_secs": 393,
-          "avg_hr": 140,
-          "max_hr": 147,
-          "avg_cadence": 90.15522,
-          "zone": 1
-        },
-        {
-          "type": "WORK",
-          "label": "383s@148bpm90rpm",
-          "duration_secs": 384,
-          "avg_hr": 146,
-          "max_hr": 152,
-          "avg_cadence": 89.875,
-          "zone": 1
-        },
-        {
-          "type": "WORK",
-          "label": "383s@148bpm90rpm",
-          "duration_secs": 374,
-          "avg_hr": 151,
-          "max_hr": 154,
-          "avg_cadence": 89.94118,
-          "zone": 2
-        },
-        {
-          "type": "WORK",
-          "label": "383s@148bpm90rpm",
-          "duration_secs": 376,
-          "avg_hr": 154,
-          "max_hr": 159,
-          "avg_cadence": 89.72607,
-          "zone": 2
-        },
-        {
-          "type": "WORK",
-          "label": "383s@148bpm90rpm",
-          "duration_secs": 376,
-          "avg_hr": 155,
-          "max_hr": 161,
-          "avg_cadence": 89.56383,
-          "zone": 2
-        },
-        {
-          "type": "WORK",
-          "label": "383s@148bpm90rpm",
-          "duration_secs": 368,
-          "avg_hr": 158,
-          "max_hr": 163,
-          "avg_cadence": 90.228264,
-          "zone": 3
-        },
-        {
-          "type": "WORK",
-          "label": "41s@147bpm65rpm",
-          "duration_secs": 41,
-          "avg_hr": 147,
-          "max_hr": 157,
-          "avg_cadence": 65.19512,
-          "zone": 1
-        }
-      ]
-    },
     {
       "activity_id": "i175926205",
       "date": "2026-08-15",
