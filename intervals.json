@@ -1,85 +1,10 @@
 {
-  "generated_at": "2026-09-09T22:12:24.467637",
+  "generated_at": "2026-09-10T00:15:24.429353",
   "version": "3.103",
   "script_hash": "ed549cafdc97",
   "scan_hours": 72,
   "retention_days": 14,
   "activities": [
-    {
-      "activity_id": "i179824781",
-      "date": "2026-08-26",
-      "type": "Run",
-      "name": "IntervalCoach - Endurance + Sprints",
-      "interval_summary": [
-        "5x 7m18s 133bpm",
-        "2x 6m6s 151bpm"
-      ],
-      "intervals": [
-        {
-          "type": "WORK",
-          "label": "438s@133bpm67rpm",
-          "duration_secs": 430,
-          "avg_hr": 121,
-          "max_hr": 134,
-          "avg_cadence": 83.23256,
-          "zone": 1
-        },
-        {
-          "type": "WORK",
-          "label": "438s@133bpm67rpm",
-          "duration_secs": 426,
-          "avg_hr": 134,
-          "max_hr": 147,
-          "avg_cadence": 74.74413,
-          "zone": 1
-        },
-        {
-          "type": "WORK",
-          "label": "366s@151bpm89rpm",
-          "duration_secs": 371,
-          "avg_hr": 146,
-          "max_hr": 153,
-          "avg_cadence": 88.30189,
-          "zone": 1
-        },
-        {
-          "type": "WORK",
-          "label": "438s@133bpm67rpm",
-          "duration_secs": 423,
-          "avg_hr": 148,
-          "max_hr": 156,
-          "avg_cadence": 74.96454,
-          "zone": 1
-        },
-        {
-          "type": "WORK",
-          "label": "438s@133bpm67rpm",
-          "duration_secs": 439,
-          "avg_hr": 144,
-          "max_hr": 155,
-          "avg_cadence": 70.70843,
-          "zone": 1
-        },
-        {
-          "type": "WORK",
-          "label": "366s@151bpm89rpm",
-          "duration_secs": 361,
-          "avg_hr": 156,
-          "max_hr": 159,
-          "avg_cadence": 89.64543,
-          "zone": 2
-        },
-        {
-          "type": "WORK",
-          "label": "438s@133bpm67rpm",
-          "duration_secs": 472,
-          "avg_hr": 118,
-          "max_hr": 158,
-          "avg_cadence": 31.33051,
-          "zone": 1
-        }
-      ]
-    },
     {
       "activity_id": "i180199005",
       "date": "2026-08-27",
@@ -628,6 +553,100 @@
           "max_hr": 177,
           "avg_cadence": 77.01128,
           "zone": 3
+        }
+      ]
+    },
+    {
+      "activity_id": "i185080354",
+      "date": "2026-09-10",
+      "type": "Run",
+      "name": "IntervalCoach - Endurance + Sprints",
+      "interval_summary": [
+        "1x 6m31s 129bpm",
+        "5x 6m9s 154bpm",
+        "1x 4m49s 175bpm",
+        "1x 3m51s 143bpm"
+      ],
+      "intervals": [
+        {
+          "type": "WORK",
+          "label": "391s@129bpm88rpm",
+          "duration_secs": 391,
+          "avg_hr": 129,
+          "max_hr": 145,
+          "avg_cadence": 88.002556,
+          "zone": 1
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 1,
+          "avg_hr": 144,
+          "max_hr": 144,
+          "avg_cadence": 89.0,
+          "zone": 1
+        },
+        {
+          "type": "WORK",
+          "label": "369s@154bpm88rpm",
+          "duration_secs": 376,
+          "avg_hr": 145,
+          "max_hr": 151,
+          "avg_cadence": 89.13032,
+          "zone": 1
+        },
+        {
+          "type": "WORK",
+          "label": "369s@154bpm88rpm",
+          "duration_secs": 370,
+          "avg_hr": 148,
+          "max_hr": 155,
+          "avg_cadence": 88.61081,
+          "zone": 1
+        },
+        {
+          "type": "WORK",
+          "label": "369s@154bpm88rpm",
+          "duration_secs": 366,
+          "avg_hr": 155,
+          "max_hr": 159,
+          "avg_cadence": 88.47814,
+          "zone": 2
+        },
+        {
+          "type": "WORK",
+          "label": "369s@154bpm88rpm",
+          "duration_secs": 366,
+          "avg_hr": 158,
+          "max_hr": 165,
+          "avg_cadence": 88.7459,
+          "zone": 3
+        },
+        {
+          "type": "WORK",
+          "label": "369s@154bpm88rpm",
+          "duration_secs": 367,
+          "avg_hr": 162,
+          "max_hr": 169,
+          "avg_cadence": 87.51226,
+          "zone": 3
+        },
+        {
+          "type": "WORK",
+          "label": "289s@175bpm91rpm",
+          "duration_secs": 289,
+          "avg_hr": 175,
+          "max_hr": 186,
+          "avg_cadence": 90.90658,
+          "zone": 5
+        },
+        {
+          "type": "WORK",
+          "label": "231s@143bpm52rpm",
+          "duration_secs": 231,
+          "avg_hr": 143,
+          "max_hr": 184,
+          "avg_cadence": 51.904762,
+          "zone": 1
         }
       ]
     }
