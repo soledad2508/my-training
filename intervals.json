@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-14T23:15:59.429192",
+  "generated_at": "2026-09-15T01:39:26.070021",
   "version": "3.103",
   "script_hash": "ed549cafdc97",
   "scan_hours": 72,
@@ -511,6 +511,82 @@
           "max_hr": 182,
           "avg_cadence": 59.221558,
           "zone": 2
+        }
+      ]
+    },
+    {
+      "activity_id": "i186768575",
+      "date": "2026-09-15",
+      "type": "Run",
+      "name": "IntervalCoach - Billat VO2 Max",
+      "interval_summary": [
+        "1x 7m26s 125bpm",
+        "5x 6m15s 151bpm",
+        "1x 17m25s 143bpm"
+      ],
+      "intervals": [
+        {
+          "type": "WORK",
+          "label": "446s@125bpm77rpm",
+          "duration_secs": 446,
+          "avg_hr": 125,
+          "max_hr": 148,
+          "avg_cadence": 76.64574,
+          "zone": 1
+        },
+        {
+          "type": "WORK",
+          "label": "375s@151bpm84rpm",
+          "duration_secs": 367,
+          "avg_hr": 147,
+          "max_hr": 150,
+          "avg_cadence": 89.711174,
+          "zone": 1
+        },
+        {
+          "type": "WORK",
+          "label": "375s@151bpm84rpm",
+          "duration_secs": 378,
+          "avg_hr": 147,
+          "max_hr": 153,
+          "avg_cadence": 84.83862,
+          "zone": 1
+        },
+        {
+          "type": "WORK",
+          "label": "375s@151bpm84rpm",
+          "duration_secs": 383,
+          "avg_hr": 151,
+          "max_hr": 156,
+          "avg_cadence": 86.339424,
+          "zone": 2
+        },
+        {
+          "type": "WORK",
+          "label": "375s@151bpm84rpm",
+          "duration_secs": 371,
+          "avg_hr": 154,
+          "max_hr": 159,
+          "avg_cadence": 87.36118,
+          "zone": 2
+        },
+        {
+          "type": "WORK",
+          "label": "1045s@143bpm78rpm",
+          "duration_secs": 1045,
+          "avg_hr": 143,
+          "max_hr": 164,
+          "avg_cadence": 77.8797,
+          "zone": 1
+        },
+        {
+          "type": "WORK",
+          "label": "375s@151bpm84rpm",
+          "duration_secs": 375,
+          "avg_hr": 157,
+          "max_hr": 164,
+          "avg_cadence": 72.584,
+          "zone": 3
         }
       ]
     }
