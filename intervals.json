@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-19T01:22:17.885419",
+  "generated_at": "2026-09-19T06:13:45.841320",
   "version": "3.103",
   "script_hash": "ed549cafdc97",
   "scan_hours": 72,
@@ -662,6 +662,91 @@
           "max_hr": 159,
           "avg_cadence": 50.048077,
           "zone": 1
+        }
+      ]
+    },
+    {
+      "activity_id": "i188089923",
+      "date": "2026-09-19",
+      "type": "Run",
+      "name": "IntervalCoach - Threshold Race Rehearsal",
+      "interval_summary": [
+        "6x 6m31s 153bpm",
+        "1x 12m37s 149bpm",
+        "1x 58s 149bpm"
+      ],
+      "intervals": [
+        {
+          "type": "WORK",
+          "label": "391s@153bpm87rpm",
+          "duration_secs": 405,
+          "avg_hr": 142,
+          "max_hr": 154,
+          "avg_cadence": 82.75062,
+          "zone": 1
+        },
+        {
+          "type": "WORK",
+          "label": "391s@153bpm87rpm",
+          "duration_secs": 392,
+          "avg_hr": 149,
+          "max_hr": 156,
+          "avg_cadence": 89.32653,
+          "zone": 2
+        },
+        {
+          "type": "WORK",
+          "label": "757s@149bpm86rpm",
+          "duration_secs": 757,
+          "avg_hr": 149,
+          "max_hr": 156,
+          "avg_cadence": 86.432915,
+          "zone": 2
+        },
+        {
+          "type": "WORK",
+          "label": "391s@153bpm87rpm",
+          "duration_secs": 407,
+          "avg_hr": 154,
+          "max_hr": 160,
+          "avg_cadence": 84.99754,
+          "zone": 2
+        },
+        {
+          "type": "WORK",
+          "label": "391s@153bpm87rpm",
+          "duration_secs": 399,
+          "avg_hr": 153,
+          "max_hr": 159,
+          "avg_cadence": 86.80451,
+          "zone": 2
+        },
+        {
+          "type": "WORK",
+          "label": "391s@153bpm87rpm",
+          "duration_secs": 381,
+          "avg_hr": 157,
+          "max_hr": 161,
+          "avg_cadence": 89.35171,
+          "zone": 3
+        },
+        {
+          "type": "WORK",
+          "label": "391s@153bpm87rpm",
+          "duration_secs": 364,
+          "avg_hr": 160,
+          "max_hr": 166,
+          "avg_cadence": 89.99725,
+          "zone": 3
+        },
+        {
+          "type": "WORK",
+          "label": "58s@149bpm36rpm",
+          "duration_secs": 58,
+          "avg_hr": 149,
+          "max_hr": 165,
+          "avg_cadence": 35.58621,
+          "zone": 2
         }
       ]
     }
