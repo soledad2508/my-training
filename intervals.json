@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-27T23:33:28.048939",
+  "generated_at": "2026-09-28T01:58:27.951924",
   "version": "3.103",
   "script_hash": "ed549cafdc97",
   "scan_hours": 72,
@@ -910,6 +910,74 @@
           "max_hr": 158,
           "avg_cadence": 34.8,
           "zone": 2
+        }
+      ]
+    },
+    {
+      "activity_id": "i191021199",
+      "date": "2026-09-28",
+      "type": "Run",
+      "name": "Qu\u1eadn 2 - th\u1ee9 2 - - Kh\u1edfi \u0111\u1ed9ng / t",
+      "interval_summary": [
+        "1x 7m36s 120bpm",
+        "3x 6m12s 142bpm",
+        "1x 25m13s 110bpm",
+        "1x 3s 142bpm"
+      ],
+      "intervals": [
+        {
+          "type": "WORK",
+          "label": "456s@120bpm80rpm",
+          "duration_secs": 456,
+          "avg_hr": 120,
+          "max_hr": 131,
+          "avg_cadence": 80.432014,
+          "zone": 1
+        },
+        {
+          "type": "WORK",
+          "label": "372s@142bpm88rpm",
+          "duration_secs": 393,
+          "avg_hr": 133,
+          "max_hr": 138,
+          "avg_cadence": 88.64377,
+          "zone": 1
+        },
+        {
+          "type": "WORK",
+          "label": "1513s@110bpm25rpm",
+          "duration_secs": 1513,
+          "avg_hr": 110,
+          "max_hr": 148,
+          "avg_cadence": 24.799736,
+          "zone": 1
+        },
+        {
+          "type": "WORK",
+          "label": "372s@142bpm88rpm",
+          "duration_secs": 358,
+          "avg_hr": 146,
+          "max_hr": 153,
+          "avg_cadence": 89.7067,
+          "zone": 1
+        },
+        {
+          "type": "WORK",
+          "label": "372s@142bpm88rpm",
+          "duration_secs": 366,
+          "avg_hr": 148,
+          "max_hr": 158,
+          "avg_cadence": 84.94536,
+          "zone": 1
+        },
+        {
+          "type": "WORK",
+          "label": "3s@142bpm71rpm",
+          "duration_secs": 3,
+          "avg_hr": 142,
+          "max_hr": 143,
+          "avg_cadence": 71.333336,
+          "zone": 1
         }
       ]
     }
