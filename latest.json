@@ -72,7 +72,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-09-29T19:51:34.848747",
+    "last_updated": "2026-09-29T23:22:49.470925",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.103"
@@ -248,7 +248,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": 17501,
+      "steps": 19272,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -470,9 +470,9 @@
           "current_week_hard_days_completed": 1,
           "current_week_hard_days_total": 6,
           "race_proximity": 18,
-          "next_week_load": 0.2,
+          "next_week_load": 0.28,
           "plan_coverage_current_week": 1.25,
-          "plan_coverage_next_week": 0.25
+          "plan_coverage_next_week": 0.5
         },
         "data_quality": "good",
         "stream_agreement": null
@@ -505,7 +505,7 @@
     "p_max": null,
     "power_model_source": "wellness.sportInfo",
     "vo2max": 52.0,
-    "calculation_timestamp": "2026-09-29T19:51:34.846945",
+    "calculation_timestamp": "2026-09-29T23:22:49.469141",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -1644,7 +1644,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": 17501,
+      "steps": 19272,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -1741,6 +1741,20 @@
       "description": "Warmup\n- Hey Sy! Short threshold run today 86s ramp 63-67% pace\n- 86s ramp 74-78% pace\n- 129s ramp 85-89% pace\n\nMain Set\n3x\n- Threshold 257s 95-100% pace\n- Recovery 129s 63-67% pace\n\nMain Set\n- Threshold 4 257s 95-100% pace\n\nCooldown\n- 129s ramp 80-76% pace\n- Excellent work, easy jog to finish 86s ramp 67-63% pace\n\n[Weekly Plan - Pre-Race Taper \u00b7 type:shortThreshold]"
     },
     {
+      "id": 140085403,
+      "date": "2026-10-07",
+      "name": "IntervalCoach - Shakeout Run",
+      "type": "WORKOUT",
+      "sport_type": "Run",
+      "planned_tss": 15,
+      "duration_hours": 0.34,
+      "duration_formatted": "20m15s",
+      "workout_summary": null,
+      "has_terrain": false,
+      "start_time": "09:00",
+      "description_preview": "Warmup\n- Sy, shakeout run today! 3m ramp 65-71% pace\nMain Set"
+    },
+    {
       "id": 112366880,
       "date": "2026-10-17",
       "name": "Garmin Run 2026",
@@ -1768,12 +1782,12 @@
     }
   ],
   "workout_summary_stats": {
-    "attempted": 6,
+    "attempted": 7,
     "success": 3,
     "patternA": 3,
     "patternB": 0,
     "bail_no_workout_doc": 0,
-    "bail_no_match": 3
+    "bail_no_match": 4
   },
   "weekly_summary": {
     "total_training_hours": 7.01,
