@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02T13:50:34.417801",
+  "generated_at": "2026-10-02T18:55:18.800090",
   "version": "3.103",
   "script_hash": "ed549cafdc97",
   "scan_hours": 72,
@@ -1040,6 +1040,67 @@
           "avg_hr": 121,
           "max_hr": 136,
           "avg_cadence": 27.603857,
+          "zone": 1
+        }
+      ]
+    },
+    {
+      "activity_id": "i192640991",
+      "date": "2026-10-02",
+      "type": "Swim",
+      "name": "B\u01a1i h\u00f4\u0300",
+      "interval_summary": [
+        "1x 100m 110bpm",
+        "1x 25m 122bpm",
+        "1x 25m 100bpm"
+      ],
+      "intervals": [
+        {
+          "type": "WORK",
+          "label": "98s@110bpm17rpm",
+          "duration_secs": 98,
+          "avg_hr": 110,
+          "max_hr": 129,
+          "avg_cadence": 17.27551,
+          "zone": 1
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 57,
+          "avg_hr": 122,
+          "max_hr": 126,
+          "zone": 1
+        },
+        {
+          "type": "WORK",
+          "label": "28s@122bpm22rpm",
+          "duration_secs": 28,
+          "avg_hr": 122,
+          "max_hr": 125,
+          "avg_cadence": 22.178572,
+          "zone": 1
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 182,
+          "avg_hr": 114,
+          "max_hr": 141,
+          "zone": 1
+        },
+        {
+          "type": "WORK",
+          "label": "31s@100bpm23rpm",
+          "duration_secs": 31,
+          "avg_hr": 100,
+          "max_hr": 104,
+          "avg_cadence": 23.225807,
+          "zone": 1
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 118,
+          "avg_hr": 107,
+          "max_hr": 122,
           "zone": 1
         }
       ]
