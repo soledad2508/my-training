@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02T01:15:10.298355",
+  "generated_at": "2026-10-02T07:02:35.049101",
   "version": "3.103",
   "script_hash": "ed549cafdc97",
   "scan_hours": 72,
@@ -1011,6 +1011,36 @@
           "max_hr": 180,
           "avg_cadence": 57.0,
           "zone": 3
+        }
+      ]
+    },
+    {
+      "activity_id": "i192476376",
+      "date": "2026-10-02",
+      "type": "TrailRun",
+      "name": "Qu\u1eadn Ng\u0169 H\u00e0nh S\u01a1n Ch\u1ea1y \u0111\u01b0\u1eddng m\u00f2n",
+      "interval_summary": [
+        "1x 27m20s 128bpm",
+        "1x 11m14s 121bpm"
+      ],
+      "intervals": [
+        {
+          "type": "WORK",
+          "label": "1640s@128bpm23rpm",
+          "duration_secs": 1640,
+          "avg_hr": 128,
+          "max_hr": 160,
+          "avg_cadence": 23.26309,
+          "zone": 1
+        },
+        {
+          "type": "WORK",
+          "label": "674s@121bpm28rpm",
+          "duration_secs": 674,
+          "avg_hr": 121,
+          "max_hr": 136,
+          "avg_cadence": 27.603857,
+          "zone": 1
         }
       ]
     }
