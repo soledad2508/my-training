@@ -64,15 +64,15 @@
       "menstrual": "menstrual_phase and menstrual_phase_predicted are not on the 1-4 scale. Values: PERIOD, FOLLICULAR, OVULATION, LUTEAL, etc."
     },
     "quick_stats": {
-      "total_training_hours": 6.21,
-      "total_training_formatted": "6h12m",
-      "total_activities": 9,
-      "total_tss": 298
+      "total_training_hours": 6.29,
+      "total_training_formatted": "6h17m",
+      "total_activities": 10,
+      "total_tss": 299
     }
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-10-03T07:05:40.060145",
+    "last_updated": "2026-10-03T12:31:28.134526",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.103"
@@ -166,8 +166,8 @@
   "summary": {
     "period_description": "Last 7 days of training (including today)",
     "note": "Duration calculated from API moving_time field.",
-    "total_duration_decimal_hours": 6.21,
-    "total_activities": 9,
+    "total_duration_decimal_hours": 6.29,
+    "total_activities": 10,
     "by_activity_type": {
       "Run": {
         "duration_decimal_hours": 5.41,
@@ -176,10 +176,10 @@
         "distance_km": 47.2
       },
       "Swim": {
-        "duration_decimal_hours": 0.04,
-        "count": 1,
-        "tss": 1,
-        "distance_km": 0.1
+        "duration_decimal_hours": 0.12,
+        "count": 2,
+        "tss": 2,
+        "distance_km": 0.4
       },
       "TrailRun": {
         "duration_decimal_hours": 0.38,
@@ -197,10 +197,10 @@
   },
   "current_status": {
     "fitness": {
-      "ctl": 24.62,
-      "atl": 41.28,
-      "tsb": -16.66,
-      "ramp_rate": 3.3,
+      "ctl": 24.65,
+      "atl": 41.41,
+      "tsb": -16.76,
+      "ramp_rate": 3.32,
       "fitness_source": "From Intervals.icu API (reflects completed workouts)"
     },
     "thresholds": {
@@ -260,7 +260,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": 18170,
+      "steps": 24133,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -282,27 +282,27 @@
     "latest_rhr": 51,
     "acwr": 1.41,
     "acwr_interpretation": "caution",
-    "monotony": 1.48,
+    "monotony": 1.47,
     "monotony_interpretation": "normal",
     "primary_sport": "run",
     "primary_sport_monotony": 1.48,
     "primary_sport_tss_7d": 292.0,
     "effective_monotony": 1.48,
     "multi_sport_detected": true,
-    "strain": 441.0,
+    "strain": 440.0,
     "stress_tolerance": 3.0,
     "load_recovery_ratio": 3.8,
-    "tss_7d_total": 298.0,
-    "tss_28d_total": 845.0,
+    "tss_7d_total": 299.0,
+    "tss_28d_total": 846.0,
     "zone_distribution_7d": {
-      "z1_hours": 3.81,
+      "z1_hours": 3.89,
       "z2_hours": 1.24,
       "z3_hours": 0.71,
       "z4_plus_hours": 0.4,
-      "total_hours": 6.16,
+      "total_hours": 6.23,
       "zone_basis": "hr"
     },
-    "grey_zone_percentage": 11.5,
+    "grey_zone_percentage": 11.3,
     "grey_zone_note": "Gray Zone % (Z3/tempo) - minimize in polarized training",
     "quality_intensity_percentage": 6.4,
     "quality_intensity_note": "Quality Intensity % (Z4+/threshold+) - target ~20% in polarized training",
@@ -311,11 +311,11 @@
     "hard_days_this_week": 1,
     "hard_days_note": "Power ladder: z3+ >= 30min, z4+ >= 10min, z5+ >= 5min, z6+ >= 2min, z7 >= 1min. HR fallback (when no power): z4+ >= 10min, z5+ >= 5min. Per Seiler 3-zone model + Foster. HR-based days flagged with intensity_basis: hr",
     "seiler_tid_7d": {
-      "z1_seconds": 18195,
+      "z1_seconds": 18468,
       "z2_seconds": 2545,
       "z3_seconds": 1428,
-      "z1_pct": 82.1,
-      "z2_pct": 11.5,
+      "z1_pct": 82.3,
+      "z2_pct": 11.3,
       "z3_pct": 6.4,
       "polarization_index": null,
       "classification": "Pyramidal",
@@ -334,12 +334,12 @@
       "sport": "run"
     },
     "seiler_tid_28d": {
-      "z1_seconds": 44108,
+      "z1_seconds": 44381,
       "z2_seconds": 7923,
       "z3_seconds": 3947,
-      "z1_pct": 78.8,
-      "z2_pct": 14.2,
-      "z3_pct": 7.1,
+      "z1_pct": 78.9,
+      "z2_pct": 14.1,
+      "z3_pct": 7.0,
       "polarization_index": null,
       "classification": "Pyramidal",
       "zone_basis": "hr"
@@ -521,12 +521,12 @@
     "p_max": null,
     "power_model_source": "wellness.sportInfo",
     "vo2max": 52.0,
-    "calculation_timestamp": "2026-10-03T07:05:40.058326",
+    "calculation_timestamp": "2026-10-03T12:31:28.132848",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
-      "activities_7d": 9,
-      "activities_28d": 20,
+      "activities_7d": 10,
+      "activities_28d": 21,
       "planned_workouts_7d": 5,
       "ftp_history_days": {
         "indoor": 0,
@@ -535,6 +535,56 @@
     }
   },
   "recent_activities": [
+    {
+      "id": "i192909450",
+      "date": "2026-10-03T16:41:59",
+      "type": "Swim",
+      "name": "B\u01a1i h\u00f4\u0300",
+      "duration_hours": 0.08,
+      "distance_km": 0.25,
+      "tss": 1,
+      "intensity_factor": 22.99205,
+      "avg_power": null,
+      "normalized_power": null,
+      "avg_hr": 107,
+      "max_hr": 127,
+      "avg_cadence": 24.457876,
+      "avg_speed": 3.3,
+      "avg_speed_unit": "KPH",
+      "max_speed": 7.1,
+      "max_speed_unit": "KPH",
+      "avg_pace": null,
+      "avg_temp": null,
+      "avg_temp_unit": "C",
+      "weather": null,
+      "humidity": null,
+      "wind_speed": null,
+      "wind_speed_unit": "KMH",
+      "work_kj": null,
+      "calories": 73,
+      "carbs_used": null,
+      "carbs_ingested": null,
+      "variability_index": null,
+      "decoupling": null,
+      "efficiency_factor": null,
+      "hrrc": null,
+      "elevation_m": null,
+      "feel": 3,
+      "rpe": 2,
+      "zone_distribution": {
+        "hr_zones": {
+          "z1_time": 273,
+          "z2_time": 0,
+          "z3_time": 0,
+          "z4_time": 0,
+          "z5_time": 0,
+          "z6_time": 0,
+          "z7_time": 0
+        }
+      },
+      "has_intervals": true,
+      "has_dfa": false
+    },
     {
       "id": "i192797354",
       "date": "2026-10-03T05:13:46",
@@ -1812,7 +1862,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": 18170,
+      "steps": 24133,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -1864,7 +1914,7 @@
       "workout_summary": "2 \u00d7 1m26s | 2m9s | 3\u00d74m17s / 2m9s rec | 4m17s | 2m9s | 1m26s",
       "has_terrain": false,
       "start_time": "09:00",
-      "description": "Warmup\n- Hey Sy! Short threshold run today 86s ramp 63-67% pace\n- 86s ramp 74-78% pace\n- 129s ramp 85-89% pace\n\nMain Set\n3x\n- Threshold 257s 95-100% pace\n- Recovery 129s 63-67% pace\n\nMain Set\n- Threshold 4 257s 95-100% pace\n\nCooldown\n- 129s ramp 80-76% pace\n- Excellent work, easy jog to finish 86s ramp 67-63% pace\n\n[Weekly Plan - Pre-Race Taper \u00b7 type:shortThreshold]"
+      "description": "Warmup\n- Hey Sy! Short threshold run today 86s ramp 63-67% pace\n- 86s ramp 74-78% pace\n- 129s ramp 85-89% pace\n\nMain Set\n3x\n- Threshold 257s 95-100% pace\n- Recovery 129s 63-67% pace\n\nMain Set\n- Threshold 4 257s 95-100% pace\n\nCooldown\n- 129s ramp 80-76% pace\n- Excellent work, easy jog to finish 86s ramp 67-63% pace\n\n[Weekly Plan - Build \u00b7 type:shortThreshold]"
     },
     {
       "id": 140085403,
@@ -1878,7 +1928,7 @@
       "workout_summary": null,
       "has_terrain": false,
       "start_time": "09:00",
-      "description": "Warmup\n- Sy, shakeout run today! 3m ramp 65-71% pace\n\nMain Set\n- Easy Run 15m 60-71% pace\n\nCooldown\n- Nice run, Sy. Recover well. 135s ramp 71-65% pace\n\n[Weekly Plan - Pre-Race Taper \u00b7 type:recoveryShakeout]"
+      "description": "Warmup\n- Sy, shakeout run today! 3m ramp 65-71% pace\n\nMain Set\n- Easy Run 15m 60-71% pace\n\nCooldown\n- Nice run, Sy. Recover well. 135s ramp 71-65% pace\n\n[Weekly Plan - Build \u00b7 type:recoveryShakeout]"
     },
     {
       "id": 140345123,
@@ -1892,7 +1942,7 @@
       "workout_summary": null,
       "has_terrain": false,
       "start_time": "09:00",
-      "description": "Warmup\n- Hey Sy! Progression run awaits 257s ramp 65-78% pace\n\nMain Set\n- Easy 463s 76-80% pace\n- Build 463s 86-90% pace\n- Tempo/Threshold 463s 93-97% pace\n\nCooldown\n- 103s ramp 80-76% pace\n- Awesome work, easy jog to finish 103s ramp 67-63% pace\n\n[Weekly Plan - Pre-Race Taper \u00b7 type:progressionRun]"
+      "description": "Warmup\n- Hey Sy! Progression run awaits 257s ramp 65-78% pace\n\nMain Set\n- Easy 463s 76-80% pace\n- Build 463s 86-90% pace\n- Tempo/Threshold 463s 93-97% pace\n\nCooldown\n- 103s ramp 80-76% pace\n- Awesome work, easy jog to finish 103s ramp 67-63% pace\n\n[Weekly Plan - Build \u00b7 type:progressionRun]"
     },
     {
       "id": 140922617,
@@ -1906,7 +1956,7 @@
       "workout_summary": "3m24s | 3\u00d74m15s / 25s rec | 2m58s | 2m33s",
       "has_terrain": false,
       "start_time": "09:00",
-      "description": "Warmup\n- Hey Sy, easy recovery run and drills today. 204s ramp 65-71% pace\n\nMain Set\n3x\n- Easy 255s 60-71% pace\n- Form Drill 25s 60-71% pace\n\nMain Set\n- Easy 4 178s 60-71% pace\n\nCooldown\n- Great work, Sy! Easy jog to finish. 153s ramp 71-65% pace\n\n[Weekly Plan - Pre-Race Taper \u00b7 type:recoveryDrills]"
+      "description": "Warmup\n- Hey Sy, easy recovery run and drills today. 204s ramp 65-71% pace\n\nMain Set\n3x\n- Easy 255s 60-71% pace\n- Form Drill 25s 60-71% pace\n\nMain Set\n- Easy 4 178s 60-71% pace\n\nCooldown\n- Great work, Sy! Easy jog to finish. 153s ramp 71-65% pace\n\n[Weekly Plan - Build \u00b7 type:recoveryDrills]"
     },
     {
       "id": 112366880,
@@ -1944,10 +1994,10 @@
     "bail_no_match": 3
   },
   "weekly_summary": {
-    "total_training_hours": 6.21,
-    "total_training_formatted": "6h12m",
-    "total_tss": 298,
-    "activities_count": 9,
+    "total_training_hours": 6.29,
+    "total_training_formatted": "6h17m",
+    "total_tss": 299,
+    "activities_count": 10,
     "avg_hrv": 100.0,
     "avg_resting_hr": 47.3
   },
