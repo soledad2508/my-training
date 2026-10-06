@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-05T10:52:04.304035",
+  "generated_at": "2026-10-06T00:54:58.647339",
   "version": "3.103",
   "script_hash": "ed549cafdc97",
   "scan_hours": 72,
@@ -1290,6 +1290,74 @@
           "duration_secs": 116,
           "avg_hr": 98,
           "max_hr": 112,
+          "zone": 1
+        }
+      ]
+    },
+    {
+      "activity_id": "i194040037",
+      "date": "2026-10-06",
+      "type": "Run",
+      "name": "IntervalCoach - Threshold Intervals",
+      "interval_summary": [
+        "1x 8m22s 108bpm",
+        "3x 5m40s 146bpm",
+        "1x 11m28s 118bpm",
+        "1x 4s 101bpm"
+      ],
+      "intervals": [
+        {
+          "type": "WORK",
+          "label": "502s@108bpm75rpm",
+          "duration_secs": 502,
+          "avg_hr": 108,
+          "max_hr": 137,
+          "avg_cadence": 74.87849,
+          "zone": 1
+        },
+        {
+          "type": "WORK",
+          "label": "340s@146bpm89rpm",
+          "duration_secs": 340,
+          "avg_hr": 141,
+          "max_hr": 152,
+          "avg_cadence": 88.89412,
+          "zone": 1
+        },
+        {
+          "type": "WORK",
+          "label": "340s@146bpm89rpm",
+          "duration_secs": 342,
+          "avg_hr": 147,
+          "max_hr": 152,
+          "avg_cadence": 89.388885,
+          "zone": 1
+        },
+        {
+          "type": "WORK",
+          "label": "340s@146bpm89rpm",
+          "duration_secs": 339,
+          "avg_hr": 151,
+          "max_hr": 154,
+          "avg_cadence": 89.69026,
+          "zone": 2
+        },
+        {
+          "type": "WORK",
+          "label": "688s@118bpm54rpm",
+          "duration_secs": 688,
+          "avg_hr": 118,
+          "max_hr": 158,
+          "avg_cadence": 53.684593,
+          "zone": 1
+        },
+        {
+          "type": "WORK",
+          "label": "4s@101bpm94rpm",
+          "duration_secs": 4,
+          "avg_hr": 101,
+          "max_hr": 102,
+          "avg_cadence": 94.0,
           "zone": 1
         }
       ]
