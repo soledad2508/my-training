@@ -1,106 +1,10 @@
 {
-  "generated_at": "2026-10-11T22:53:06.870397",
+  "generated_at": "2026-10-12T02:00:25.596210",
   "version": "3.103",
   "script_hash": "ed549cafdc97",
   "scan_hours": 72,
   "retention_days": 14,
   "activities": [
-    {
-      "activity_id": "i190695189",
-      "date": "2026-09-27",
-      "type": "Run",
-      "name": "IntervalCoach - Aerobic Endurance",
-      "interval_summary": [
-        "1x 7m12s 120bpm",
-        "1x 9m34s 122bpm",
-        "5x 7m5s 143bpm",
-        "1x 16m22s 120bpm",
-        "1x 21s 153bpm"
-      ],
-      "intervals": [
-        {
-          "type": "WORK",
-          "label": "432s@120bpm76rpm",
-          "duration_secs": 432,
-          "avg_hr": 120,
-          "max_hr": 138,
-          "avg_cadence": 75.52315,
-          "zone": 1
-        },
-        {
-          "type": "WORK",
-          "label": "574s@122bpm59rpm",
-          "duration_secs": 574,
-          "avg_hr": 122,
-          "max_hr": 142,
-          "avg_cadence": 59.287457,
-          "zone": 1
-        },
-        {
-          "type": "WORK",
-          "label": "425s@143bpm75rpm",
-          "duration_secs": 440,
-          "avg_hr": 135,
-          "max_hr": 148,
-          "avg_cadence": 70.91591,
-          "zone": 1
-        },
-        {
-          "type": "WORK",
-          "label": "425s@143bpm75rpm",
-          "duration_secs": 410,
-          "avg_hr": 144,
-          "max_hr": 153,
-          "avg_cadence": 77.40732,
-          "zone": 1
-        },
-        {
-          "type": "WORK",
-          "label": "425s@143bpm75rpm",
-          "duration_secs": 478,
-          "avg_hr": 138,
-          "max_hr": 152,
-          "avg_cadence": 70.61297,
-          "zone": 1
-        },
-        {
-          "type": "WORK",
-          "label": "982s@120bpm35rpm",
-          "duration_secs": 982,
-          "avg_hr": 120,
-          "max_hr": 148,
-          "avg_cadence": 34.81772,
-          "zone": 1
-        },
-        {
-          "type": "WORK",
-          "label": "425s@143bpm75rpm",
-          "duration_secs": 429,
-          "avg_hr": 145,
-          "max_hr": 153,
-          "avg_cadence": 68.16317,
-          "zone": 1
-        },
-        {
-          "type": "WORK",
-          "label": "425s@143bpm75rpm",
-          "duration_secs": 370,
-          "avg_hr": 153,
-          "max_hr": 159,
-          "avg_cadence": 88.45676,
-          "zone": 2
-        },
-        {
-          "type": "WORK",
-          "label": "21s@153bpm35rpm",
-          "duration_secs": 21,
-          "avg_hr": 153,
-          "max_hr": 158,
-          "avg_cadence": 34.8,
-          "zone": 2
-        }
-      ]
-    },
     {
       "activity_id": "i191021199",
       "date": "2026-09-28",
