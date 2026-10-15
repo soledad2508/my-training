@@ -1,48 +1,10 @@
 {
-  "generated_at": "2026-10-14T22:17:12.844815",
+  "generated_at": "2026-10-15T00:41:39.631236",
   "version": "3.103",
   "script_hash": "ed549cafdc97",
   "scan_hours": 72,
   "retention_days": 14,
   "activities": [
-    {
-      "activity_id": "i191711453",
-      "date": "2026-09-30",
-      "type": "Run",
-      "name": "IntervalCoach - Endurance + Sprints",
-      "interval_summary": [
-        "1x 18m6s 88bpm",
-        "1x 7m49s 98bpm"
-      ],
-      "intervals": [
-        {
-          "type": "WORK",
-          "label": "1086s@88bpm41rpm",
-          "duration_secs": 1086,
-          "avg_hr": 88,
-          "max_hr": 104,
-          "avg_cadence": 40.78361,
-          "zone": 1
-        },
-        {
-          "type": "RECOVERY",
-          "duration_secs": 1,
-          "avg_hr": 95,
-          "max_hr": 95,
-          "avg_cadence": 55.0,
-          "zone": 1
-        },
-        {
-          "type": "WORK",
-          "label": "469s@98bpm50rpm",
-          "duration_secs": 469,
-          "avg_hr": 98,
-          "max_hr": 105,
-          "avg_cadence": 50.464817,
-          "zone": 1
-        }
-      ]
-    },
     {
       "activity_id": "i192057468",
       "date": "2026-10-01",
