@@ -1,101 +1,10 @@
 {
-  "generated_at": "2026-10-16T22:56:05.524687",
+  "generated_at": "2026-10-17T01:02:23.717128",
   "version": "3.103",
   "script_hash": "ed549cafdc97",
   "scan_hours": 72,
   "retention_days": 14,
   "activities": [
-    {
-      "activity_id": "i192476376",
-      "date": "2026-10-02",
-      "type": "TrailRun",
-      "name": "Qu\u1eadn Ng\u0169 H\u00e0nh S\u01a1n Ch\u1ea1y \u0111\u01b0\u1eddng m\u00f2n",
-      "interval_summary": [
-        "1x 27m20s 128bpm",
-        "1x 11m14s 121bpm"
-      ],
-      "intervals": [
-        {
-          "type": "WORK",
-          "label": "1640s@128bpm23rpm",
-          "duration_secs": 1640,
-          "avg_hr": 128,
-          "max_hr": 160,
-          "avg_cadence": 23.26309,
-          "zone": 1
-        },
-        {
-          "type": "WORK",
-          "label": "674s@121bpm28rpm",
-          "duration_secs": 674,
-          "avg_hr": 121,
-          "max_hr": 136,
-          "avg_cadence": 27.603857,
-          "zone": 1
-        }
-      ]
-    },
-    {
-      "activity_id": "i192640991",
-      "date": "2026-10-02",
-      "type": "Swim",
-      "name": "B\u01a1i h\u00f4\u0300",
-      "interval_summary": [
-        "1x 100m 110bpm",
-        "1x 25m 122bpm",
-        "1x 25m 100bpm"
-      ],
-      "intervals": [
-        {
-          "type": "WORK",
-          "label": "98s@110bpm17rpm",
-          "duration_secs": 98,
-          "avg_hr": 110,
-          "max_hr": 129,
-          "avg_cadence": 17.27551,
-          "zone": 1
-        },
-        {
-          "type": "RECOVERY",
-          "duration_secs": 57,
-          "avg_hr": 122,
-          "max_hr": 126,
-          "zone": 1
-        },
-        {
-          "type": "WORK",
-          "label": "28s@122bpm22rpm",
-          "duration_secs": 28,
-          "avg_hr": 122,
-          "max_hr": 125,
-          "avg_cadence": 22.178572,
-          "zone": 1
-        },
-        {
-          "type": "RECOVERY",
-          "duration_secs": 182,
-          "avg_hr": 114,
-          "max_hr": 141,
-          "zone": 1
-        },
-        {
-          "type": "WORK",
-          "label": "31s@100bpm23rpm",
-          "duration_secs": 31,
-          "avg_hr": 100,
-          "max_hr": 104,
-          "avg_cadence": 23.225807,
-          "zone": 1
-        },
-        {
-          "type": "RECOVERY",
-          "duration_secs": 118,
-          "avg_hr": 107,
-          "max_hr": 122,
-          "zone": 1
-        }
-      ]
-    },
     {
       "activity_id": "i192797354",
       "date": "2026-10-03",
@@ -1574,6 +1483,53 @@
           "max_hr": 141,
           "avg_cadence": 73.36527,
           "zone": 1
+        }
+      ]
+    },
+    {
+      "activity_id": "i198153202",
+      "date": "2026-10-17",
+      "type": "Run",
+      "name": "Qu\u1eadn 2 Cha\u0323y",
+      "interval_summary": [
+        "4x 6m33s 145bpm"
+      ],
+      "intervals": [
+        {
+          "type": "WORK",
+          "label": "393s@145bpm79rpm",
+          "duration_secs": 405,
+          "avg_hr": 134,
+          "max_hr": 143,
+          "avg_cadence": 79.29136,
+          "zone": 1
+        },
+        {
+          "type": "WORK",
+          "label": "393s@145bpm79rpm",
+          "duration_secs": 390,
+          "avg_hr": 145,
+          "max_hr": 159,
+          "avg_cadence": 74.628204,
+          "zone": 1
+        },
+        {
+          "type": "WORK",
+          "label": "393s@145bpm79rpm",
+          "duration_secs": 362,
+          "avg_hr": 151,
+          "max_hr": 160,
+          "avg_cadence": 86.342545,
+          "zone": 2
+        },
+        {
+          "type": "WORK",
+          "label": "393s@145bpm79rpm",
+          "duration_secs": 414,
+          "avg_hr": 149,
+          "max_hr": 160,
+          "avg_cadence": 74.833336,
+          "zone": 2
         }
       ]
     }
