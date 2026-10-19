@@ -72,7 +72,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-10-19T06:52:34.980071",
+    "last_updated": "2026-10-19T14:16:32.211862",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.103"
@@ -110,10 +110,10 @@
         "delta_pct": -15.9
       },
       "rhr": {
-        "status": "amber",
-        "value": 50,
-        "baseline_7d": 46.7,
-        "delta_bpm": 3.3
+        "status": "green",
+        "value": 48,
+        "baseline_7d": 46.4,
+        "delta_bpm": 1.6
       },
       "sleep": {
         "status": "green",
@@ -126,8 +126,8 @@
       },
       "ri": {
         "status": "green",
-        "value": 0.79,
-        "value_yesterday": 0.88
+        "value": 0.81,
+        "value_yesterday": 0.87
       },
       "tsb": {
         "status": "amber",
@@ -135,8 +135,8 @@
       }
     },
     "signal_summary": {
-      "green": 3,
-      "amber": 3,
+      "green": 4,
+      "amber": 2,
       "red": 0,
       "unavailable": 0
     },
@@ -150,7 +150,6 @@
     "modification": {
       "triggers": [
         "hrv",
-        "rhr",
         "tsb"
       ],
       "suggested_adjustments": {
@@ -159,7 +158,7 @@
         "cap_zone": null
       }
     },
-    "reason": "P2 signal count. 3 amber (hrv, rhr, tsb) >= threshold 2.",
+    "reason": "P2 signal count. 2 amber (hrv, tsb) >= threshold 2.",
     "alarm_refs": []
   },
   "history": {
@@ -226,7 +225,7 @@
     },
     "current_metrics": {
       "weight_kg": 67.5,
-      "resting_hr": 50,
+      "resting_hr": 48,
       "hrv": 84.0,
       "sleep_quality": 3,
       "sleep_hours": 7.23,
@@ -248,7 +247,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": 554,
+      "steps": 5747,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -260,14 +259,14 @@
     }
   },
   "derived_metrics": {
-    "recovery_index": 0.79,
-    "recovery_index_yesterday": 0.88,
+    "recovery_index": 0.81,
+    "recovery_index_yesterday": 0.87,
     "hrv_baseline_7d": 99.9,
-    "rhr_baseline_7d": 46.7,
+    "rhr_baseline_7d": 46.4,
     "hrv_baseline_28d": 100.1,
-    "rhr_baseline_28d": 46.3,
+    "rhr_baseline_28d": 46.2,
     "latest_hrv": 84.0,
-    "latest_rhr": 50,
+    "latest_rhr": 48,
     "acwr": 1.13,
     "acwr_interpretation": "optimal",
     "monotony": 0.7,
@@ -279,7 +278,7 @@
     "multi_sport_detected": false,
     "strain": 233.0,
     "stress_tolerance": 3.3,
-    "load_recovery_ratio": 4.2,
+    "load_recovery_ratio": 4.1,
     "tss_7d_total": 333.0,
     "tss_28d_total": 1182.0,
     "zone_distribution_7d": {
@@ -462,7 +461,7 @@
           "weeks_available": 4
         },
         "stream_2": {
-          "planned_tss_delta": 0.58,
+          "planned_tss_delta": 0.62,
           "hard_sessions_planned": 5,
           "current_week_hard_days_completed": 0,
           "current_week_hard_days_total": 5,
@@ -502,7 +501,7 @@
     "p_max": null,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-10-19T06:52:34.978240",
+    "calculation_timestamp": "2026-10-19T14:16:32.210013",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -2274,7 +2273,7 @@
     {
       "date": "2026-10-19",
       "weight_kg": null,
-      "resting_hr": 50,
+      "resting_hr": 48,
       "hrv_rmssd": 84.0,
       "hrv_sdnn": null,
       "sleep_hours": 7.23,
@@ -2300,7 +2299,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": 554,
+      "steps": 5747,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -2313,49 +2312,49 @@
   ],
   "planned_workouts": [
     {
-      "id": 144072361,
+      "id": 146159940,
       "date": "2026-10-20",
       "name": "IntervalCoach - Fat Max",
       "type": "WORKOUT",
       "sport_type": "Run",
-      "planned_tss": 33,
-      "duration_hours": 0.75,
-      "duration_formatted": "45m",
+      "planned_tss": 30,
+      "duration_hours": 0.5,
+      "duration_formatted": "30m",
       "workout_summary": null,
       "has_terrain": false,
       "start_time": "09:00",
-      "description": "Warmup\n- 0^ Hey Sy! A relaxed Fat Max run awaits 7m 63-67% pace\n\nMain Set\n- Settle In 11m 63-67% pace\n- Fat Max 11m 65-72% pace\n- Cruise 11m 65-72% pace\n\nCooldown\n- 5m 61-65% pace\n\n[Weekly Plan - Build \u00b7 type:enduranceFatMax]"
+      "description": "Warmup\n- Hey Sy! Fat Max run ahead 95s ramp 63-67% pace\n- 189s ramp 75-79% pace\n\nMain Set\n- Settle In 426s 76-80% pace\n- Fat Max 426s 78-82% pace\n- Cruise 474s 78-82% pace\n\nCooldown\n- 95s ramp 78-74% pace\n- Lovely work, ease into a relaxed jog 95s ramp 67-63% pace\n\n[Weekly Plan - Recovery \u00b7 type:enduranceFatMax]"
     },
     {
-      "id": 144562985,
+      "id": 146160119,
       "date": "2026-10-21",
-      "name": "IntervalCoach - Shakeout Run",
+      "name": "IntervalCoach - Easy Shakeout",
       "type": "WORKOUT",
       "sport_type": "Run",
-      "planned_tss": 30,
-      "duration_hours": 0.7,
-      "duration_formatted": "42m",
+      "planned_tss": 29,
+      "duration_hours": 0.63,
+      "duration_formatted": "38m",
       "workout_summary": null,
       "has_terrain": false,
       "start_time": "09:00",
-      "description": "Warmup\n- Hey Sy! A relaxed shakeout run awaits 6m 62-66% pace\n\nMain Set\n- Easy 16m 60-66% pace intensity=recovery\n- Shake Out 16m 66-71% pace intensity=recovery\n\nCooldown\n- 4m 65-69% pace\n\n[Weekly Plan - Build \u00b7 type:recoveryShakeout]"
+      "description": "Warmup\n- Hey Sy! Enjoy a gentle shakeout run 6m 64-68% pace\n\nMain Set\n- Easy 14m 65-69% pace intensity=recovery\n- Shake Out 14m 68-72% pace intensity=recovery\n\nCooldown\n- 2m 68-72% pace\n- Lovely work, Sy\u2014keep those strides relaxed 2m 63-67% pace\n\n[Weekly Plan - Recovery \u00b7 type:recoveryShakeout]"
     },
     {
-      "id": 145057852,
+      "id": 146160211,
       "date": "2026-10-22",
-      "name": "IntervalCoach - Aerobic Tempo",
+      "name": "IntervalCoach - Tempo Endurance",
       "type": "WORKOUT",
       "sport_type": "Run",
-      "planned_tss": 30,
-      "duration_hours": 0.49,
-      "duration_formatted": "29m12s",
+      "planned_tss": 31,
+      "duration_hours": 0.5,
+      "duration_formatted": "30m13s",
       "workout_summary": null,
       "has_terrain": false,
       "start_time": "09:00",
-      "description": "Warmup\n- Hey Sy! An easy endurance run awaits 95s ramp 63-67% pace\n- 189s ramp 75-79% pace\n\nMain Set\n- Settle In 426s 76-80% pace\n- Aerobic 426s 78-87% pace\n- Cruise 426s 78-87% pace\n\nCooldown\n- 95s ramp 78-74% pace\n- Well done, Sy! Enjoy a gentle jog 95s ramp 67-63% pace\n\n[Weekly Plan - Build \u00b7 type:endurance]"
+      "description": "Warmup\n- Hey Sy! A relaxed endurance run awaits 98s ramp 63-67% pace\n- 196s ramp 75-79% pace\n\nMain Set\n- Settle In 441s 76-80% pace\n- Aerobic 441s 78-87% pace\n- Cruise 441s 78-87% pace\n\nCooldown\n- 98s ramp 78-74% pace\n- Well done, Sy! Enjoy an easy jog 98s ramp 67-63% pace\n\n[Weekly Plan - Recovery \u00b7 type:endurance]"
     },
     {
-      "id": 145317146,
+      "id": 146160316,
       "date": "2026-10-24",
       "name": "IntervalCoach - Progressive Aerobic",
       "type": "WORKOUT",
@@ -2366,21 +2365,21 @@
       "workout_summary": null,
       "has_terrain": false,
       "start_time": "09:00",
-      "description": "Warmup\n- Hey Sy! A progressive aerobic run awaits 88s ramp 63-67% pace\n- 176s ramp 75-79% pace\n\nMain Set\n- Low Aerobic 395s 76-80% pace\n- Mid Aerobic 395s 78-87% pace\n- Upper Aerobic 439s 86-90% pace\n\nCooldown\n- 88s ramp 80-76% pace\n- Lovely work, finish with an easy jog 88s ramp 67-63% pace\n\n[Weekly Plan - Build \u00b7 type:enduranceProgressive]"
+      "description": "Warmup\n- Hey Sy! A progressive aerobic run awaits 88s ramp 63-67% pace\n- 176s ramp 75-79% pace\n\nMain Set\n- Low Aerobic 395s 76-80% pace\n- Mid Aerobic 395s 78-87% pace\n- Upper Aerobic 439s 86-90% pace\n\nCooldown\n- 88s ramp 80-76% pace\n- Lovely work, Sy\u2014finish with an easy jog 88s ramp 67-63% pace\n\n[Weekly Plan - Recovery \u00b7 type:enduranceProgressive]"
     },
     {
-      "id": 145562835,
+      "id": 146160484,
       "date": "2026-10-25",
-      "name": "IntervalCoach - Aerobic Tempo",
+      "name": "IntervalCoach - Steady Tempo",
       "type": "WORKOUT",
       "sport_type": "Run",
-      "planned_tss": 43,
-      "duration_hours": 0.64,
-      "duration_formatted": "38m12s",
+      "planned_tss": 59,
+      "duration_hours": 0.92,
+      "duration_formatted": "54m56s",
       "workout_summary": null,
       "has_terrain": false,
       "start_time": "09:00",
-      "description": "Warmup\n- Hey Sy! A steady long run awaits 108s ramp 63-67% pace\n- 108s ramp 74-78% pace\n- 108s ramp 83-87% pace\n\nMain Set\n- Aerobic 19m 78-87% pace\n- Tempo Touch 432s 88-94% pace\n- Easy Finish 3m 76-80% pace\n\nCooldown\n- 108s ramp 80-76% pace\n- Beautiful work, Sy\u2014enjoy that easy finish 108s ramp 67-63% pace\n\n[Weekly Plan - Build \u00b7 type:longRun]"
+      "description": "Warmup\n- Hey Sy! A relaxed long run awaits 184s ramp 63-67% pace\n- 184s ramp 74-78% pace\n- 138s ramp 79-83% pace\n\nMain Set\n- Settle In 368s 77-83% pace\n- Steady Aerobic 35m 81-85% pace\n\nCooldown\n- 184s ramp 80-76% pace\n- Lovely work, Sy\u2014enjoy an easy jog 138s ramp 67-63% pace\n\n[Weekly Plan - Recovery \u00b7 type:longAerobic]"
     }
   ],
   "workout_summary_stats": {
@@ -2397,7 +2396,7 @@
     "total_tss": 333,
     "activities_count": 8,
     "avg_hrv": 99.9,
-    "avg_resting_hr": 46.7
+    "avg_resting_hr": 46.4
   },
   "race_calendar": {
     "next_race": null,
