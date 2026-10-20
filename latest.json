@@ -72,7 +72,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-10-20T12:58:25.917360",
+    "last_updated": "2026-10-20T17:49:59.175795",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.103"
@@ -237,7 +237,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": 4013,
+      "steps": 4256,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -456,9 +456,9 @@
           "current_week_hard_days_completed": 0,
           "current_week_hard_days_total": 5,
           "race_proximity": null,
-          "next_week_load": null,
+          "next_week_load": 0.14,
           "plan_coverage_current_week": 0.62,
-          "plan_coverage_next_week": 0.0
+          "plan_coverage_next_week": 0.12
         },
         "data_quality": "good",
         "stream_agreement": null
@@ -491,7 +491,7 @@
     "p_max": null,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-10-20T12:58:25.915508",
+    "calculation_timestamp": "2026-10-20T17:49:59.173974",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -2239,7 +2239,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": 4013,
+      "steps": 4256,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -2320,12 +2320,26 @@
       "has_terrain": false,
       "start_time": "09:00",
       "description": "Warmup\n- Hey Sy! A relaxed long run awaits 184s ramp 63-67% pace\n- 184s ramp 74-78% pace\n- 138s ramp 79-83% pace\n\nMain Set\n- Settle In 368s 77-83% pace\n- Steady Aerobic 35m 81-85% pace\n\nCooldown\n- 184s ramp 80-76% pace\n- Lovely work, Sy\u2014enjoy an easy jog 138s ramp 67-63% pace\n\n[Weekly Plan - Recovery \u00b7 type:longAerobic]"
+    },
+    {
+      "id": 146522474,
+      "date": "2026-10-27",
+      "name": "IntervalCoach - 5x5 Tempo Sprints",
+      "type": "WORKOUT",
+      "sport_type": "Run",
+      "planned_tss": 39,
+      "duration_hours": 0.59,
+      "duration_formatted": "35m40s",
+      "workout_summary": "3 \u00d7 2m | 4\u00d75m / 10s rec | 5m | 2 \u00d7 2m",
+      "has_terrain": false,
+      "start_time": "09:00",
+      "description": "Warmup\n- Hey Sy! Endurance running and sprints ahead 2m 63-67% pace\n- 2m 74-78% pace\n- 2m 83-87% pace\n\nMain Set\n4x\n- Aerobic 5m 78-87% pace\n- Sprint 10s 128-132% pace\n\nRecovery\n- Aerobic 5m 78-87% pace\n\nCooldown\n- 2m 76-80% pace\n- Great work, Sy! Enjoy an easy jog 2m 63-67% pace\n\n[Weekly Plan - Base \u00b7 type:enduranceWithSprints]"
     }
   ],
   "workout_summary_stats": {
-    "attempted": 5,
-    "success": 0,
-    "patternA": 0,
+    "attempted": 6,
+    "success": 1,
+    "patternA": 1,
     "patternB": 0,
     "bail_no_workout_doc": 0,
     "bail_no_match": 5
