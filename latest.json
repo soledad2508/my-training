@@ -72,7 +72,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-10-26T00:20:51.886810",
+    "last_updated": "2026-10-26T05:06:17.029924",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.103"
@@ -141,21 +141,21 @@
       "unavailable": 0
     },
     "phase_context": {
-      "phase": "Base",
+      "phase": "Build",
       "phase_week": 1,
-      "amber_threshold": 2,
-      "modifier_applied": "default"
+      "amber_threshold": 3,
+      "modifier_applied": "build_loosened"
     },
     "race_week_defers": false,
     "modification": null,
-    "reason": "P3 green light. 5 green, 1 amber (threshold 2), 0 red.",
+    "reason": "P3 green light. 5 green, 1 amber (threshold 3), 0 red.",
     "alarm_refs": []
   },
   "history": {
     "available": true,
-    "last_generated": "2026-08-30",
-    "age_days": 56,
-    "total_months": 80,
+    "last_generated": "2026-10-26",
+    "age_days": 0,
+    "total_months": 82,
     "history_confidence": "high"
   },
   "summary": {
@@ -237,7 +237,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": 2835,
+      "steps": 4174,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -443,13 +443,13 @@
       "completed_dates": []
     },
     "phase_detection": {
-      "phase": "Base",
+      "phase": "Build",
       "confidence": "medium",
       "reason_codes": [],
       "basis": {
         "stream_1": {
-          "ctl_slope": null,
-          "acwr_trend": null,
+          "ctl_slope": 2.5,
+          "acwr_trend": "falling",
           "hard_day_pattern": 0.7,
           "weeks_available": 4
         },
@@ -471,7 +471,7 @@
       "dossier_declared": null,
       "dossier_agreement": null
     },
-    "phase_detected": "Base",
+    "phase_detected": "Build",
     "phase_triggers": [],
     "seasonal_context": "Late Season / Transition",
     "benchmark_indoor": {
@@ -494,7 +494,7 @@
     "p_max": null,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-10-26T00:20:51.885027",
+    "calculation_timestamp": "2026-10-26T05:06:17.028994",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -2298,7 +2298,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": 2835,
+      "steps": 4174,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
