@@ -72,7 +72,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-10-28T12:52:24.974520",
+    "last_updated": "2026-10-28T18:37:25.708385",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.103"
@@ -236,7 +236,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": 3692,
+      "steps": 19775,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -493,7 +493,7 @@
     "p_max": null,
     "power_model_source": "wellness.sportInfo",
     "vo2max": 54.0,
-    "calculation_timestamp": "2026-10-28T12:52:24.973279",
+    "calculation_timestamp": "2026-10-28T18:37:25.706606",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -2297,7 +2297,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": 3692,
+      "steps": 19775,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -2325,7 +2325,7 @@
     },
     {
       "id": 147851015,
-      "date": "2026-10-29",
+      "date": "2026-10-30",
       "name": "IntervalCoach - 3x10 Tempo Run",
       "type": "WORKOUT",
       "sport_type": "Run",
@@ -2335,7 +2335,7 @@
       "workout_summary": null,
       "has_terrain": false,
       "start_time": "09:00",
-      "description": "Warmup\n- Hey Sy! A steady tempo run awaits 3m 63-67% pace\n- 3m 74-78% pace\n- 2m 85-89% pace\n\nMain Set\n- Tempo 1 10m 88-94% pace\n- Easy 5m 65-77% pace\n- Tempo 2 10m 88-94% pace\n- Easy 5m 65-77% pace\n- Tempo 3 10m 88-94% pace\n\nCooldown\n- 4m 76-80% pace\n- Great work, Sy! Jog easy and enjoy the finish 2m 63-67% pace\n\n[Weekly Plan - Base \u00b7 type:tempo]"
+      "description": "Warmup\n- Hey Sy! A steady tempo run awaits 3m 63-67% pace\n- 3m 74-78% pace\n- 2m 85-89% pace\n\nMain Set\n- Tempo 1 10m 88-94% pace\n- Easy 5m 65-77% pace\n- Tempo 2 10m 88-94% pace\n- Easy 5m 65-77% pace\n- Tempo 3 10m 88-94% pace\n\nCooldown\n- 4m 76-80% pace\n- Great work, Sy! Jog easy and enjoy the finish 2m 63-67% pace\n\n[Athlete moved - was plan: Base \u00b7 type:tempo]"
     },
     {
       "id": 147851036,
