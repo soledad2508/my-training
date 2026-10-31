@@ -72,7 +72,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-10-31T20:54:31.434676",
+    "last_updated": "2026-10-31T23:54:53.883205",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.103"
@@ -457,9 +457,9 @@
           "current_week_hard_days_completed": 1,
           "current_week_hard_days_total": 3,
           "race_proximity": 85,
-          "next_week_load": null,
+          "next_week_load": 0.76,
           "plan_coverage_current_week": 0.29,
-          "plan_coverage_next_week": 0.57
+          "plan_coverage_next_week": 0.71
         },
         "data_quality": "good",
         "stream_agreement": null
@@ -494,7 +494,7 @@
     "p_max": null,
     "power_model_source": "wellness.sportInfo",
     "vo2max": 54.0,
-    "calculation_timestamp": "2026-10-31T20:54:31.432905",
+    "calculation_timestamp": "2026-10-31T23:54:53.881395",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -2403,55 +2403,69 @@
       "description": "Lower Body Strength\n\nLeg strength for cycling power and running economy\n\n1. Goblet Squat: 3 sets \u00d7 12 reps (Weight at chest, sit back into heels) [Rest: 60 sec]\n2. Romanian Deadlift: 3 sets \u00d7 10 reps (Hinge at hips, slight knee bend) [Rest: 60 sec]\n3. Walking Lunges: 3 sets \u00d7 10 reps each leg (Keep torso upright, knee tracks over toe) [Rest: 45 sec]\n4. Step-ups: 3 sets \u00d7 10 reps each leg (Use bench or box, drive through heel) [Rest: 45 sec]\n5. Calf Raises: 3 sets \u00d7 15 reps (Full range of motion, hold at top) [Rest: 30 sec]\n6. Single Leg Glute Bridge: 3 sets \u00d7 10 reps each leg (Keep hips level throughout) [Rest: 30 sec]\n\nBuild phase: increase weight, lower reps (6-10) for strength gains.\n\n[Duration: ~45 min]\n[Exercises \u00b7 gobletSquat 3x12 rest 60 sec \u00b7 romanianDeadlift 3x10 rest 60 sec \u00b7 walkingLunges 3x10 side rest 45 sec \u00b7 stepUps 3x10 side rest 45 sec \u00b7 calfRaises 3x15 rest 30 sec \u00b7 singleLegGluteBridge 3x10 side rest 30 sec]\n\n[Weekly Plan - Build \u00b7 type:lower-body-strength]"
     },
     {
-      "id": 149223018,
+      "id": 150374317,
       "date": "2026-11-04",
-      "name": "IntervalCoach - Core Stability",
+      "name": "IntervalCoach - Threshold Repeats",
       "type": "WORKOUT",
-      "sport_type": "WeightTraining",
-      "planned_tss": 9,
-      "duration_hours": 0.75,
-      "duration_formatted": "45m",
+      "sport_type": "Run",
+      "planned_tss": 71,
+      "duration_hours": 1.0,
+      "duration_formatted": "1h",
       "workout_summary": null,
       "has_terrain": false,
       "start_time": "09:00",
-      "description": "Core Stability\n\nCore exercises to improve stability, posture, and power transfer\n\n1. Plank: 5 sets \u00d7 45-60 sec (Keep body in straight line, engage glutes) [Rest: 30 sec]\n2. Side Plank: 3 sets \u00d7 30 sec each side (Stack feet or stagger for stability) [Rest: 15 sec]\n3. Dead Bug: 5 sets \u00d7 10 reps each side (Keep lower back pressed to floor) [Rest: 30 sec]\n4. Bird Dog: 5 sets \u00d7 10 reps each side (Extend opposite arm and leg, hold 2s) [Rest: 30 sec]\n5. Glute Bridge: 5 sets \u00d7 15 reps (Squeeze glutes at top, hold 2s) [Rest: 30 sec]\n6. Pallof Press: 5 sets \u00d7 10 reps each side (Band at chest height, press and hold, resist rotation) [Rest: 30 sec]\n\n[Duration: ~45 min]\n[Exercises \u00b7 plank 5x45-60 sec rest 30 sec \u00b7 sidePlank 3x30 sec side rest 15 sec \u00b7 deadBug 5x10 side rest 30 sec \u00b7 birdDog 5x10 side rest 30 sec \u00b7 gluteBridge 5x15 rest 30 sec \u00b7 pallofPress 5x10 side rest 30 sec]\n\n[Weekly Plan - Build \u00b7 type:core-stability]"
+      "description": "Warmup\n- 3m 63-67% pace\n- 6m 75-79% pace\n\nMain Set\n- Endurance 7m 76-80% pace\n- Threshold 1 10m 95-99% pace\n- Jog Recovery 3m 65-71% pace\n- Threshold 2 8m 96-100% pace\n- Jog Recovery 3m 65-71% pace\n- Threshold 3 6m 97-101% pace\n- Endurance 8m 76-80% pace\n\nCooldown\n- 3m 76-80% pace\n- 3m 63-67% pace\n\n[Weekly Plan - Build \u00b7 type:threshold]"
     },
     {
-      "id": 149424314,
+      "id": 150374371,
       "date": "2026-11-05",
-      "name": "IntervalCoach - Lower Body Strength",
+      "name": "IntervalCoach - Recovery Drills",
       "type": "WORKOUT",
-      "sport_type": "WeightTraining",
-      "planned_tss": 9,
-      "duration_hours": 0.75,
-      "duration_formatted": "45m",
-      "workout_summary": null,
+      "sport_type": "Run",
+      "planned_tss": 23,
+      "duration_hours": 0.5,
+      "duration_formatted": "30m4s",
+      "workout_summary": "4m25s | 3\u00d75m18s / 27s rec | 5m45s | 2m39s",
       "has_terrain": false,
       "start_time": "09:00",
-      "description": "Lower Body Strength\n\nLeg strength for cycling power and running economy\n\n1. Goblet Squat: 3 sets \u00d7 12 reps (Weight at chest, sit back into heels) [Rest: 60 sec]\n2. Romanian Deadlift: 3 sets \u00d7 10 reps (Hinge at hips, slight knee bend) [Rest: 60 sec]\n3. Walking Lunges: 3 sets \u00d7 10 reps each leg (Keep torso upright, knee tracks over toe) [Rest: 45 sec]\n4. Step-ups: 3 sets \u00d7 10 reps each leg (Use bench or box, drive through heel) [Rest: 45 sec]\n5. Calf Raises: 3 sets \u00d7 15 reps (Full range of motion, hold at top) [Rest: 30 sec]\n6. Single Leg Glute Bridge: 3 sets \u00d7 10 reps each leg (Keep hips level throughout) [Rest: 30 sec]\n\nBuild phase: increase weight, lower reps (6-10) for strength gains.\n\n[Duration: ~45 min]\n[Exercises \u00b7 gobletSquat 3x12 rest 60 sec \u00b7 romanianDeadlift 3x10 rest 60 sec \u00b7 walkingLunges 3x10 side rest 45 sec \u00b7 stepUps 3x10 side rest 45 sec \u00b7 calfRaises 3x15 rest 30 sec \u00b7 singleLegGluteBridge 3x10 side rest 30 sec]\n\n[Weekly Plan - Build \u00b7 type:lower-body-strength]"
+      "description": "Warmup\n- 265s ramp 65-71% pace\n\nMain Set\n3x\n- Easy 318s 65-71% pace\n- Form Drill 27s 65-71% pace\n\nMain Set\n- Easy 345s 65-71% pace\n\nCooldown\n- 159s ramp 71-65% pace\n\n[Weekly Plan - Build \u00b7 type:recoveryDrills]"
     },
     {
-      "id": 150104250,
+      "id": 150374529,
       "date": "2026-11-07",
-      "name": "IntervalCoach - Lower Body Strength",
+      "name": "IntervalCoach - Threshold Repeats",
       "type": "WORKOUT",
-      "sport_type": "WeightTraining",
-      "planned_tss": 9,
-      "duration_hours": 0.75,
-      "duration_formatted": "45m",
+      "sport_type": "Run",
+      "planned_tss": 101,
+      "duration_hours": 1.43,
+      "duration_formatted": "1h26m",
       "workout_summary": null,
       "has_terrain": false,
       "start_time": "09:00",
-      "description": "Lower Body Strength\n\nLeg strength for cycling power and running economy\n\n1. Goblet Squat: 3 sets \u00d7 12 reps (Weight at chest, sit back into heels) [Rest: 60 sec]\n2. Romanian Deadlift: 3 sets \u00d7 10 reps (Hinge at hips, slight knee bend) [Rest: 60 sec]\n3. Walking Lunges: 3 sets \u00d7 10 reps each leg (Keep torso upright, knee tracks over toe) [Rest: 45 sec]\n4. Step-ups: 3 sets \u00d7 10 reps each leg (Use bench or box, drive through heel) [Rest: 45 sec]\n5. Calf Raises: 3 sets \u00d7 15 reps (Full range of motion, hold at top) [Rest: 30 sec]\n6. Single Leg Glute Bridge: 3 sets \u00d7 10 reps each leg (Keep hips level throughout) [Rest: 30 sec]\n\nBuild phase: increase weight, lower reps (6-10) for strength gains.\n\n[Duration: ~45 min]\n[Exercises \u00b7 gobletSquat 3x12 rest 60 sec \u00b7 romanianDeadlift 3x10 rest 60 sec \u00b7 walkingLunges 3x10 side rest 45 sec \u00b7 stepUps 3x10 side rest 45 sec \u00b7 calfRaises 3x15 rest 30 sec \u00b7 singleLegGluteBridge 3x10 side rest 30 sec]\n\n[Weekly Plan - Build \u00b7 type:lower-body-strength]"
+      "description": "Warmup\n- 4m 63-67% pace\n- 9m 75-79% pace\n\nMain Set\n- Endurance 9m 76-80% pace\n- Threshold 1 10m 95-99% pace\n- Jog Recovery 3m 65-71% pace\n- Threshold 2 8m 95-99% pace\n- Jog Recovery 3m 65-71% pace\n- Threshold 3 6m 95-99% pace\n- Jog Recovery 3m 65-71% pace\n- Threshold 4 5m 96-100% pace\n- Jog Recovery 3m 65-71% pace\n- Threshold 5 5m 96-100% pace\n- Endurance 9m 76-80% pace\n\nCooldown\n- 5m 76-80% pace\n- 4m 63-67% pace\n\n[Weekly Plan - Build \u00b7 type:thresholdRepeats]"
+    },
+    {
+      "id": 150374558,
+      "date": "2026-11-08",
+      "name": "IntervalCoach - Recovery Shakeout",
+      "type": "WORKOUT",
+      "sport_type": "Run",
+      "planned_tss": 29,
+      "duration_hours": 0.63,
+      "duration_formatted": "38m",
+      "workout_summary": null,
+      "has_terrain": false,
+      "start_time": "09:00",
+      "description_preview": "Warmup\n- 6m 64-68% pace\nMain Set"
     }
   ],
   "workout_summary_stats": {
-    "attempted": 2,
-    "success": 0,
-    "patternA": 0,
+    "attempted": 6,
+    "success": 1,
+    "patternA": 1,
     "patternB": 0,
-    "bail_no_workout_doc": 4,
-    "bail_no_match": 2
+    "bail_no_workout_doc": 1,
+    "bail_no_match": 5
   },
   "weekly_summary": {
     "total_training_hours": 6.47,
