@@ -72,7 +72,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-11-12T10:01:29.784012",
+    "last_updated": "2026-11-12T18:17:27.132849",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.103"
@@ -233,7 +233,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": 10765,
+      "steps": 12051,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -450,7 +450,7 @@
           "weeks_available": 4
         },
         "stream_2": {
-          "planned_tss_delta": 1.36,
+          "planned_tss_delta": 1.35,
           "hard_sessions_planned": 3,
           "current_week_hard_days_completed": 0,
           "current_week_hard_days_total": 3,
@@ -490,7 +490,7 @@
     "p_max": null,
     "power_model_source": "wellness.sportInfo",
     "vo2max": 54.0,
-    "calculation_timestamp": "2026-11-12T10:01:29.782234",
+    "calculation_timestamp": "2026-11-12T18:17:27.131924",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -2446,7 +2446,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": 10765,
+      "steps": 12051,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -2473,22 +2473,8 @@
       "description": "Warmup\n- 3m 63-67% pace\n- 5m 75-79% pace\n\nMain Set\n- Endurance 6m 76-80% pace\n- Threshold 1 10m 95-99% pace\n- Jog Recovery 3m 65-71% pace\n- Threshold 2 8m 96-100% pace\n- Jog Recovery 3m 65-71% pace\n- Threshold 3 6m 97-101% pace\n- Endurance 6m 76-80% pace\n\nCooldown\n- 3m 76-80% pace\n- 3m 63-67% pace\n\n[Weekly Plan - Build \u00b7 type:threshold]"
     },
     {
-      "id": 154618764,
-      "date": "2026-11-14",
-      "name": "IntervalCoach - Endurance + Sprints",
-      "type": "WORKOUT",
-      "sport_type": "Run",
-      "planned_tss": 71,
-      "duration_hours": 1.14,
-      "duration_formatted": "1h8m40s",
-      "workout_summary": "11m | 4\u00d710m / 10s rec | 10m | 7m",
-      "has_terrain": false,
-      "start_time": "09:00",
-      "description": "Warmup\n- 11m Z2 HR\n\nMain Set\n4x\n- Aerobic 10m Z2 HR\n- Sprint 10s\n\nRecovery\n- Aerobic 10m Z2 HR\n\nCooldown\n- 7m Z2 HR\n\n[Weekly Plan - Build \u00b7 type:enduranceWithSprints]"
-    },
-    {
       "id": 153967939,
-      "date": "2026-11-15",
+      "date": "2026-11-14",
       "name": "IntervalCoach - Running Time Trial",
       "type": "WORKOUT",
       "sport_type": "Run",
@@ -2499,6 +2485,20 @@
       "has_terrain": false,
       "start_time": "09:00",
       "description": "Warmup\n- 9m Z2 HR\n\nMain Set\n- Time Trial 30m Z4 HR\n\nCooldown\n- 6m Z2 HR\n\n[Athlete moved - was plan: Build \u00b7 type:runTimeTrialTest]"
+    },
+    {
+      "id": 154618764,
+      "date": "2026-11-15",
+      "name": "IntervalCoach - Endurance + Sprints",
+      "type": "WORKOUT",
+      "sport_type": "Run",
+      "planned_tss": 70,
+      "duration_hours": 1.14,
+      "duration_formatted": "1h8m40s",
+      "workout_summary": "11m | 4\u00d710m / 10s rec | 10m | 7m",
+      "has_terrain": false,
+      "start_time": "09:00",
+      "description": "Warmup\n- 11m Z2 HR\n\nMain Set\n4x\n- Aerobic 10m Z2 HR\n- Sprint 10s\n\nRecovery\n- Aerobic 10m Z2 HR\n\nCooldown\n- 7m Z2 HR\n\n[Athlete moved - was plan: Build \u00b7 type:enduranceWithSprints]"
     },
     {
       "id": 153946913,
